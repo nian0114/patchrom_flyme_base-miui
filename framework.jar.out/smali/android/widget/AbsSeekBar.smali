@@ -1837,6 +1837,8 @@
 
     invoke-virtual {p0, v2}, Landroid/widget/AbsSeekBar;->invalidate(Landroid/graphics/Rect;)V
 
+    invoke-static/range {p0 .. p0}, Landroid/widget/AbsSeekBar$FlymeInjector;->invalidateThumb(Landroid/widget/AbsSeekBar;)V
+
     :cond_4
     invoke-virtual {p0}, Landroid/widget/AbsSeekBar;->onStartTrackingTouch()V
 
@@ -1894,6 +1896,8 @@
 
     invoke-virtual {p0, v2}, Landroid/widget/AbsSeekBar;->invalidate(Landroid/graphics/Rect;)V
 
+    invoke-static/range {p0 .. p0}, Landroid/widget/AbsSeekBar$FlymeInjector;->invalidateThumb(Landroid/widget/AbsSeekBar;)V
+
     :cond_6
     invoke-virtual {p0}, Landroid/widget/AbsSeekBar;->onStartTrackingTouch()V
 
@@ -1920,7 +1924,7 @@
 
     invoke-static/range {p0 .. p0}, Landroid/widget/AbsSeekBar$FlymeInjector;->mzSetInDragoning(Landroid/widget/AbsSeekBar;)V
 
-    goto :goto_0
+    goto/16 :goto_0
 
     :cond_7
     invoke-virtual {p0}, Landroid/widget/AbsSeekBar;->onStartTrackingTouch()V

@@ -366,6 +366,8 @@
 
     invoke-static {v10, v1}, Landroid/miui/ResourcesManager;->initMiuiResource(Landroid/content/res/Resources;Ljava/lang/String;)V
 
+    invoke-direct {p0, v10}, Landroid/app/ContextImpl;->setFlymeThemeResource(Landroid/content/res/Resources;)V
+
     :cond_4
     iput-object v10, p0, Landroid/app/ContextImpl;->mResources:Landroid/content/res/Resources;
 

@@ -8,6 +8,12 @@
 
 
 # annotations
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/content/res/Configuration$FlymeInjector;
+    }
+.end annotation
+
 .annotation system Ldalvik/annotation/Signature;
     value = {
         "Ljava/lang/Object;",
@@ -741,6 +747,8 @@
     iput v1, v0, Landroid/content/res/Configuration;->densityDpi:I
 
     :cond_15
+    invoke-static {p0, p1, v0}, Landroid/content/res/Configuration$FlymeInjector;->generateDelta(Landroid/content/res/Configuration;Landroid/content/res/Configuration;Landroid/content/res/Configuration;)V
+
     return-object v0
 .end method
 
@@ -929,7 +937,7 @@
 .end method
 
 .method public static needNewResources(II)Z
-    .locals 1
+    .locals 2
     .param p0, "configChanges"    # I
     .param p1, "interestingChanges"    # I
 
@@ -939,6 +947,12 @@
 
     or-int/2addr v0, p1
 
+    or-int/lit16 v0, v0, 0x4000
+
+    const v1, 0x8000
+
+    or-int/2addr v0, v1
+
     and-int/2addr v0, p0
 
     if-nez v0, :cond_0
@@ -947,15 +961,12 @@
 
     move-result v0
 
-    if-eqz v0, :cond_1
-
     :cond_0
     const/4 v0, 0x1
 
     :goto_0
     return v0
 
-    :cond_1
     const/4 v0, 0x0
 
     goto :goto_0
@@ -2610,6 +2621,10 @@
 
     move-result v2
 
+    invoke-static {p0, p1, v2}, Landroid/content/res/Configuration$FlymeInjector;->compareTo(Landroid/content/res/Configuration;Landroid/content/res/Configuration;I)I
+
+    move-result v2
+
     .line 1305
     goto/16 :goto_0
 .end method
@@ -2964,6 +2979,10 @@
 
     or-int/2addr v0, v2
 
+    invoke-static {p0, p1, v0}, Landroid/content/res/Configuration$FlymeInjector;->diff(Landroid/content/res/Configuration;Landroid/content/res/Configuration;I)I
+
+    move-result v0
+
     .line 1109
     return v0
 .end method
@@ -3191,6 +3210,10 @@
     move-result v2
 
     add-int v0, v1, v2
+
+    invoke-static {p0, v0}, Landroid/content/res/Configuration$FlymeInjector;->hashCode(Landroid/content/res/Configuration;I)I
+
+    move-result v0
 
     return v0
 
@@ -3494,6 +3517,8 @@
 
     invoke-virtual {v0, p1}, Landroid/content/res/MiuiConfiguration;->readFromParcel(Landroid/os/Parcel;)V
 
+    invoke-static/range {p0 .. p1}, Landroid/content/res/Configuration$FlymeInjector;->readFromParcel(Landroid/content/res/Configuration;Landroid/os/Parcel;)V
+
     return-void
 
     :cond_1
@@ -3662,6 +3687,8 @@
 
     invoke-virtual {v0, v1}, Landroid/content/res/MiuiConfiguration;->setTo(Landroid/content/res/MiuiConfiguration;)V
 
+    invoke-static/range {p0 .. p1}, Landroid/content/res/Configuration$FlymeInjector;->initFlymeExtraFields(Landroid/content/res/Configuration;Landroid/content/res/Configuration;)V
+
     return-void
 .end method
 
@@ -3722,6 +3749,8 @@
     iget-object v0, p0, Landroid/content/res/Configuration;->extraConfig:Landroid/content/res/MiuiConfiguration;
 
     invoke-virtual {v0}, Landroid/content/res/MiuiConfiguration;->setToDefaults()V
+
+    invoke-static/range {p0 .. p0}, Landroid/content/res/Configuration$FlymeInjector;->initFlymeExtraFields(Landroid/content/res/Configuration;)V
 
     return-void
 .end method
@@ -5182,6 +5211,10 @@
 
     or-int/2addr v0, v2
 
+    invoke-static {p0, p1, v0}, Landroid/content/res/Configuration$FlymeInjector;->updateFrom(Landroid/content/res/Configuration;Landroid/content/res/Configuration;I)I
+
+    move-result v0
+
     .line 997
     return v0
 
@@ -5310,6 +5343,8 @@
 
     invoke-virtual {v0, p1, p2}, Landroid/content/res/MiuiConfiguration;->writeToParcel(Landroid/os/Parcel;I)V
 
+    invoke-static/range {p0 .. p2}, Landroid/content/res/Configuration$FlymeInjector;->writeToParcel(Landroid/content/res/Configuration;Landroid/os/Parcel;I)V
+
     return-void
 
     :cond_0
@@ -5341,11 +5376,11 @@
 
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
 
-    goto :goto_0
+    goto/16 :goto_0
 
     .line 1182
     :cond_1
     invoke-virtual {p1, v1}, Landroid/os/Parcel;->writeInt(I)V
 
-    goto :goto_1
+    goto/16 :goto_1
 .end method

@@ -16,6 +16,11 @@
     name = "LayoutParams"
 .end annotation
 
+.annotation system Ldalvik/annotation/MemberClasses;
+    value = {
+        Landroid/view/WindowManager$LayoutParams$FlymeInjector;
+    }
+.end annotation
 
 # static fields
 .field public static final MEIZU_FLAGS_CHANGED:I = 0x800000
@@ -2217,6 +2222,10 @@
     or-int/2addr v0, v2
 
     :cond_23
+    invoke-static {p0, p1, v0}, Landroid/view/WindowManager$LayoutParams$FlymeInjector;->copyFrom(Landroid/view/WindowManager$LayoutParams;Landroid/view/WindowManager$LayoutParams;I)I
+
+    move-result v0
+
     return v0
 .end method
 

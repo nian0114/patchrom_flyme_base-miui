@@ -12,6 +12,7 @@
 
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroid/widget/TextView$FlymeInjector;,
         Landroid/widget/TextView$4;,
         Landroid/widget/TextView$ChangeWatcher;,
         Landroid/widget/TextView$Marquee;,
@@ -139,6 +140,18 @@
 
 .field private mFirstTouch:Z
 
+.field mFlymeAutoLinkMaskIncludeDateTime:Z
+
+.field private mFlymeCurrentCursorVisible:Z
+
+.field mFlymeCursorWidth:I
+
+.field mFlymeInputShownChangeListener:Landroid/view/inputmethod/InputMethodManager$InputShownChangeListener;
+
+.field mFlymeTempCoords:[I
+
+.field mFlymeTouching:Z
+
 .field private mFreezesText:Z
 
 .field private mGravity:I
@@ -253,6 +266,8 @@
 .field private mSpacingMult:F
 
 .field private mSpannableFactory:Landroid/text/Spannable$Factory;
+
+.field private mTempCurosrRect:Landroid/graphics/Rect;
 
 .field private mTempRect:Landroid/graphics/Rect;
 
@@ -3074,6 +3089,8 @@
 
     .line 1380
     :cond_d
+    invoke-static/range {p0 .. p1}, Landroid/widget/TextView$FlymeInjector;->initFlymeExtraFields(Landroid/widget/TextView;Landroid/content/Context;)V
+
     if-nez v50, :cond_e
 
     if-nez v51, :cond_e
@@ -20797,8 +20814,6 @@
 
     iget-object v0, p0, Landroid/widget/TextView;->mEditor:Landroid/widget/Editor;
 
-    invoke-virtual {v0}, Landroid/widget/Editor;->stopSelectionActionMode()V
-
     :cond_0
     :goto_0
     return-void
@@ -23923,6 +23938,17 @@
     :cond_0
     sparse-switch p1, :sswitch_data_0
 
+    invoke-static/range {p0 .. p1}, Landroid/widget/TextView$FlymeInjector;->mzOnTextContextMenuItem(Landroid/widget/TextView;I)Z
+
+    move-result v6
+
+    if-nez v6, :cond_flyme_1
+
+    const/4 v6, 0x1
+
+    return v6
+
+    :cond_flyme_1
     move v7, v5
 
     :cond_1
@@ -24162,7 +24188,15 @@
 
     iget-object v7, p0, Landroid/widget/TextView;->mEditor:Landroid/widget/Editor;
 
-    invoke-virtual {v7}, Landroid/widget/Editor;->isInSwipeSelectionMode()Z
+    iget-object v7, v7, Landroid/widget/Editor;->mSelectionModifierCursorController:Landroid/widget/Editor$SelectionModifierCursorController;
+
+    if-eqz v7, :cond_4
+
+    iget-object v7, p0, Landroid/widget/TextView;->mEditor:Landroid/widget/Editor;
+
+    iget-object v7, v7, Landroid/widget/Editor;->mSelectionModifierCursorController:Landroid/widget/Editor$SelectionModifierCursorController;
+
+    invoke-virtual {v7}, Landroid/widget/Editor$SelectionModifierCursorController;->isDragAcceleratorActive()Z
 
     move-result v7
 

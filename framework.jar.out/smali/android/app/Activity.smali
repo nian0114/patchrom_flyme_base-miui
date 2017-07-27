@@ -14,6 +14,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroid/app/Activity$FlymeInjector;,
         Landroid/app/Activity$1;,
         Landroid/app/Activity$HostCallbacks;,
         Landroid/app/Activity$TranslucentConversionListener;,
@@ -6571,6 +6572,8 @@
     iput-boolean v0, p0, Landroid/app/Activity;->mCalled:Z
 
     invoke-static {p0}, Landroid/app/ActivityInjector;->checkAccessControl(Landroid/app/Activity;)V
+
+    invoke-static/range {p0 .. p0}, Landroid/app/Activity$FlymeInjector;->injectAccessControl(Landroid/app/Activity;)V
 
     return-void
 .end method

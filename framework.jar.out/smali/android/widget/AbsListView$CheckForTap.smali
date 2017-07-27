@@ -290,6 +290,9 @@
     .end local v4    # "point":[F
     :cond_3
     :goto_1
+    invoke-direct/range {p0 .. p0}, Landroid/widget/AbsListView$CheckForTap;->setFlymeShowPressed()V
+
+    :goto_flyme_1
     return-void
 
     .line 3339
@@ -323,7 +326,7 @@
 
     iput v10, v5, Landroid/widget/AbsListView;->mTouchMode:I
 
-    goto :goto_1
+    goto :goto_flyme_1
 .end method
 
 .method private setFlymeShowPressed()V

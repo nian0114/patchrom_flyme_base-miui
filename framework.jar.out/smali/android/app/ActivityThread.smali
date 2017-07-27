@@ -6,6 +6,8 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroid/app/ActivityThread$FlymeApplicationThread;,
+        Landroid/app/ActivityThread$FlymeInjector;,
         Landroid/app/ActivityThread$DropBoxReporter;,
         Landroid/app/ActivityThread$EventLoggingReporter;,
         Landroid/app/ActivityThread$ProviderRefCount;,
@@ -378,9 +380,9 @@
 
     iput-object v0, p0, Landroid/app/ActivityThread;->mPerf:Landroid/util/BoostFramework;
 
-    new-instance v0, Landroid/app/ActivityThread$ApplicationThread;
+    new-instance v0, Landroid/app/ActivityThread$FlymeApplicationThread;
 
-    invoke-direct {v0, p0, v1}, Landroid/app/ActivityThread$ApplicationThread;-><init>(Landroid/app/ActivityThread;Landroid/app/ActivityThread$1;)V
+    invoke-direct {v0, p0}, Landroid/app/ActivityThread$FlymeApplicationThread;-><init>(Landroid/app/ActivityThread;)V
 
     iput-object v0, p0, Landroid/app/ActivityThread;->mAppThread:Landroid/app/ActivityThread$ApplicationThread;
 
@@ -9029,6 +9031,8 @@
     .param p5, "dontReport"    # Z
 
     .prologue
+    invoke-static/range {p0 .. p0}, Landroid/app/ActivityThread$FlymeInjector;->handleFlymePauseActivity(Landroid/app/ActivityThread;)V
+
     iget-object v1, p0, Landroid/app/ActivityThread;->mActivities:Landroid/util/ArrayMap;
 
     invoke-virtual {v1, p1}, Landroid/util/ArrayMap;->get(Ljava/lang/Object;)Ljava/lang/Object;
@@ -9197,13 +9201,11 @@
     iget-object v9, p1, Landroid/app/ActivityThread$ReceiverData;->intent:Landroid/content/Intent;
 
     invoke-virtual {v7, v8, v9}, Landroid/content/BroadcastReceiver;->onReceive(Landroid/content/Context;Landroid/content/Intent;)V
-
-    :cond_flyme_0
-
     :try_end_1
     .catch Ljava/lang/Exception; {:try_start_1 .. :try_end_1} :catch_1
     .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
+    :cond_flyme_0
     sget-object v8, Landroid/app/ActivityThread;->sCurrentBroadcastIntent:Ljava/lang/ThreadLocal;
 
     invoke-virtual {v8, v11}, Ljava/lang/ThreadLocal;->set(Ljava/lang/Object;)V

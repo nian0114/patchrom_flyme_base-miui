@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroid/inputmethodservice/InputMethodService$FlymeInjector;,
         Landroid/inputmethodservice/InputMethodService$Insets;,
         Landroid/inputmethodservice/InputMethodService$InputMethodSessionImpl;,
         Landroid/inputmethodservice/InputMethodService$InputMethodImpl;
@@ -2821,6 +2822,17 @@
     if-nez v2, :cond_0
 
     :cond_2
+    invoke-static/range {p0 .. p0}, Landroid/inputmethodservice/InputMethodService$FlymeInjector;->onEvaluateFullscreenMode(Landroid/inputmethodservice/InputMethodService;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_flyme_3
+
+    iget-boolean v1, p0, Landroid/inputmethodservice/InputMethodService;->mIsFullscreen:Z
+
+    return v1
+
+    :cond_flyme_3
     const/4 v1, 0x1
 
     goto :goto_0
@@ -3195,6 +3207,19 @@
 
     .restart local v0    # "eet":Landroid/inputmethodservice/ExtractEditText;
     :cond_0
+    invoke-static/range {p0 .. p0}, Landroid/inputmethodservice/InputMethodService$FlymeInjector;->isImeInterceptBackKey(Landroid/inputmethodservice/InputMethodService;)Z
+
+    move-result v1
+
+    if-nez v1, :cond_flyme_1
+
+    invoke-static/range {p0 .. p0}, Landroid/inputmethodservice/InputMethodService$FlymeInjector;->handleBack(Landroid/inputmethodservice/InputMethodService;)Z
+
+    move-result v1
+
+    return v1
+
+    :cond_flyme_1
     invoke-direct {p0, v2}, Landroid/inputmethodservice/InputMethodService;->handleBack(Z)Z
 
     move-result v3
@@ -4383,6 +4408,8 @@
     invoke-virtual {p0, v6}, Landroid/inputmethodservice/InputMethodService;->startExtractingText(Z)V
 
     :cond_4
+    invoke-static/range {p0 .. p0}, Landroid/inputmethodservice/InputMethodService$FlymeInjector;->updateCoverViewShown(Landroid/inputmethodservice/InputMethodService;)V
+
     invoke-virtual {p0}, Landroid/inputmethodservice/InputMethodService;->isInputViewShown()Z
 
     move-result v4

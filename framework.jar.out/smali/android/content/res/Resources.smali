@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Landroid/content/res/Resources$FlymeInjector;,
         Landroid/content/res/Resources$ThemeKey;,
         Landroid/content/res/Resources$Theme;,
         Landroid/content/res/Resources$NotFoundException;
@@ -1094,6 +1095,8 @@
 
     invoke-static {v0, v1}, Landroid/miui/ResourcesManager;->initMiuiResource(Landroid/content/res/Resources;Ljava/lang/String;)V
 
+    invoke-static {}, Landroid/content/res/Resources$FlymeInjector;->setFlymeSystemThemeResource()V
+
     :cond_0
     monitor-exit v2
 
@@ -1449,7 +1452,7 @@
     move-result-object v3
 
     .local v3, "is":Ljava/io/InputStream;
-    invoke-virtual {p0, p1, v3, v2, p2}, Landroid/content/res/Resources;->createFromResourceStream(Landroid/util/TypedValue;Ljava/io/InputStream;Ljava/lang/String;I)Landroid/graphics/drawable/Drawable;
+    invoke-static/range {p0 .. p2}, Landroid/content/res/Resources$FlymeInjector;->createFromResourceStream(Landroid/content/res/Resources;Landroid/util/TypedValue;I)Landroid/graphics/drawable/Drawable;
 
     move-result-object v0
 
