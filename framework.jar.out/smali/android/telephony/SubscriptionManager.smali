@@ -2465,3 +2465,31 @@
 
     goto :goto_0
 .end method
+
+.method public setDefaultDataSubIdExtended(I)V
+    .locals 2
+    .param p1, "subId"    # I
+
+    .prologue
+    invoke-static {p1}, Landroid/telephony/SubscriptionManager;->getSlotId(I)I
+
+    move-result v0
+
+    invoke-static {}, Lmiui/telephony/SubscriptionManager;->getDefault()Lmiui/telephony/SubscriptionManager;
+
+    move-result-object v1
+
+    invoke-virtual {v1, v0}, Lmiui/telephony/SubscriptionManager;->setDefaultDataSlotId(I)V
+
+    return-void
+.end method
+
+.method public setDefaultVoiceSubIdExtended(I)V
+    .locals 0
+    .param p1, "subId"    # I
+
+    .prologue
+    invoke-static {p1}, Landroid/telephony/SubscriptionManager;->setDefaultVoiceSubId(I)V
+
+    return-void
+.end method
