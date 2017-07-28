@@ -9,6 +9,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/android/server/am/ActivityStackSupervisor$FlymeInjector;,
         Lcom/android/server/am/ActivityStackSupervisor$VirtualActivityDisplay;,
         Lcom/android/server/am/ActivityStackSupervisor$ActivityDisplay;,
         Lcom/android/server/am/ActivityStackSupervisor$VirtualActivityContainer;,
@@ -10732,6 +10733,8 @@
     .param p5, "userId"    # I
 
     .prologue
+    invoke-static {p1, p5}, Lcom/android/server/am/ActivityStackSupervisor$FlymeInjector;->interceptAcquireGooglePlayServiceIntent(Landroid/content/Intent;I)V
+
     :try_start_0
     invoke-static {}, Landroid/app/AppGlobals;->getPackageManager()Landroid/content/pm/IPackageManager;
 
@@ -13936,6 +13939,27 @@
 
     .end local v29    # "e":Landroid/os/RemoteException;
     :cond_20
+    move-object/from16 v0, p0
+
+    move-object/from16 v1, p2
+
+    move-object/from16 v2, p4
+
+    move/from16 v3, p11
+
+    invoke-static {v0, v1, v2, v3}, Lcom/android/server/am/ActivityStackSupervisor$FlymeInjector;->interceptForAccessControl(Lcom/android/server/am/ActivityStackSupervisor;Landroid/content/Intent;Landroid/content/pm/ActivityInfo;I)Landroid/content/pm/ActivityInfo;
+
+    move-result-object p4
+
+    invoke-static/range {p0 .. p0}, Lcom/android/server/am/ActivityStackSupervisor$FlymeInjector;->isIntercepted(Lcom/android/server/am/ActivityStackSupervisor;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_flyme_21
+
+    const/16 p21, 0x0
+
+    :cond_flyme_21
     new-instance v7, Lcom/android/server/am/ActivityRecord;
 
     move-object/from16 v0, p0
@@ -14418,6 +14442,23 @@
 
     .line 975
     .local v7, "aInfo":Landroid/content/pm/ActivityInfo;
+    move-object/from16 v0, p0
+
+    move/from16 v1, p2
+
+    move-object/from16 v2, p3
+
+    invoke-static {v0, v1, v2, v7}, Lcom/android/server/am/ActivityStackSupervisor$FlymeInjector;->changeMayInterceptPackage(Lcom/android/server/am/ActivityStackSupervisor;ILjava/lang/String;Landroid/content/pm/ActivityInfo;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_flyme_1
+
+    const/4 v0, 0x0
+
+    return v0
+
+    :cond_flyme_1
     invoke-static {}, Lcom/android/server/am/ActivityStackSupervisorInjector;->isXSpaceActive()Z
 
     move-result v4
@@ -14556,10 +14597,6 @@
     move/from16 v16, p16
 
     move/from16 v17, p17
-
-    invoke-static/range {v8 .. v17}, Lcom/android/server/am/ActivityStackSupervisorInjector;->checkStartActivityPermission(Landroid/content/Context;Lcom/android/server/am/ActivityManagerService;Landroid/app/IApplicationThread;Landroid/content/pm/ActivityInfo;Landroid/content/Intent;Ljava/lang/String;ZIZI)Landroid/content/Intent;
-
-    move-result-object p4
 
     .line 986
     move-object/from16 v0, p4
@@ -15099,7 +15136,7 @@
 
     move-result v4
 
-    if-nez v4, :cond_12
+    if-nez v4, :cond_11
 
     move-object/from16 v0, p0
 

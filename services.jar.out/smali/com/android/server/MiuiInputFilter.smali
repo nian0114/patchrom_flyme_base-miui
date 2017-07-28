@@ -2299,8 +2299,6 @@
     if-nez v4, :cond_0
 
     .line 355
-    invoke-direct/range {p0 .. p0}, Lcom/android/server/MiuiInputFilter;->showGestureDetectAlert()V
-
     goto/16 :goto_0
 
     .line 364

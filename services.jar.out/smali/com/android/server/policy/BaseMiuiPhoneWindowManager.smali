@@ -3709,7 +3709,10 @@
     .locals 2
 
     .prologue
-    .line 2162
+    invoke-super/range {p0 .. p0}, Lcom/android/server/policy/PhoneWindowManager;->hideBootMessages()V
+
+    return-void
+
     iget-object v0, p0, Lcom/android/server/policy/BaseMiuiPhoneWindowManager;->mHandler:Landroid/os/Handler;
 
     new-instance v1, Lcom/android/server/policy/BaseMiuiPhoneWindowManager$14;
@@ -9035,7 +9038,10 @@
     .param p2, "always"    # Z
 
     .prologue
-    .line 2068
+    invoke-super/range {p0 .. p2}, Lcom/android/server/policy/PhoneWindowManager;->showBootMessage(Ljava/lang/CharSequence;Z)V
+
+    return-void
+
     iget-object v0, p0, Lcom/android/server/policy/BaseMiuiPhoneWindowManager;->mHandler:Landroid/os/Handler;
 
     new-instance v1, Lcom/android/server/policy/BaseMiuiPhoneWindowManager$13;

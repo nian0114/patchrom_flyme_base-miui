@@ -849,10 +849,6 @@
 
     .prologue
     .line 77
-    sget v0, Lmiui/R$style;->Theme_Light:I
-
-    invoke-virtual {p0, v0}, Landroid/content/Context;->setTheme(I)V
-
     .line 78
     invoke-static {}, Lcom/android/server/am/ExtraActivityManagerService;->init()V
 

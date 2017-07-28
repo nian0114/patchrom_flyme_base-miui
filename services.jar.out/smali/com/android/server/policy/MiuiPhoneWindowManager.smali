@@ -590,8 +590,6 @@
 
     invoke-direct {v2, p0}, Lcom/android/server/policy/MiuiPhoneWindowManager$1;-><init>(Lcom/android/server/policy/MiuiPhoneWindowManager;)V
 
-    invoke-virtual {v1, v2}, Landroid/os/Handler;->post(Ljava/lang/Runnable;)Z
-
     goto :goto_0
 
     .line 279
@@ -599,7 +597,7 @@
     if-ne v6, v0, :cond_4
 
     .line 280
-    invoke-direct {p0}, Lcom/android/server/policy/MiuiPhoneWindowManager;->injectHomeEvent()V
+    invoke-direct {p0}, Lcom/android/server/policy/MiuiPhoneWindowManager;->injectBackEvent()V
 
     goto :goto_0
 

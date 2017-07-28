@@ -345,7 +345,7 @@
 
     sget-boolean v2, Lcom/android/server/power/ShutdownThread;->mReboot:Z
 
-    invoke-static {p0, v2}, Lcom/android/server/power/ShutdownThreadInjector;->showShutdownAnimOrDialog(Landroid/content/Context;Z)V
+    invoke-static/range {p0 .. p0}, Lcom/android/server/power/ShutdownThread$FlymeInjector;->showShutDownAnimation(Landroid/content/Context;)V
 
     sget-object v2, Lcom/android/server/power/ShutdownThread;->sInstance:Lcom/android/server/power/ShutdownThread;
 
@@ -1221,7 +1221,7 @@
     .line 191
     sget-object v6, Lcom/android/server/power/ShutdownThread;->sConfirmDialog:Landroid/app/AlertDialog;
 
-    invoke-virtual {v6}, Landroid/app/AlertDialog;->show()V
+    invoke-static {p0}, Lcom/android/server/power/ShutdownThread$FlymeInjector;->showShutDownAnimation(Landroid/content/Context;)V
 
     goto/16 :goto_0
 

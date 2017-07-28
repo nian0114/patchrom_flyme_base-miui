@@ -4211,8 +4211,6 @@
     .line 1046
     .restart local v0    # "privacyUserId":I
     :cond_4
-    invoke-virtual {p4, v5}, Lcom/android/server/wm/WindowManagerService;->lockNow(Landroid/os/Bundle;)V
-
     goto :goto_1
 .end method
 

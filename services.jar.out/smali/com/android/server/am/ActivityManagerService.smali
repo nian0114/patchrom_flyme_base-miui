@@ -10,6 +10,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/android/server/am/ActivityManagerService$FlymeActivityManagerServiceInjector;,
         Lcom/android/server/am/ActivityManagerService$AppTaskImpl;,
         Lcom/android/server/am/ActivityManagerService$SleepTokenImpl;,
         Lcom/android/server/am/ActivityManagerService$LocalService;,
@@ -7590,6 +7591,7 @@
     invoke-direct/range {v4 .. v13}, Lcom/android/server/am/ActivityManagerService;->forceStopPackageLocked(Ljava/lang/String;IZZZZZILjava/lang/String;)Z
 
     :cond_11
+    :goto_flyme_0
     if-eqz v69, :cond_15
 
     const/4 v4, 0x0
@@ -7745,6 +7747,10 @@
 
     :goto_a
     invoke-virtual {v6, v5, v4}, Lcom/android/server/am/BatteryStatsService;->notePackageInstalled(Ljava/lang/String;I)V
+
+    move-object/from16 v0, p0
+
+    invoke-static {v0, v14}, Lcom/android/server/am/ActivityManagerService$FlymeActivityManagerServiceInjector;->addFlymeAppLocked(Lcom/android/server/am/ActivityManagerService;Landroid/content/Intent;)V
     :try_end_2
     .catch Landroid/os/RemoteException; {:try_start_2 .. :try_end_2} :catch_1
 
@@ -12067,6 +12073,8 @@
     move-object/from16 v0, p1
 
     iput-boolean v3, v0, Lcom/android/server/am/ProcessRecord;->foregroundActivities:Z
+
+    invoke-static/range {p1 .. p1}, Lcom/android/server/am/ActivityManagerService$FlymeActivityManagerServiceInjector;->modifyFlymeOomAdj(Lcom/android/server/am/ProcessRecord;)V
 
     const/4 v3, -0x1
 
@@ -18200,6 +18208,15 @@
     .param p1, "func"    # Ljava/lang/String;
 
     .prologue
+    invoke-static {}, Lcom/android/server/am/ActivityManagerService$FlymeActivityManagerServiceInjector;->isSystemUid()Z
+
+    move-result v0
+
+    if-eqz v0, :cond_flyme_0
+
+    return-void
+
+    :cond_flyme_0
     invoke-static {}, Landroid/os/Binder;->getCallingUid()I
 
     move-result v1
@@ -33538,7 +33555,7 @@
 
     move/from16 v0, p2
 
-    invoke-static {v2, v0}, Lcom/android/server/am/ActivityManagerService;->killProcessGroup(II)V
+    invoke-static {v2, v0}, Lcom/android/server/am/ActivityManagerService;->killFlymeProcessGroup(II)V
 
     const/4 v2, 0x1
 
@@ -59693,7 +59710,7 @@
 
     if-eqz v2, :cond_flyme_0
 
-    goto :goto_flyme_0
+    goto :goto_5
 
     :cond_flyme_0
 
@@ -89039,6 +89056,8 @@
     invoke-virtual {v3, v5}, Lcom/android/server/am/ActivityManagerService$MainHandler;->post(Ljava/lang/Runnable;)Z
 
     :cond_35
+    invoke-static/range {p0 .. p0}, Lcom/android/server/am/ActivityManagerService$FlymeActivityManagerServiceInjector;->updateFlymeOomAdjLocked(Lcom/android/server/am/ActivityManagerService;)V
+
     return-void
 
     .restart local v4    # "app":Lcom/android/server/am/ProcessRecord;
@@ -89508,6 +89527,8 @@
     monitor-exit v0
 
     :goto_0
+    invoke-static/range {p1 .. p2}, Lcom/android/server/am/ActivityManagerService$FlymeActivityManagerServiceInjector;->adjustFlymeShrinkerGround(Lcom/android/server/am/ActivityRecord;Z)V
+
     return-void
 
     :catchall_0
