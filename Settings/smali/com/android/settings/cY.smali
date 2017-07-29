@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/cY;
+.class public interface abstract Lcom/android/settings_ex/cY;
 .super Ljava/lang/Object;
 .source "FingerprintAddListener.java"
 

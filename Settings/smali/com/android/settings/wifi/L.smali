@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/L;
+.class public Lcom/android/settings_ex/wifi/L;
 .super Lcom/android/b/e/c;
 .source "MiuiWifiTracker.java"
 

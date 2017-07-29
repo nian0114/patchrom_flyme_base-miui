@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$SlowWarningFragment$1;
+.class Lcom/android/settings_ex/deviceinfo/StorageWizardFormatProgress$SlowWarningFragment$1;
 .super Ljava/lang/Object;
 .source "StorageWizardFormatProgress.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Xx:Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$SlowWarningFragment;
+.field final synthetic Xx:Lcom/android/settings_ex/deviceinfo/StorageWizardFormatProgress$SlowWarningFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$SlowWarningFragment;)V
+.method constructor <init>(Lcom/android/settings_ex/deviceinfo/StorageWizardFormatProgress$SlowWarningFragment;)V
     .locals 0
 
     .prologue
     .line 180
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$SlowWarningFragment$1;->Xx:Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$SlowWarningFragment;
+    iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/StorageWizardFormatProgress$SlowWarningFragment$1;->Xx:Lcom/android/settings_ex/deviceinfo/StorageWizardFormatProgress$SlowWarningFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,16 +30,16 @@
 
     .prologue
     .line 183
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$SlowWarningFragment$1;->Xx:Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$SlowWarningFragment;
+    iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/StorageWizardFormatProgress$SlowWarningFragment$1;->Xx:Lcom/android/settings_ex/deviceinfo/StorageWizardFormatProgress$SlowWarningFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress$SlowWarningFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ex/deviceinfo/StorageWizardFormatProgress$SlowWarningFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;
+    check-cast v0, Lcom/android/settings_ex/deviceinfo/StorageWizardFormatProgress;
 
     .line 185
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;->b(Lcom/android/settings/deviceinfo/StorageWizardFormatProgress;)V
+    invoke-static {v0}, Lcom/android/settings_ex/deviceinfo/StorageWizardFormatProgress;->b(Lcom/android/settings_ex/deviceinfo/StorageWizardFormatProgress;)V
 
     .line 186
     return-void

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/d/g;
+.class Lcom/android/settings_ex/d/g;
 .super Landroid/os/AsyncTask;
 .source "NetworkPolicyEditor.java"
 
@@ -6,18 +6,18 @@
 # instance fields
 .field final synthetic ahZ:[Landroid/net/NetworkPolicy;
 
-.field final synthetic aia:Lcom/android/settings/d/f;
+.field final synthetic aia:Lcom/android/settings_ex/d/f;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/d/f;[Landroid/net/NetworkPolicy;)V
+.method constructor <init>(Lcom/android/settings_ex/d/f;[Landroid/net/NetworkPolicy;)V
     .locals 0
 
     .prologue
     .line 81
-    iput-object p1, p0, Lcom/android/settings/d/g;->aia:Lcom/android/settings/d/f;
+    iput-object p1, p0, Lcom/android/settings_ex/d/g;->aia:Lcom/android/settings_ex/d/f;
 
-    iput-object p2, p0, Lcom/android/settings/d/g;->ahZ:[Landroid/net/NetworkPolicy;
+    iput-object p2, p0, Lcom/android/settings_ex/d/g;->ahZ:[Landroid/net/NetworkPolicy;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
@@ -33,7 +33,7 @@
     .line 81
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/d/g;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ex/d/g;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
 
@@ -45,11 +45,11 @@
 
     .prologue
     .line 84
-    iget-object v0, p0, Lcom/android/settings/d/g;->aia:Lcom/android/settings/d/f;
+    iget-object v0, p0, Lcom/android/settings_ex/d/g;->aia:Lcom/android/settings_ex/d/f;
 
-    iget-object v1, p0, Lcom/android/settings/d/g;->ahZ:[Landroid/net/NetworkPolicy;
+    iget-object v1, p0, Lcom/android/settings_ex/d/g;->ahZ:[Landroid/net/NetworkPolicy;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/d/f;->a([Landroid/net/NetworkPolicy;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/d/f;->a([Landroid/net/NetworkPolicy;)V
 
     .line 85
     const/4 v0, 0x0

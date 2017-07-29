@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;
+.class public Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;
 .super Lmiui/preference/PreferenceActivity;
 .source "ModifyAndInstructionPrivacyPassword.java"
 
@@ -15,7 +15,7 @@
 
 .field private anc:Landroid/preference/CheckBoxPreference;
 
-.field private and:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+.field private and:Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
 .field private ane:Landroid/view/View;
 
@@ -33,13 +33,13 @@
 
 .field private anl:Landroid/content/DialogInterface$OnDismissListener;
 
-.field private anm:Lcom/android/settings/dd;
+.field private anm:Lcom/android/settings_ex/dd;
 
 .field private m:Lmiui/security/SecurityManager;
 
 .field private qb:Landroid/app/AlertDialog;
 
-.field private qe:Lcom/android/settings/cZ;
+.field private qe:Lcom/android/settings_ex/cZ;
 
 .field private rX:Landroid/preference/CheckBoxPreference;
 
@@ -53,95 +53,95 @@
     invoke-direct {p0}, Lmiui/preference/PreferenceActivity;-><init>()V
 
     .line 330
-    new-instance v0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword$3;
+    new-instance v0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword$3;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword$3;-><init>(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword$3;-><init>(Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;)V
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->ank:Landroid/content/DialogInterface$OnClickListener;
+    iput-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->ank:Landroid/content/DialogInterface$OnClickListener;
 
     .line 339
-    new-instance v0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword$4;
+    new-instance v0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword$4;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword$4;-><init>(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword$4;-><init>(Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;)V
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anl:Landroid/content/DialogInterface$OnDismissListener;
+    iput-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anl:Landroid/content/DialogInterface$OnDismissListener;
 
     .line 359
-    new-instance v0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword$5;
+    new-instance v0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword$5;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword$5;-><init>(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword$5;-><init>(Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;)V
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anm:Lcom/android/settings/dd;
+    iput-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anm:Lcom/android/settings_ex/dd;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;I)I
+.method static synthetic a(Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;I)I
     .locals 0
 
     .prologue
     .line 49
-    iput p1, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anh:I
+    iput p1, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anh:I
 
     return p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+.method static synthetic a(Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;)Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
     .locals 1
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;Z)Z
+.method static synthetic a(Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;Z)Z
     .locals 0
 
     .prologue
     .line 49
-    iput-boolean p1, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->ani:Z
+    iput-boolean p1, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->ani:Z
 
     return p1
 .end method
 
-.method static synthetic b(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)Landroid/preference/CheckBoxPreference;
+.method static synthetic b(Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;)Landroid/preference/CheckBoxPreference;
     .locals 1
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->ana:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->ana:Landroid/preference/CheckBoxPreference;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)Landroid/preference/CheckBoxPreference;
+.method static synthetic c(Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;)Landroid/preference/CheckBoxPreference;
     .locals 1
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anc:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anc:Landroid/preference/CheckBoxPreference;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)Lcom/android/settings/cZ;
+.method static synthetic d(Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;)Lcom/android/settings_ex/cZ;
     .locals 1
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->qe:Lcom/android/settings/cZ;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->qe:Lcom/android/settings_ex/cZ;
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)I
+.method static synthetic e(Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;)I
     .locals 1
 
     .prologue
     .line 49
-    iget v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anh:I
+    iget v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anh:I
 
     return v0
 .end method
@@ -160,66 +160,66 @@
     return v0
 .end method
 
-.method static synthetic f(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)Z
+.method static synthetic f(Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;)Z
     .locals 1
 
     .prologue
     .line 49
-    iget-boolean v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->ani:Z
+    iget-boolean v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->ani:Z
 
     return v0
 .end method
 
-.method static synthetic g(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)I
+.method static synthetic g(Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;)I
     .locals 1
 
     .prologue
     .line 49
-    iget v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anh:I
+    iget v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anh:I
 
     add-int/lit8 v0, v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anh:I
+    iput v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anh:I
 
     return v0
 .end method
 
-.method static synthetic h(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)Landroid/widget/TextView;
+.method static synthetic h(Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;)Landroid/widget/TextView;
     .locals 1
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anf:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anf:Landroid/widget/TextView;
 
     return-object v0
 .end method
 
-.method static synthetic i(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)Landroid/app/AlertDialog;
+.method static synthetic i(Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;)Landroid/app/AlertDialog;
     .locals 1
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->qb:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->qb:Landroid/app/AlertDialog;
 
     return-object v0
 .end method
 
-.method static synthetic j(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)V
+.method static synthetic j(Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;)V
     .locals 0
 
     .prologue
     .line 49
-    invoke-direct {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->tw()V
+    invoke-direct {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->tw()V
 
     return-void
 .end method
 
-.method static synthetic k(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)V
+.method static synthetic k(Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;)V
     .locals 0
 
     .prologue
     .line 49
-    invoke-direct {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->tz()V
+    invoke-direct {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->tz()V
 
     return-void
 .end method
@@ -229,7 +229,7 @@
 
     .prologue
     .line 124
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -240,7 +240,7 @@
     move-result-object v1
 
     .line 125
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -281,7 +281,7 @@
 
     aget-object v4, v2, v0
 
-    invoke-direct {p0, v3, v4}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->x(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, v3, v4}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->x(Ljava/lang/String;Ljava/lang/String;)V
 
     goto :goto_1
 
@@ -297,7 +297,7 @@
     .line 353
     const-string v0, "vibrator"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -326,17 +326,17 @@
     .prologue
     .line 394
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->qe:Lcom/android/settings/cZ;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->qe:Lcom/android/settings_ex/cZ;
 
-    iget-object v1, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anm:Lcom/android/settings/dd;
+    iget-object v1, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anm:Lcom/android/settings_ex/dd;
 
-    iget-object v2, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->qe:Lcom/android/settings/cZ;
+    iget-object v2, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->qe:Lcom/android/settings_ex/cZ;
 
-    invoke-virtual {v2}, Lcom/android/settings/cZ;->dV()Ljava/util/List;
+    invoke-virtual {v2}, Lcom/android/settings_ex/cZ;->dV()Ljava/util/List;
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/cZ;->a(Lcom/android/settings/dd;Ljava/util/List;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ex/cZ;->a(Lcom/android/settings_ex/dd;Ljava/util/List;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -363,7 +363,7 @@
 
     .prologue
     .line 413
-    invoke-static {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->bZ(Landroid/content/Context;)I
+    invoke-static {p0}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordUtils;->bZ(Landroid/content/Context;)I
 
     move-result v0
 
@@ -372,10 +372,10 @@
     .line 414
     const/4 v0, 0x0
 
-    invoke-static {p0, v0}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->s(Landroid/content/Context;I)V
+    invoke-static {p0, v0}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordUtils;->s(Landroid/content/Context;I)V
 
     .line 415
-    invoke-static {}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->tM()Z
+    invoke-static {}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordUtils;->tM()Z
 
     move-result v0
 
@@ -383,7 +383,7 @@
 
     .line 417
     :try_start_0
-    invoke-static {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->ca(Landroid/content/Context;)V
+    invoke-static {p0}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordUtils;->ca(Landroid/content/Context;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -411,7 +411,7 @@
 
     .prologue
     .line 135
-    invoke-static {}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->tL()Z
+    invoke-static {}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordUtils;->tL()Z
 
     move-result v0
 
@@ -445,7 +445,7 @@
     invoke-virtual {v0, p0}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 142
-    iget-object v1, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anb:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anb:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -459,7 +459,7 @@
     .line 325
     const-string v0, "com.android.settings.bgColor"
 
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -474,7 +474,7 @@
     .line 326
     const-string v0, "com.android.settings.titleColor"
 
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -489,7 +489,7 @@
     .line 327
     const-string v0, "com.android.settings.ConfirmLockPattern.header"
 
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -514,12 +514,12 @@
     .line 295
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl;
+    const-class v1, Lcom/android/settings_ex/privacypassword/PrivacyPasswordConfirmAccessControl;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
     .line 296
-    invoke-virtual {p0, v0, p1}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, p1}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->startActivityForResult(Landroid/content/Intent;I)V
 
     .line 297
     return-void
@@ -530,18 +530,18 @@
 
     .prologue
     .line 232
-    invoke-static {p0}, Lcom/android/settings/privacypassword/XiaomiAccountUtils;->cd(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ex/privacypassword/XiaomiAccountUtils;->cd(Landroid/content/Context;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 233
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->bk(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;->bk(Ljava/lang/String;)V
 
     .line 235
     :cond_0
@@ -575,7 +575,7 @@
     .line 202
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/privacypassword/SetPrivacyPasswordChooseAccessControl;
+    const-class v1, Lcom/android/settings_ex/privacypassword/SetPrivacyPasswordChooseAccessControl;
 
     invoke-direct {v0, p0, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -587,7 +587,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 204
-    invoke-virtual {p0, v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 
@@ -596,7 +596,7 @@
     if-ne p2, v0, :cond_0
 
     .line 209
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->tt()V
+    invoke-virtual {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->tt()V
 
     goto :goto_0
 
@@ -608,14 +608,14 @@
 
     .line 214
     :goto_1
-    iget-object v1, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anc:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anc:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 215
-    iget-object v1, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v1, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->ba(Z)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;->ba(Z)V
 
     goto :goto_0
 
@@ -630,32 +630,32 @@
     if-ne p2, v0, :cond_2
 
     .line 219
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->tv()V
+    invoke-virtual {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->tv()V
 
     goto :goto_0
 
     .line 221
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anc:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anc:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v1, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
-    invoke-virtual {v1}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->tK()Z
+    invoke-virtual {v1}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;->tK()Z
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 222
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
-    iget-object v1, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v1, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
-    invoke-virtual {v1}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->tK()Z
+    invoke-virtual {v1}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;->tK()Z
 
     move-result v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->ba(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;->ba(Z)V
 
     goto :goto_0
 
@@ -681,79 +681,79 @@
     invoke-super {p0, p1}, Lmiui/preference/PreferenceActivity;->onCreate(Landroid/os/Bundle;)V
 
     .line 90
-    invoke-static {}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->tL()Z
+    invoke-static {}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordUtils;->tL()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 91
-    invoke-virtual {p0, v1}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->setRequestedOrientation(I)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->setRequestedOrientation(I)V
 
     .line 93
     :cond_0
     const v0, 0x7f080065
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->addPreferencesFromResource(I)V
 
     .line 94
-    invoke-static {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->bW(Landroid/content/Context;)Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    invoke-static {p0}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;->bW(Landroid/content/Context;)Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iput-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
     .line 95
     const-string v0, "security"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
     check-cast v0, Lmiui/security/SecurityManager;
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->m:Lmiui/security/SecurityManager;
+    iput-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->m:Lmiui/security/SecurityManager;
 
     .line 96
     const-string v0, "modify_privacy_password"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->amZ:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->amZ:Landroid/preference/Preference;
 
     .line 97
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->amZ:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->amZ:Landroid/preference/Preference;
 
     invoke-virtual {v0, p0}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 98
     const-string v0, "forget_privacy_password_setting"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->ana:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->ana:Landroid/preference/CheckBoxPreference;
 
     .line 99
     const-string v0, "privacy_password_spcific"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anb:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anb:Landroid/preference/PreferenceCategory;
 
     .line 100
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
-    invoke-virtual {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->tJ()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;->tJ()Ljava/lang/String;
 
     move-result-object v0
 
@@ -762,77 +762,77 @@
 
     .line 102
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->ana:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->ana:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 103
     const-string v0, "privacy_password_visible_pattern"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->rX:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->rX:Landroid/preference/CheckBoxPreference;
 
     .line 104
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->rX:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->rX:Landroid/preference/CheckBoxPreference;
 
-    invoke-static {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->bX(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordUtils;->bX(Landroid/content/Context;)Z
 
     move-result v2
 
     invoke-virtual {v0, v2}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 105
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->rX:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->rX:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 107
-    new-instance v0, Lcom/android/settings/cZ;
+    new-instance v0, Lcom/android/settings_ex/cZ;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/cZ;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ex/cZ;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->qe:Lcom/android/settings/cZ;
+    iput-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->qe:Lcom/android/settings_ex/cZ;
 
     .line 108
     const-string v0, "password_settings_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->ang:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->ang:Landroid/preference/PreferenceCategory;
 
     .line 109
     const-string v0, "use_finger_cofirm_password"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anc:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anc:Landroid/preference/CheckBoxPreference;
 
     .line 110
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->qe:Lcom/android/settings/cZ;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->qe:Lcom/android/settings_ex/cZ;
 
-    invoke-virtual {v0}, Lcom/android/settings/cZ;->isHardwareDetected()Z
+    invoke-virtual {v0}, Lcom/android/settings_ex/cZ;->isHardwareDetected()Z
 
     move-result v0
 
     if-eqz v0, :cond_3
 
     .line 111
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->qe:Lcom/android/settings/cZ;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->qe:Lcom/android/settings_ex/cZ;
 
-    invoke-virtual {v0}, Lcom/android/settings/cZ;->dV()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/android/settings_ex/cZ;->dV()Ljava/util/List;
 
     move-result-object v0
 
@@ -842,15 +842,15 @@
 
     if-nez v0, :cond_2
 
-    invoke-static {p0}, Lcom/android/settings/privacypassword/TransparentHelper;->cb(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ex/privacypassword/TransparentHelper;->cb(Landroid/content/Context;)Z
 
     move-result v0
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
-    invoke-virtual {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->tK()Z
+    invoke-virtual {v0}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;->tK()Z
 
     move-result v0
 
@@ -860,26 +860,26 @@
 
     .line 112
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anc:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anc:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 113
-    iget-object v1, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anc:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anc:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 114
-    iget-object v1, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v1, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->ba(Z)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;->ba(Z)V
 
     .line 119
     :goto_1
-    invoke-direct {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->ts()V
+    invoke-direct {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->ts()V
 
     .line 120
-    invoke-direct {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->tz()V
+    invoke-direct {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->tz()V
 
     .line 121
     return-void
@@ -892,9 +892,9 @@
 
     .line 116
     :cond_3
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->ang:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->ang:Landroid/preference/PreferenceCategory;
 
-    iget-object v1, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anc:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anc:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
@@ -906,23 +906,23 @@
 
     .prologue
     .line 285
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->qb:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->qb:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_0
 
     .line 286
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->qb:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->qb:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
     .line 288
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anj:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anj:Landroid/app/AlertDialog;
 
     if-eqz v0, :cond_1
 
     .line 289
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anj:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anj:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->dismiss()V
 
@@ -944,7 +944,7 @@
     move-result-object v1
 
     .line 148
-    invoke-static {}, Lcom/android/settings/privacypassword/BussinessPackageInfoCache;->tr()Ljava/util/Map;
+    invoke-static {}, Lcom/android/settings_ex/privacypassword/BussinessPackageInfoCache;->tr()Ljava/util/Map;
 
     move-result-object v0
 
@@ -960,7 +960,7 @@
     .line 150
     new-instance v1, Landroid/content/Intent;
 
-    const-class v2, Lcom/android/settings/privacypassword/FunctionSpecification;
+    const-class v2, Lcom/android/settings_ex/privacypassword/FunctionSpecification;
 
     invoke-direct {v1, p0, v2}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 
@@ -970,7 +970,7 @@
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 152
-    invoke-virtual {p0, v1}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->startActivity(Landroid/content/Intent;)V
 
     .line 163
     :cond_0
@@ -992,7 +992,7 @@
     .line 154
     const v0, 0x46dc2
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->cF(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->cF(I)V
 
     goto :goto_0
 
@@ -1007,24 +1007,24 @@
     if-eqz v0, :cond_3
 
     .line 156
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->rX:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->rX:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->rX:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->rX:Landroid/preference/CheckBoxPreference;
 
-    invoke-direct {p0, v1}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->e(Landroid/preference/Preference;)Z
+    invoke-direct {p0, v1}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->e(Landroid/preference/Preference;)Z
 
     move-result v1
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 157
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->rX:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->rX:Landroid/preference/CheckBoxPreference;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->e(Landroid/preference/Preference;)Z
+    invoke-direct {p0, v0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->e(Landroid/preference/Preference;)Z
 
     move-result v0
 
-    invoke-static {p0, v0}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->n(Landroid/content/Context;Z)V
+    invoke-static {p0, v0}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordUtils;->n(Landroid/content/Context;Z)V
 
     goto :goto_0
 
@@ -1041,7 +1041,7 @@
     .line 159
     const v0, 0x46dcb
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->cF(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->cF(I)V
 
     goto :goto_0
 
@@ -1058,7 +1058,7 @@
     .line 161
     const/16 v0, 0x7163
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->cF(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->cF(I)V
 
     goto :goto_0
 .end method
@@ -1071,9 +1071,9 @@
     invoke-super {p0}, Lmiui/preference/PreferenceActivity;->onRestart()V
 
     .line 252
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->rX:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->rX:Landroid/preference/CheckBoxPreference;
 
-    invoke-static {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->bX(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordUtils;->bX(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -1088,16 +1088,16 @@
 
     .prologue
     .line 190
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
-    invoke-virtual {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->tI()Z
+    invoke-virtual {v0}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;->tI()Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 191
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->finish()V
 
     .line 193
     :cond_0
@@ -1112,21 +1112,21 @@
 
     .prologue
     .line 240
-    invoke-static {p0}, Lcom/android/settings/privacypassword/XiaomiAccountUtils;->cd(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ex/privacypassword/XiaomiAccountUtils;->cd(Landroid/content/Context;)Z
 
     move-result v0
 
     .line 241
-    iget-object v1, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v1, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
-    invoke-virtual {v1}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->tJ()Ljava/lang/String;
+    invoke-virtual {v1}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;->tJ()Ljava/lang/String;
 
     move-result-object v1
 
     .line 242
     if-eqz v0, :cond_0
 
-    invoke-static {p0}, Lcom/android/settings/privacypassword/XiaomiAccountUtils;->ce(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/settings_ex/privacypassword/XiaomiAccountUtils;->ce(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -1138,15 +1138,15 @@
 
     .line 243
     :cond_0
-    iget-object v2, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v2, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
     const/4 v3, 0x0
 
-    invoke-virtual {v2, v3}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->bk(Ljava/lang/String;)V
+    invoke-virtual {v2, v3}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;->bk(Ljava/lang/String;)V
 
     .line 245
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->ana:Landroid/preference/CheckBoxPreference;
+    iget-object v2, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->ana:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_2
 
@@ -1176,29 +1176,29 @@
 
     .prologue
     .line 171
-    invoke-static {p0}, Lcom/android/settings/privacypassword/XiaomiAccountUtils;->cd(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ex/privacypassword/XiaomiAccountUtils;->cd(Landroid/content/Context;)Z
 
     move-result v0
 
     if-nez v0, :cond_1
 
     .line 172
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->m:Lmiui/security/SecurityManager;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->m:Lmiui/security/SecurityManager;
 
     const-string v1, "com.xiaomi.account"
 
-    invoke-static {v0, v1}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->b(Lmiui/security/SecurityManager;Ljava/lang/String;)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordUtils;->b(Lmiui/security/SecurityManager;Ljava/lang/String;)Z
 
     move-result v0
 
     if-nez v0, :cond_0
 
     .line 173
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->m:Lmiui/security/SecurityManager;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->m:Lmiui/security/SecurityManager;
 
     const-string v1, "com.xiaomi.account"
 
-    invoke-static {v0, v1}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->a(Lmiui/security/SecurityManager;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordUtils;->a(Lmiui/security/SecurityManager;Ljava/lang/String;)V
 
     .line 175
     :cond_0
@@ -1207,9 +1207,9 @@
     invoke-direct {v0}, Landroid/os/Bundle;-><init>()V
 
     .line 176
-    iget-object v1, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v1, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
-    invoke-static {p0, v0, v1}, Lcom/android/settings/privacypassword/XiaomiAccountUtils;->a(Landroid/app/Activity;Landroid/os/Bundle;Lcom/android/settings/privacypassword/PrivacyPasswordManager;)V
+    invoke-static {p0, v0, v1}, Lcom/android/settings_ex/privacypassword/XiaomiAccountUtils;->a(Landroid/app/Activity;Landroid/os/Bundle;Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;)V
 
     .line 186
     :goto_0
@@ -1217,23 +1217,23 @@
 
     .line 178
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
-    invoke-virtual {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->tJ()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;->tJ()Ljava/lang/String;
 
     move-result-object v0
 
     if-eqz v0, :cond_2
 
     .line 179
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->bk(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;->bk(Ljava/lang/String;)V
 
     .line 180
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->ana:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->ana:Landroid/preference/CheckBoxPreference;
 
     const/4 v1, 0x0
 
@@ -1243,12 +1243,12 @@
 
     .line 182
     :cond_2
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->tu()V
+    invoke-virtual {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->tu()V
 
     .line 183
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->ana:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->ana:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -1272,7 +1272,7 @@
 
     invoke-direct {v0, p0}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;)V
 
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -1286,7 +1286,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -1298,7 +1298,7 @@
 
     const/4 v4, 0x0
 
-    invoke-static {p0}, Lcom/android/settings/privacypassword/XiaomiAccountUtils;->cc(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p0}, Lcom/android/settings_ex/privacypassword/XiaomiAccountUtils;->cc(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v5
 
@@ -1312,7 +1312,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -1322,15 +1322,15 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword$2;
+    new-instance v2, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword$2;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword$2;-><init>(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword$2;-><init>(Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -1340,9 +1340,9 @@
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword$1;
+    new-instance v2, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword$1;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword$1;-><init>(Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword$1;-><init>(Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;)V
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -1352,10 +1352,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anj:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anj:Landroid/app/AlertDialog;
 
     .line 280
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anj:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anj:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
@@ -1370,9 +1370,9 @@
     const/16 v4, 0x7162
 
     .line 300
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anc:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anc:Landroid/preference/CheckBoxPreference;
 
-    invoke-direct {p0, v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->e(Landroid/preference/Preference;)Z
+    invoke-direct {p0, v0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->e(Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -1380,15 +1380,15 @@
     if-eqz v0, :cond_4
 
     .line 302
-    invoke-static {p0}, Lcom/android/settings/privacypassword/TransparentHelper;->cb(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ex/privacypassword/TransparentHelper;->cb(Landroid/content/Context;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->qe:Lcom/android/settings/cZ;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->qe:Lcom/android/settings_ex/cZ;
 
-    invoke-virtual {v0}, Lcom/android/settings/cZ;->dV()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/android/settings_ex/cZ;->dV()Ljava/util/List;
 
     move-result-object v0
 
@@ -1399,7 +1399,7 @@
     if-nez v0, :cond_0
 
     .line 303
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->ty()V
+    invoke-virtual {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->ty()V
 
     .line 322
     :goto_0
@@ -1407,15 +1407,15 @@
 
     .line 304
     :cond_0
-    invoke-static {p0}, Lcom/android/settings/privacypassword/TransparentHelper;->cb(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ex/privacypassword/TransparentHelper;->cb(Landroid/content/Context;)Z
 
     move-result v0
 
     if-nez v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->qe:Lcom/android/settings/cZ;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->qe:Lcom/android/settings_ex/cZ;
 
-    invoke-virtual {v0}, Lcom/android/settings/cZ;->dV()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/android/settings_ex/cZ;->dV()Ljava/util/List;
 
     move-result-object v0
 
@@ -1440,11 +1440,11 @@
     if-eqz v1, :cond_1
 
     .line 307
-    invoke-direct {p0, v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->y(Landroid/content/Intent;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->y(Landroid/content/Intent;)V
 
     .line 309
     :cond_1
-    invoke-virtual {p0, v0, v4}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v4}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 
@@ -1473,21 +1473,21 @@
     if-eqz v1, :cond_3
 
     .line 315
-    invoke-direct {p0, v0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->y(Landroid/content/Intent;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->y(Landroid/content/Intent;)V
 
     .line 317
     :cond_3
-    invoke-virtual {p0, v0, v4}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->startActivityForResult(Landroid/content/Intent;I)V
+    invoke-virtual {p0, v0, v4}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->startActivityForResult(Landroid/content/Intent;I)V
 
     goto :goto_0
 
     .line 320
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->and:Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->ba(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;->ba(Z)V
 
     goto :goto_0
 .end method
@@ -1505,10 +1505,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->qb:Landroid/app/AlertDialog;
+    iput-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->qb:Landroid/app/AlertDialog;
 
     .line 402
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->getLayoutInflater()Landroid/view/LayoutInflater;
+    invoke-virtual {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->getLayoutInflater()Landroid/view/LayoutInflater;
 
     move-result-object v0
 
@@ -1520,10 +1520,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->ane:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->ane:Landroid/view/View;
 
     .line 403
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->ane:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->ane:Landroid/view/View;
 
     const v1, 0x7f130079
 
@@ -1533,12 +1533,12 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anf:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anf:Landroid/widget/TextView;
 
     .line 404
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anf:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anf:Landroid/widget/TextView;
 
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -1551,16 +1551,16 @@
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 405
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->qb:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->qb:Landroid/app/AlertDialog;
 
-    iget-object v1, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->ane:Landroid/view/View;
+    iget-object v1, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->ane:Landroid/view/View;
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setView(Landroid/view/View;)V
 
     .line 406
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->qb:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->qb:Landroid/app/AlertDialog;
 
-    invoke-virtual {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -1570,24 +1570,24 @@
 
     move-result-object v1
 
-    iget-object v2, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->ank:Landroid/content/DialogInterface$OnClickListener;
+    iget-object v2, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->ank:Landroid/content/DialogInterface$OnClickListener;
 
     invoke-virtual {v0, v1, v2}, Landroid/app/AlertDialog;->setButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)V
 
     .line 407
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->qb:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->qb:Landroid/app/AlertDialog;
 
     invoke-virtual {v0}, Landroid/app/AlertDialog;->show()V
 
     .line 408
-    iget-object v0, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->qb:Landroid/app/AlertDialog;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->qb:Landroid/app/AlertDialog;
 
-    iget-object v1, p0, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->anl:Landroid/content/DialogInterface$OnDismissListener;
+    iget-object v1, p0, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->anl:Landroid/content/DialogInterface$OnDismissListener;
 
     invoke-virtual {v0, v1}, Landroid/app/AlertDialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
     .line 409
-    invoke-direct {p0}, Lcom/android/settings/privacypassword/ModifyAndInstructionPrivacyPassword;->tx()V
+    invoke-direct {p0}, Lcom/android/settings_ex/privacypassword/ModifyAndInstructionPrivacyPassword;->tx()V
 
     .line 410
     return-void

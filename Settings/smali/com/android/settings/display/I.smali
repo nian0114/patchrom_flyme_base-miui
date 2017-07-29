@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/display/I;
+.class public Lcom/android/settings_ex/display/I;
 .super Landroid/preference/Preference;
 .source "ScreenColorSeekBarPreference.java"
 
@@ -30,7 +30,7 @@
     .line 54
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/display/I;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
+    invoke-direct {p0, p1, v0}, Lcom/android/settings_ex/display/I;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;)V
 
     .line 55
     return-void
@@ -43,7 +43,7 @@
     .line 50
     const/4 v0, 0x0
 
-    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings/display/I;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
+    invoke-direct {p0, p1, p2, v0}, Lcom/android/settings_ex/display/I;-><init>(Landroid/content/Context;Landroid/util/AttributeSet;I)V
 
     .line 51
     return-void
@@ -59,14 +59,14 @@
     .line 35
     const-wide/high16 v0, 0x4049000000000000L    # 50.0
 
-    iput-wide v0, p0, Lcom/android/settings/display/I;->ZA:D
+    iput-wide v0, p0, Lcom/android/settings_ex/display/I;->ZA:D
 
     .line 46
-    invoke-direct {p0}, Lcom/android/settings/display/I;->pG()Landroid/content/res/ColorStateList;
+    invoke-direct {p0}, Lcom/android/settings_ex/display/I;->pG()Landroid/content/res/ColorStateList;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/display/I;->Zx:Landroid/content/res/ColorStateList;
+    iput-object v0, p0, Lcom/android/settings_ex/display/I;->Zx:Landroid/content/res/ColorStateList;
 
     .line 47
     return-void
@@ -87,7 +87,7 @@
     :cond_0
     int-to-double v0, p2
 
-    iget-wide v2, p0, Lcom/android/settings/display/I;->ZA:D
+    iget-wide v2, p0, Lcom/android/settings_ex/display/I;->ZA:D
 
     cmpl-double v0, v0, v2
 
@@ -97,7 +97,7 @@
 
     const-wide/high16 v2, 0x4059000000000000L    # 100.0
 
-    iget-wide v4, p0, Lcom/android/settings/display/I;->ZA:D
+    iget-wide v4, p0, Lcom/android/settings_ex/display/I;->ZA:D
 
     sub-double/2addr v2, v4
 
@@ -106,7 +106,7 @@
     if-gtz v0, :cond_1
 
     .line 143
-    iget v0, p0, Lcom/android/settings/display/I;->ZC:I
+    iget v0, p0, Lcom/android/settings_ex/display/I;->ZC:I
 
     div-int/lit8 v0, v0, 0x2
 
@@ -131,7 +131,7 @@
     .line 176
     int-to-double v0, p1
 
-    iget-wide v2, p0, Lcom/android/settings/display/I;->ZA:D
+    iget-wide v2, p0, Lcom/android/settings_ex/display/I;->ZA:D
 
     const-wide/high16 v4, 0x4000000000000000L    # 2.0
 
@@ -139,7 +139,7 @@
 
     add-double/2addr v0, v2
 
-    iget-wide v2, p0, Lcom/android/settings/display/I;->ZA:D
+    iget-wide v2, p0, Lcom/android/settings_ex/display/I;->ZA:D
 
     div-double/2addr v0, v2
 
@@ -155,7 +155,7 @@
     .line 180
     int-to-double v0, p1
 
-    iget-wide v2, p0, Lcom/android/settings/display/I;->ZA:D
+    iget-wide v2, p0, Lcom/android/settings_ex/display/I;->ZA:D
 
     mul-double/2addr v0, v2
 
@@ -186,7 +186,7 @@
     aput v1, v0, v7
 
     .line 185
-    invoke-virtual {p0}, Lcom/android/settings/display/I;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ex/display/I;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -195,7 +195,7 @@
     move-result-object v1
 
     .line 186
-    invoke-virtual {p0}, Lcom/android/settings/display/I;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ex/display/I;->getContext()Landroid/content/Context;
 
     move-result-object v2
 
@@ -265,7 +265,7 @@
 
     .prologue
     .line 125
-    iput-object p1, p0, Lcom/android/settings/display/I;->ZD:[Ljava/lang/CharSequence;
+    iput-object p1, p0, Lcom/android/settings_ex/display/I;->ZD:[Ljava/lang/CharSequence;
 
     .line 126
     return-void
@@ -276,7 +276,7 @@
 
     .prologue
     .line 121
-    invoke-virtual {p0}, Lcom/android/settings/display/I;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ex/display/I;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -288,7 +288,7 @@
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/I;->b([Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/display/I;->b([Ljava/lang/CharSequence;)V
 
     .line 122
     return-void
@@ -316,13 +316,13 @@
     invoke-virtual {v0, p0}, Landroid/widget/SeekBar;->setOnSeekBarChangeListener(Landroid/widget/SeekBar$OnSeekBarChangeListener;)V
 
     .line 105
-    iget v1, p0, Lcom/android/settings/display/I;->mLevel:I
+    iget v1, p0, Lcom/android/settings_ex/display/I;->mLevel:I
 
-    invoke-direct {p0, v1}, Lcom/android/settings/display/I;->bR(I)I
+    invoke-direct {p0, v1}, Lcom/android/settings_ex/display/I;->bR(I)I
 
     move-result v1
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/display/I;->a(Landroid/widget/SeekBar;I)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ex/display/I;->a(Landroid/widget/SeekBar;I)V
 
     .line 106
     const v0, 0x7f1301c5
@@ -351,14 +351,14 @@
     check-cast v1, Landroid/widget/TextView;
 
     .line 109
-    iget-object v4, p0, Lcom/android/settings/display/I;->ZD:[Ljava/lang/CharSequence;
+    iget-object v4, p0, Lcom/android/settings_ex/display/I;->ZD:[Ljava/lang/CharSequence;
 
     aget-object v4, v4, v2
 
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 110
-    iget v4, p0, Lcom/android/settings/display/I;->mLevel:I
+    iget v4, p0, Lcom/android/settings_ex/display/I;->mLevel:I
 
     if-ne v2, v4, :cond_1
 
@@ -368,7 +368,7 @@
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setSelected(Z)V
 
     .line 111
-    iget-object v4, p0, Lcom/android/settings/display/I;->Zw:Landroid/content/res/ColorStateList;
+    iget-object v4, p0, Lcom/android/settings_ex/display/I;->Zw:Landroid/content/res/ColorStateList;
 
     if-nez v4, :cond_0
 
@@ -377,7 +377,7 @@
 
     move-result-object v4
 
-    iput-object v4, p0, Lcom/android/settings/display/I;->Zw:Landroid/content/res/ColorStateList;
+    iput-object v4, p0, Lcom/android/settings_ex/display/I;->Zw:Landroid/content/res/ColorStateList;
 
     .line 114
     :cond_0
@@ -387,7 +387,7 @@
 
     if-eqz v4, :cond_2
 
-    iget-object v4, p0, Lcom/android/settings/display/I;->Zx:Landroid/content/res/ColorStateList;
+    iget-object v4, p0, Lcom/android/settings_ex/display/I;->Zx:Landroid/content/res/ColorStateList;
 
     :goto_2
     invoke-virtual {v1, v4}, Landroid/widget/TextView;->setTextColor(Landroid/content/res/ColorStateList;)V
@@ -407,9 +407,9 @@
 
     .line 114
     :cond_2
-    iget-object v4, p0, Lcom/android/settings/display/I;->Zx:Landroid/content/res/ColorStateList;
+    iget-object v4, p0, Lcom/android/settings_ex/display/I;->Zx:Landroid/content/res/ColorStateList;
 
-    iget-object v5, p0, Lcom/android/settings/display/I;->Zw:Landroid/content/res/ColorStateList;
+    iget-object v5, p0, Lcom/android/settings_ex/display/I;->Zw:Landroid/content/res/ColorStateList;
 
     invoke-virtual {v1}, Landroid/widget/TextView;->getDrawableState()[I
 
@@ -447,7 +447,7 @@
     const/4 v3, 0x0
 
     .line 59
-    invoke-virtual {p0}, Lcom/android/settings/display/I;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ex/display/I;->getContext()Landroid/content/Context;
 
     move-result-object v0
 
@@ -485,7 +485,7 @@
 
     move-result v2
 
-    iput v2, p0, Lcom/android/settings/display/I;->ZB:I
+    iput v2, p0, Lcom/android/settings_ex/display/I;->ZB:I
 
     .line 68
     invoke-virtual {v1}, Landroid/widget/SeekBar;->getThumb()Landroid/graphics/drawable/Drawable;
@@ -498,7 +498,7 @@
     move v2, v3
 
     :goto_0
-    iput v2, p0, Lcom/android/settings/display/I;->ZC:I
+    iput v2, p0, Lcom/android/settings_ex/display/I;->ZC:I
 
     .line 72
     :cond_0
@@ -537,7 +537,7 @@
     if-nez v1, :cond_6
 
     .line 77
-    invoke-virtual {p0}, Lcom/android/settings/display/I;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ex/display/I;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -564,7 +564,7 @@
     .line 80
     new-instance v8, Landroid/widget/TextView;
 
-    invoke-virtual {p0}, Lcom/android/settings/display/I;->getContext()Landroid/content/Context;
+    invoke-virtual {p0}, Lcom/android/settings_ex/display/I;->getContext()Landroid/content/Context;
 
     move-result-object v1
 
@@ -677,24 +677,24 @@
 
     .line 161
     :cond_1
-    invoke-direct {p0, p2}, Lcom/android/settings/display/I;->bQ(I)I
+    invoke-direct {p0, p2}, Lcom/android/settings_ex/display/I;->bQ(I)I
 
     move-result v0
 
     .line 162
-    iget v1, p0, Lcom/android/settings/display/I;->mLevel:I
+    iget v1, p0, Lcom/android/settings_ex/display/I;->mLevel:I
 
     if-eq v0, v1, :cond_0
 
     .line 163
-    iput v0, p0, Lcom/android/settings/display/I;->mLevel:I
+    iput v0, p0, Lcom/android/settings_ex/display/I;->mLevel:I
 
     .line 164
     invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/display/I;->callChangeListener(Ljava/lang/Object;)Z
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/display/I;->callChangeListener(Ljava/lang/Object;)Z
 
     goto :goto_0
 .end method
@@ -712,12 +712,12 @@
 
     .prologue
     .line 171
-    iget v0, p0, Lcom/android/settings/display/I;->ZB:I
+    iget v0, p0, Lcom/android/settings_ex/display/I;->ZB:I
 
     invoke-virtual {p1, v0}, Landroid/widget/SeekBar;->setThumbOffset(I)V
 
     .line 172
-    invoke-virtual {p0}, Lcom/android/settings/display/I;->notifyChanged()V
+    invoke-virtual {p0}, Lcom/android/settings_ex/display/I;->notifyChanged()V
 
     .line 173
     return-void
@@ -728,10 +728,10 @@
 
     .prologue
     .line 133
-    iput p1, p0, Lcom/android/settings/display/I;->mLevel:I
+    iput p1, p0, Lcom/android/settings_ex/display/I;->mLevel:I
 
     .line 134
-    invoke-virtual {p0}, Lcom/android/settings/display/I;->notifyChanged()V
+    invoke-virtual {p0}, Lcom/android/settings_ex/display/I;->notifyChanged()V
 
     .line 135
     return-void

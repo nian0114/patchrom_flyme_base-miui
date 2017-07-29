@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fingerprint/f;
+.class Lcom/android/settings_ex/fingerprint/f;
 .super Ljava/lang/Object;
 .source "FingerprintEnrollEnrolling.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic abM:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+.field final synthetic abM:Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;)V
+.method constructor <init>(Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;)V
     .locals 0
 
     .prologue
     .line 324
-    iput-object p1, p0, Lcom/android/settings/fingerprint/f;->abM:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+    iput-object p1, p0, Lcom/android/settings_ex/fingerprint/f;->abM:Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,9 +38,9 @@
 
     .prologue
     .line 334
-    iget-object v0, p0, Lcom/android/settings/fingerprint/f;->abM:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+    iget-object v0, p0, Lcom/android/settings_ex/fingerprint/f;->abM:Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;
 
-    invoke-static {v0}, Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;->j(Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;)Landroid/widget/ProgressBar;
+    invoke-static {v0}, Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;->j(Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;)Landroid/widget/ProgressBar;
 
     move-result-object v0
 
@@ -53,15 +53,15 @@
     if-lt v0, v1, :cond_0
 
     .line 335
-    iget-object v0, p0, Lcom/android/settings/fingerprint/f;->abM:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+    iget-object v0, p0, Lcom/android/settings_ex/fingerprint/f;->abM:Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;
 
-    invoke-static {v0}, Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;->j(Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;)Landroid/widget/ProgressBar;
+    invoke-static {v0}, Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;->j(Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;)Landroid/widget/ProgressBar;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/fingerprint/f;->abM:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+    iget-object v1, p0, Lcom/android/settings_ex/fingerprint/f;->abM:Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;
 
-    invoke-static {v1}, Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;->k(Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;)Ljava/lang/Runnable;
+    invoke-static {v1}, Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;->k(Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;)Ljava/lang/Runnable;
 
     move-result-object v1
 

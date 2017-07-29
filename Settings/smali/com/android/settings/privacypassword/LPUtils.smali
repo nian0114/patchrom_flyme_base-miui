@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/privacypassword/LPUtils;
+.class public Lcom/android/settings_ex/privacypassword/LPUtils;
 .super Ljava/lang/Object;
 .source "LPUtils.java"
 

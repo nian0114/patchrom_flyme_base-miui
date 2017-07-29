@@ -1,4 +1,4 @@
-.class Lcom/android/settings/es;
+.class Lcom/android/settings_ex/es;
 .super Ljava/lang/Object;
 .source "MiuiFactoryResetReceived.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic qZ:Lcom/android/settings/MiuiFactoryResetReceived;
+.field final synthetic qZ:Lcom/android/settings_ex/MiuiFactoryResetReceived;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiFactoryResetReceived;)V
+.method constructor <init>(Lcom/android/settings_ex/MiuiFactoryResetReceived;)V
     .locals 0
 
     .prologue
     .line 35
-    iput-object p1, p0, Lcom/android/settings/es;->qZ:Lcom/android/settings/MiuiFactoryResetReceived;
+    iput-object p1, p0, Lcom/android/settings_ex/es;->qZ:Lcom/android/settings_ex/MiuiFactoryResetReceived;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -51,9 +51,9 @@
 
     new-array v3, v3, [Ljava/lang/Object;
 
-    iget-object v4, p0, Lcom/android/settings/es;->qZ:Lcom/android/settings/MiuiFactoryResetReceived;
+    iget-object v4, p0, Lcom/android/settings_ex/es;->qZ:Lcom/android/settings_ex/MiuiFactoryResetReceived;
 
-    invoke-virtual {v4}, Lcom/android/settings/MiuiFactoryResetReceived;->getApplicationContext()Landroid/content/Context;
+    invoke-virtual {v4}, Lcom/android/settings_ex/MiuiFactoryResetReceived;->getApplicationContext()Landroid/content/Context;
 
     move-result-object v4
 
@@ -97,9 +97,9 @@
     invoke-interface {p1}, Landroid/content/DialogInterface;->cancel()V
 
     .line 43
-    iget-object v0, p0, Lcom/android/settings/es;->qZ:Lcom/android/settings/MiuiFactoryResetReceived;
+    iget-object v0, p0, Lcom/android/settings_ex/es;->qZ:Lcom/android/settings_ex/MiuiFactoryResetReceived;
 
-    invoke-virtual {v0}, Lcom/android/settings/MiuiFactoryResetReceived;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ex/MiuiFactoryResetReceived;->finish()V
 
     .line 44
     return-void

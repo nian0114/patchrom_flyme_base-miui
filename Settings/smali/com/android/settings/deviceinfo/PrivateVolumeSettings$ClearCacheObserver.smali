@@ -1,16 +1,16 @@
-.class Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;
+.class Lcom/android/settings_ex/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;
 .super Landroid/content/pm/IPackageDataObserver$Stub;
 .source "PrivateVolumeSettings.java"
 
 
 # instance fields
-.field private final Wp:Lcom/android/settings/deviceinfo/PrivateVolumeSettings;
+.field private final Wp:Lcom/android/settings_ex/deviceinfo/PrivateVolumeSettings;
 
 .field private Wq:I
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/deviceinfo/PrivateVolumeSettings;I)V
+.method public constructor <init>(Lcom/android/settings_ex/deviceinfo/PrivateVolumeSettings;I)V
     .locals 0
 
     .prologue
@@ -18,21 +18,21 @@
     invoke-direct {p0}, Landroid/content/pm/IPackageDataObserver$Stub;-><init>()V
 
     .line 906
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;->Wp:Lcom/android/settings/deviceinfo/PrivateVolumeSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;->Wp:Lcom/android/settings_ex/deviceinfo/PrivateVolumeSettings;
 
     .line 907
-    iput p2, p0, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;->Wq:I
+    iput p2, p0, Lcom/android/settings_ex/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;->Wq:I
 
     .line 908
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;)Lcom/android/settings/deviceinfo/PrivateVolumeSettings;
+.method static synthetic a(Lcom/android/settings_ex/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;)Lcom/android/settings_ex/deviceinfo/PrivateVolumeSettings;
     .locals 1
 
     .prologue
     .line 901
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;->Wp:Lcom/android/settings/deviceinfo/PrivateVolumeSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;->Wp:Lcom/android/settings_ex/deviceinfo/PrivateVolumeSettings;
 
     return-object v0
 .end method
@@ -48,24 +48,24 @@
 
     .line 913
     :try_start_0
-    iget v0, p0, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;->Wq:I
+    iget v0, p0, Lcom/android/settings_ex/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;->Wq:I
 
     add-int/lit8 v0, v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;->Wq:I
+    iput v0, p0, Lcom/android/settings_ex/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;->Wq:I
 
     if-nez v0, :cond_0
 
     .line 914
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;->Wp:Lcom/android/settings/deviceinfo/PrivateVolumeSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;->Wp:Lcom/android/settings_ex/deviceinfo/PrivateVolumeSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ex/deviceinfo/PrivateVolumeSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ClearCacheObserver$1;
+    new-instance v1, Lcom/android/settings_ex/deviceinfo/PrivateVolumeSettings$ClearCacheObserver$1;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ClearCacheObserver$1;-><init>(Lcom/android/settings/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ex/deviceinfo/PrivateVolumeSettings$ClearCacheObserver$1;-><init>(Lcom/android/settings_ex/deviceinfo/PrivateVolumeSettings$ClearCacheObserver;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Activity;->runOnUiThread(Ljava/lang/Runnable;)V
 

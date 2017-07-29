@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/df;
+.class public Lcom/android/settings_ex/df;
 .super Ljava/lang/Object;
 .source "FingerprintUtils.java"
 

@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/notification/ServiceListing$Callback;
+.class public interface abstract Lcom/android/settings_ex/notification/ServiceListing$Callback;
 .super Ljava/lang/Object;
 .source "ServiceListing.java"
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/print/r;
+.class Lcom/android/settings_ex/print/r;
 .super Ljava/lang/Object;
 .source "PrintSettingsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic amJ:Lcom/android/settings/print/q;
+.field final synthetic amJ:Lcom/android/settings_ex/print/q;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/print/q;)V
+.method constructor <init>(Lcom/android/settings_ex/print/q;)V
     .locals 0
 
     .prologue
     .line 561
-    iput-object p1, p0, Lcom/android/settings/print/r;->amJ:Lcom/android/settings/print/q;
+    iput-object p1, p0, Lcom/android/settings_ex/print/r;->amJ:Lcom/android/settings_ex/print/q;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 564
-    iget-object v0, p0, Lcom/android/settings/print/r;->amJ:Lcom/android/settings/print/q;
+    iget-object v0, p0, Lcom/android/settings_ex/print/r;->amJ:Lcom/android/settings_ex/print/q;
 
-    invoke-static {v0}, Lcom/android/settings/print/q;->a(Lcom/android/settings/print/q;)V
+    invoke-static {v0}, Lcom/android/settings_ex/print/q;->a(Lcom/android/settings_ex/print/q;)V
 
     .line 565
     return-void

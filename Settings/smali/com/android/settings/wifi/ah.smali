@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/ah;
+.class Lcom/android/settings_ex/wifi/ah;
 .super Ljava/lang/Object;
 .source "WifiConfigController.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aDi:Lcom/android/settings/wifi/ag;
+.field final synthetic aDi:Lcom/android/settings_ex/wifi/ag;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/ag;)V
+.method constructor <init>(Lcom/android/settings_ex/wifi/ag;)V
     .locals 0
 
     .prologue
     .line 1505
-    iput-object p1, p0, Lcom/android/settings/wifi/ah;->aDi:Lcom/android/settings/wifi/ag;
+    iput-object p1, p0, Lcom/android/settings_ex/wifi/ah;->aDi:Lcom/android/settings_ex/wifi/ag;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 1507
-    iget-object v0, p0, Lcom/android/settings/wifi/ah;->aDi:Lcom/android/settings/wifi/ag;
+    iget-object v0, p0, Lcom/android/settings_ex/wifi/ah;->aDi:Lcom/android/settings_ex/wifi/ag;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/ag;->xj()V
+    invoke-virtual {v0}, Lcom/android/settings_ex/wifi/ag;->xj()V
 
     .line 1508
     return-void

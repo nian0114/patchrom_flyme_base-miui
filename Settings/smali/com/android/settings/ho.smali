@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ho;
-.super Lcom/android/settings/hp;
+.class public Lcom/android/settings_ex/ho;
+.super Lcom/android/settings_ex/hp;
 .source "Settings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 112
-    invoke-direct {p0}, Lcom/android/settings/hp;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ex/hp;-><init>()V
 
     return-void
 .end method

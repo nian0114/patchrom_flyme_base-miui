@@ -1,4 +1,4 @@
-.class Lcom/android/settings/gd;
+.class Lcom/android/settings_ex/gd;
 .super Ljava/lang/Object;
 .source "OwnerInfoSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic vI:Lcom/android/settings/OwnerInfoSettings;
+.field final synthetic vI:Lcom/android/settings_ex/OwnerInfoSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/OwnerInfoSettings;)V
+.method constructor <init>(Lcom/android/settings_ex/OwnerInfoSettings;)V
     .locals 0
 
     .prologue
     .line 134
-    iput-object p1, p0, Lcom/android/settings/gd;->vI:Lcom/android/settings/OwnerInfoSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/gd;->vI:Lcom/android/settings_ex/OwnerInfoSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,15 +30,15 @@
 
     .prologue
     .line 137
-    iget-object v0, p0, Lcom/android/settings/gd;->vI:Lcom/android/settings/OwnerInfoSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/gd;->vI:Lcom/android/settings_ex/OwnerInfoSettings;
 
-    invoke-static {v0}, Lcom/android/settings/OwnerInfoSettings;->b(Lcom/android/settings/OwnerInfoSettings;)Landroid/widget/CheckBox;
+    invoke-static {v0}, Lcom/android/settings_ex/OwnerInfoSettings;->b(Lcom/android/settings_ex/OwnerInfoSettings;)Landroid/widget/CheckBox;
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/android/settings/gd;->vI:Lcom/android/settings/OwnerInfoSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/gd;->vI:Lcom/android/settings_ex/OwnerInfoSettings;
 
-    invoke-static {v0}, Lcom/android/settings/OwnerInfoSettings;->b(Lcom/android/settings/OwnerInfoSettings;)Landroid/widget/CheckBox;
+    invoke-static {v0}, Lcom/android/settings_ex/OwnerInfoSettings;->b(Lcom/android/settings_ex/OwnerInfoSettings;)Landroid/widget/CheckBox;
 
     move-result-object v0
 

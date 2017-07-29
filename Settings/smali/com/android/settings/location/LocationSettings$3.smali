@@ -1,19 +1,19 @@
-.class Lcom/android/settings/location/LocationSettings$3;
+.class Lcom/android/settings_ex/location/LocationSettings$3;
 .super Landroid/content/BroadcastReceiver;
 .source "LocationSettings.java"
 
 
 # instance fields
-.field final synthetic ahj:Lcom/android/settings/location/LocationSettings;
+.field final synthetic ahj:Lcom/android/settings_ex/location/LocationSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/location/LocationSettings;)V
+.method constructor <init>(Lcom/android/settings_ex/location/LocationSettings;)V
     .locals 0
 
     .prologue
     .line 280
-    iput-object p1, p0, Lcom/android/settings/location/LocationSettings$3;->ahj:Lcom/android/settings/location/LocationSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/location/LocationSettings$3;->ahj:Lcom/android/settings_ex/location/LocationSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -62,13 +62,13 @@
 
     .line 286
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/location/LocationSettings$3;->ahj:Lcom/android/settings/location/LocationSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/location/LocationSettings$3;->ahj:Lcom/android/settings_ex/location/LocationSettings;
 
-    invoke-static {v0}, Lcom/android/settings/location/LocationSettings;->a(Lcom/android/settings/location/LocationSettings;)Lcom/android/settings/location/SettingsInjector;
+    invoke-static {v0}, Lcom/android/settings_ex/location/LocationSettings;->a(Lcom/android/settings_ex/location/LocationSettings;)Lcom/android/settings_ex/location/SettingsInjector;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/location/SettingsInjector;->rO()V
+    invoke-virtual {v0}, Lcom/android/settings_ex/location/SettingsInjector;->rO()V
 
     .line 287
     return-void

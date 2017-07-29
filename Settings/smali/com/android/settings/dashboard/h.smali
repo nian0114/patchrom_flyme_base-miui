@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dashboard/h;
+.class Lcom/android/settings_ex/dashboard/h;
 .super Ljava/lang/Object;
 .source "SearchResultsSummary.java"
 
@@ -28,25 +28,25 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 500
-    iput-object p1, p0, Lcom/android/settings/dashboard/h;->context:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ex/dashboard/h;->context:Landroid/content/Context;
 
     .line 501
-    iput-object p2, p0, Lcom/android/settings/dashboard/h;->title:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/settings_ex/dashboard/h;->title:Ljava/lang/String;
 
     .line 502
-    iput-object p3, p0, Lcom/android/settings/dashboard/h;->Vc:Ljava/lang/String;
+    iput-object p3, p0, Lcom/android/settings_ex/dashboard/h;->Vc:Ljava/lang/String;
 
     .line 503
-    iput-object p4, p0, Lcom/android/settings/dashboard/h;->Vd:Ljava/lang/String;
+    iput-object p4, p0, Lcom/android/settings_ex/dashboard/h;->Vd:Ljava/lang/String;
 
     .line 504
-    iput-object p5, p0, Lcom/android/settings/dashboard/h;->Ve:Ljava/lang/String;
+    iput-object p5, p0, Lcom/android/settings_ex/dashboard/h;->Ve:Ljava/lang/String;
 
     .line 505
-    iput p6, p0, Lcom/android/settings/dashboard/h;->iconResId:I
+    iput p6, p0, Lcom/android/settings_ex/dashboard/h;->iconResId:I
 
     .line 506
-    iput-object p7, p0, Lcom/android/settings/dashboard/h;->key:Ljava/lang/String;
+    iput-object p7, p0, Lcom/android/settings_ex/dashboard/h;->key:Ljava/lang/String;
 
     .line 507
     return-void

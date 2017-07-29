@@ -1,19 +1,19 @@
-.class Lcom/android/settings/DeviceAdminAdd$4$1;
+.class Lcom/android/settings_ex/DeviceAdminAdd$4$1;
 .super Landroid/os/RemoteCallback;
 .source "DeviceAdminAdd.java"
 
 
 # instance fields
-.field final synthetic lc:Lcom/android/settings/cg;
+.field final synthetic lc:Lcom/android/settings_ex/cg;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/cg;Landroid/os/Handler;)V
+.method constructor <init>(Lcom/android/settings_ex/cg;Landroid/os/Handler;)V
     .locals 0
 
     .prologue
     .line 305
-    iput-object p1, p0, Lcom/android/settings/DeviceAdminAdd$4$1;->lc:Lcom/android/settings/cg;
+    iput-object p1, p0, Lcom/android/settings_ex/DeviceAdminAdd$4$1;->lc:Lcom/android/settings_ex/cg;
 
     invoke-direct {p0, p2}, Landroid/os/RemoteCallback;-><init>(Landroid/os/Handler;)V
 
@@ -37,11 +37,11 @@
 
     .line 312
     :goto_0
-    iget-object v1, p0, Lcom/android/settings/DeviceAdminAdd$4$1;->lc:Lcom/android/settings/cg;
+    iget-object v1, p0, Lcom/android/settings_ex/DeviceAdminAdd$4$1;->lc:Lcom/android/settings_ex/cg;
 
-    iget-object v1, v1, Lcom/android/settings/cg;->lb:Lcom/android/settings/DeviceAdminAdd;
+    iget-object v1, v1, Lcom/android/settings_ex/cg;->lb:Lcom/android/settings_ex/DeviceAdminAdd;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/DeviceAdminAdd;->a(Ljava/lang/CharSequence;)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ex/DeviceAdminAdd;->a(Ljava/lang/CharSequence;)V
 
     .line 313
     return-void

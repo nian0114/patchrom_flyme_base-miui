@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fr;
+.class Lcom/android/settings_ex/fr;
 .super Ljava/lang/Object;
 .source "MiuiSecurityTrustedCredentials.java"
 
@@ -24,92 +24,92 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/fh;)V
+.method synthetic constructor <init>(Lcom/android/settings_ex/fh;)V
     .locals 0
 
     .prologue
     .line 368
-    invoke-direct {p0}, Lcom/android/settings/fr;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ex/fr;-><init>()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/fr;Landroid/widget/CheckBox;)Landroid/widget/CheckBox;
+.method static synthetic a(Lcom/android/settings_ex/fr;Landroid/widget/CheckBox;)Landroid/widget/CheckBox;
     .locals 0
 
     .prologue
     .line 368
-    iput-object p1, p0, Lcom/android/settings/fr;->tb:Landroid/widget/CheckBox;
+    iput-object p1, p0, Lcom/android/settings_ex/fr;->tb:Landroid/widget/CheckBox;
 
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/fr;Landroid/widget/Switch;)Landroid/widget/Switch;
+.method static synthetic a(Lcom/android/settings_ex/fr;Landroid/widget/Switch;)Landroid/widget/Switch;
     .locals 0
 
     .prologue
     .line 368
-    iput-object p1, p0, Lcom/android/settings/fr;->ta:Landroid/widget/Switch;
+    iput-object p1, p0, Lcom/android/settings_ex/fr;->ta:Landroid/widget/Switch;
 
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/fr;)Landroid/widget/TextView;
+.method static synthetic a(Lcom/android/settings_ex/fr;)Landroid/widget/TextView;
     .locals 1
 
     .prologue
     .line 368
-    iget-object v0, p0, Lcom/android/settings/fr;->sY:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ex/fr;->sY:Landroid/widget/TextView;
 
     return-object v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/fr;Landroid/widget/TextView;)Landroid/widget/TextView;
+.method static synthetic a(Lcom/android/settings_ex/fr;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
 
     .prologue
     .line 368
-    iput-object p1, p0, Lcom/android/settings/fr;->sY:Landroid/widget/TextView;
+    iput-object p1, p0, Lcom/android/settings_ex/fr;->sY:Landroid/widget/TextView;
 
     return-object p1
 .end method
 
-.method static synthetic b(Lcom/android/settings/fr;)Landroid/widget/TextView;
+.method static synthetic b(Lcom/android/settings_ex/fr;)Landroid/widget/TextView;
     .locals 1
 
     .prologue
     .line 368
-    iget-object v0, p0, Lcom/android/settings/fr;->sZ:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ex/fr;->sZ:Landroid/widget/TextView;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/fr;Landroid/widget/TextView;)Landroid/widget/TextView;
+.method static synthetic b(Lcom/android/settings_ex/fr;Landroid/widget/TextView;)Landroid/widget/TextView;
     .locals 0
 
     .prologue
     .line 368
-    iput-object p1, p0, Lcom/android/settings/fr;->sZ:Landroid/widget/TextView;
+    iput-object p1, p0, Lcom/android/settings_ex/fr;->sZ:Landroid/widget/TextView;
 
     return-object p1
 .end method
 
-.method static synthetic c(Lcom/android/settings/fr;)Landroid/widget/Switch;
+.method static synthetic c(Lcom/android/settings_ex/fr;)Landroid/widget/Switch;
     .locals 1
 
     .prologue
     .line 368
-    iget-object v0, p0, Lcom/android/settings/fr;->ta:Landroid/widget/Switch;
+    iget-object v0, p0, Lcom/android/settings_ex/fr;->ta:Landroid/widget/Switch;
 
     return-object v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/fr;)Landroid/widget/CheckBox;
+.method static synthetic d(Lcom/android/settings_ex/fr;)Landroid/widget/CheckBox;
     .locals 1
 
     .prologue
     .line 368
-    iget-object v0, p0, Lcom/android/settings/fr;->tb:Landroid/widget/CheckBox;
+    iget-object v0, p0, Lcom/android/settings_ex/fr;->tb:Landroid/widget/CheckBox;
 
     return-object v0
 .end method

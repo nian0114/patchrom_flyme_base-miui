@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/display/ScreenPaperModeActivity;
-.super Lcom/android/settings/SubSettings;
+.class public Lcom/android/settings_ex/display/ScreenPaperModeActivity;
+.super Lcom/android/settings_ex/SubSettings;
 .source "ScreenPaperModeActivity.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 5
-    invoke-direct {p0}, Lcom/android/settings/SubSettings;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ex/SubSettings;-><init>()V
 
     return-void
 .end method

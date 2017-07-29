@@ -1,10 +1,10 @@
-.class public Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;
-.super Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;
+.class public Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;
+.super Lcom/android/settings_ex/accessibility/ToggleFeaturePreferenceFragment;
 .source "ToggleDaltonizerPreferenceFragment.java"
 
 # interfaces
 .implements Landroid/preference/Preference$OnPreferenceChangeListener;
-.implements Lcom/android/settings/widget/I;
+.implements Lcom/android/settings_ex/widget/I;
 
 
 # instance fields
@@ -17,7 +17,7 @@
 
     .prologue
     .line 32
-    invoke-direct {p0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ex/accessibility/ToggleFeaturePreferenceFragment;-><init>()V
 
     return-void
 .end method
@@ -27,7 +27,7 @@
 
     .prologue
     .line 111
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -44,17 +44,17 @@
     move-result-object v0
 
     .line 113
-    iget-object v1, p0, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->DA:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->DA:Landroid/preference/ListPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/ListPreference;->setValue(Ljava/lang/String;)V
 
     .line 114
-    iget-object v1, p0, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->DA:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->DA:Landroid/preference/ListPreference;
 
     invoke-virtual {v1, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 115
-    iget-object v1, p0, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->DA:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->DA:Landroid/preference/ListPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/ListPreference;->findIndexOfValue(Ljava/lang/String;)I
 
@@ -64,7 +64,7 @@
     if-gez v0, :cond_0
 
     .line 118
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->DA:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->DA:Landroid/preference/ListPreference;
 
     const v1, 0x7f0c06b2
 
@@ -76,13 +76,13 @@
 
     const v4, 0x7f0c089c
 
-    invoke-virtual {p0, v4}, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v4}, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v4
 
     aput-object v4, v2, v3
 
-    invoke-virtual {p0, v1, v2}, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
+    invoke-virtual {p0, v1, v2}, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->getString(I[Ljava/lang/Object;)Ljava/lang/String;
 
     move-result-object v1
 
@@ -100,9 +100,9 @@
 
     .prologue
     .line 125
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->zY:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->zY:Ljava/lang/String;
 
-    invoke-virtual {p0, v0, p2}, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->b(Ljava/lang/String;Z)V
+    invoke-virtual {p0, v0, p2}, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->b(Ljava/lang/String;Z)V
 
     .line 126
     return-void
@@ -113,7 +113,7 @@
 
     .prologue
     .line 63
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
@@ -141,7 +141,7 @@
 
     .prologue
     .line 42
-    const-class v0, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;
+    const-class v0, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -159,12 +159,12 @@
     const/4 v2, 0x0
 
     .line 85
-    invoke-super {p0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->iP()V
+    invoke-super {p0}, Lcom/android/settings_ex/accessibility/ToggleFeaturePreferenceFragment;->iP()V
 
     .line 87
-    iget-object v3, p0, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->me:Lcom/android/settings/widget/SwitchBar;
+    iget-object v3, p0, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->me:Lcom/android/settings_ex/widget/SwitchBar;
 
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -179,17 +179,17 @@
     move v0, v1
 
     :goto_0
-    invoke-virtual {v3, v0}, Lcom/android/settings/widget/SwitchBar;->bw(Z)V
+    invoke-virtual {v3, v0}, Lcom/android/settings_ex/widget/SwitchBar;->bw(Z)V
 
     .line 89
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->me:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->me:Lcom/android/settings_ex/widget/SwitchBar;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/widget/SwitchBar;->a(Lcom/android/settings/widget/I;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ex/widget/SwitchBar;->a(Lcom/android/settings_ex/widget/I;)V
 
     .line 91
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->DC:Lcom/android/settings/widget/K;
+    iget-object v0, p0, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->DC:Lcom/android/settings_ex/widget/K;
 
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -202,16 +202,16 @@
     if-ne v3, v1, :cond_1
 
     :goto_1
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/K;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/widget/K;->setChecked(Z)V
 
     .line 92
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->DC:Lcom/android/settings/widget/K;
+    iget-object v0, p0, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->DC:Lcom/android/settings_ex/widget/K;
 
-    new-instance v1, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment$1;
+    new-instance v1, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment$1;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment$1;-><init>(Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment$1;-><init>(Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;)V
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/K;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/widget/K;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 102
     return-void
@@ -234,12 +234,12 @@
 
     .prologue
     .line 106
-    invoke-super {p0}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->iX()V
+    invoke-super {p0}, Lcom/android/settings_ex/accessibility/ToggleFeaturePreferenceFragment;->iX()V
 
     .line 107
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->me:Lcom/android/settings/widget/SwitchBar;
+    iget-object v0, p0, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->me:Lcom/android/settings_ex/widget/SwitchBar;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/widget/SwitchBar;->b(Lcom/android/settings/widget/I;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ex/widget/SwitchBar;->b(Lcom/android/settings_ex/widget/I;)V
 
     .line 108
     return-void
@@ -250,26 +250,26 @@
 
     .prologue
     .line 52
-    invoke-super {p0, p1}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ex/accessibility/ToggleFeaturePreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 54
     const v0, 0x7f080006
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->addPreferencesFromResource(I)V
 
     .line 56
     const-string v0, "type"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/ListPreference;
 
-    iput-object v0, p0, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->DA:Landroid/preference/ListPreference;
+    iput-object v0, p0, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->DA:Landroid/preference/ListPreference;
 
     .line 58
-    invoke-direct {p0}, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->iY()V
+    invoke-direct {p0}, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->iY()V
 
     .line 59
     return-void
@@ -280,12 +280,12 @@
 
     .prologue
     .line 68
-    iget-object v0, p0, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->DA:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->DA:Landroid/preference/ListPreference;
 
     if-ne p1, v0, :cond_0
 
     .line 69
-    invoke-virtual {p0}, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -316,16 +316,16 @@
 
     .prologue
     .line 78
-    invoke-super {p0, p1, p2}, Lcom/android/settings/accessibility/ToggleFeaturePreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ex/accessibility/ToggleFeaturePreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 80
     const v0, 0x7f0c06ae
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accessibility/ToggleDaltonizerPreferenceFragment;->setTitle(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/accessibility/ToggleDaltonizerPreferenceFragment;->setTitle(Ljava/lang/String;)V
 
     .line 81
     return-void

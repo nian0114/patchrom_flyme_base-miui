@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/MiuiFactoryResetReceived;
+.class public Lcom/android/settings_ex/MiuiFactoryResetReceived;
 .super Landroid/app/Activity;
 .source "MiuiFactoryResetReceived.java"
 
@@ -26,7 +26,7 @@
     invoke-direct {v0, p0, v1}, Landroid/app/AlertDialog$Builder;-><init>(Landroid/content/Context;I)V
 
     .line 33
-    invoke-virtual {p0}, Lcom/android/settings/MiuiFactoryResetReceived;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiFactoryResetReceived;->getResources()Landroid/content/res/Resources;
 
     move-result-object v1
 
@@ -46,7 +46,7 @@
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiFactoryResetReceived;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiFactoryResetReceived;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -56,15 +56,15 @@
 
     move-result-object v2
 
-    new-instance v3, Lcom/android/settings/es;
+    new-instance v3, Lcom/android/settings_ex/es;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/es;-><init>(Lcom/android/settings/MiuiFactoryResetReceived;)V
+    invoke-direct {v3, p0}, Lcom/android/settings_ex/es;-><init>(Lcom/android/settings_ex/MiuiFactoryResetReceived;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setPositiveButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
     move-result-object v1
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiFactoryResetReceived;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiFactoryResetReceived;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
@@ -74,9 +74,9 @@
 
     move-result-object v2
 
-    new-instance v3, Lcom/android/settings/er;
+    new-instance v3, Lcom/android/settings_ex/er;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/er;-><init>(Lcom/android/settings/MiuiFactoryResetReceived;)V
+    invoke-direct {v3, p0}, Lcom/android/settings_ex/er;-><init>(Lcom/android/settings_ex/MiuiFactoryResetReceived;)V
 
     invoke-virtual {v1, v2, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(Ljava/lang/CharSequence;Landroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -109,7 +109,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 28
-    invoke-direct {p0}, Lcom/android/settings/MiuiFactoryResetReceived;->fc()V
+    invoke-direct {p0}, Lcom/android/settings_ex/MiuiFactoryResetReceived;->fc()V
 
     .line 29
     return-void

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;
+.super Lcom/android/settings_ex/SettingsPreferenceFragment;
 .source "MiuiSecurityFingerprintSettings.java"
 
 
@@ -25,19 +25,19 @@
 
     .prologue
     .line 50
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;-><init>()V
 
     .line 63
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sg:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sg:Ljava/util/List;
 
     .line 265
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sk:Z
+    iput-boolean v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sk:Z
 
     return-void
 .end method
@@ -49,7 +49,7 @@
     .line 120
     new-instance v0, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -94,11 +94,11 @@
 
     .prologue
     .line 244
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0, p1}, Lcom/android/settings/df;->d(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, p1}, Lcom/android/settings_ex/df;->d(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v0
 
@@ -137,32 +137,32 @@
 
     .prologue
     .line 116
-    invoke-virtual {p0, p1}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v0
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->J(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->J(Ljava/lang/String;)V
 
     .line 117
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;)V
+.method static synthetic a(Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 50
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->fz()V
+    invoke-direct {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->fz()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;Ljava/lang/String;Ljava/lang/String;)V
+.method static synthetic a(Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;Ljava/lang/String;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 50
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->g(Ljava/lang/String;Ljava/lang/String;)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->g(Ljava/lang/String;Ljava/lang/String;)V
 
     return-void
 .end method
@@ -186,7 +186,7 @@
     if-ne p2, v0, :cond_0
 
     .line 307
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -197,13 +197,13 @@
     if-eqz v0, :cond_1
 
     .line 308
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->fH()V
+    invoke-direct {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->fH()V
 
     goto :goto_0
 
     .line 310
     :cond_1
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->fJ()V
+    invoke-direct {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->fJ()V
 
     goto :goto_0
 
@@ -226,7 +226,7 @@
     invoke-direct {v1}, Ljava/util/HashMap;-><init>()V
 
     .line 138
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sg:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sg:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -246,11 +246,11 @@
     check-cast v0, Ljava/lang/String;
 
     .line 139
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
-    invoke-static {v3, v0}, Lcom/android/settings/df;->c(Landroid/content/Context;Ljava/lang/String;)J
+    invoke-static {v3, v0}, Lcom/android/settings_ex/df;->c(Landroid/content/Context;Ljava/lang/String;)J
 
     move-result-wide v4
 
@@ -265,11 +265,11 @@
 
     .line 143
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sg:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sg:Ljava/util/List;
 
-    new-instance v2, Lcom/android/settings/ff;
+    new-instance v2, Lcom/android/settings_ex/ff;
 
-    invoke-direct {v2, p0, v1}, Lcom/android/settings/ff;-><init>(Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;Ljava/util/Map;)V
+    invoke-direct {v2, p0, v1}, Lcom/android/settings_ex/ff;-><init>(Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;Ljava/util/Map;)V
 
     invoke-static {v0, v2}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
@@ -282,46 +282,46 @@
 
     .prologue
     .line 156
-    new-instance v0, Lcom/android/settings/cZ;
+    new-instance v0, Lcom/android/settings_ex/cZ;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/cZ;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ex/cZ;-><init>(Landroid/content/Context;)V
 
     .line 157
-    invoke-virtual {v0}, Lcom/android/settings/cZ;->dV()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/android/settings_ex/cZ;->dV()Ljava/util/List;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sg:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sg:Ljava/util/List;
 
     .line 158
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->so:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->so:Ljava/util/List;
 
     .line 159
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->fL()V
+    invoke-direct {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->fL()V
 
     .line 160
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->fA()V
+    invoke-direct {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->fA()V
 
     .line 161
-    new-instance v3, Lcom/android/settings/fg;
+    new-instance v3, Lcom/android/settings_ex/fg;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/fg;-><init>(Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;)V
+    invoke-direct {v3, p0}, Lcom/android/settings_ex/fg;-><init>(Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;)V
 
     .line 177
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sf:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sf:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceCategory;->removeAll()V
 
     .line 178
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sn:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sn:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0}, Landroid/preference/PreferenceCategory;->removeAll()V
 
@@ -331,7 +331,7 @@
     move v1, v0
 
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sg:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sg:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -340,7 +340,7 @@
     if-ge v1, v0, :cond_2
 
     .line 181
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sg:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sg:Ljava/util/List;
 
     invoke-interface {v0, v1}, Ljava/util/List;->get(I)Ljava/lang/Object;
 
@@ -351,7 +351,7 @@
     .line 183
     new-instance v4, Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -361,11 +361,11 @@
     invoke-virtual {v4, v0}, Landroid/preference/Preference;->setKey(Ljava/lang/String;)V
 
     .line 186
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-static {v2, v0}, Lcom/android/settings/df;->d(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v2, v0}, Lcom/android/settings_ex/df;->d(Landroid/content/Context;Ljava/lang/String;)Ljava/lang/String;
 
     move-result-object v2
 
@@ -377,16 +377,16 @@
     if-eqz v5, :cond_0
 
     .line 188
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->fC()Ljava/lang/String;
+    invoke-direct {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->fC()Ljava/lang/String;
 
     move-result-object v2
 
     .line 189
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v5
 
-    invoke-static {v5, v0, v2}, Lcom/android/settings/df;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
+    invoke-static {v5, v0, v2}, Lcom/android/settings_ex/df;->a(Landroid/content/Context;Ljava/lang/String;Ljava/lang/String;)V
 
     .line 191
     :cond_0
@@ -396,7 +396,7 @@
     invoke-virtual {v4, v3}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 194
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->so:Ljava/util/List;
+    iget-object v2, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->so:Ljava/util/List;
 
     invoke-interface {v2, v0}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -405,7 +405,7 @@
     if-eqz v0, :cond_1
 
     .line 195
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sf:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sf:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v4}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -419,7 +419,7 @@
 
     .line 197
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sn:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sn:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v4}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -429,7 +429,7 @@
     :cond_2
     new-instance v0, Landroid/preference/Preference;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -449,7 +449,7 @@
     invoke-virtual {v0, v3}, Landroid/preference/Preference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 205
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sf:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sf:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v1, v0}, Landroid/preference/PreferenceCategory;->addPreference(Landroid/preference/Preference;)Z
 
@@ -468,7 +468,7 @@
     new-array v1, v0, [Z
 
     .line 225
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sg:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sg:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->iterator()Ljava/util/Iterator;
 
@@ -489,7 +489,7 @@
     check-cast v0, Ljava/lang/String;
 
     .line 226
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->K(Ljava/lang/String;)I
+    invoke-direct {p0, v0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->K(Ljava/lang/String;)I
 
     move-result v0
 
@@ -516,7 +516,7 @@
     move-exception v0
 
     .line 238
-    const-class v1, Lcom/android/settings/NewFingerprintActivity;
+    const-class v1, Lcom/android/settings_ex/NewFingerprintActivity;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getSimpleName()Ljava/lang/String;
 
@@ -557,7 +557,7 @@
 
     const v2, 0x7f0c1108
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -591,7 +591,7 @@
 
     .prologue
     .line 318
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -619,7 +619,7 @@
 
     const/16 v2, 0x6a
 
-    invoke-virtual {p0, p0, v1, v2, v0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
+    invoke-virtual {p0, p0, v1, v2, v0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;)Z
 
     .line 325
     return-void
@@ -630,7 +630,7 @@
 
     .prologue
     .line 209
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -652,7 +652,7 @@
     if-lez v1, :cond_0
 
     .line 211
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->so:Ljava/util/List;
+    iget-object v1, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->so:Ljava/util/List;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->keySet()Ljava/util/Set;
 
@@ -662,11 +662,11 @@
 
     .line 213
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sp:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sp:Ljava/lang/String;
 
     if-eqz v0, :cond_2
 
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sp:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sp:Ljava/lang/String;
 
     invoke-virtual {v0}, Ljava/lang/String;->length()I
 
@@ -675,9 +675,9 @@
     if-lez v0, :cond_2
 
     .line 214
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->so:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->so:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sp:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sp:Ljava/lang/String;
 
     invoke-interface {v0, v1}, Ljava/util/List;->contains(Ljava/lang/Object;)Z
 
@@ -686,19 +686,19 @@
     if-eqz v0, :cond_1
 
     .line 215
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->so:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->so:Ljava/util/List;
 
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sp:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sp:Ljava/lang/String;
 
     invoke-interface {v0, v1}, Ljava/util/List;->remove(Ljava/lang/Object;)Z
 
     .line 217
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->so:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->so:Ljava/util/List;
 
     const/4 v1, 0x0
 
-    iget-object v2, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sp:Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sp:Ljava/lang/String;
 
     invoke-interface {v0, v1, v2}, Ljava/util/List;->add(ILjava/lang/Object;)V
 
@@ -712,25 +712,25 @@
 
     .prologue
     .line 96
-    iget-boolean v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sk:Z
+    iget-boolean v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sk:Z
 
     if-nez v0, :cond_0
 
     .line 97
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sf:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sf:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 98
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sn:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sn:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -740,7 +740,7 @@
 
     .line 100
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->fB()V
+    invoke-direct {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->fB()V
 
     goto :goto_0
 .end method
@@ -750,11 +750,11 @@
 
     .prologue
     .line 105
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sg:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sg:Ljava/util/List;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sg:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sg:Ljava/util/List;
 
     invoke-interface {v0}, Ljava/util/List;->size()I
 
@@ -767,7 +767,7 @@
     .line 106
     const v0, 0x7f0c1119
 
-    invoke-direct {p0, v0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->V(I)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->V(I)V
 
     .line 113
     :goto_0
@@ -791,7 +791,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setComponent(Landroid/content/ComponentName;)Landroid/content/Intent;
 
     .line 112
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->startActivity(Landroid/content/Intent;)V
 
     goto :goto_0
 .end method
@@ -816,7 +816,7 @@
     invoke-virtual {v4, v0, p2}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 131
-    const-class v0, Lcom/android/settings/MiuiFingerprintDetailFragment;
+    const-class v0, Lcom/android/settings_ex/MiuiFingerprintDetailFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -830,7 +830,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     .line 133
     return-void
@@ -864,7 +864,7 @@
     if-eqz v2, :cond_1
 
     :goto_1
-    invoke-direct {p0, p1, v0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->b(II)V
+    invoke-direct {p0, p1, v0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->b(II)V
 
     .line 301
     return-void
@@ -887,7 +887,7 @@
 
     .prologue
     .line 69
-    const-class v0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;
+    const-class v0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -901,10 +901,10 @@
 
     .prologue
     .line 293
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
+    invoke-super {p0, p1, p2, p3}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onActivityResult(IILandroid/content/Intent;)V
 
     .line 294
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->b(II)V
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->b(II)V
 
     .line 295
     return-void
@@ -915,10 +915,10 @@
 
     .prologue
     .line 269
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 270
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -941,35 +941,35 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sp:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sp:Ljava/lang/String;
 
     .line 275
     :cond_0
     new-instance v0, Landroid/security/ChooseLockSettingsHelper;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
     invoke-direct {v0, v1, p0}, Landroid/security/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;Landroid/app/Fragment;)V
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
+    iput-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->b:Landroid/security/ChooseLockSettingsHelper;
 
     .line 277
-    new-instance v0, Lcom/android/settings/cZ;
+    new-instance v0, Lcom/android/settings_ex/cZ;
 
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/cZ;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ex/cZ;-><init>(Landroid/content/Context;)V
 
     .line 278
-    invoke-virtual {v0}, Lcom/android/settings/cZ;->isHardwareDetected()Z
+    invoke-virtual {v0}, Lcom/android/settings_ex/cZ;->isHardwareDetected()Z
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sk:Z
+    iput-boolean v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sk:Z
 
     .line 279
     return-void
@@ -983,7 +983,7 @@
     invoke-virtual {p2}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
 
     .line 286
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onPreferenceTreeClick(Landroid/preference/PreferenceScreen;Landroid/preference/Preference;)Z
 
     move-result v0
 
@@ -996,10 +996,10 @@
 
     .prologue
     .line 74
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onResume()V
 
     .line 77
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -1026,7 +1026,7 @@
 
     .line 82
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -1040,32 +1040,32 @@
     :cond_1
     const v0, 0x7f08009a
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->addPreferencesFromResource(I)V
 
     .line 89
     const-string v0, "fingerprint_list"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sf:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sf:Landroid/preference/PreferenceCategory;
 
     .line 90
     const-string v0, "fingerprint_list_main"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sn:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->sn:Landroid/preference/PreferenceCategory;
 
     .line 92
-    invoke-direct {p0}, Lcom/android/settings/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->fy()V
+    invoke-direct {p0}, Lcom/android/settings_ex/MiuiSecurityFingerprintSettings$MiuiSecurityFingerprintSettingsFragment;->fy()V
 
     goto :goto_0
 .end method

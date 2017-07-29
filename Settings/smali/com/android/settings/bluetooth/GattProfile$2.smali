@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bluetooth/GattProfile$2;
+.class Lcom/android/settings_ex/bluetooth/GattProfile$2;
 .super Ljava/lang/Object;
 .source "GattProfile.java"
 
@@ -9,22 +9,22 @@
 # instance fields
 .field final synthetic RA:Lcom/android/b/b/H;
 
-.field final synthetic Sb:Lcom/android/settings/bluetooth/GattProfile;
+.field final synthetic Sb:Lcom/android/settings_ex/bluetooth/GattProfile;
 
 .field final synthetic Sc:Landroid/bluetooth/BluetoothDevice;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/GattProfile;Landroid/bluetooth/BluetoothDevice;Lcom/android/b/b/H;)V
+.method constructor <init>(Lcom/android/settings_ex/bluetooth/GattProfile;Landroid/bluetooth/BluetoothDevice;Lcom/android/b/b/H;)V
     .locals 0
 
     .prologue
     .line 163
-    iput-object p1, p0, Lcom/android/settings/bluetooth/GattProfile$2;->Sb:Lcom/android/settings/bluetooth/GattProfile;
+    iput-object p1, p0, Lcom/android/settings_ex/bluetooth/GattProfile$2;->Sb:Lcom/android/settings_ex/bluetooth/GattProfile;
 
-    iput-object p2, p0, Lcom/android/settings/bluetooth/GattProfile$2;->Sc:Landroid/bluetooth/BluetoothDevice;
+    iput-object p2, p0, Lcom/android/settings_ex/bluetooth/GattProfile$2;->Sc:Landroid/bluetooth/BluetoothDevice;
 
-    iput-object p3, p0, Lcom/android/settings/bluetooth/GattProfile$2;->RA:Lcom/android/b/b/H;
+    iput-object p3, p0, Lcom/android/settings_ex/bluetooth/GattProfile$2;->RA:Lcom/android/b/b/H;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,11 +38,11 @@
 
     .prologue
     .line 167
-    iget-object v0, p0, Lcom/android/settings/bluetooth/GattProfile$2;->Sb:Lcom/android/settings/bluetooth/GattProfile;
+    iget-object v0, p0, Lcom/android/settings_ex/bluetooth/GattProfile$2;->Sb:Lcom/android/settings_ex/bluetooth/GattProfile;
 
-    iget-object v1, p0, Lcom/android/settings/bluetooth/GattProfile$2;->Sc:Landroid/bluetooth/BluetoothDevice;
+    iget-object v1, p0, Lcom/android/settings_ex/bluetooth/GattProfile$2;->Sc:Landroid/bluetooth/BluetoothDevice;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/bluetooth/GattProfile;->g(Landroid/bluetooth/BluetoothDevice;)I
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/bluetooth/GattProfile;->g(Landroid/bluetooth/BluetoothDevice;)I
 
     move-result v0
 
@@ -55,13 +55,13 @@
 
     .line 170
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/GattProfile$2;->Sb:Lcom/android/settings/bluetooth/GattProfile;
+    iget-object v0, p0, Lcom/android/settings_ex/bluetooth/GattProfile$2;->Sb:Lcom/android/settings_ex/bluetooth/GattProfile;
 
-    invoke-static {v0}, Lcom/android/settings/bluetooth/GattProfile;->a(Lcom/android/settings/bluetooth/GattProfile;)Lcom/android/b/b/J;
+    invoke-static {v0}, Lcom/android/settings_ex/bluetooth/GattProfile;->a(Lcom/android/settings_ex/bluetooth/GattProfile;)Lcom/android/b/b/J;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/bluetooth/GattProfile$2;->RA:Lcom/android/b/b/H;
+    iget-object v1, p0, Lcom/android/settings_ex/bluetooth/GattProfile$2;->RA:Lcom/android/b/b/H;
 
     invoke-virtual {v0, v1}, Lcom/android/b/b/J;->i(Lcom/android/b/b/H;)V
 

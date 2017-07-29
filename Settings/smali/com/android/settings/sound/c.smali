@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/sound/c;
+.class final Lcom/android/settings_ex/sound/c;
 .super Ljava/lang/Object;
 .source "AsyncMediaPlayer.java"
 
@@ -24,12 +24,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/sound/b;)V
+.method synthetic constructor <init>(Lcom/android/settings_ex/sound/b;)V
     .locals 0
 
     .prologue
     .line 22
-    invoke-direct {p0}, Lcom/android/settings/sound/c;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ex/sound/c;-><init>()V
 
     return-void
 .end method
@@ -51,7 +51,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/android/settings/sound/c;->code:I
+    iget v1, p0, Lcom/android/settings_ex/sound/c;->code:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -63,7 +63,7 @@
 
     move-result-object v0
 
-    iget v1, p0, Lcom/android/settings/sound/c;->aqe:I
+    iget v1, p0, Lcom/android/settings_ex/sound/c;->aqe:I
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(I)Ljava/lang/StringBuilder;
 
@@ -75,7 +75,7 @@
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/sound/c;->uri:Landroid/net/Uri;
+    iget-object v1, p0, Lcom/android/settings_ex/sound/c;->uri:Landroid/net/Uri;
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/Object;)Ljava/lang/StringBuilder;
 

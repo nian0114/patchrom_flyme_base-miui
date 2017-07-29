@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/KeyguardShortcutChooserSettings;
-.super Lcom/android/settings/BaseListFragment;
+.class public Lcom/android/settings_ex/KeyguardShortcutChooserSettings;
+.super Lcom/android/settings_ex/BaseListFragment;
 .source "KeyguardShortcutChooserSettings.java"
 
 
@@ -8,7 +8,7 @@
 
 .field private mList:Ljava/util/List;
 
-.field private oC:Lcom/android/settings/dE;
+.field private oC:Lcom/android/settings_ex/dE;
 
 .field private oD:Z
 
@@ -21,14 +21,14 @@
 
     .prologue
     .line 18
-    invoke-direct {p0}, Lcom/android/settings/BaseListFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ex/BaseListFragment;-><init>()V
 
     .line 20
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/KeyguardShortcutChooserSettings;->mList:Ljava/util/List;
+    iput-object v0, p0, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->mList:Ljava/util/List;
 
     .line 64
     return-void
@@ -51,7 +51,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 42
-    iget-object v1, p0, Lcom/android/settings/KeyguardShortcutChooserSettings;->mActivity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v1}, Landroid/app/Activity;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -83,18 +83,18 @@
     check-cast v0, Landroid/content/pm/ResolveInfo;
 
     .line 45
-    new-instance v4, Lcom/android/settings/dD;
+    new-instance v4, Lcom/android/settings_ex/dD;
 
     const/4 v1, 0x0
 
-    invoke-direct {v4, v1}, Lcom/android/settings/dD;-><init>(Lcom/android/settings/dC;)V
+    invoke-direct {v4, v1}, Lcom/android/settings_ex/dD;-><init>(Lcom/android/settings_ex/dC;)V
 
     .line 46
     invoke-virtual {v0, v2}, Landroid/content/pm/ResolveInfo;->loadIcon(Landroid/content/pm/PackageManager;)Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
-    iput-object v1, v4, Lcom/android/settings/dD;->icon:Landroid/graphics/drawable/Drawable;
+    iput-object v1, v4, Lcom/android/settings_ex/dD;->icon:Landroid/graphics/drawable/Drawable;
 
     .line 47
     invoke-virtual {v0, v2}, Landroid/content/pm/ResolveInfo;->loadLabel(Landroid/content/pm/PackageManager;)Ljava/lang/CharSequence;
@@ -103,7 +103,7 @@
 
     check-cast v1, Ljava/lang/String;
 
-    iput-object v1, v4, Lcom/android/settings/dD;->label:Ljava/lang/String;
+    iput-object v1, v4, Lcom/android/settings_ex/dD;->label:Ljava/lang/String;
 
     .line 48
     new-instance v1, Ljava/lang/StringBuilder;
@@ -136,10 +136,10 @@
 
     move-result-object v0
 
-    iput-object v0, v4, Lcom/android/settings/dD;->oF:Ljava/lang/String;
+    iput-object v0, v4, Lcom/android/settings_ex/dD;->oF:Ljava/lang/String;
 
     .line 49
-    iget-object v0, p0, Lcom/android/settings/KeyguardShortcutChooserSettings;->mList:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->mList:Ljava/util/List;
 
     invoke-interface {v0, v4}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
@@ -150,62 +150,62 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/KeyguardShortcutChooserSettings;Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic a(Lcom/android/settings_ex/KeyguardShortcutChooserSettings;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
     .prologue
     .line 18
-    iput-object p1, p0, Lcom/android/settings/KeyguardShortcutChooserSettings;->oE:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->oE:Ljava/lang/String;
 
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/KeyguardShortcutChooserSettings;)Ljava/util/List;
+.method static synthetic a(Lcom/android/settings_ex/KeyguardShortcutChooserSettings;)Ljava/util/List;
     .locals 1
 
     .prologue
     .line 18
-    iget-object v0, p0, Lcom/android/settings/KeyguardShortcutChooserSettings;->mList:Ljava/util/List;
+    iget-object v0, p0, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->mList:Ljava/util/List;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/KeyguardShortcutChooserSettings;)Landroid/app/Activity;
+.method static synthetic b(Lcom/android/settings_ex/KeyguardShortcutChooserSettings;)Landroid/app/Activity;
     .locals 1
 
     .prologue
     .line 18
-    iget-object v0, p0, Lcom/android/settings/KeyguardShortcutChooserSettings;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->mActivity:Landroid/app/Activity;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/KeyguardShortcutChooserSettings;)Z
+.method static synthetic c(Lcom/android/settings_ex/KeyguardShortcutChooserSettings;)Z
     .locals 1
 
     .prologue
     .line 18
-    iget-boolean v0, p0, Lcom/android/settings/KeyguardShortcutChooserSettings;->oD:Z
+    iget-boolean v0, p0, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->oD:Z
 
     return v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/KeyguardShortcutChooserSettings;)Ljava/lang/String;
+.method static synthetic d(Lcom/android/settings_ex/KeyguardShortcutChooserSettings;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 18
-    iget-object v0, p0, Lcom/android/settings/KeyguardShortcutChooserSettings;->oE:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->oE:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/KeyguardShortcutChooserSettings;)Lcom/android/settings/dE;
+.method static synthetic e(Lcom/android/settings_ex/KeyguardShortcutChooserSettings;)Lcom/android/settings_ex/dE;
     .locals 1
 
     .prologue
     .line 18
-    iget-object v0, p0, Lcom/android/settings/KeyguardShortcutChooserSettings;->oC:Lcom/android/settings/dE;
+    iget-object v0, p0, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->oC:Lcom/android/settings_ex/dE;
 
     return-object v0
 .end method
@@ -217,17 +217,17 @@
 
     .prologue
     .line 27
-    invoke-super {p0, p1}, Lcom/android/settings/BaseListFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ex/BaseListFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 28
-    invoke-virtual {p0}, Lcom/android/settings/KeyguardShortcutChooserSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/KeyguardShortcutChooserSettings;->mActivity:Landroid/app/Activity;
+    iput-object v0, p0, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->mActivity:Landroid/app/Activity;
 
     .line 29
-    invoke-virtual {p0}, Lcom/android/settings/KeyguardShortcutChooserSettings;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -239,16 +239,16 @@
 
     move-result v0
 
-    iput-boolean v0, p0, Lcom/android/settings/KeyguardShortcutChooserSettings;->oD:Z
+    iput-boolean v0, p0, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->oD:Z
 
     .line 30
-    iget-object v0, p0, Lcom/android/settings/KeyguardShortcutChooserSettings;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v1
 
-    iget-boolean v0, p0, Lcom/android/settings/KeyguardShortcutChooserSettings;->oD:Z
+    iget-boolean v0, p0, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->oD:Z
 
     if-eqz v0, :cond_0
 
@@ -259,24 +259,24 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/KeyguardShortcutChooserSettings;->oE:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->oE:Ljava/lang/String;
 
     .line 33
-    invoke-direct {p0}, Lcom/android/settings/KeyguardShortcutChooserSettings;->R()V
+    invoke-direct {p0}, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->R()V
 
     .line 35
-    new-instance v0, Lcom/android/settings/dE;
+    new-instance v0, Lcom/android/settings_ex/dE;
 
     const/4 v1, 0x0
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/dE;-><init>(Lcom/android/settings/KeyguardShortcutChooserSettings;Lcom/android/settings/dC;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ex/dE;-><init>(Lcom/android/settings_ex/KeyguardShortcutChooserSettings;Lcom/android/settings_ex/dC;)V
 
-    iput-object v0, p0, Lcom/android/settings/KeyguardShortcutChooserSettings;->oC:Lcom/android/settings/dE;
+    iput-object v0, p0, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->oC:Lcom/android/settings_ex/dE;
 
     .line 36
-    iget-object v0, p0, Lcom/android/settings/KeyguardShortcutChooserSettings;->oC:Lcom/android/settings/dE;
+    iget-object v0, p0, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->oC:Lcom/android/settings_ex/dE;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/KeyguardShortcutChooserSettings;->setListAdapter(Landroid/widget/ListAdapter;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/KeyguardShortcutChooserSettings;->setListAdapter(Landroid/widget/ListAdapter;)V
 
     .line 37
     return-void

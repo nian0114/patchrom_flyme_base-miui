@@ -1,4 +1,4 @@
-.class synthetic Lcom/android/settings/fh;
+.class synthetic Lcom/android/settings_ex/fh;
 .super Ljava/lang/Object;
 .source "MiuiSecurityTrustedCredentials.java"
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 83
-    invoke-static {}, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->values()[Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+    invoke-static {}, Lcom/android/settings_ex/MiuiSecurityTrustedCredentials$Tab;->values()[Lcom/android/settings_ex/MiuiSecurityTrustedCredentials$Tab;
 
     move-result-object v0
 
@@ -21,12 +21,12 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/fh;->sz:[I
+    sput-object v0, Lcom/android/settings_ex/fh;->sz:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/fh;->sz:[I
+    sget-object v0, Lcom/android/settings_ex/fh;->sz:[I
 
-    sget-object v1, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->sK:Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+    sget-object v1, Lcom/android/settings_ex/MiuiSecurityTrustedCredentials$Tab;->sK:Lcom/android/settings_ex/MiuiSecurityTrustedCredentials$Tab;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -40,9 +40,9 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/fh;->sz:[I
+    sget-object v0, Lcom/android/settings_ex/fh;->sz:[I
 
-    sget-object v1, Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;->sL:Lcom/android/settings/MiuiSecurityTrustedCredentials$Tab;
+    sget-object v1, Lcom/android/settings_ex/MiuiSecurityTrustedCredentials$Tab;->sL:Lcom/android/settings_ex/MiuiSecurityTrustedCredentials$Tab;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 

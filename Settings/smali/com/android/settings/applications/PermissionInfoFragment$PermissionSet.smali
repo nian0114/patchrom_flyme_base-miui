@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;
+.class Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;
 .super Ljava/lang/Object;
 .source "PermissionInfoFragment.java"
 
@@ -24,51 +24,51 @@
 
     invoke-direct {v0}, Ljava/util/TreeMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;->KF:Ljava/util/Map;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;->KF:Ljava/util/Map;
 
     .line 167
     new-instance v0, Ljava/util/TreeMap;
 
     invoke-direct {v0}, Ljava/util/TreeMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;->KG:Ljava/util/Map;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;->KG:Ljava/util/Map;
 
     .line 168
     new-instance v0, Ljava/util/TreeMap;
 
     invoke-direct {v0}, Ljava/util/TreeMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;->KH:Ljava/util/Map;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;->KH:Ljava/util/Map;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;)Ljava/util/Map;
+.method static synthetic a(Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;)Ljava/util/Map;
     .locals 1
 
     .prologue
     .line 165
-    iget-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;->KF:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;->KF:Ljava/util/Map;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;)Ljava/util/Map;
+.method static synthetic b(Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;)Ljava/util/Map;
     .locals 1
 
     .prologue
     .line 165
-    iget-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;->KG:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;->KG:Ljava/util/Map;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;)Ljava/util/Map;
+.method static synthetic c(Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;)Ljava/util/Map;
     .locals 1
 
     .prologue
     .line 165
-    iget-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;->KH:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;->KH:Ljava/util/Map;
 
     return-object v0
 .end method
@@ -80,7 +80,7 @@
 
     .prologue
     .line 171
-    iget-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;->KF:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;->KF:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->size()I
 
@@ -94,7 +94,7 @@
 
     .prologue
     .line 175
-    iget-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;->KG:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;->KG:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->size()I
 
@@ -108,7 +108,7 @@
 
     .prologue
     .line 179
-    iget-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;->KH:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;->KH:Ljava/util/Map;
 
     invoke-interface {v0}, Ljava/util/Map;->size()I
 

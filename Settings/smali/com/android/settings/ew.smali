@@ -1,19 +1,19 @@
-.class Lcom/android/settings/ew;
+.class Lcom/android/settings_ex/ew;
 .super Landroid/widget/ArrayAdapter;
 .source "MiuiLocalePicker.java"
 
 
 # instance fields
-.field final synthetic rj:Lcom/android/settings/MiuiLocalePicker;
+.field final synthetic rj:Lcom/android/settings_ex/MiuiLocalePicker;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/MiuiLocalePicker;Landroid/content/Context;IILjava/util/List;)V
+.method public constructor <init>(Lcom/android/settings_ex/MiuiLocalePicker;Landroid/content/Context;IILjava/util/List;)V
     .locals 0
 
     .prologue
     .line 85
-    iput-object p1, p0, Lcom/android/settings/ew;->rj:Lcom/android/settings/MiuiLocalePicker;
+    iput-object p1, p0, Lcom/android/settings_ex/ew;->rj:Lcom/android/settings_ex/MiuiLocalePicker;
 
     .line 86
     invoke-direct {p0, p2, p3, p4, p5}, Landroid/widget/ArrayAdapter;-><init>(Landroid/content/Context;IILjava/util/List;)V
@@ -43,7 +43,7 @@
     check-cast v0, Landroid/widget/RadioButton;
 
     .line 93
-    invoke-virtual {p0, p1}, Lcom/android/settings/ew;->getItem(I)Ljava/lang/Object;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ex/ew;->getItem(I)Ljava/lang/Object;
 
     move-result-object v1
 
@@ -57,9 +57,9 @@
 
     move-result-object v1
 
-    iget-object v3, p0, Lcom/android/settings/ew;->rj:Lcom/android/settings/MiuiLocalePicker;
+    iget-object v3, p0, Lcom/android/settings_ex/ew;->rj:Lcom/android/settings_ex/MiuiLocalePicker;
 
-    invoke-static {v3}, Lcom/android/settings/MiuiLocalePicker;->a(Lcom/android/settings/MiuiLocalePicker;)Ljava/lang/String;
+    invoke-static {v3}, Lcom/android/settings_ex/MiuiLocalePicker;->a(Lcom/android/settings_ex/MiuiLocalePicker;)Ljava/lang/String;
 
     move-result-object v3
 

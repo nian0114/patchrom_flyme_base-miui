@@ -1,31 +1,31 @@
-.class Lcom/android/settings/dv;
+.class Lcom/android/settings_ex/dv;
 .super Landroid/content/BroadcastReceiver;
 .source "HomeSettings.java"
 
 
 # instance fields
-.field final synthetic nW:Lcom/android/settings/HomeSettings;
+.field final synthetic nW:Lcom/android/settings_ex/HomeSettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/HomeSettings;)V
+.method private constructor <init>(Lcom/android/settings_ex/HomeSettings;)V
     .locals 0
 
     .prologue
     .line 74
-    iput-object p1, p0, Lcom/android/settings/dv;->nW:Lcom/android/settings/HomeSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/dv;->nW:Lcom/android/settings_ex/HomeSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/HomeSettings;Lcom/android/settings/dq;)V
+.method synthetic constructor <init>(Lcom/android/settings_ex/HomeSettings;Lcom/android/settings_ex/dq;)V
     .locals 0
 
     .prologue
     .line 74
-    invoke-direct {p0, p1}, Lcom/android/settings/dv;-><init>(Lcom/android/settings/HomeSettings;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ex/dv;-><init>(Lcom/android/settings_ex/HomeSettings;)V
 
     return-void
 .end method
@@ -39,22 +39,22 @@
     const/4 v2, 0x1
 
     .line 77
-    iget-object v0, p0, Lcom/android/settings/dv;->nW:Lcom/android/settings/HomeSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/dv;->nW:Lcom/android/settings_ex/HomeSettings;
 
-    invoke-static {v0}, Lcom/android/settings/HomeSettings;->a(Lcom/android/settings/HomeSettings;)V
+    invoke-static {v0}, Lcom/android/settings_ex/HomeSettings;->a(Lcom/android/settings_ex/HomeSettings;)V
 
     .line 78
-    invoke-static {p1}, Lcom/android/settings/search/e;->cf(Landroid/content/Context;)Lcom/android/settings/search/e;
+    invoke-static {p1}, Lcom/android/settings_ex/search/e;->cf(Landroid/content/Context;)Lcom/android/settings_ex/search/e;
 
     move-result-object v0
 
-    const-class v1, Lcom/android/settings/HomeSettings;
+    const-class v1, Lcom/android/settings_ex/HomeSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1, v2, v2}, Lcom/android/settings/search/e;->b(Ljava/lang/String;ZZ)V
+    invoke-virtual {v0, v1, v2, v2}, Lcom/android/settings_ex/search/e;->b(Ljava/lang/String;ZZ)V
 
     .line 80
     return-void

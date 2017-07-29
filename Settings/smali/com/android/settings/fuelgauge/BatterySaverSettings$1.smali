@@ -1,19 +1,19 @@
-.class Lcom/android/settings/fuelgauge/BatterySaverSettings$1;
-.super Lcom/android/settings/notification/SettingPref;
+.class Lcom/android/settings_ex/fuelgauge/BatterySaverSettings$1;
+.super Lcom/android/settings_ex/notification/SettingPref;
 .source "BatterySaverSettings.java"
 
 
 # instance fields
-.field final synthetic aeW:Lcom/android/settings/fuelgauge/BatterySaverSettings;
+.field final synthetic aeW:Lcom/android/settings_ex/fuelgauge/BatterySaverSettings;
 
 
 # direct methods
-.method varargs constructor <init>(Lcom/android/settings/fuelgauge/BatterySaverSettings;ILjava/lang/String;Ljava/lang/String;I[I)V
+.method varargs constructor <init>(Lcom/android/settings_ex/fuelgauge/BatterySaverSettings;ILjava/lang/String;Ljava/lang/String;I[I)V
     .locals 6
 
     .prologue
     .line 92
-    iput-object p1, p0, Lcom/android/settings/fuelgauge/BatterySaverSettings$1;->aeW:Lcom/android/settings/fuelgauge/BatterySaverSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/fuelgauge/BatterySaverSettings$1;->aeW:Lcom/android/settings_ex/fuelgauge/BatterySaverSettings;
 
     move-object v0, p0
 
@@ -27,7 +27,7 @@
 
     move-object v5, p6
 
-    invoke-direct/range {v0 .. v5}, Lcom/android/settings/notification/SettingPref;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
+    invoke-direct/range {v0 .. v5}, Lcom/android/settings_ex/notification/SettingPref;-><init>(ILjava/lang/String;Ljava/lang/String;I[I)V
 
     return-void
 .end method
@@ -54,7 +54,7 @@
 
     const/4 v2, 0x0
 
-    invoke-static {p2}, Lcom/android/settings/iE;->ar(I)Ljava/lang/String;
+    invoke-static {p2}, Lcom/android/settings_ex/iE;->ar(I)Ljava/lang/String;
 
     move-result-object v3
 

@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/PrivacyPasswordChooseLockPattern;
-.super Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;
+.class public Lcom/android/settings_ex/PrivacyPasswordChooseLockPattern;
+.super Lcom/android/settings_ex/privacypassword/PrivacyPasswordChooseAccessControl;
 .source "PrivacyPasswordChooseLockPattern.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 19
-    invoke-direct {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordChooseAccessControl;-><init>()V
 
     return-void
 .end method
@@ -24,12 +24,12 @@
     if-eqz p1, :cond_0
 
     .line 30
-    new-instance v0, Lcom/android/settings/privacypassword/BussinessPackageInfoCache;
+    new-instance v0, Lcom/android/settings_ex/privacypassword/BussinessPackageInfoCache;
 
-    invoke-direct {v0}, Lcom/android/settings/privacypassword/BussinessPackageInfoCache;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ex/privacypassword/BussinessPackageInfoCache;-><init>()V
 
     .line 31
-    invoke-static {}, Lcom/android/settings/privacypassword/BussinessPackageInfoCache;->tp()Ljava/util/Map;
+    invoke-static {}, Lcom/android/settings_ex/privacypassword/BussinessPackageInfoCache;->tp()Ljava/util/Map;
 
     move-result-object v0
 
@@ -37,19 +37,19 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/privacypassword/BussinessPackageInfo;
+    check-cast v0, Lcom/android/settings_ex/privacypassword/BussinessPackageInfo;
 
     .line 32
     if-eqz v0, :cond_0
 
     .line 33
-    iget-object v1, p0, Lcom/android/settings/PrivacyPasswordChooseLockPattern;->anp:Landroid/widget/TextView;
+    iget-object v1, p0, Lcom/android/settings_ex/PrivacyPasswordChooseLockPattern;->anp:Landroid/widget/TextView;
 
-    invoke-virtual {p0}, Lcom/android/settings/PrivacyPasswordChooseLockPattern;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ex/PrivacyPasswordChooseLockPattern;->getResources()Landroid/content/res/Resources;
 
     move-result-object v2
 
-    iget v0, v0, Lcom/android/settings/privacypassword/BussinessPackageInfo;->amK:I
+    iget v0, v0, Lcom/android/settings_ex/privacypassword/BussinessPackageInfo;->amK:I
 
     invoke-virtual {v2, v0}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -67,10 +67,10 @@
 
     .prologue
     .line 23
-    invoke-super {p0, p1}, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordChooseAccessControl;->onCreate(Landroid/os/Bundle;)V
 
     .line 24
-    invoke-virtual {p0}, Lcom/android/settings/PrivacyPasswordChooseLockPattern;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ex/PrivacyPasswordChooseLockPattern;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -81,7 +81,7 @@
     move-result-object v0
 
     .line 25
-    invoke-virtual {p0, v0}, Lcom/android/settings/PrivacyPasswordChooseLockPattern;->M(Ljava/lang/String;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/PrivacyPasswordChooseLockPattern;->M(Ljava/lang/String;)V
 
     .line 26
     return-void
@@ -92,22 +92,22 @@
 
     .prologue
     .line 40
-    invoke-super {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordChooseAccessControl;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordChooseAccessControl;->onResume()V
 
     .line 41
-    invoke-static {p0}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->bW(Landroid/content/Context;)Lcom/android/settings/privacypassword/PrivacyPasswordManager;
+    invoke-static {p0}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;->bW(Landroid/content/Context;)Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;
 
     move-result-object v0
 
     .line 42
-    invoke-virtual {v0}, Lcom/android/settings/privacypassword/PrivacyPasswordManager;->tI()Z
+    invoke-virtual {v0}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordManager;->tI()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 43
-    invoke-virtual {p0}, Lcom/android/settings/PrivacyPasswordChooseLockPattern;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ex/PrivacyPasswordChooseLockPattern;->finish()V
 
     .line 45
     :cond_0

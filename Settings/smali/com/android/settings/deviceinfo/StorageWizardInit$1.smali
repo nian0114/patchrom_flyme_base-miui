@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/StorageWizardInit$1;
+.class Lcom/android/settings_ex/deviceinfo/StorageWizardInit$1;
 .super Ljava/lang/Object;
 .source "StorageWizardInit.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic XB:Lcom/android/settings/deviceinfo/StorageWizardInit;
+.field final synthetic XB:Lcom/android/settings_ex/deviceinfo/StorageWizardInit;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/StorageWizardInit;)V
+.method constructor <init>(Lcom/android/settings_ex/deviceinfo/StorageWizardInit;)V
     .locals 0
 
     .prologue
     .line 83
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/StorageWizardInit$1;->XB:Lcom/android/settings/deviceinfo/StorageWizardInit;
+    iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/StorageWizardInit$1;->XB:Lcom/android/settings_ex/deviceinfo/StorageWizardInit;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -37,34 +37,34 @@
     if-eqz p2, :cond_1
 
     .line 87
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit$1;->XB:Lcom/android/settings/deviceinfo/StorageWizardInit;
+    iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/StorageWizardInit$1;->XB:Lcom/android/settings_ex/deviceinfo/StorageWizardInit;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/StorageWizardInit;->a(Lcom/android/settings/deviceinfo/StorageWizardInit;)Landroid/widget/RadioButton;
+    invoke-static {v0}, Lcom/android/settings_ex/deviceinfo/StorageWizardInit;->a(Lcom/android/settings_ex/deviceinfo/StorageWizardInit;)Landroid/widget/RadioButton;
 
     move-result-object v0
 
     if-ne p1, v0, :cond_2
 
     .line 88
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit$1;->XB:Lcom/android/settings/deviceinfo/StorageWizardInit;
+    iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/StorageWizardInit$1;->XB:Lcom/android/settings_ex/deviceinfo/StorageWizardInit;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/StorageWizardInit;->b(Lcom/android/settings/deviceinfo/StorageWizardInit;)Landroid/widget/RadioButton;
+    invoke-static {v0}, Lcom/android/settings_ex/deviceinfo/StorageWizardInit;->b(Lcom/android/settings_ex/deviceinfo/StorageWizardInit;)Landroid/widget/RadioButton;
 
     move-result-object v0
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     .line 89
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit$1;->XB:Lcom/android/settings/deviceinfo/StorageWizardInit;
+    iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/StorageWizardInit$1;->XB:Lcom/android/settings_ex/deviceinfo/StorageWizardInit;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/deviceinfo/StorageWizardInit;->aJ(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/deviceinfo/StorageWizardInit;->aJ(Z)V
 
     .line 94
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit$1;->XB:Lcom/android/settings/deviceinfo/StorageWizardInit;
+    iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/StorageWizardInit$1;->XB:Lcom/android/settings_ex/deviceinfo/StorageWizardInit;
 
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/StorageWizardInit;->getNextButton()Landroid/widget/Button;
+    invoke-virtual {v0}, Lcom/android/settings_ex/deviceinfo/StorageWizardInit;->getNextButton()Landroid/widget/Button;
 
     move-result-object v0
 
@@ -76,27 +76,27 @@
 
     .line 90
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit$1;->XB:Lcom/android/settings/deviceinfo/StorageWizardInit;
+    iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/StorageWizardInit$1;->XB:Lcom/android/settings_ex/deviceinfo/StorageWizardInit;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/StorageWizardInit;->b(Lcom/android/settings/deviceinfo/StorageWizardInit;)Landroid/widget/RadioButton;
+    invoke-static {v0}, Lcom/android/settings_ex/deviceinfo/StorageWizardInit;->b(Lcom/android/settings_ex/deviceinfo/StorageWizardInit;)Landroid/widget/RadioButton;
 
     move-result-object v0
 
     if-ne p1, v0, :cond_0
 
     .line 91
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit$1;->XB:Lcom/android/settings/deviceinfo/StorageWizardInit;
+    iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/StorageWizardInit$1;->XB:Lcom/android/settings_ex/deviceinfo/StorageWizardInit;
 
-    invoke-static {v0}, Lcom/android/settings/deviceinfo/StorageWizardInit;->a(Lcom/android/settings/deviceinfo/StorageWizardInit;)Landroid/widget/RadioButton;
+    invoke-static {v0}, Lcom/android/settings_ex/deviceinfo/StorageWizardInit;->a(Lcom/android/settings_ex/deviceinfo/StorageWizardInit;)Landroid/widget/RadioButton;
 
     move-result-object v0
 
     invoke-virtual {v0, v1}, Landroid/widget/RadioButton;->setChecked(Z)V
 
     .line 92
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/StorageWizardInit$1;->XB:Lcom/android/settings/deviceinfo/StorageWizardInit;
+    iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/StorageWizardInit$1;->XB:Lcom/android/settings_ex/deviceinfo/StorageWizardInit;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/deviceinfo/StorageWizardInit;->aJ(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/settings_ex/deviceinfo/StorageWizardInit;->aJ(Z)V
 
     goto :goto_0
 .end method

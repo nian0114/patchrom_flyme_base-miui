@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/toggleposition/j;
+.class public interface abstract Lcom/android/settings_ex/toggleposition/j;
 .super Ljava/lang/Object;
 .source "FixedDividerSortableListView.java"
 

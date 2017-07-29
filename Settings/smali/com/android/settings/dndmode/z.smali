@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dndmode/z;
+.class Lcom/android/settings_ex/dndmode/z;
 .super Ljava/lang/Object;
 .source "VipCallSettingsFragment.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic abi:Ljava/lang/String;
 
-.field final synthetic abj:Lcom/android/settings/dndmode/y;
+.field final synthetic abj:Lcom/android/settings_ex/dndmode/y;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/dndmode/y;Ljava/lang/String;)V
+.method constructor <init>(Lcom/android/settings_ex/dndmode/y;Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 247
-    iput-object p1, p0, Lcom/android/settings/dndmode/z;->abj:Lcom/android/settings/dndmode/y;
+    iput-object p1, p0, Lcom/android/settings_ex/dndmode/z;->abj:Lcom/android/settings_ex/dndmode/y;
 
-    iput-object p2, p0, Lcom/android/settings/dndmode/z;->abi:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/settings_ex/dndmode/z;->abi:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,11 +36,11 @@
     const/4 v2, 0x0
 
     .line 251
-    iget-object v0, p0, Lcom/android/settings/dndmode/z;->abj:Lcom/android/settings/dndmode/y;
+    iget-object v0, p0, Lcom/android/settings_ex/dndmode/z;->abj:Lcom/android/settings_ex/dndmode/y;
 
-    iget-object v0, v0, Lcom/android/settings/dndmode/y;->abg:Lcom/android/settings/dndmode/v;
+    iget-object v0, v0, Lcom/android/settings_ex/dndmode/y;->abg:Lcom/android/settings_ex/dndmode/v;
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/v;->a(Lcom/android/settings/dndmode/v;)Lmiui/app/Activity;
+    invoke-static {v0}, Lcom/android/settings_ex/dndmode/v;->a(Lcom/android/settings_ex/dndmode/v;)Lmiui/app/Activity;
 
     move-result-object v0
 
@@ -60,7 +60,7 @@
 
     move-result-object v3
 
-    iget-object v4, p0, Lcom/android/settings/dndmode/z;->abi:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/settings_ex/dndmode/z;->abi:Ljava/lang/String;
 
     invoke-virtual {v3, v4}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
 
@@ -139,11 +139,11 @@
     invoke-virtual {v0, v1, v3}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Integer;)V
 
     .line 271
-    iget-object v1, p0, Lcom/android/settings/dndmode/z;->abj:Lcom/android/settings/dndmode/y;
+    iget-object v1, p0, Lcom/android/settings_ex/dndmode/z;->abj:Lcom/android/settings_ex/dndmode/y;
 
-    iget-object v1, v1, Lcom/android/settings/dndmode/y;->abg:Lcom/android/settings/dndmode/v;
+    iget-object v1, v1, Lcom/android/settings_ex/dndmode/y;->abg:Lcom/android/settings_ex/dndmode/v;
 
-    invoke-static {v1}, Lcom/android/settings/dndmode/v;->a(Lcom/android/settings/dndmode/v;)Lmiui/app/Activity;
+    invoke-static {v1}, Lcom/android/settings_ex/dndmode/v;->a(Lcom/android/settings_ex/dndmode/v;)Lmiui/app/Activity;
 
     move-result-object v1
 
@@ -153,7 +153,7 @@
 
     sget-object v3, Lmiui/provider/ExtraTelephony$Phonelist;->CONTENT_URI:Landroid/net/Uri;
 
-    iget-object v4, p0, Lcom/android/settings/dndmode/z;->abi:Ljava/lang/String;
+    iget-object v4, p0, Lcom/android/settings_ex/dndmode/z;->abi:Ljava/lang/String;
 
     invoke-static {v3, v4}, Landroid/net/Uri;->withAppendedPath(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
 
@@ -179,11 +179,11 @@
 
     .line 276
     :cond_4
-    iget-object v0, p0, Lcom/android/settings/dndmode/z;->abj:Lcom/android/settings/dndmode/y;
+    iget-object v0, p0, Lcom/android/settings_ex/dndmode/z;->abj:Lcom/android/settings_ex/dndmode/y;
 
-    iget-object v0, v0, Lcom/android/settings/dndmode/y;->abg:Lcom/android/settings/dndmode/v;
+    iget-object v0, v0, Lcom/android/settings_ex/dndmode/y;->abg:Lcom/android/settings_ex/dndmode/v;
 
-    invoke-static {v0}, Lcom/android/settings/dndmode/v;->a(Lcom/android/settings/dndmode/v;)Lmiui/app/Activity;
+    invoke-static {v0}, Lcom/android/settings_ex/dndmode/v;->a(Lcom/android/settings_ex/dndmode/v;)Lmiui/app/Activity;
 
     move-result-object v0
 
@@ -193,7 +193,7 @@
 
     sget-object v1, Lmiui/provider/ExtraTelephony$Phonelist;->CONTENT_URI:Landroid/net/Uri;
 
-    iget-object v3, p0, Lcom/android/settings/dndmode/z;->abi:Ljava/lang/String;
+    iget-object v3, p0, Lcom/android/settings_ex/dndmode/z;->abi:Ljava/lang/String;
 
     invoke-static {v1, v3}, Landroid/net/Uri;->withAppendedPath(Landroid/net/Uri;Ljava/lang/String;)Landroid/net/Uri;
 

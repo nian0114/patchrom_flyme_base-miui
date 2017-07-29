@@ -1,19 +1,19 @@
-.class Lcom/android/settings/sound/B;
+.class Lcom/android/settings_ex/sound/B;
 .super Landroid/content/BroadcastReceiver;
 .source "RingerVolumeFragment.java"
 
 
 # instance fields
-.field final synthetic aqX:Lcom/android/settings/sound/RingerVolumeFragment;
+.field final synthetic aqX:Lcom/android/settings_ex/sound/RingerVolumeFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sound/RingerVolumeFragment;)V
+.method constructor <init>(Lcom/android/settings_ex/sound/RingerVolumeFragment;)V
     .locals 0
 
     .prologue
     .line 168
-    iput-object p1, p0, Lcom/android/settings/sound/B;->aqX:Lcom/android/settings/sound/RingerVolumeFragment;
+    iput-object p1, p0, Lcom/android/settings_ex/sound/B;->aqX:Lcom/android/settings_ex/sound/RingerVolumeFragment;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -41,15 +41,15 @@
     if-eqz v0, :cond_0
 
     .line 172
-    iget-object v0, p0, Lcom/android/settings/sound/B;->aqX:Lcom/android/settings/sound/RingerVolumeFragment;
+    iget-object v0, p0, Lcom/android/settings_ex/sound/B;->aqX:Lcom/android/settings_ex/sound/RingerVolumeFragment;
 
-    invoke-static {v0}, Lcom/android/settings/sound/RingerVolumeFragment;->b(Lcom/android/settings/sound/RingerVolumeFragment;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/settings_ex/sound/RingerVolumeFragment;->b(Lcom/android/settings_ex/sound/RingerVolumeFragment;)Landroid/os/Handler;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/sound/B;->aqX:Lcom/android/settings/sound/RingerVolumeFragment;
+    iget-object v1, p0, Lcom/android/settings_ex/sound/B;->aqX:Lcom/android/settings_ex/sound/RingerVolumeFragment;
 
-    invoke-static {v1}, Lcom/android/settings/sound/RingerVolumeFragment;->b(Lcom/android/settings/sound/RingerVolumeFragment;)Landroid/os/Handler;
+    invoke-static {v1}, Lcom/android/settings_ex/sound/RingerVolumeFragment;->b(Lcom/android/settings_ex/sound/RingerVolumeFragment;)Landroid/os/Handler;
 
     move-result-object v1
 

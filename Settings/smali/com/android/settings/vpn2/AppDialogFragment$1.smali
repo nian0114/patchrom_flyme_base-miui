@@ -1,4 +1,4 @@
-.class Lcom/android/settings/vpn2/AppDialogFragment$1;
+.class Lcom/android/settings_ex/vpn2/AppDialogFragment$1;
 .super Ljava/lang/Object;
 .source "AppDialogFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic avh:Lcom/android/settings/vpn2/AppDialogFragment;
+.field final synthetic avh:Lcom/android/settings_ex/vpn2/AppDialogFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/vpn2/AppDialogFragment;)V
+.method constructor <init>(Lcom/android/settings_ex/vpn2/AppDialogFragment;)V
     .locals 0
 
     .prologue
     .line 88
-    iput-object p1, p0, Lcom/android/settings/vpn2/AppDialogFragment$1;->avh:Lcom/android/settings/vpn2/AppDialogFragment;
+    iput-object p1, p0, Lcom/android/settings_ex/vpn2/AppDialogFragment$1;->avh:Lcom/android/settings_ex/vpn2/AppDialogFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 91
-    iget-object v0, p0, Lcom/android/settings/vpn2/AppDialogFragment$1;->avh:Lcom/android/settings/vpn2/AppDialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ex/vpn2/AppDialogFragment$1;->avh:Lcom/android/settings_ex/vpn2/AppDialogFragment;
 
-    invoke-static {v0, p1}, Lcom/android/settings/vpn2/AppDialogFragment;->a(Lcom/android/settings/vpn2/AppDialogFragment;Landroid/content/DialogInterface;)V
+    invoke-static {v0, p1}, Lcom/android/settings_ex/vpn2/AppDialogFragment;->a(Lcom/android/settings_ex/vpn2/AppDialogFragment;Landroid/content/DialogInterface;)V
 
     .line 92
     return-void

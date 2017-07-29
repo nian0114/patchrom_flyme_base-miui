@@ -1,4 +1,4 @@
-.class synthetic Lcom/android/settings/hK;
+.class synthetic Lcom/android/settings_ex/hK;
 .super Ljava/lang/Object;
 .source "SettingsApplication.java"
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 239
-    invoke-static {}, Lcom/android/settings/ShortcutHelper$Shortcut;->values()[Lcom/android/settings/ShortcutHelper$Shortcut;
+    invoke-static {}, Lcom/android/settings_ex/ShortcutHelper$Shortcut;->values()[Lcom/android/settings_ex/ShortcutHelper$Shortcut;
 
     move-result-object v0
 
@@ -21,12 +21,12 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/hK;->Al:[I
+    sput-object v0, Lcom/android/settings_ex/hK;->Al:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/hK;->Al:[I
+    sget-object v0, Lcom/android/settings_ex/hK;->Al:[I
 
-    sget-object v1, Lcom/android/settings/ShortcutHelper$Shortcut;->Am:Lcom/android/settings/ShortcutHelper$Shortcut;
+    sget-object v1, Lcom/android/settings_ex/ShortcutHelper$Shortcut;->Am:Lcom/android/settings_ex/ShortcutHelper$Shortcut;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -40,9 +40,9 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/hK;->Al:[I
+    sget-object v0, Lcom/android/settings_ex/hK;->Al:[I
 
-    sget-object v1, Lcom/android/settings/ShortcutHelper$Shortcut;->Aq:Lcom/android/settings/ShortcutHelper$Shortcut;
+    sget-object v1, Lcom/android/settings_ex/ShortcutHelper$Shortcut;->Aq:Lcom/android/settings_ex/ShortcutHelper$Shortcut;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -56,9 +56,9 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/android/settings/hK;->Al:[I
+    sget-object v0, Lcom/android/settings_ex/hK;->Al:[I
 
-    sget-object v1, Lcom/android/settings/ShortcutHelper$Shortcut;->Ar:Lcom/android/settings/ShortcutHelper$Shortcut;
+    sget-object v1, Lcom/android/settings_ex/ShortcutHelper$Shortcut;->Ar:Lcom/android/settings_ex/ShortcutHelper$Shortcut;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -72,9 +72,9 @@
 
     :goto_2
     :try_start_3
-    sget-object v0, Lcom/android/settings/hK;->Al:[I
+    sget-object v0, Lcom/android/settings_ex/hK;->Al:[I
 
-    sget-object v1, Lcom/android/settings/ShortcutHelper$Shortcut;->An:Lcom/android/settings/ShortcutHelper$Shortcut;
+    sget-object v1, Lcom/android/settings_ex/ShortcutHelper$Shortcut;->An:Lcom/android/settings_ex/ShortcutHelper$Shortcut;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -88,9 +88,9 @@
 
     :goto_3
     :try_start_4
-    sget-object v0, Lcom/android/settings/hK;->Al:[I
+    sget-object v0, Lcom/android/settings_ex/hK;->Al:[I
 
-    sget-object v1, Lcom/android/settings/ShortcutHelper$Shortcut;->Ao:Lcom/android/settings/ShortcutHelper$Shortcut;
+    sget-object v1, Lcom/android/settings_ex/ShortcutHelper$Shortcut;->Ao:Lcom/android/settings_ex/ShortcutHelper$Shortcut;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -104,9 +104,9 @@
 
     :goto_4
     :try_start_5
-    sget-object v0, Lcom/android/settings/hK;->Al:[I
+    sget-object v0, Lcom/android/settings_ex/hK;->Al:[I
 
-    sget-object v1, Lcom/android/settings/ShortcutHelper$Shortcut;->Ap:Lcom/android/settings/ShortcutHelper$Shortcut;
+    sget-object v1, Lcom/android/settings_ex/ShortcutHelper$Shortcut;->Ap:Lcom/android/settings_ex/ShortcutHelper$Shortcut;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 

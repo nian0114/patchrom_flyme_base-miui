@@ -1,4 +1,4 @@
-.class Lcom/android/settings/cG;
+.class Lcom/android/settings_ex/cG;
 .super Ljava/lang/Object;
 .source "DreamSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic mg:Lcom/android/settings/DreamSettings;
+.field final synthetic mg:Lcom/android/settings_ex/DreamSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DreamSettings;)V
+.method constructor <init>(Lcom/android/settings_ex/DreamSettings;)V
     .locals 0
 
     .prologue
     .line 213
-    iput-object p1, p0, Lcom/android/settings/cG;->mg:Lcom/android/settings/DreamSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/cG;->mg:Lcom/android/settings_ex/DreamSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -36,9 +36,9 @@
     const/4 v2, 0x1
 
     .line 215
-    iget-object v0, p0, Lcom/android/settings/cG;->mg:Lcom/android/settings/DreamSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/cG;->mg:Lcom/android/settings_ex/DreamSettings;
 
-    invoke-static {v0}, Lcom/android/settings/DreamSettings;->a(Lcom/android/settings/DreamSettings;)Lcom/android/settings/cA;
+    invoke-static {v0}, Lcom/android/settings_ex/DreamSettings;->a(Lcom/android/settings_ex/DreamSettings;)Lcom/android/settings_ex/cA;
 
     move-result-object v3
 
@@ -50,12 +50,12 @@
     move v0, v2
 
     :goto_0
-    invoke-virtual {v3, v0}, Lcom/android/settings/cA;->v(Z)V
+    invoke-virtual {v3, v0}, Lcom/android/settings_ex/cA;->v(Z)V
 
     .line 216
-    iget-object v0, p0, Lcom/android/settings/cG;->mg:Lcom/android/settings/DreamSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/cG;->mg:Lcom/android/settings_ex/DreamSettings;
 
-    invoke-static {v0}, Lcom/android/settings/DreamSettings;->a(Lcom/android/settings/DreamSettings;)Lcom/android/settings/cA;
+    invoke-static {v0}, Lcom/android/settings_ex/DreamSettings;->a(Lcom/android/settings_ex/DreamSettings;)Lcom/android/settings_ex/cA;
 
     move-result-object v0
 
@@ -67,7 +67,7 @@
     move v1, v2
 
     :cond_2
-    invoke-virtual {v0, v1}, Lcom/android/settings/cA;->w(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/cA;->w(Z)V
 
     .line 217
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V

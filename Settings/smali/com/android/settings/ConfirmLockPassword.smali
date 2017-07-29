@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/ConfirmLockPassword;
-.super Lcom/android/settings/hx;
+.class public Lcom/android/settings_ex/ConfirmLockPassword;
+.super Lcom/android/settings_ex/hx;
 .source "ConfirmLockPassword.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 52
-    invoke-direct {p0}, Lcom/android/settings/hx;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ex/hx;-><init>()V
 
     .line 89
     return-void
@@ -20,7 +20,7 @@
 
     .prologue
     .line 85
-    invoke-virtual {p0}, Lcom/android/settings/ConfirmLockPassword;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ex/ConfirmLockPassword;->getIntent()Landroid/content/Intent;
 
     move-result-object v0
 
@@ -49,7 +49,7 @@
     .line 62
     new-instance v0, Landroid/content/Intent;
 
-    invoke-super {p0}, Lcom/android/settings/hx;->getIntent()Landroid/content/Intent;
+    invoke-super {p0}, Lcom/android/settings_ex/hx;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -58,7 +58,7 @@
     .line 63
     const-string v1, ":settings:show_fragment"
 
-    const-class v2, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;
+    const-class v2, Lcom/android/settings_ex/ConfirmLockPassword$ConfirmLockPasswordFragment;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -82,7 +82,7 @@
 
     .prologue
     .line 70
-    const-class v0, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;
+    const-class v0, Lcom/android/settings_ex/ConfirmLockPassword$ConfirmLockPasswordFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -111,10 +111,10 @@
 
     .prologue
     .line 76
-    invoke-super {p0, p1}, Lcom/android/settings/hx;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ex/hx;->onCreate(Landroid/os/Bundle;)V
 
     .line 78
-    invoke-direct {p0}, Lcom/android/settings/ConfirmLockPassword;->aM()Z
+    invoke-direct {p0}, Lcom/android/settings_ex/ConfirmLockPassword;->aM()Z
 
     move-result v0
 
@@ -123,18 +123,18 @@
     .line 79
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ConfirmLockPassword;->setRequestedOrientation(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/ConfirmLockPassword;->setRequestedOrientation(I)V
 
     .line 80
     :cond_0
     const v0, 0x7f0c0544
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/ConfirmLockPassword;->getText(I)Ljava/lang/CharSequence;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/ConfirmLockPassword;->getText(I)Ljava/lang/CharSequence;
 
     move-result-object v0
 
     .line 81
-    invoke-virtual {p0, v0}, Lcom/android/settings/ConfirmLockPassword;->setTitle(Ljava/lang/CharSequence;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/ConfirmLockPassword;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 82
     return-void

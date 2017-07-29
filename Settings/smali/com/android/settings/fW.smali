@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fW;
+.class Lcom/android/settings_ex/fW;
 .super Ljava/lang/Object;
 .source "NotificationAppListSettings.java"
 
@@ -12,36 +12,36 @@
 
 .field private mType:I
 
-.field final synthetic vi:Lcom/android/settings/NotificationAppListSettings;
+.field final synthetic vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
 .field private vl:Z
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/NotificationAppListSettings;Landroid/content/pm/ApplicationInfo;I)V
+.method public constructor <init>(Lcom/android/settings_ex/NotificationAppListSettings;Landroid/content/pm/ApplicationInfo;I)V
     .locals 4
 
     .prologue
     const/4 v3, 0x0
 
     .line 263
-    iput-object p1, p0, Lcom/android/settings/fW;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/fW;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 259
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/fW;->mType:I
+    iput v0, p0, Lcom/android/settings_ex/fW;->mType:I
 
     .line 261
-    iput-boolean v3, p0, Lcom/android/settings/fW;->vl:Z
+    iput-boolean v3, p0, Lcom/android/settings_ex/fW;->vl:Z
 
     .line 264
-    iput-object p2, p0, Lcom/android/settings/fW;->bL:Landroid/content/pm/ApplicationInfo;
+    iput-object p2, p0, Lcom/android/settings_ex/fW;->bL:Landroid/content/pm/ApplicationInfo;
 
     .line 265
-    invoke-static {p1}, Lcom/android/settings/NotificationAppListSettings;->f(Lcom/android/settings/NotificationAppListSettings;)Landroid/content/pm/PackageManager;
+    invoke-static {p1}, Lcom/android/settings_ex/NotificationAppListSettings;->f(Lcom/android/settings_ex/NotificationAppListSettings;)Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
@@ -65,117 +65,117 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fW;->mLabel:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ex/fW;->mLabel:Ljava/lang/String;
 
     .line 266
-    invoke-static {p1}, Lcom/android/settings/NotificationAppListSettings;->d(Lcom/android/settings/NotificationAppListSettings;)Landroid/content/Context;
+    invoke-static {p1}, Lcom/android/settings_ex/NotificationAppListSettings;->d(Lcom/android/settings_ex/NotificationAppListSettings;)Landroid/content/Context;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/fW;->Q()Ljava/lang/String;
+    invoke-virtual {p0}, Lcom/android/settings_ex/fW;->Q()Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-static {v0, v1, p3}, Lcom/android/settings/NotificationAppListSettings;->e(Landroid/content/Context;Ljava/lang/String;I)Ljava/lang/String;
+    invoke-static {v0, v1, p3}, Lcom/android/settings_ex/NotificationAppListSettings;->e(Landroid/content/Context;Ljava/lang/String;I)Ljava/lang/String;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fW;->bM:Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ex/fW;->bM:Ljava/lang/String;
 
     .line 267
-    iput v3, p0, Lcom/android/settings/fW;->mType:I
+    iput v3, p0, Lcom/android/settings_ex/fW;->mType:I
 
     .line 268
     return-void
 .end method
 
-.method public constructor <init>(Lcom/android/settings/NotificationAppListSettings;Ljava/lang/String;)V
+.method public constructor <init>(Lcom/android/settings_ex/NotificationAppListSettings;Ljava/lang/String;)V
     .locals 1
 
     .prologue
     .line 270
-    iput-object p1, p0, Lcom/android/settings/fW;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/fW;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 259
     const/4 v0, -0x1
 
-    iput v0, p0, Lcom/android/settings/fW;->mType:I
+    iput v0, p0, Lcom/android/settings_ex/fW;->mType:I
 
     .line 261
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/fW;->vl:Z
+    iput-boolean v0, p0, Lcom/android/settings_ex/fW;->vl:Z
 
     .line 271
-    iput-object p2, p0, Lcom/android/settings/fW;->mLabel:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/settings_ex/fW;->mLabel:Ljava/lang/String;
 
     .line 272
     const/4 v0, 0x1
 
-    iput v0, p0, Lcom/android/settings/fW;->mType:I
+    iput v0, p0, Lcom/android/settings_ex/fW;->mType:I
 
     .line 273
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/fW;Ljava/lang/String;)Ljava/lang/String;
+.method static synthetic a(Lcom/android/settings_ex/fW;Ljava/lang/String;)Ljava/lang/String;
     .locals 0
 
     .prologue
     .line 255
-    iput-object p1, p0, Lcom/android/settings/fW;->bM:Ljava/lang/String;
+    iput-object p1, p0, Lcom/android/settings_ex/fW;->bM:Ljava/lang/String;
 
     return-object p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/fW;)Z
+.method static synthetic a(Lcom/android/settings_ex/fW;)Z
     .locals 1
 
     .prologue
     .line 255
-    iget-boolean v0, p0, Lcom/android/settings/fW;->vl:Z
+    iget-boolean v0, p0, Lcom/android/settings_ex/fW;->vl:Z
 
     return v0
 .end method
 
-.method static synthetic a(Lcom/android/settings/fW;Z)Z
+.method static synthetic a(Lcom/android/settings_ex/fW;Z)Z
     .locals 0
 
     .prologue
     .line 255
-    iput-boolean p1, p0, Lcom/android/settings/fW;->vl:Z
+    iput-boolean p1, p0, Lcom/android/settings_ex/fW;->vl:Z
 
     return p1
 .end method
 
-.method static synthetic b(Lcom/android/settings/fW;)Ljava/lang/String;
+.method static synthetic b(Lcom/android/settings_ex/fW;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 255
-    iget-object v0, p0, Lcom/android/settings/fW;->mLabel:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ex/fW;->mLabel:Ljava/lang/String;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/fW;)I
+.method static synthetic c(Lcom/android/settings_ex/fW;)I
     .locals 1
 
     .prologue
     .line 255
-    iget v0, p0, Lcom/android/settings/fW;->mType:I
+    iget v0, p0, Lcom/android/settings_ex/fW;->mType:I
 
     return v0
 .end method
 
-.method static synthetic d(Lcom/android/settings/fW;)Ljava/lang/String;
+.method static synthetic d(Lcom/android/settings_ex/fW;)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 255
-    iget-object v0, p0, Lcom/android/settings/fW;->bM:Ljava/lang/String;
+    iget-object v0, p0, Lcom/android/settings_ex/fW;->bM:Ljava/lang/String;
 
     return-object v0
 .end method
@@ -187,7 +187,7 @@
 
     .prologue
     .line 276
-    iget-object v0, p0, Lcom/android/settings/fW;->bL:Landroid/content/pm/ApplicationInfo;
+    iget-object v0, p0, Lcom/android/settings_ex/fW;->bL:Landroid/content/pm/ApplicationInfo;
 
     if-nez v0, :cond_0
 
@@ -197,7 +197,7 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/fW;->bL:Landroid/content/pm/ApplicationInfo;
+    iget-object v0, p0, Lcom/android/settings_ex/fW;->bL:Landroid/content/pm/ApplicationInfo;
 
     iget-object v0, v0, Landroid/content/pm/ApplicationInfo;->packageName:Ljava/lang/String;
 

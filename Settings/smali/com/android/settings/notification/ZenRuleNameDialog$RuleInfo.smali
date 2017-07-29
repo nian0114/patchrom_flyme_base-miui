@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/notification/ZenRuleNameDialog$RuleInfo;
+.class public Lcom/android/settings_ex/notification/ZenRuleNameDialog$RuleInfo;
 .super Ljava/lang/Object;
 .source "ZenRuleNameDialog.java"
 

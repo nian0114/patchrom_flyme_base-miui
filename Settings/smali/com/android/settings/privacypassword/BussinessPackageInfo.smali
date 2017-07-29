@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/privacypassword/BussinessPackageInfo;
+.class public Lcom/android/settings_ex/privacypassword/BussinessPackageInfo;
 .super Ljava/lang/Object;
 .source "BussinessPackageInfo.java"
 
@@ -18,10 +18,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 9
-    iput p1, p0, Lcom/android/settings/privacypassword/BussinessPackageInfo;->amK:I
+    iput p1, p0, Lcom/android/settings_ex/privacypassword/BussinessPackageInfo;->amK:I
 
     .line 10
-    iput-object p2, p0, Lcom/android/settings/privacypassword/BussinessPackageInfo;->amL:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/settings_ex/privacypassword/BussinessPackageInfo;->amL:Ljava/lang/String;
 
     .line 11
     return-void

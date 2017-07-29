@@ -1,19 +1,19 @@
-.class Lcom/android/settings/users/AppRestrictionsFragment$1;
+.class Lcom/android/settings_ex/users/AppRestrictionsFragment$1;
 .super Landroid/content/BroadcastReceiver;
 .source "AppRestrictionsFragment.java"
 
 
 # instance fields
-.field final synthetic atr:Lcom/android/settings/users/AppRestrictionsFragment;
+.field final synthetic atr:Lcom/android/settings_ex/users/AppRestrictionsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/users/AppRestrictionsFragment;)V
+.method constructor <init>(Lcom/android/settings_ex/users/AppRestrictionsFragment;)V
     .locals 0
 
     .prologue
     .line 117
-    iput-object p1, p0, Lcom/android/settings/users/AppRestrictionsFragment$1;->atr:Lcom/android/settings/users/AppRestrictionsFragment;
+    iput-object p1, p0, Lcom/android/settings_ex/users/AppRestrictionsFragment$1;->atr:Lcom/android/settings_ex/users/AppRestrictionsFragment;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -27,18 +27,18 @@
 
     .prologue
     .line 123
-    iget-object v0, p0, Lcom/android/settings/users/AppRestrictionsFragment$1;->atr:Lcom/android/settings/users/AppRestrictionsFragment;
+    iget-object v0, p0, Lcom/android/settings_ex/users/AppRestrictionsFragment$1;->atr:Lcom/android/settings_ex/users/AppRestrictionsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/users/AppRestrictionsFragment;->a(Lcom/android/settings/users/AppRestrictionsFragment;)Z
+    invoke-static {v0}, Lcom/android/settings_ex/users/AppRestrictionsFragment;->a(Lcom/android/settings_ex/users/AppRestrictionsFragment;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 125
-    iget-object v0, p0, Lcom/android/settings/users/AppRestrictionsFragment$1;->atr:Lcom/android/settings/users/AppRestrictionsFragment;
+    iget-object v0, p0, Lcom/android/settings_ex/users/AppRestrictionsFragment$1;->atr:Lcom/android/settings_ex/users/AppRestrictionsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/users/AppRestrictionsFragment;->b(Lcom/android/settings/users/AppRestrictionsFragment;)V
+    invoke-static {v0}, Lcom/android/settings_ex/users/AppRestrictionsFragment;->b(Lcom/android/settings_ex/users/AppRestrictionsFragment;)V
 
     .line 128
     :cond_0

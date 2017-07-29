@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/SetFullBackupPassword;
+.class public Lcom/android/settings_ex/SetFullBackupPassword;
 .super Landroid/app/Activity;
 .source "SetFullBackupPassword.java"
 
@@ -28,21 +28,21 @@
     invoke-direct {p0}, Landroid/app/Activity;-><init>()V
 
     .line 38
-    new-instance v0, Lcom/android/settings/hn;
+    new-instance v0, Lcom/android/settings_ex/hn;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/hn;-><init>(Lcom/android/settings/SetFullBackupPassword;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ex/hn;-><init>(Lcom/android/settings_ex/SetFullBackupPassword;)V
 
-    iput-object v0, p0, Lcom/android/settings/SetFullBackupPassword;->ze:Landroid/view/View$OnClickListener;
+    iput-object v0, p0, Lcom/android/settings_ex/SetFullBackupPassword;->ze:Landroid/view/View$OnClickListener;
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/SetFullBackupPassword;Ljava/lang/String;Ljava/lang/String;)Z
+.method static synthetic a(Lcom/android/settings_ex/SetFullBackupPassword;Ljava/lang/String;Ljava/lang/String;)Z
     .locals 1
 
     .prologue
     .line 31
-    invoke-direct {p0, p1, p2}, Lcom/android/settings/SetFullBackupPassword;->setBackupPassword(Ljava/lang/String;Ljava/lang/String;)Z
+    invoke-direct {p0, p1, p2}, Lcom/android/settings_ex/SetFullBackupPassword;->setBackupPassword(Ljava/lang/String;Ljava/lang/String;)Z
 
     move-result v0
 
@@ -55,7 +55,7 @@
     .prologue
     .line 100
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/SetFullBackupPassword;->jc:Landroid/app/backup/IBackupManager;
+    iget-object v0, p0, Lcom/android/settings_ex/SetFullBackupPassword;->jc:Landroid/app/backup/IBackupManager;
 
     invoke-interface {v0, p1, p2}, Landroid/app/backup/IBackupManager;->setBackupPassword(Ljava/lang/String;Ljava/lang/String;)Z
     :try_end_0
@@ -104,79 +104,79 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/SetFullBackupPassword;->jc:Landroid/app/backup/IBackupManager;
+    iput-object v0, p0, Lcom/android/settings_ex/SetFullBackupPassword;->jc:Landroid/app/backup/IBackupManager;
 
     .line 85
     const v0, 0x7f040139
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SetFullBackupPassword;->setContentView(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/SetFullBackupPassword;->setContentView(I)V
 
     .line 87
     const v0, 0x7f13029f
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SetFullBackupPassword;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/SetFullBackupPassword;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/SetFullBackupPassword;->yZ:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ex/SetFullBackupPassword;->yZ:Landroid/widget/TextView;
 
     .line 88
     const v0, 0x7f1302a1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SetFullBackupPassword;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/SetFullBackupPassword;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/SetFullBackupPassword;->za:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ex/SetFullBackupPassword;->za:Landroid/widget/TextView;
 
     .line 89
     const v0, 0x7f1302a3
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SetFullBackupPassword;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/SetFullBackupPassword;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/SetFullBackupPassword;->zb:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ex/SetFullBackupPassword;->zb:Landroid/widget/TextView;
 
     .line 91
     const v0, 0x7f1302a4
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SetFullBackupPassword;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/SetFullBackupPassword;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/SetFullBackupPassword;->zc:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/settings_ex/SetFullBackupPassword;->zc:Landroid/widget/Button;
 
     .line 92
     const v0, 0x7f1302a5
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/SetFullBackupPassword;->findViewById(I)Landroid/view/View;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/SetFullBackupPassword;->findViewById(I)Landroid/view/View;
 
     move-result-object v0
 
     check-cast v0, Landroid/widget/Button;
 
-    iput-object v0, p0, Lcom/android/settings/SetFullBackupPassword;->zd:Landroid/widget/Button;
+    iput-object v0, p0, Lcom/android/settings_ex/SetFullBackupPassword;->zd:Landroid/widget/Button;
 
     .line 94
-    iget-object v0, p0, Lcom/android/settings/SetFullBackupPassword;->zc:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ex/SetFullBackupPassword;->zc:Landroid/widget/Button;
 
-    iget-object v1, p0, Lcom/android/settings/SetFullBackupPassword;->ze:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/android/settings_ex/SetFullBackupPassword;->ze:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 95
-    iget-object v0, p0, Lcom/android/settings/SetFullBackupPassword;->zd:Landroid/widget/Button;
+    iget-object v0, p0, Lcom/android/settings_ex/SetFullBackupPassword;->zd:Landroid/widget/Button;
 
-    iget-object v1, p0, Lcom/android/settings/SetFullBackupPassword;->ze:Landroid/view/View$OnClickListener;
+    iget-object v1, p0, Lcom/android/settings_ex/SetFullBackupPassword;->ze:Landroid/view/View$OnClickListener;
 
     invoke-virtual {v0, v1}, Landroid/widget/Button;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 

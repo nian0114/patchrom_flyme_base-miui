@@ -1,4 +1,4 @@
-.class Lcom/android/settings/dG;
+.class Lcom/android/settings_ex/dG;
 .super Ljava/lang/Object;
 .source "KeyguardShortcutChooserSettings.java"
 
@@ -20,12 +20,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/dC;)V
+.method synthetic constructor <init>(Lcom/android/settings_ex/dC;)V
     .locals 0
 
     .prologue
     .line 59
-    invoke-direct {p0}, Lcom/android/settings/dG;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ex/dG;-><init>()V
 
     return-void
 .end method

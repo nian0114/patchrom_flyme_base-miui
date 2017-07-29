@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/Settings$ZenModeSettingsActivity;
-.super Lcom/android/settings/hp;
+.class public Lcom/android/settings_ex/Settings$ZenModeSettingsActivity;
+.super Lcom/android/settings_ex/hp;
 .source "Settings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 102
-    invoke-direct {p0}, Lcom/android/settings/hp;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ex/hp;-><init>()V
 
     return-void
 .end method

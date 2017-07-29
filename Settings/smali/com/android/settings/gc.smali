@@ -1,4 +1,4 @@
-.class Lcom/android/settings/gc;
+.class Lcom/android/settings_ex/gc;
 .super Ljava/lang/Object;
 .source "OwnerInfoSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic vI:Lcom/android/settings/OwnerInfoSettings;
+.field final synthetic vI:Lcom/android/settings_ex/OwnerInfoSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/OwnerInfoSettings;)V
+.method constructor <init>(Lcom/android/settings_ex/OwnerInfoSettings;)V
     .locals 0
 
     .prologue
     .line 113
-    iput-object p1, p0, Lcom/android/settings/gc;->vI:Lcom/android/settings/OwnerInfoSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/gc;->vI:Lcom/android/settings_ex/OwnerInfoSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 124
-    iget-object v0, p0, Lcom/android/settings/gc;->vI:Lcom/android/settings/OwnerInfoSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/gc;->vI:Lcom/android/settings_ex/OwnerInfoSettings;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/android/settings/OwnerInfoSettings;->a(Lcom/android/settings/OwnerInfoSettings;Z)Z
+    invoke-static {v0, v1}, Lcom/android/settings_ex/OwnerInfoSettings;->a(Lcom/android/settings_ex/OwnerInfoSettings;Z)Z
 
     .line 125
     return-void

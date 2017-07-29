@@ -1,4 +1,4 @@
-.class Lcom/android/settings/widget/l;
+.class Lcom/android/settings_ex/widget/l;
 .super Ljava/lang/Object;
 .source "ScreenView.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ayX:Lcom/android/settings/widget/ScreenView;
+.field final synthetic ayX:Lcom/android/settings_ex/widget/ScreenView;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/widget/ScreenView;)V
+.method constructor <init>(Lcom/android/settings_ex/widget/ScreenView;)V
     .locals 0
 
     .prologue
     .line 233
-    iput-object p1, p0, Lcom/android/settings/widget/l;->ayX:Lcom/android/settings/widget/ScreenView;
+    iput-object p1, p0, Lcom/android/settings_ex/widget/l;->ayX:Lcom/android/settings_ex/widget/ScreenView;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 235
-    iget-object v0, p0, Lcom/android/settings/widget/l;->ayX:Lcom/android/settings/widget/ScreenView;
+    iget-object v0, p0, Lcom/android/settings_ex/widget/l;->ayX:Lcom/android/settings_ex/widget/ScreenView;
 
-    invoke-static {v0}, Lcom/android/settings/widget/ScreenView;->a(Lcom/android/settings/widget/ScreenView;)V
+    invoke-static {v0}, Lcom/android/settings_ex/widget/ScreenView;->a(Lcom/android/settings_ex/widget/ScreenView;)V
 
     .line 236
     return-void

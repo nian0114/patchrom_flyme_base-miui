@@ -1,19 +1,19 @@
-.class Lcom/android/settings/wfd/j;
+.class Lcom/android/settings_ex/wfd/j;
 .super Landroid/content/BroadcastReceiver;
 .source "WifiDisplaySettings.java"
 
 
 # instance fields
-.field final synthetic awA:Lcom/android/settings/wfd/WifiDisplaySettings;
+.field final synthetic awA:Lcom/android/settings_ex/wfd/WifiDisplaySettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wfd/WifiDisplaySettings;)V
+.method constructor <init>(Lcom/android/settings_ex/wfd/WifiDisplaySettings;)V
     .locals 0
 
     .prologue
     .line 631
-    iput-object p1, p0, Lcom/android/settings/wfd/j;->awA:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iput-object p1, p0, Lcom/android/settings_ex/wfd/j;->awA:Lcom/android/settings_ex/wfd/WifiDisplaySettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -41,11 +41,11 @@
     if-eqz v0, :cond_0
 
     .line 636
-    iget-object v0, p0, Lcom/android/settings/wfd/j;->awA:Lcom/android/settings/wfd/WifiDisplaySettings;
+    iget-object v0, p0, Lcom/android/settings_ex/wfd/j;->awA:Lcom/android/settings_ex/wfd/WifiDisplaySettings;
 
     const/4 v1, 0x4
 
-    invoke-static {v0, v1}, Lcom/android/settings/wfd/WifiDisplaySettings;->f(Lcom/android/settings/wfd/WifiDisplaySettings;I)V
+    invoke-static {v0, v1}, Lcom/android/settings_ex/wfd/WifiDisplaySettings;->f(Lcom/android/settings_ex/wfd/WifiDisplaySettings;I)V
 
     .line 638
     :cond_0

@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/hl;
+.class final Lcom/android/settings_ex/hl;
 .super Ljava/lang/Object;
 .source "SeekBarPreference.java"
 
@@ -19,12 +19,12 @@
 
 
 # virtual methods
-.method public ad(I)[Lcom/android/settings/SeekBarPreference$SavedState;
+.method public ad(I)[Lcom/android/settings_ex/SeekBarPreference$SavedState;
     .locals 1
 
     .prologue
     .line 228
-    new-array v0, p1, [Lcom/android/settings/SeekBarPreference$SavedState;
+    new-array v0, p1, [Lcom/android/settings_ex/SeekBarPreference$SavedState;
 
     return-object v0
 .end method
@@ -34,21 +34,21 @@
 
     .prologue
     .line 222
-    invoke-virtual {p0, p1}, Lcom/android/settings/hl;->e(Landroid/os/Parcel;)Lcom/android/settings/SeekBarPreference$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ex/hl;->e(Landroid/os/Parcel;)Lcom/android/settings_ex/SeekBarPreference$SavedState;
 
     move-result-object v0
 
     return-object v0
 .end method
 
-.method public e(Landroid/os/Parcel;)Lcom/android/settings/SeekBarPreference$SavedState;
+.method public e(Landroid/os/Parcel;)Lcom/android/settings_ex/SeekBarPreference$SavedState;
     .locals 1
 
     .prologue
     .line 224
-    new-instance v0, Lcom/android/settings/SeekBarPreference$SavedState;
+    new-instance v0, Lcom/android/settings_ex/SeekBarPreference$SavedState;
 
-    invoke-direct {v0, p1}, Lcom/android/settings/SeekBarPreference$SavedState;-><init>(Landroid/os/Parcel;)V
+    invoke-direct {v0, p1}, Lcom/android/settings_ex/SeekBarPreference$SavedState;-><init>(Landroid/os/Parcel;)V
 
     return-object v0
 .end method
@@ -58,7 +58,7 @@
 
     .prologue
     .line 222
-    invoke-virtual {p0, p1}, Lcom/android/settings/hl;->ad(I)[Lcom/android/settings/SeekBarPreference$SavedState;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ex/hl;->ad(I)[Lcom/android/settings_ex/SeekBarPreference$SavedState;
 
     move-result-object v0
 

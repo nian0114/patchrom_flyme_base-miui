@@ -1,4 +1,4 @@
-.class Lcom/android/settings/M;
+.class Lcom/android/settings_ex/M;
 .super Ljava/lang/Object;
 .source "ApplicationSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic bw:Lcom/android/settings/ApplicationSettings;
+.field final synthetic bw:Lcom/android/settings_ex/ApplicationSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ApplicationSettings;)V
+.method constructor <init>(Lcom/android/settings_ex/ApplicationSettings;)V
     .locals 0
 
     .prologue
     .line 80
-    iput-object p1, p0, Lcom/android/settings/M;->bw:Lcom/android/settings/ApplicationSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/M;->bw:Lcom/android/settings_ex/ApplicationSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,9 +33,9 @@
     check-cast p2, Ljava/lang/String;
 
     .line 83
-    iget-object v0, p0, Lcom/android/settings/M;->bw:Lcom/android/settings/ApplicationSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/M;->bw:Lcom/android/settings_ex/ApplicationSettings;
 
-    invoke-virtual {v0, p2}, Lcom/android/settings/ApplicationSettings;->k(Ljava/lang/String;)V
+    invoke-virtual {v0, p2}, Lcom/android/settings_ex/ApplicationSettings;->k(Ljava/lang/String;)V
 
     .line 84
     const/4 v0, 0x0

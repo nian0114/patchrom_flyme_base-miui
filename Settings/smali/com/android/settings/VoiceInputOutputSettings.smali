@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/VoiceInputOutputSettings;
+.class public Lcom/android/settings_ex/VoiceInputOutputSettings;
 .super Ljava/lang/Object;
 .source "VoiceInputOutputSettings.java"
 
@@ -10,13 +10,13 @@
 
 .field private Ck:Landroid/preference/Preference;
 
-.field private final Cl:Lcom/android/settings/SettingsPreferenceFragment;
+.field private final Cl:Lcom/android/settings_ex/SettingsPreferenceFragment;
 
 .field private final Cm:Landroid/speech/tts/TtsEngines;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/SettingsPreferenceFragment;)V
+.method public constructor <init>(Lcom/android/settings_ex/SettingsPreferenceFragment;)V
     .locals 2
 
     .prologue
@@ -24,12 +24,12 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 44
-    iput-object p1, p0, Lcom/android/settings/VoiceInputOutputSettings;->Cl:Lcom/android/settings/SettingsPreferenceFragment;
+    iput-object p1, p0, Lcom/android/settings_ex/VoiceInputOutputSettings;->Cl:Lcom/android/settings_ex/SettingsPreferenceFragment;
 
     .line 45
     new-instance v0, Landroid/speech/tts/TtsEngines;
 
-    invoke-virtual {p1}, Lcom/android/settings/SettingsPreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v1
 
@@ -39,7 +39,7 @@
 
     invoke-direct {v0, v1}, Landroid/speech/tts/TtsEngines;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/VoiceInputOutputSettings;->Cm:Landroid/speech/tts/TtsEngines;
+    iput-object v0, p0, Lcom/android/settings_ex/VoiceInputOutputSettings;->Cm:Landroid/speech/tts/TtsEngines;
 
     .line 46
     return-void
@@ -50,7 +50,7 @@
 
     .prologue
     .line 57
-    invoke-direct {p0}, Lcom/android/settings/VoiceInputOutputSettings;->iy()Z
+    invoke-direct {p0}, Lcom/android/settings_ex/VoiceInputOutputSettings;->iy()Z
 
     move-result v0
 
@@ -58,13 +58,13 @@
     if-nez v0, :cond_0
 
     .line 62
-    iget-object v0, p0, Lcom/android/settings/VoiceInputOutputSettings;->Cl:Lcom/android/settings/SettingsPreferenceFragment;
+    iget-object v0, p0, Lcom/android/settings_ex/VoiceInputOutputSettings;->Cl:Lcom/android/settings_ex/SettingsPreferenceFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/SettingsPreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {v0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/VoiceInputOutputSettings;->Cj:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ex/VoiceInputOutputSettings;->Cj:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -78,7 +78,7 @@
 
     .prologue
     .line 67
-    iget-object v0, p0, Lcom/android/settings/VoiceInputOutputSettings;->Cm:Landroid/speech/tts/TtsEngines;
+    iget-object v0, p0, Lcom/android/settings_ex/VoiceInputOutputSettings;->Cm:Landroid/speech/tts/TtsEngines;
 
     invoke-virtual {v0}, Landroid/speech/tts/TtsEngines;->getEngines()Ljava/util/List;
 
@@ -91,9 +91,9 @@
     if-eqz v0, :cond_0
 
     .line 68
-    iget-object v0, p0, Lcom/android/settings/VoiceInputOutputSettings;->Cj:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ex/VoiceInputOutputSettings;->Cj:Landroid/preference/PreferenceCategory;
 
-    iget-object v1, p0, Lcom/android/settings/VoiceInputOutputSettings;->Ck:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/settings_ex/VoiceInputOutputSettings;->Ck:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceCategory;->removePreference(Landroid/preference/Preference;)Z
 
@@ -117,16 +117,16 @@
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/android/settings/VoiceInputOutputSettings;->Cl:Lcom/android/settings/SettingsPreferenceFragment;
+    iget-object v0, p0, Lcom/android/settings_ex/VoiceInputOutputSettings;->Cl:Lcom/android/settings_ex/SettingsPreferenceFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/SettingsPreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {v0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/VoiceInputOutputSettings;->Ci:Landroid/preference/PreferenceGroup;
+    iput-object v0, p0, Lcom/android/settings_ex/VoiceInputOutputSettings;->Ci:Landroid/preference/PreferenceGroup;
 
     .line 50
-    iget-object v0, p0, Lcom/android/settings/VoiceInputOutputSettings;->Ci:Landroid/preference/PreferenceGroup;
+    iget-object v0, p0, Lcom/android/settings_ex/VoiceInputOutputSettings;->Ci:Landroid/preference/PreferenceGroup;
 
     const-string v1, "voice_category"
 
@@ -136,10 +136,10 @@
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/VoiceInputOutputSettings;->Cj:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ex/VoiceInputOutputSettings;->Cj:Landroid/preference/PreferenceCategory;
 
     .line 51
-    iget-object v0, p0, Lcom/android/settings/VoiceInputOutputSettings;->Cj:Landroid/preference/PreferenceCategory;
+    iget-object v0, p0, Lcom/android/settings_ex/VoiceInputOutputSettings;->Cj:Landroid/preference/PreferenceCategory;
 
     const-string v1, "tts_settings"
 
@@ -147,10 +147,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/VoiceInputOutputSettings;->Ck:Landroid/preference/Preference;
+    iput-object v0, p0, Lcom/android/settings_ex/VoiceInputOutputSettings;->Ck:Landroid/preference/Preference;
 
     .line 53
-    invoke-direct {p0}, Lcom/android/settings/VoiceInputOutputSettings;->ix()V
+    invoke-direct {p0}, Lcom/android/settings_ex/VoiceInputOutputSettings;->ix()V
 
     .line 54
     return-void

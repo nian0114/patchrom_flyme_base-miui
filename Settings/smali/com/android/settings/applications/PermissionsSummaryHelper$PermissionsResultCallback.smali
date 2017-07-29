@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/applications/PermissionsSummaryHelper$PermissionsResultCallback;
+.class public interface abstract Lcom/android/settings_ex/applications/PermissionsSummaryHelper$PermissionsResultCallback;
 .super Ljava/lang/Object;
 .source "PermissionsSummaryHelper.java"
 

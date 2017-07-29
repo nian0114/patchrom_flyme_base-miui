@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hA;
+.class Lcom/android/settings_ex/hA;
 .super Ljava/lang/Object;
 .source "SettingsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic zS:Lcom/android/settings/hz;
+.field final synthetic zS:Lcom/android/settings_ex/hz;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/hz;)V
+.method constructor <init>(Lcom/android/settings_ex/hz;)V
     .locals 0
 
     .prologue
     .line 180
-    iput-object p1, p0, Lcom/android/settings/hA;->zS:Lcom/android/settings/hz;
+    iput-object p1, p0, Lcom/android/settings_ex/hA;->zS:Lcom/android/settings_ex/hz;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,11 +35,11 @@
     if-ne p2, v0, :cond_0
 
     .line 184
-    iget-object v0, p0, Lcom/android/settings/hA;->zS:Lcom/android/settings/hz;
+    iget-object v0, p0, Lcom/android/settings_ex/hA;->zS:Lcom/android/settings_ex/hz;
 
-    iget-object v0, v0, Lcom/android/settings/hz;->zR:Lcom/android/settings/SettingsFragment;
+    iget-object v0, v0, Lcom/android/settings_ex/hz;->zR:Lcom/android/settings_ex/SettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/SettingsFragment;->i(Lcom/android/settings/SettingsFragment;)V
+    invoke-static {v0}, Lcom/android/settings_ex/SettingsFragment;->i(Lcom/android/settings_ex/SettingsFragment;)V
 
     .line 185
     const/4 v0, 0x1

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/InstalledAppDetailsFragment$PackageMoveObserver;
+.class Lcom/android/settings_ex/applications/InstalledAppDetailsFragment$PackageMoveObserver;
 .super Landroid/content/pm/IPackageMoveObserver$Stub;
 .source "InstalledAppDetailsFragment.java"
 

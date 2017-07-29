@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/backup/ToggleBackupSettingFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;
+.super Lcom/android/settings_ex/SettingsPreferenceFragment;
 .source "ToggleBackupSettingFragment.java"
 
 # interfaces
@@ -8,7 +8,7 @@
 
 
 # instance fields
-.field protected DC:Lcom/android/settings/widget/K;
+.field protected DC:Lcom/android/settings_ex/widget/K;
 
 .field private DD:Landroid/preference/Preference;
 
@@ -25,32 +25,32 @@
 
     .prologue
     .line 30
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;-><init>()V
 
     .line 52
     const/4 v0, 0x0
 
-    iput-boolean v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->Qm:Z
+    iput-boolean v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->Qm:Z
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/backup/ToggleBackupSettingFragment;)V
+.method static synthetic a(Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;)V
     .locals 0
 
     .prologue
     .line 30
-    invoke-direct {p0}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->nn()V
+    invoke-direct {p0}, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->nn()V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/backup/ToggleBackupSettingFragment;Z)V
+.method static synthetic a(Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;Z)V
     .locals 0
 
     .prologue
     .line 30
-    invoke-direct {p0, p1}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->setBackupEnabled(Z)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->setBackupEnabled(Z)V
 
     return-void
 .end method
@@ -60,7 +60,7 @@
 
     .prologue
     .line 216
-    invoke-virtual {p0}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -75,7 +75,7 @@
     if-eqz v0, :cond_0
 
     .line 217
-    invoke-virtual {p0}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -89,12 +89,12 @@
     :goto_0
     const/4 v1, 0x1
 
-    iput-boolean v1, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->Qm:Z
+    iput-boolean v1, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->Qm:Z
 
     .line 225
     new-instance v1, Landroid/app/AlertDialog$Builder;
 
-    invoke-virtual {p0}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
@@ -130,14 +130,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->Ql:Landroid/app/Dialog;
+    iput-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->Ql:Landroid/app/Dialog;
 
     .line 231
     return-void
 
     .line 219
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -155,13 +155,13 @@
 
     .prologue
     .line 244
-    iget-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->jc:Landroid/app/backup/IBackupManager;
+    iget-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->jc:Landroid/app/backup/IBackupManager;
 
     if-eqz v0, :cond_0
 
     .line 246
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->jc:Landroid/app/backup/IBackupManager;
+    iget-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->jc:Landroid/app/backup/IBackupManager;
 
     invoke-interface {v0, p1}, Landroid/app/backup/IBackupManager;->setBackupEnabled(Z)V
     :try_end_0
@@ -193,7 +193,7 @@
 
     .prologue
     .line 56
-    const-class v0, Lcom/android/settings/backup/ToggleBackupSettingFragment;
+    const-class v0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -207,16 +207,16 @@
 
     .prologue
     .line 131
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 153
-    iget-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings/widget/K;
+    iget-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings_ex/widget/K;
 
-    new-instance v1, Lcom/android/settings/backup/C;
+    new-instance v1, Lcom/android/settings_ex/backup/C;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/backup/C;-><init>(Lcom/android/settings/backup/ToggleBackupSettingFragment;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ex/backup/C;-><init>(Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;)V
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/K;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/widget/K;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 168
     return-void
@@ -236,15 +236,15 @@
     if-ne p2, v0, :cond_1
 
     .line 184
-    iput-boolean v1, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->Qm:Z
+    iput-boolean v1, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->Qm:Z
 
     .line 185
-    invoke-direct {p0, v1}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->setBackupEnabled(Z)V
+    invoke-direct {p0, v1}, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->setBackupEnabled(Z)V
 
     .line 187
-    iget-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings/widget/K;
+    iget-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings_ex/widget/K;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/K;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/widget/K;->setChecked(Z)V
 
     .line 197
     :cond_0
@@ -258,15 +258,15 @@
     if-ne p2, v0, :cond_0
 
     .line 191
-    iput-boolean v1, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->Qm:Z
+    iput-boolean v1, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->Qm:Z
 
     .line 192
-    invoke-direct {p0, v2}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->setBackupEnabled(Z)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->setBackupEnabled(Z)V
 
     .line 194
-    iget-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings/widget/K;
+    iget-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings_ex/widget/K;
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/widget/K;->setChecked(Z)V
+    invoke-virtual {v0, v2}, Lcom/android/settings_ex/widget/K;->setChecked(Z)V
 
     goto :goto_0
 .end method
@@ -276,7 +276,7 @@
 
     .prologue
     .line 61
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 63
     const-string v0, "backup"
@@ -289,14 +289,14 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->jc:Landroid/app/backup/IBackupManager;
+    iput-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->jc:Landroid/app/backup/IBackupManager;
 
     .line 66
-    invoke-virtual {p0}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->getPreferenceManager()Landroid/preference/PreferenceManager;
+    invoke-virtual {p0}, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v0
 
-    invoke-virtual {p0}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -305,35 +305,35 @@
     move-result-object v0
 
     .line 68
-    invoke-virtual {p0, v0}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->setPreferenceScreen(Landroid/preference/PreferenceScreen;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->setPreferenceScreen(Landroid/preference/PreferenceScreen;)V
 
     .line 69
-    new-instance v1, Lcom/android/settings/backup/B;
+    new-instance v1, Lcom/android/settings_ex/backup/B;
 
-    invoke-virtual {p0}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-direct {v1, p0, v2}, Lcom/android/settings/backup/B;-><init>(Lcom/android/settings/backup/ToggleBackupSettingFragment;Landroid/content/Context;)V
+    invoke-direct {v1, p0, v2}, Lcom/android/settings_ex/backup/B;-><init>(Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;Landroid/content/Context;)V
 
-    iput-object v1, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->DD:Landroid/preference/Preference;
+    iput-object v1, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->DD:Landroid/preference/Preference;
 
     .line 77
-    iget-object v1, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->DD:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->DD:Landroid/preference/Preference;
 
     const/4 v2, 0x0
 
     invoke-virtual {v1, v2}, Landroid/preference/Preference;->setPersistent(Z)V
 
     .line 78
-    iget-object v1, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->DD:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->DD:Landroid/preference/Preference;
 
     const v2, 0x7f04017d
 
     invoke-virtual {v1, v2}, Landroid/preference/Preference;->setLayoutResource(I)V
 
     .line 79
-    iget-object v1, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->DD:Landroid/preference/Preference;
+    iget-object v1, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->DD:Landroid/preference/Preference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
@@ -346,14 +346,14 @@
 
     .prologue
     .line 122
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onDestroyView()V
+    invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onDestroyView()V
 
     .line 124
-    iget-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings/widget/K;
+    iget-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings_ex/widget/K;
 
     const/4 v1, 0x0
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/K;->a(Lcom/android/settings/widget/L;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/widget/K;->a(Lcom/android/settings_ex/widget/L;)V
 
     .line 127
     return-void
@@ -366,17 +366,17 @@
     const/4 v1, 0x1
 
     .line 201
-    iget-boolean v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->Qm:Z
+    iget-boolean v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->Qm:Z
 
     if-eqz v0, :cond_0
 
     .line 203
-    invoke-direct {p0, v1}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->setBackupEnabled(Z)V
+    invoke-direct {p0, v1}, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->setBackupEnabled(Z)V
 
     .line 205
-    iget-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings/widget/K;
+    iget-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings_ex/widget/K;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/K;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/widget/K;->setChecked(Z)V
 
     .line 208
     :cond_0
@@ -388,11 +388,11 @@
 
     .prologue
     .line 173
-    iget-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->Ql:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->Ql:Landroid/app/Dialog;
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->Ql:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->Ql:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->isShowing()Z
 
@@ -401,7 +401,7 @@
     if-eqz v0, :cond_0
 
     .line 174
-    iget-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->Ql:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->Ql:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->dismiss()V
 
@@ -409,10 +409,10 @@
     :cond_0
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->Ql:Landroid/app/Dialog;
+    iput-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->Ql:Landroid/app/Dialog;
 
     .line 177
-    invoke-super {p0}, Lcom/android/settings/SettingsPreferenceFragment;->onStop()V
+    invoke-super {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onStop()V
 
     .line 178
     return-void
@@ -425,51 +425,51 @@
     const/4 v1, 0x0
 
     .line 84
-    invoke-super {p0, p1, p2}, Lcom/android/settings/SettingsPreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onViewCreated(Landroid/view/View;Landroid/os/Bundle;)V
 
     .line 86
-    invoke-virtual {p0}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hp;
+    check-cast v0, Lcom/android/settings_ex/hp;
 
     .line 90
-    new-instance v0, Lcom/android/settings/widget/K;
+    new-instance v0, Lcom/android/settings_ex/widget/K;
 
-    invoke-virtual {p0}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    invoke-direct {v0, v2}, Lcom/android/settings/widget/K;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v2}, Lcom/android/settings_ex/widget/K;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings/widget/K;
+    iput-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings_ex/widget/K;
 
     .line 91
-    iget-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings/widget/K;
+    iget-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings_ex/widget/K;
 
     const v2, 0x7f0c1011
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/widget/K;->setTitle(I)V
+    invoke-virtual {v0, v2}, Lcom/android/settings_ex/widget/K;->setTitle(I)V
 
     .line 92
-    iget-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings/widget/K;
+    iget-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings_ex/widget/K;
 
     const/4 v2, -0x1
 
-    invoke-virtual {v0, v2}, Lcom/android/settings/widget/K;->setOrder(I)V
+    invoke-virtual {v0, v2}, Lcom/android/settings_ex/widget/K;->setOrder(I)V
 
     .line 93
-    invoke-virtual {p0}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v2, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings/widget/K;
+    iget-object v2, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings_ex/widget/K;
 
     invoke-virtual {v0, v2}, Landroid/preference/PreferenceScreen;->addPreference(Landroid/preference/Preference;)Z
 
     .line 100
-    invoke-virtual {p0}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -482,7 +482,7 @@
     if-eqz v0, :cond_0
 
     .line 101
-    iget-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->DD:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->DD:Landroid/preference/Preference;
 
     const v2, 0x7f0c0810
 
@@ -491,7 +491,7 @@
     .line 106
     :goto_0
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->jc:Landroid/app/backup/IBackupManager;
+    iget-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->jc:Landroid/app/backup/IBackupManager;
 
     if-nez v0, :cond_1
 
@@ -499,15 +499,15 @@
 
     .line 110
     :goto_1
-    iget-object v2, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings/widget/K;
+    iget-object v2, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings_ex/widget/K;
 
-    invoke-virtual {v2, v0}, Lcom/android/settings/widget/K;->setChecked(Z)V
+    invoke-virtual {v2, v0}, Lcom/android/settings_ex/widget/K;->setChecked(Z)V
     :try_end_0
     .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
 
     .line 117
     :goto_2
-    invoke-virtual {p0}, Lcom/android/settings/backup/ToggleBackupSettingFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -520,7 +520,7 @@
 
     .line 103
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->DD:Landroid/preference/Preference;
+    iget-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->DD:Landroid/preference/Preference;
 
     const v2, 0x7f0c0800
 
@@ -531,7 +531,7 @@
     .line 106
     :cond_1
     :try_start_1
-    iget-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->jc:Landroid/app/backup/IBackupManager;
+    iget-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->jc:Landroid/app/backup/IBackupManager;
 
     invoke-interface {v0}, Landroid/app/backup/IBackupManager;->isBackupEnabled()Z
     :try_end_1
@@ -546,9 +546,9 @@
     move-exception v0
 
     .line 115
-    iget-object v0, p0, Lcom/android/settings/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings/widget/K;
+    iget-object v0, p0, Lcom/android/settings_ex/backup/ToggleBackupSettingFragment;->DC:Lcom/android/settings_ex/widget/K;
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/widget/K;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/widget/K;->setChecked(Z)V
 
     goto :goto_2
 .end method

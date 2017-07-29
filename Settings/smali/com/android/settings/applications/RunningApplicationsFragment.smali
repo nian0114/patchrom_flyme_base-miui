@@ -1,31 +1,31 @@
-.class public Lcom/android/settings/applications/RunningApplicationsFragment;
-.super Lcom/android/settings/BaseFragment;
+.class public Lcom/android/settings_ex/applications/RunningApplicationsFragment;
+.super Lcom/android/settings_ex/BaseFragment;
 .source "RunningApplicationsFragment.java"
 
 # interfaces
 .implements Landroid/widget/AbsListView$RecyclerListener;
 .implements Landroid/widget/AdapterView$OnItemClickListener;
-.implements Lcom/android/settings/applications/RunningState$OnRefreshUiListener;
+.implements Lcom/android/settings_ex/applications/RunningState$OnRefreshUiListener;
 
 
 # instance fields
 .field private HV:I
 
-.field private Hz:Lcom/android/settings/applications/RunningState;
+.field private Hz:Lcom/android/settings_ex/applications/RunningState;
 
-.field private Ko:Lcom/android/settings/applications/ApplicationsContainer;
+.field private Ko:Lcom/android/settings_ex/applications/ApplicationsContainer;
 
 .field final MU:Ljava/util/HashMap;
 
 .field private MV:Landroid/app/ActivityManager;
 
-.field private MW:Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;
+.field private MW:Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;
 
 .field MX:Ljava/lang/Runnable;
 
 .field MY:J
 
-.field MZ:Lcom/android/settings/applications/RunningState$BaseItem;
+.field MZ:Lcom/android/settings_ex/applications/RunningState$BaseItem;
 
 .field Na:Lcom/android/internal/util/MemInfoReader;
 
@@ -64,14 +64,14 @@
     const-wide/16 v2, -0x1
 
     .line 30
-    invoke-direct {p0}, Lcom/android/settings/BaseFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ex/BaseFragment;-><init>()V
 
     .line 33
     new-instance v0, Ljava/util/HashMap;
 
     invoke-direct {v0}, Ljava/util/HashMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MU:Ljava/util/HashMap;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MU:Ljava/util/HashMap;
 
     .line 46
     new-instance v0, Ljava/lang/StringBuilder;
@@ -80,51 +80,51 @@
 
     invoke-direct {v0, v1}, Ljava/lang/StringBuilder;-><init>(I)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->mBuilder:Ljava/lang/StringBuilder;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->mBuilder:Ljava/lang/StringBuilder;
 
     .line 47
     new-instance v0, Lcom/android/internal/util/MemInfoReader;
 
     invoke-direct {v0}, Lcom/android/internal/util/MemInfoReader;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Na:Lcom/android/internal/util/MemInfoReader;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Na:Lcom/android/internal/util/MemInfoReader;
 
     .line 49
-    iput v4, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Nb:I
+    iput v4, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Nb:I
 
     .line 50
-    iput v4, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Nc:I
+    iput v4, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Nc:I
 
     .line 51
-    iput v4, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Nd:I
+    iput v4, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Nd:I
 
     .line 52
-    iput-wide v2, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Ne:J
+    iput-wide v2, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Ne:J
 
     .line 53
-    iput-wide v2, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Nf:J
+    iput-wide v2, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Nf:J
 
     .line 54
-    iput-wide v2, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Ng:J
+    iput-wide v2, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Ng:J
 
     .line 55
-    iput-wide v2, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Nh:J
+    iput-wide v2, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Nh:J
 
     .line 127
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/applications/RunningApplicationsFragment;)Landroid/content/Context;
+.method static synthetic a(Lcom/android/settings_ex/applications/RunningApplicationsFragment;)Landroid/content/Context;
     .locals 1
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->mContext:Landroid/content/Context;
 
     return-object v0
 .end method
 
-.method private a(Lcom/android/settings/applications/RunningState$MergedItem;)V
+.method private a(Lcom/android/settings_ex/applications/RunningState$MergedItem;)V
     .locals 3
 
     .prologue
@@ -143,52 +143,52 @@
     .line 252
     const-string v1, "uid"
 
-    iget-object v2, p1, Lcom/android/settings/applications/RunningState$MergedItem;->OW:Lcom/android/settings/applications/RunningState$ProcessItem;
+    iget-object v2, p1, Lcom/android/settings_ex/applications/RunningState$MergedItem;->OW:Lcom/android/settings_ex/applications/RunningState$ProcessItem;
 
-    iget v2, v2, Lcom/android/settings/applications/RunningState$ProcessItem;->mUid:I
+    iget v2, v2, Lcom/android/settings_ex/applications/RunningState$ProcessItem;->mUid:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 253
     const-string v1, "user_id"
 
-    iget-object v2, p1, Lcom/android/settings/applications/RunningState$MergedItem;->OW:Lcom/android/settings/applications/RunningState$ProcessItem;
+    iget-object v2, p1, Lcom/android/settings_ex/applications/RunningState$MergedItem;->OW:Lcom/android/settings_ex/applications/RunningState$ProcessItem;
 
-    iget v2, v2, Lcom/android/settings/applications/RunningState$ProcessItem;->mUserId:I
+    iget v2, v2, Lcom/android/settings_ex/applications/RunningState$ProcessItem;->mUserId:I
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 254
     const-string v1, "process"
 
-    iget-object v2, p1, Lcom/android/settings/applications/RunningState$MergedItem;->OW:Lcom/android/settings/applications/RunningState$ProcessItem;
+    iget-object v2, p1, Lcom/android/settings_ex/applications/RunningState$MergedItem;->OW:Lcom/android/settings_ex/applications/RunningState$ProcessItem;
 
-    iget-object v2, v2, Lcom/android/settings/applications/RunningState$ProcessItem;->mProcessName:Ljava/lang/String;
+    iget-object v2, v2, Lcom/android/settings_ex/applications/RunningState$ProcessItem;->mProcessName:Ljava/lang/String;
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
 
     .line 255
     const-string v1, "background"
 
-    iget-object v2, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MW:Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;
+    iget-object v2, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MW:Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;
 
-    iget-boolean v2, v2, Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;->Nj:Z
+    iget-boolean v2, v2, Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;->Nj:Z
 
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 256
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/RunningApplicationsFragment;->startActivity(Landroid/content/Intent;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->startActivity(Landroid/content/Intent;)V
 
     .line 257
     return-void
 .end method
 
-.method static synthetic b(Lcom/android/settings/applications/RunningApplicationsFragment;)Ljava/lang/StringBuilder;
+.method static synthetic b(Lcom/android/settings_ex/applications/RunningApplicationsFragment;)Ljava/lang/StringBuilder;
     .locals 1
 
     .prologue
     .line 30
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->mBuilder:Ljava/lang/StringBuilder;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->mBuilder:Ljava/lang/StringBuilder;
 
     return-object v0
 .end method
@@ -208,7 +208,7 @@
 
     .line 276
     :pswitch_0
-    invoke-virtual {p0}, Lcom/android/settings/applications/RunningApplicationsFragment;->lp()V
+    invoke-virtual {p0}, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->lp()V
 
     goto :goto_0
 
@@ -216,10 +216,10 @@
     :pswitch_1
     const/4 v0, 0x0
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/RunningApplicationsFragment;->at(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->at(Z)V
 
     .line 280
-    invoke-virtual {p0}, Lcom/android/settings/applications/RunningApplicationsFragment;->lp()V
+    invoke-virtual {p0}, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->lp()V
 
     goto :goto_0
 
@@ -227,10 +227,10 @@
     :pswitch_2
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/RunningApplicationsFragment;->at(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->at(Z)V
 
     .line 284
-    invoke-virtual {p0}, Lcom/android/settings/applications/RunningApplicationsFragment;->lp()V
+    invoke-virtual {p0}, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->lp()V
 
     goto :goto_0
 
@@ -253,52 +253,52 @@
     if-eqz p1, :cond_0
 
     .line 291
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->bz:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->bz:Landroid/widget/ListView;
 
     invoke-virtual {v0}, Landroid/widget/ListView;->getAdapter()Landroid/widget/ListAdapter;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;
+    check-cast v0, Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;
 
-    check-cast v0, Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;
+    check-cast v0, Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;
 
     .line 292
-    invoke-virtual {v0}, Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;->lq()V
+    invoke-virtual {v0}, Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;->lq()V
 
     .line 293
-    invoke-virtual {v0}, Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;->notifyDataSetChanged()V
 
     .line 296
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MX:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MX:Ljava/lang/Runnable;
 
     if-eqz v0, :cond_1
 
     .line 297
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MX:Ljava/lang/Runnable;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MX:Ljava/lang/Runnable;
 
     invoke-interface {v0}, Ljava/lang/Runnable;->run()V
 
     .line 298
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MX:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MX:Ljava/lang/Runnable;
 
     .line 303
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Na:Lcom/android/internal/util/MemInfoReader;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Na:Lcom/android/internal/util/MemInfoReader;
 
     invoke-virtual {v0}, Lcom/android/internal/util/MemInfoReader;->readMemInfo()V
 
     .line 304
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Na:Lcom/android/internal/util/MemInfoReader;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Na:Lcom/android/internal/util/MemInfoReader;
 
     invoke-virtual {v0}, Lcom/android/internal/util/MemInfoReader;->getFreeSize()J
 
     move-result-wide v0
 
-    iget-object v4, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Na:Lcom/android/internal/util/MemInfoReader;
+    iget-object v4, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Na:Lcom/android/internal/util/MemInfoReader;
 
     invoke-virtual {v4}, Lcom/android/internal/util/MemInfoReader;->getCachedSize()J
 
@@ -306,7 +306,7 @@
 
     add-long/2addr v0, v4
 
-    iget-wide v4, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MY:J
+    iget-wide v4, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MY:J
 
     sub-long/2addr v0, v4
 
@@ -319,33 +319,33 @@
 
     .line 310
     :cond_2
-    iget-object v2, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings/applications/RunningState;
+    iget-object v2, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings_ex/applications/RunningState;
 
-    iget-object v2, v2, Lcom/android/settings/applications/RunningState;->mLock:Ljava/lang/Object;
+    iget-object v2, v2, Lcom/android/settings_ex/applications/RunningState;->mLock:Ljava/lang/Object;
 
     monitor-enter v2
 
     .line 311
     :try_start_0
-    iget v3, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Nb:I
+    iget v3, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Nb:I
 
-    iget-object v4, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings/applications/RunningState;
+    iget-object v4, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings_ex/applications/RunningState;
 
-    iget v4, v4, Lcom/android/settings/applications/RunningState;->OA:I
+    iget v4, v4, Lcom/android/settings_ex/applications/RunningState;->OA:I
 
     if-ne v3, v4, :cond_3
 
-    iget-wide v4, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Ne:J
+    iget-wide v4, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Ne:J
 
-    iget-object v3, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings/applications/RunningState;
+    iget-object v3, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings_ex/applications/RunningState;
 
-    iget-wide v6, v3, Lcom/android/settings/applications/RunningState;->OB:J
+    iget-wide v6, v3, Lcom/android/settings_ex/applications/RunningState;->OB:J
 
     cmp-long v3, v4, v6
 
     if-nez v3, :cond_3
 
-    iget-wide v4, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Nh:J
+    iget-wide v4, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Nh:J
 
     cmp-long v3, v4, v0
 
@@ -353,55 +353,55 @@
 
     .line 314
     :cond_3
-    iget-object v3, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings/applications/RunningState;
+    iget-object v3, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings_ex/applications/RunningState;
 
-    iget v3, v3, Lcom/android/settings/applications/RunningState;->OA:I
+    iget v3, v3, Lcom/android/settings_ex/applications/RunningState;->OA:I
 
-    iput v3, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Nb:I
+    iput v3, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Nb:I
 
     .line 315
-    iget-object v3, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings/applications/RunningState;
+    iget-object v3, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings_ex/applications/RunningState;
 
-    iget-wide v4, v3, Lcom/android/settings/applications/RunningState;->OB:J
+    iget-wide v4, v3, Lcom/android/settings_ex/applications/RunningState;->OB:J
 
-    iput-wide v4, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Ne:J
+    iput-wide v4, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Ne:J
 
     .line 316
-    iput-wide v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Nh:J
+    iput-wide v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Nh:J
 
     .line 318
     :cond_4
-    iget v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Nc:I
+    iget v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Nc:I
 
-    iget-object v1, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings/applications/RunningState;
+    iget-object v1, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings_ex/applications/RunningState;
 
-    iget v1, v1, Lcom/android/settings/applications/RunningState;->OC:I
+    iget v1, v1, Lcom/android/settings_ex/applications/RunningState;->OC:I
 
     if-ne v0, v1, :cond_5
 
-    iget-wide v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Nf:J
+    iget-wide v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Nf:J
 
-    iget-object v3, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings/applications/RunningState;
+    iget-object v3, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings_ex/applications/RunningState;
 
-    iget-wide v4, v3, Lcom/android/settings/applications/RunningState;->OD:J
+    iget-wide v4, v3, Lcom/android/settings_ex/applications/RunningState;->OD:J
 
     cmp-long v0, v0, v4
 
     if-nez v0, :cond_5
 
-    iget v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Nd:I
+    iget v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Nd:I
 
-    iget-object v1, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings/applications/RunningState;
+    iget-object v1, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings_ex/applications/RunningState;
 
-    iget v1, v1, Lcom/android/settings/applications/RunningState;->OE:I
+    iget v1, v1, Lcom/android/settings_ex/applications/RunningState;->OE:I
 
     if-ne v0, v1, :cond_5
 
-    iget-wide v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Ng:J
+    iget-wide v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Ng:J
 
-    iget-object v3, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings/applications/RunningState;
+    iget-object v3, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings_ex/applications/RunningState;
 
-    iget-wide v4, v3, Lcom/android/settings/applications/RunningState;->OF:J
+    iget-wide v4, v3, Lcom/android/settings_ex/applications/RunningState;->OF:J
 
     cmp-long v0, v0, v4
 
@@ -409,32 +409,32 @@
 
     .line 322
     :cond_5
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings/applications/RunningState;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings_ex/applications/RunningState;
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState;->OC:I
+    iget v0, v0, Lcom/android/settings_ex/applications/RunningState;->OC:I
 
-    iput v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Nc:I
+    iput v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Nc:I
 
     .line 323
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings/applications/RunningState;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings_ex/applications/RunningState;
 
-    iget-wide v0, v0, Lcom/android/settings/applications/RunningState;->OD:J
+    iget-wide v0, v0, Lcom/android/settings_ex/applications/RunningState;->OD:J
 
-    iput-wide v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Nf:J
+    iput-wide v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Nf:J
 
     .line 324
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings/applications/RunningState;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings_ex/applications/RunningState;
 
-    iget v0, v0, Lcom/android/settings/applications/RunningState;->OE:I
+    iget v0, v0, Lcom/android/settings_ex/applications/RunningState;->OE:I
 
-    iput v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Nd:I
+    iput v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Nd:I
 
     .line 325
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings/applications/RunningState;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings_ex/applications/RunningState;
 
-    iget-wide v0, v0, Lcom/android/settings/applications/RunningState;->OF:J
+    iget-wide v0, v0, Lcom/android/settings_ex/applications/RunningState;->OF:J
 
-    iput-wide v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Ng:J
+    iput-wide v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Ng:J
 
     .line 327
     :cond_6
@@ -459,7 +459,7 @@
 
     .prologue
     .line 260
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MU:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MU:Ljava/util/HashMap;
 
     invoke-virtual {v0}, Ljava/util/HashMap;->values()Ljava/util/Collection;
 
@@ -482,10 +482,10 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/RunningProcessesView$ActiveItem;
+    check-cast v0, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;
 
     .line 263
-    iget-object v2, v0, Lcom/android/settings/applications/RunningProcessesView$ActiveItem;->mRootView:Landroid/view/View;
+    iget-object v2, v0, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;->mRootView:Landroid/view/View;
 
     invoke-virtual {v2}, Landroid/view/View;->getWindowToken()Landroid/os/IBinder;
 
@@ -500,13 +500,13 @@
 
     .line 268
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/applications/RunningApplicationsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v2
 
-    iget-object v3, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->mBuilder:Ljava/lang/StringBuilder;
+    iget-object v3, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->mBuilder:Ljava/lang/StringBuilder;
 
-    invoke-virtual {v0, v2, v3}, Lcom/android/settings/applications/RunningProcessesView$ActiveItem;->a(Landroid/content/Context;Ljava/lang/StringBuilder;)V
+    invoke-virtual {v0, v2, v3}, Lcom/android/settings_ex/applications/RunningProcessesView$ActiveItem;->a(Landroid/content/Context;Ljava/lang/StringBuilder;)V
 
     goto :goto_0
 
@@ -520,15 +520,15 @@
 
     .prologue
     .line 63
-    invoke-super {p0, p1}, Lcom/android/settings/BaseFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ex/BaseFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 65
     sget v0, Lmiui/R$style;->Theme_Light_Settings_NoTitle:I
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/RunningApplicationsFragment;->setThemeRes(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->setThemeRes(I)V
 
     .line 66
-    invoke-virtual {p0}, Lcom/android/settings/applications/RunningApplicationsFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -538,29 +538,29 @@
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->HV:I
+    iput v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->HV:I
 
     .line 67
     const/4 v0, 0x3
 
-    iget v1, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->HV:I
+    iget v1, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->HV:I
 
     if-ne v0, v1, :cond_0
 
     const/4 v0, 0x1
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Ni:Z
+    iput-boolean v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Ni:Z
 
     .line 69
-    invoke-virtual {p0}, Lcom/android/settings/applications/RunningApplicationsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->mContext:Landroid/content/Context;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->mContext:Landroid/content/Context;
 
     .line 71
-    invoke-virtual {p0}, Lcom/android/settings/applications/RunningApplicationsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -568,7 +568,7 @@
 
     move-result-object v0
 
-    const-class v1, Lcom/android/settings/applications/ApplicationsContainer;
+    const-class v1, Lcom/android/settings_ex/applications/ApplicationsContainer;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -578,9 +578,9 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/ApplicationsContainer;
+    check-cast v0, Lcom/android/settings_ex/applications/ApplicationsContainer;
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Ko:Lcom/android/settings/applications/ApplicationsContainer;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Ko:Lcom/android/settings_ex/applications/ApplicationsContainer;
 
     .line 73
     return-void
@@ -597,12 +597,12 @@
 
     .prologue
     .line 103
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->mRootView:Landroid/view/View;
 
     if-eqz v0, :cond_0
 
     .line 104
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->mRootView:Landroid/view/View;
 
     .line 124
     :goto_0
@@ -610,7 +610,7 @@
 
     .line 106
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/applications/RunningApplicationsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -622,18 +622,18 @@
 
     check-cast v0, Landroid/app/ActivityManager;
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MV:Landroid/app/ActivityManager;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MV:Landroid/app/ActivityManager;
 
     .line 107
-    invoke-virtual {p0}, Lcom/android/settings/applications/RunningApplicationsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/applications/RunningState;->aq(Landroid/content/Context;)Lcom/android/settings/applications/RunningState;
+    invoke-static {v0}, Lcom/android/settings_ex/applications/RunningState;->aq(Landroid/content/Context;)Lcom/android/settings_ex/applications/RunningState;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings/applications/RunningState;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings_ex/applications/RunningState;
 
     .line 109
     const v0, 0x7f0400a4
@@ -644,10 +644,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->mRootView:Landroid/view/View;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->mRootView:Landroid/view/View;
 
     .line 110
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->mRootView:Landroid/view/View;
 
     const v1, 0x102000a
 
@@ -657,10 +657,10 @@
 
     check-cast v0, Landroid/widget/ListView;
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->bz:Landroid/widget/ListView;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->bz:Landroid/widget/ListView;
 
     .line 111
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->mRootView:Landroid/view/View;
 
     const v1, 0x1020004
 
@@ -672,43 +672,43 @@
     if-eqz v0, :cond_1
 
     .line 113
-    iget-object v1, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->bz:Landroid/widget/ListView;
+    iget-object v1, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->bz:Landroid/widget/ListView;
 
     invoke-virtual {v1, v0}, Landroid/widget/ListView;->setEmptyView(Landroid/view/View;)V
 
     .line 115
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->bz:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->bz:Landroid/widget/ListView;
 
     invoke-virtual {v0, p0}, Landroid/widget/ListView;->setOnItemClickListener(Landroid/widget/AdapterView$OnItemClickListener;)V
 
     .line 116
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->bz:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->bz:Landroid/widget/ListView;
 
     invoke-virtual {v0, p0}, Landroid/widget/ListView;->setRecyclerListener(Landroid/widget/AbsListView$RecyclerListener;)V
 
     .line 117
-    new-instance v0, Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;
+    new-instance v0, Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;
 
-    iget-object v1, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings/applications/RunningState;
+    iget-object v1, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings_ex/applications/RunningState;
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;-><init>(Lcom/android/settings/applications/RunningApplicationsFragment;Lcom/android/settings/applications/RunningState;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;-><init>(Lcom/android/settings_ex/applications/RunningApplicationsFragment;Lcom/android/settings_ex/applications/RunningState;)V
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MW:Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MW:Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;
 
     .line 118
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->bz:Landroid/widget/ListView;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->bz:Landroid/widget/ListView;
 
-    iget-object v1, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MW:Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;
+    iget-object v1, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MW:Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;
 
     invoke-virtual {v0, v1}, Landroid/widget/ListView;->setAdapter(Landroid/widget/ListAdapter;)V
 
     .line 119
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MW:Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MW:Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;
 
-    iget-boolean v1, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Ni:Z
+    iget-boolean v1, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Ni:Z
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;->au(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;->au(Z)V
 
     .line 121
     new-instance v0, Landroid/app/ActivityManager$MemoryInfo;
@@ -716,17 +716,17 @@
     invoke-direct {v0}, Landroid/app/ActivityManager$MemoryInfo;-><init>()V
 
     .line 122
-    iget-object v1, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MV:Landroid/app/ActivityManager;
+    iget-object v1, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MV:Landroid/app/ActivityManager;
 
     invoke-virtual {v1, v0}, Landroid/app/ActivityManager;->getMemoryInfo(Landroid/app/ActivityManager$MemoryInfo;)V
 
     .line 123
     iget-wide v0, v0, Landroid/app/ActivityManager$MemoryInfo;->secondaryServerThreshold:J
 
-    iput-wide v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MY:J
+    iput-wide v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MY:J
 
     .line 124
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->mRootView:Landroid/view/View;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->mRootView:Landroid/view/View;
 
     goto :goto_0
 .end method
@@ -747,17 +747,17 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/applications/RunningState$MergedItem;
+    check-cast v0, Lcom/android/settings_ex/applications/RunningState$MergedItem;
 
     .line 233
-    iput-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MZ:Lcom/android/settings/applications/RunningState$BaseItem;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MZ:Lcom/android/settings_ex/applications/RunningState$BaseItem;
 
     .line 234
-    invoke-virtual {p0}, Lcom/android/settings/applications/RunningApplicationsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    instance-of v1, v1, Lcom/android/settings/MiuiSettings;
+    instance-of v1, v1, Lcom/android/settings_ex/MiuiSettings;
 
     if-eqz v1, :cond_0
 
@@ -769,27 +769,27 @@
     .line 236
     const-string v1, "uid"
 
-    iget-object v2, v0, Lcom/android/settings/applications/RunningState$MergedItem;->OW:Lcom/android/settings/applications/RunningState$ProcessItem;
+    iget-object v2, v0, Lcom/android/settings_ex/applications/RunningState$MergedItem;->OW:Lcom/android/settings_ex/applications/RunningState$ProcessItem;
 
-    iget v2, v2, Lcom/android/settings/applications/RunningState$ProcessItem;->mUid:I
+    iget v2, v2, Lcom/android/settings_ex/applications/RunningState$ProcessItem;->mUid:I
 
     invoke-virtual {v4, v1, v2}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 237
     const-string v1, "process"
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$MergedItem;->OW:Lcom/android/settings/applications/RunningState$ProcessItem;
+    iget-object v0, v0, Lcom/android/settings_ex/applications/RunningState$MergedItem;->OW:Lcom/android/settings_ex/applications/RunningState$ProcessItem;
 
-    iget-object v0, v0, Lcom/android/settings/applications/RunningState$ProcessItem;->mProcessName:Ljava/lang/String;
+    iget-object v0, v0, Lcom/android/settings_ex/applications/RunningState$ProcessItem;->mProcessName:Ljava/lang/String;
 
     invoke-virtual {v4, v1, v0}, Landroid/os/Bundle;->putString(Ljava/lang/String;Ljava/lang/String;)V
 
     .line 238
     const-string v0, "background"
 
-    iget-object v1, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MW:Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;
+    iget-object v1, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MW:Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;
 
-    iget-boolean v1, v1, Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;->Nj:Z
+    iget-boolean v1, v1, Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;->Nj:Z
 
     invoke-virtual {v4, v0, v1}, Landroid/os/Bundle;->putBoolean(Ljava/lang/String;Z)V
 
@@ -801,7 +801,7 @@
     invoke-virtual {v4, v0, v1}, Landroid/os/Bundle;->putInt(Ljava/lang/String;I)V
 
     .line 240
-    const-class v0, Lcom/android/settings/applications/RunningServiceDetails;
+    const-class v0, Lcom/android/settings_ex/applications/RunningServiceDetails;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -815,7 +815,7 @@
 
     move-object v1, p0
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/applications/RunningApplicationsFragment;->a(Lmiui/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->a(Lmiui/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
 
     .line 245
     :goto_0
@@ -823,7 +823,7 @@
 
     .line 243
     :cond_0
-    invoke-direct {p0, v0}, Lcom/android/settings/applications/RunningApplicationsFragment;->a(Lcom/android/settings/applications/RunningState$MergedItem;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->a(Lcom/android/settings_ex/applications/RunningState$MergedItem;)V
 
     goto :goto_0
 .end method
@@ -833,7 +833,7 @@
 
     .prologue
     .line 226
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MU:Ljava/util/HashMap;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MU:Ljava/util/HashMap;
 
     invoke-virtual {v0, p1}, Ljava/util/HashMap;->remove(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -846,17 +846,17 @@
 
     .prologue
     .line 90
-    invoke-super {p0}, Lcom/android/settings/BaseFragment;->onPause()V
+    invoke-super {p0}, Lcom/android/settings_ex/BaseFragment;->onPause()V
 
     .line 91
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Ko:Lcom/android/settings/applications/ApplicationsContainer;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Ko:Lcom/android/settings_ex/applications/ApplicationsContainer;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/applications/ApplicationsContainer;->b(Lcom/android/settings/applications/RunningState$OnRefreshUiListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ex/applications/ApplicationsContainer;->b(Lcom/android/settings_ex/applications/RunningState$OnRefreshUiListener;)V
 
     .line 92
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MX:Ljava/lang/Runnable;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MX:Ljava/lang/Runnable;
 
     .line 93
     return-void
@@ -867,27 +867,27 @@
 
     .prologue
     .line 77
-    invoke-super {p0}, Lcom/android/settings/BaseFragment;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ex/BaseFragment;->onResume()V
 
     .line 78
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Ko:Lcom/android/settings/applications/ApplicationsContainer;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Ko:Lcom/android/settings_ex/applications/ApplicationsContainer;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/applications/ApplicationsContainer;->a(Lcom/android/settings/applications/RunningState$OnRefreshUiListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ex/applications/ApplicationsContainer;->a(Lcom/android/settings_ex/applications/RunningState$OnRefreshUiListener;)V
 
     .line 79
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings/applications/RunningState;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Hz:Lcom/android/settings_ex/applications/RunningState;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/RunningState;->hasData()Z
+    invoke-virtual {v0}, Lcom/android/settings_ex/applications/RunningState;->hasData()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
-    iget v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->HV:I
+    iget v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->HV:I
 
-    iget-object v1, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Ko:Lcom/android/settings/applications/ApplicationsContainer;
+    iget-object v1, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Ko:Lcom/android/settings_ex/applications/ApplicationsContainer;
 
-    invoke-virtual {v1}, Lcom/android/settings/applications/ApplicationsContainer;->kh()I
+    invoke-virtual {v1}, Lcom/android/settings_ex/applications/ApplicationsContainer;->kh()I
 
     move-result v1
 
@@ -896,13 +896,13 @@
     .line 82
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/RunningApplicationsFragment;->at(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->at(Z)V
 
     .line 85
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MW:Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MW:Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;->notifyDataSetChanged()V
 
     .line 86
     return-void
@@ -913,16 +913,16 @@
 
     .prologue
     .line 96
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MW:Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MW:Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;
 
     if-eqz v0, :cond_0
 
     .line 97
-    iget-object v0, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->MW:Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->MW:Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;
 
-    iget-boolean v1, p0, Lcom/android/settings/applications/RunningApplicationsFragment;->Ni:Z
+    iget-boolean v1, p0, Lcom/android/settings_ex/applications/RunningApplicationsFragment;->Ni:Z
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/applications/RunningApplicationsFragment$ServiceListAdapter;->au(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/applications/RunningApplicationsFragment$ServiceListAdapter;->au(Z)V
 
     .line 99
     :cond_0

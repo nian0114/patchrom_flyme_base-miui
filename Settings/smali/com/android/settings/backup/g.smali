@@ -1,4 +1,4 @@
-.class public abstract Lcom/android/settings/backup/g;
+.class public abstract Lcom/android/settings_ex/backup/g;
 .super Ljava/lang/Object;
 .source "AgentBase.java"
 
@@ -16,7 +16,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 13
-    iput-object p1, p0, Lcom/android/settings/backup/g;->PN:Lmiui/app/backup/FullBackupAgent;
+    iput-object p1, p0, Lcom/android/settings_ex/backup/g;->PN:Lmiui/app/backup/FullBackupAgent;
 
     .line 14
     return-void

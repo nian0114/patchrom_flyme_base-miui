@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hy;
+.class Lcom/android/settings_ex/hy;
 .super Ljava/lang/Object;
 .source "SettingsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic zR:Lcom/android/settings/SettingsFragment;
+.field final synthetic zR:Lcom/android/settings_ex/SettingsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SettingsFragment;)V
+.method constructor <init>(Lcom/android/settings_ex/SettingsFragment;)V
     .locals 0
 
     .prologue
     .line 143
-    iput-object p1, p0, Lcom/android/settings/hy;->zR:Lcom/android/settings/SettingsFragment;
+    iput-object p1, p0, Lcom/android/settings_ex/hy;->zR:Lcom/android/settings_ex/SettingsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,15 +30,15 @@
 
     .prologue
     .line 146
-    iget-object v0, p0, Lcom/android/settings/hy;->zR:Lcom/android/settings/SettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ex/hy;->zR:Lcom/android/settings_ex/SettingsFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/SettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ex/SettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/hy;->zR:Lcom/android/settings/SettingsFragment;
+    iget-object v1, p0, Lcom/android/settings_ex/hy;->zR:Lcom/android/settings_ex/SettingsFragment;
 
-    invoke-static {v1}, Lcom/android/settings/SettingsFragment;->a(Lcom/android/settings/SettingsFragment;)Lmiui/view/SearchActionMode$Callback;
+    invoke-static {v1}, Lcom/android/settings_ex/SettingsFragment;->a(Lcom/android/settings_ex/SettingsFragment;)Lmiui/view/SearchActionMode$Callback;
 
     move-result-object v1
 

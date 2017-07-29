@@ -1,4 +1,4 @@
-.class Lcom/android/settings/cloudbackup/g;
+.class Lcom/android/settings_ex/cloudbackup/g;
 .super Ljava/lang/Object;
 .source "SoundAndVibrateCloudBackupHelper.java"
 
@@ -151,7 +151,7 @@
     if-eqz v0, :cond_0
 
     .line 65
-    invoke-static {p0}, Lcom/android/settings/MiuiSoundSettings;->I(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    invoke-static {p0}, Lcom/android/settings_ex/MiuiSoundSettings;->I(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
 
@@ -356,7 +356,7 @@
     if-eqz v0, :cond_0
 
     .line 97
-    invoke-static {p0}, Lcom/android/settings/MiuiSoundSettings;->I(Landroid/content/Context;)Landroid/content/SharedPreferences;
+    invoke-static {p0}, Lcom/android/settings_ex/MiuiSoundSettings;->I(Landroid/content/Context;)Landroid/content/SharedPreferences;
 
     move-result-object v0
 

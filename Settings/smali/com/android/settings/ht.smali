@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ht;
+.class Lcom/android/settings_ex/ht;
 .super Ljava/lang/Object;
 .source "SettingsActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic zD:Lcom/android/settings/hp;
+.field final synthetic zD:Lcom/android/settings_ex/hp;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/hp;)V
+.method constructor <init>(Lcom/android/settings_ex/hp;)V
     .locals 0
 
     .prologue
     .line 734
-    iput-object p1, p0, Lcom/android/settings/ht;->zD:Lcom/android/settings/hp;
+    iput-object p1, p0, Lcom/android/settings_ex/ht;->zD:Lcom/android/settings_ex/hp;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,22 +30,22 @@
 
     .prologue
     .line 736
-    iget-object v0, p0, Lcom/android/settings/ht;->zD:Lcom/android/settings/hp;
+    iget-object v0, p0, Lcom/android/settings_ex/ht;->zD:Lcom/android/settings_ex/hp;
 
     const/4 v1, -0x1
 
-    iget-object v2, p0, Lcom/android/settings/ht;->zD:Lcom/android/settings/hp;
+    iget-object v2, p0, Lcom/android/settings_ex/ht;->zD:Lcom/android/settings_ex/hp;
 
-    invoke-virtual {v2}, Lcom/android/settings/hp;->hN()Landroid/content/Intent;
+    invoke-virtual {v2}, Lcom/android/settings_ex/hp;->hN()Landroid/content/Intent;
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/hp;->setResult(ILandroid/content/Intent;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ex/hp;->setResult(ILandroid/content/Intent;)V
 
     .line 737
-    iget-object v0, p0, Lcom/android/settings/ht;->zD:Lcom/android/settings/hp;
+    iget-object v0, p0, Lcom/android/settings_ex/ht;->zD:Lcom/android/settings_ex/hp;
 
-    invoke-virtual {v0}, Lcom/android/settings/hp;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ex/hp;->finish()V
 
     .line 738
     return-void

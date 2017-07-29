@@ -1,4 +1,4 @@
-.class Lcom/android/settings/il;
+.class Lcom/android/settings_ex/il;
 .super Ljava/lang/Object;
 .source "TrustedCredentialsSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic By:Lcom/android/settings/ij;
+.field final synthetic By:Lcom/android/settings_ex/ij;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ij;)V
+.method constructor <init>(Lcom/android/settings_ex/ij;)V
     .locals 0
 
     .prologue
     .line 700
-    iput-object p1, p0, Lcom/android/settings/il;->By:Lcom/android/settings/ij;
+    iput-object p1, p0, Lcom/android/settings_ex/il;->By:Lcom/android/settings_ex/ij;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

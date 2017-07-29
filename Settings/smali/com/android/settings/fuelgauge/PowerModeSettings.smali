@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fuelgauge/PowerModeSettings;
+.class public Lcom/android/settings_ex/fuelgauge/PowerModeSettings;
 .super Landroid/app/Activity;
 .source "PowerModeSettings.java"
 
@@ -20,12 +20,12 @@
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/fuelgauge/PowerModeSettings;)[Ljava/lang/CharSequence;
+.method static synthetic a(Lcom/android/settings_ex/fuelgauge/PowerModeSettings;)[Ljava/lang/CharSequence;
     .locals 1
 
     .prologue
     .line 17
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerModeSettings;->ZU:[Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerModeSettings;->ZU:[Ljava/lang/CharSequence;
 
     return-object v0
 .end method
@@ -38,7 +38,7 @@
     const v0, 0x7f0c0ea9
 
     .line 37
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerModeSettings;->getIntent()Landroid/content/Intent;
+    invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerModeSettings;->getIntent()Landroid/content/Intent;
 
     move-result-object v1
 
@@ -77,16 +77,16 @@
     move-result-object v0
 
     .line 45
-    invoke-virtual {p0, v0}, Lcom/android/settings/fuelgauge/PowerModeSettings;->findIndexOfValue(Ljava/lang/String;)I
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/fuelgauge/PowerModeSettings;->findIndexOfValue(Ljava/lang/String;)I
 
     move-result v0
 
     .line 46
-    iget-object v2, p0, Lcom/android/settings/fuelgauge/PowerModeSettings;->ZT:[Ljava/lang/CharSequence;
+    iget-object v2, p0, Lcom/android/settings_ex/fuelgauge/PowerModeSettings;->ZT:[Ljava/lang/CharSequence;
 
-    new-instance v3, Lcom/android/settings/fuelgauge/PowerModeSettings$1;
+    new-instance v3, Lcom/android/settings_ex/fuelgauge/PowerModeSettings$1;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/fuelgauge/PowerModeSettings$1;-><init>(Lcom/android/settings/fuelgauge/PowerModeSettings;)V
+    invoke-direct {v3, p0}, Lcom/android/settings_ex/fuelgauge/PowerModeSettings$1;-><init>(Lcom/android/settings_ex/fuelgauge/PowerModeSettings;)V
 
     invoke-virtual {v1, v2, v0, v3}, Landroid/app/AlertDialog$Builder;->setSingleChoiceItems([Ljava/lang/CharSequence;ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -103,9 +103,9 @@
     move-result-object v0
 
     .line 64
-    new-instance v1, Lcom/android/settings/fuelgauge/PowerModeSettings$2;
+    new-instance v1, Lcom/android/settings_ex/fuelgauge/PowerModeSettings$2;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/fuelgauge/PowerModeSettings$2;-><init>(Lcom/android/settings/fuelgauge/PowerModeSettings;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ex/fuelgauge/PowerModeSettings$2;-><init>(Lcom/android/settings_ex/fuelgauge/PowerModeSettings;)V
 
     invoke-virtual {v0, v1}, Landroid/app/Dialog;->setOnDismissListener(Landroid/content/DialogInterface$OnDismissListener;)V
 
@@ -122,12 +122,12 @@
     .line 73
     if-eqz p1, :cond_1
 
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerModeSettings;->ZU:[Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerModeSettings;->ZU:[Ljava/lang/CharSequence;
 
     if-eqz v0, :cond_1
 
     .line 74
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerModeSettings;->ZU:[Ljava/lang/CharSequence;
+    iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerModeSettings;->ZU:[Ljava/lang/CharSequence;
 
     array-length v0, v0
 
@@ -137,7 +137,7 @@
     if-ltz v0, :cond_1
 
     .line 75
-    iget-object v1, p0, Lcom/android/settings/fuelgauge/PowerModeSettings;->ZU:[Ljava/lang/CharSequence;
+    iget-object v1, p0, Lcom/android/settings_ex/fuelgauge/PowerModeSettings;->ZU:[Ljava/lang/CharSequence;
 
     aget-object v1, v1, v0
 
@@ -172,7 +172,7 @@
     invoke-super {p0, p1}, Landroid/app/Activity;->onCreate(Landroid/os/Bundle;)V
 
     .line 24
-    invoke-virtual {p0}, Lcom/android/settings/fuelgauge/PowerModeSettings;->getResources()Landroid/content/res/Resources;
+    invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/PowerModeSettings;->getResources()Landroid/content/res/Resources;
 
     move-result-object v0
 
@@ -182,15 +182,15 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/PowerModeSettings;->ZT:[Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerModeSettings;->ZT:[Ljava/lang/CharSequence;
 
     .line 25
     sget-object v0, Landroid/provider/MiuiSettings$System;->POWER_MODE_VALUES:[Ljava/lang/String;
 
-    iput-object v0, p0, Lcom/android/settings/fuelgauge/PowerModeSettings;->ZU:[Ljava/lang/CharSequence;
+    iput-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerModeSettings;->ZU:[Ljava/lang/CharSequence;
 
     .line 26
-    invoke-direct {p0}, Lcom/android/settings/fuelgauge/PowerModeSettings;->ra()V
+    invoke-direct {p0}, Lcom/android/settings_ex/fuelgauge/PowerModeSettings;->ra()V
 
     .line 27
     return-void
@@ -206,7 +206,7 @@
     .line 32
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/fuelgauge/PowerModeSettings;->setVisible(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/fuelgauge/PowerModeSettings;->setVisible(Z)V
 
     .line 33
     return-void

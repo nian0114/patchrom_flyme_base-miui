@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/AppStateNotificationBridge;
-.super Lcom/android/settings/applications/AppStateBaseBridge;
+.class public Lcom/android/settings_ex/applications/AppStateNotificationBridge;
+.super Lcom/android/settings_ex/applications/AppStateBaseBridge;
 .source "AppStateNotificationBridge.java"
 
 
@@ -14,7 +14,7 @@
 
 
 # instance fields
-.field private final Gz:Lcom/android/settings/notification/NotificationBackend;
+.field private final Gz:Lcom/android/settings_ex/notification/NotificationBackend;
 
 .field private final i:Landroid/content/pm/PackageManager;
 
@@ -25,48 +25,48 @@
 
     .prologue
     .line 59
-    new-instance v0, Lcom/android/settings/applications/AppStateNotificationBridge$1;
+    new-instance v0, Lcom/android/settings_ex/applications/AppStateNotificationBridge$1;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/AppStateNotificationBridge$1;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ex/applications/AppStateNotificationBridge$1;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/AppStateNotificationBridge;->GA:Lcom/android/b/a/p;
+    sput-object v0, Lcom/android/settings_ex/applications/AppStateNotificationBridge;->GA:Lcom/android/b/a/p;
 
     .line 70
-    new-instance v0, Lcom/android/settings/applications/AppStateNotificationBridge$2;
+    new-instance v0, Lcom/android/settings_ex/applications/AppStateNotificationBridge$2;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/AppStateNotificationBridge$2;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ex/applications/AppStateNotificationBridge$2;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/AppStateNotificationBridge;->GB:Lcom/android/b/a/p;
+    sput-object v0, Lcom/android/settings_ex/applications/AppStateNotificationBridge;->GB:Lcom/android/b/a/p;
 
     .line 81
-    new-instance v0, Lcom/android/settings/applications/AppStateNotificationBridge$3;
+    new-instance v0, Lcom/android/settings_ex/applications/AppStateNotificationBridge$3;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/AppStateNotificationBridge$3;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ex/applications/AppStateNotificationBridge$3;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/AppStateNotificationBridge;->GC:Lcom/android/b/a/p;
+    sput-object v0, Lcom/android/settings_ex/applications/AppStateNotificationBridge;->GC:Lcom/android/b/a/p;
 
     .line 92
-    new-instance v0, Lcom/android/settings/applications/AppStateNotificationBridge$4;
+    new-instance v0, Lcom/android/settings_ex/applications/AppStateNotificationBridge$4;
 
-    invoke-direct {v0}, Lcom/android/settings/applications/AppStateNotificationBridge$4;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ex/applications/AppStateNotificationBridge$4;-><init>()V
 
-    sput-object v0, Lcom/android/settings/applications/AppStateNotificationBridge;->GD:Lcom/android/b/a/p;
+    sput-object v0, Lcom/android/settings_ex/applications/AppStateNotificationBridge;->GD:Lcom/android/b/a/p;
 
     return-void
 .end method
 
-.method public constructor <init>(Landroid/content/pm/PackageManager;Lcom/android/b/a/a;Lcom/android/settings/applications/AppStateBaseBridge$Callback;Lcom/android/settings/notification/NotificationBackend;)V
+.method public constructor <init>(Landroid/content/pm/PackageManager;Lcom/android/b/a/a;Lcom/android/settings_ex/applications/AppStateBaseBridge$Callback;Lcom/android/settings_ex/notification/NotificationBackend;)V
     .locals 0
 
     .prologue
     .line 39
-    invoke-direct {p0, p2, p3}, Lcom/android/settings/applications/AppStateBaseBridge;-><init>(Lcom/android/b/a/a;Lcom/android/settings/applications/AppStateBaseBridge$Callback;)V
+    invoke-direct {p0, p2, p3}, Lcom/android/settings_ex/applications/AppStateBaseBridge;-><init>(Lcom/android/b/a/a;Lcom/android/settings_ex/applications/AppStateBaseBridge$Callback;)V
 
     .line 40
-    iput-object p1, p0, Lcom/android/settings/applications/AppStateNotificationBridge;->i:Landroid/content/pm/PackageManager;
+    iput-object p1, p0, Lcom/android/settings_ex/applications/AppStateNotificationBridge;->i:Landroid/content/pm/PackageManager;
 
     .line 41
-    iput-object p4, p0, Lcom/android/settings/applications/AppStateNotificationBridge;->Gz:Lcom/android/settings/notification/NotificationBackend;
+    iput-object p4, p0, Lcom/android/settings_ex/applications/AppStateNotificationBridge;->Gz:Lcom/android/settings_ex/notification/NotificationBackend;
 
     .line 42
     return-void
@@ -79,13 +79,13 @@
 
     .prologue
     .line 56
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateNotificationBridge;->Gz:Lcom/android/settings/notification/NotificationBackend;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/AppStateNotificationBridge;->Gz:Lcom/android/settings_ex/notification/NotificationBackend;
 
-    iget-object v1, p0, Lcom/android/settings/applications/AppStateNotificationBridge;->i:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lcom/android/settings_ex/applications/AppStateNotificationBridge;->i:Landroid/content/pm/PackageManager;
 
     iget-object v2, p1, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/notification/NotificationBackend;->a(Landroid/content/pm/PackageManager;Landroid/content/pm/ApplicationInfo;)Lcom/android/settings/notification/NotificationBackend$AppRow;
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ex/notification/NotificationBackend;->a(Landroid/content/pm/PackageManager;Landroid/content/pm/ApplicationInfo;)Lcom/android/settings_ex/notification/NotificationBackend$AppRow;
 
     move-result-object v0
 
@@ -100,7 +100,7 @@
 
     .prologue
     .line 46
-    iget-object v0, p0, Lcom/android/settings/applications/AppStateNotificationBridge;->Gu:Lcom/android/b/a/w;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/AppStateNotificationBridge;->Gu:Lcom/android/b/a/w;
 
     invoke-virtual {v0}, Lcom/android/b/a/w;->zq()Ljava/util/ArrayList;
 
@@ -127,13 +127,13 @@
     check-cast v0, Lcom/android/b/a/o;
 
     .line 50
-    iget-object v4, p0, Lcom/android/settings/applications/AppStateNotificationBridge;->Gz:Lcom/android/settings/notification/NotificationBackend;
+    iget-object v4, p0, Lcom/android/settings_ex/applications/AppStateNotificationBridge;->Gz:Lcom/android/settings_ex/notification/NotificationBackend;
 
-    iget-object v5, p0, Lcom/android/settings/applications/AppStateNotificationBridge;->i:Landroid/content/pm/PackageManager;
+    iget-object v5, p0, Lcom/android/settings_ex/applications/AppStateNotificationBridge;->i:Landroid/content/pm/PackageManager;
 
     iget-object v6, v0, Lcom/android/b/a/o;->bp:Landroid/content/pm/ApplicationInfo;
 
-    invoke-virtual {v4, v5, v6}, Lcom/android/settings/notification/NotificationBackend;->a(Landroid/content/pm/PackageManager;Landroid/content/pm/ApplicationInfo;)Lcom/android/settings/notification/NotificationBackend$AppRow;
+    invoke-virtual {v4, v5, v6}, Lcom/android/settings_ex/notification/NotificationBackend;->a(Landroid/content/pm/PackageManager;Landroid/content/pm/ApplicationInfo;)Lcom/android/settings_ex/notification/NotificationBackend$AppRow;
 
     move-result-object v4
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/RunningState$BaseItem;
+.class Lcom/android/settings_ex/applications/RunningState$BaseItem;
 .super Ljava/lang/Object;
 .source "RunningState.java"
 
@@ -40,10 +40,10 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 363
-    iput-boolean p1, p0, Lcom/android/settings/applications/RunningState$BaseItem;->ON:Z
+    iput-boolean p1, p0, Lcom/android/settings_ex/applications/RunningState$BaseItem;->ON:Z
 
     .line 364
-    iput p2, p0, Lcom/android/settings/applications/RunningState$BaseItem;->mUserId:I
+    iput p2, p0, Lcom/android/settings_ex/applications/RunningState$BaseItem;->mUserId:I
 
     .line 365
     return-void

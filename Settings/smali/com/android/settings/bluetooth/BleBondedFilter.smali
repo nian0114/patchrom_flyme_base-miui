@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/bluetooth/BleBondedFilter;
+.class public Lcom/android/settings_ex/bluetooth/BleBondedFilter;
 .super Ljava/lang/Object;
 .source "BleBondedFilter.java"
 

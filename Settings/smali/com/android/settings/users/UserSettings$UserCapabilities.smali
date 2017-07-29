@@ -1,4 +1,4 @@
-.class Lcom/android/settings/users/UserSettings$UserCapabilities;
+.class Lcom/android/settings_ex/users/UserSettings$UserCapabilities;
 .super Ljava/lang/Object;
 .source "UserSettings.java"
 
@@ -28,13 +28,13 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 1045
-    iput-boolean v0, p0, Lcom/android/settings/users/UserSettings$UserCapabilities;->mEnabled:Z
+    iput-boolean v0, p0, Lcom/android/settings_ex/users/UserSettings$UserCapabilities;->mEnabled:Z
 
     .line 1046
-    iput-boolean v0, p0, Lcom/android/settings/users/UserSettings$UserCapabilities;->auG:Z
+    iput-boolean v0, p0, Lcom/android/settings_ex/users/UserSettings$UserCapabilities;->auG:Z
 
     .line 1047
-    iput-boolean v0, p0, Lcom/android/settings/users/UserSettings$UserCapabilities;->auH:Z
+    iput-boolean v0, p0, Lcom/android/settings_ex/users/UserSettings$UserCapabilities;->auH:Z
 
     .line 1048
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
@@ -44,7 +44,7 @@
     if-nez v1, :cond_0
 
     :goto_0
-    iput-boolean v0, p0, Lcom/android/settings/users/UserSettings$UserCapabilities;->auI:Z
+    iput-boolean v0, p0, Lcom/android/settings_ex/users/UserSettings$UserCapabilities;->auI:Z
 
     return-void
 
@@ -54,7 +54,7 @@
     goto :goto_0
 .end method
 
-.method public static cl(Landroid/content/Context;)Lcom/android/settings/users/UserSettings$UserCapabilities;
+.method public static cl(Landroid/content/Context;)Lcom/android/settings_ex/users/UserSettings$UserCapabilities;
     .locals 7
 
     .prologue
@@ -72,9 +72,9 @@
     check-cast v0, Landroid/os/UserManager;
 
     .line 1054
-    new-instance v4, Lcom/android/settings/users/UserSettings$UserCapabilities;
+    new-instance v4, Lcom/android/settings_ex/users/UserSettings$UserCapabilities;
 
-    invoke-direct {v4}, Lcom/android/settings/users/UserSettings$UserCapabilities;-><init>()V
+    invoke-direct {v4}, Lcom/android/settings_ex/users/UserSettings$UserCapabilities;-><init>()V
 
     .line 1055
     invoke-static {}, Landroid/os/UserManager;->supportsMultipleUsers()Z
@@ -83,7 +83,7 @@
 
     if-eqz v1, :cond_0
 
-    invoke-static {}, Lcom/android/settings/iE;->iw()Z
+    invoke-static {}, Lcom/android/settings_ex/iE;->iw()Z
 
     move-result v1
 
@@ -91,7 +91,7 @@
 
     .line 1056
     :cond_0
-    iput-boolean v2, v4, Lcom/android/settings/users/UserSettings$UserCapabilities;->mEnabled:Z
+    iput-boolean v2, v4, Lcom/android/settings_ex/users/UserSettings$UserCapabilities;->mEnabled:Z
 
     move-object v0, v4
 
@@ -108,7 +108,7 @@
     move-result v5
 
     .line 1062
-    iget-boolean v1, v4, Lcom/android/settings/users/UserSettings$UserCapabilities;->auI:Z
+    iget-boolean v1, v4, Lcom/android/settings_ex/users/UserSettings$UserCapabilities;->auI:Z
 
     if-eqz v1, :cond_2
 
@@ -130,7 +130,7 @@
 
     .line 1065
     :cond_2
-    iput-boolean v2, v4, Lcom/android/settings/users/UserSettings$UserCapabilities;->auG:Z
+    iput-boolean v2, v4, Lcom/android/settings_ex/users/UserSettings$UserCapabilities;->auG:Z
 
     .line 1067
     :cond_3
@@ -149,7 +149,7 @@
 
     if-nez v1, :cond_4
 
-    invoke-static {p0}, Lcom/android/settings/iE;->Y(Landroid/content/Context;)Z
+    invoke-static {p0}, Lcom/android/settings_ex/iE;->Y(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -157,7 +157,7 @@
 
     .line 1071
     :cond_4
-    iput-boolean v2, v4, Lcom/android/settings/users/UserSettings$UserCapabilities;->auH:Z
+    iput-boolean v2, v4, Lcom/android/settings_ex/users/UserSettings$UserCapabilities;->auH:Z
 
     .line 1073
     :cond_5
@@ -174,10 +174,10 @@
 
     move-result v0
 
-    iput-boolean v0, v4, Lcom/android/settings/users/UserSettings$UserCapabilities;->auJ:Z
+    iput-boolean v0, v4, Lcom/android/settings_ex/users/UserSettings$UserCapabilities;->auJ:Z
 
     .line 1076
-    iget-boolean v0, v4, Lcom/android/settings/users/UserSettings$UserCapabilities;->auI:Z
+    iget-boolean v0, v4, Lcom/android/settings_ex/users/UserSettings$UserCapabilities;->auI:Z
 
     if-nez v0, :cond_6
 
@@ -198,7 +198,7 @@
 
     .line 1078
     :goto_1
-    iget-boolean v1, v4, Lcom/android/settings/users/UserSettings$UserCapabilities;->auJ:Z
+    iget-boolean v1, v4, Lcom/android/settings_ex/users/UserSettings$UserCapabilities;->auJ:Z
 
     if-nez v1, :cond_8
 
@@ -207,7 +207,7 @@
     if-eqz v0, :cond_8
 
     :goto_2
-    iput-boolean v3, v4, Lcom/android/settings/users/UserSettings$UserCapabilities;->auK:Z
+    iput-boolean v3, v4, Lcom/android/settings_ex/users/UserSettings$UserCapabilities;->auK:Z
 
     move-object v0, v4
 
@@ -244,7 +244,7 @@
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/android/settings/users/UserSettings$UserCapabilities;->mEnabled:Z
+    iget-boolean v1, p0, Lcom/android/settings_ex/users/UserSettings$UserCapabilities;->mEnabled:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -256,7 +256,7 @@
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/android/settings/users/UserSettings$UserCapabilities;->auG:Z
+    iget-boolean v1, p0, Lcom/android/settings_ex/users/UserSettings$UserCapabilities;->auG:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -268,7 +268,7 @@
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/android/settings/users/UserSettings$UserCapabilities;->auH:Z
+    iget-boolean v1, p0, Lcom/android/settings_ex/users/UserSettings$UserCapabilities;->auH:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -280,7 +280,7 @@
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/android/settings/users/UserSettings$UserCapabilities;->auI:Z
+    iget-boolean v1, p0, Lcom/android/settings_ex/users/UserSettings$UserCapabilities;->auI:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 
@@ -292,7 +292,7 @@
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/android/settings/users/UserSettings$UserCapabilities;->auJ:Z
+    iget-boolean v1, p0, Lcom/android/settings_ex/users/UserSettings$UserCapabilities;->auJ:Z
 
     invoke-virtual {v0, v1}, Ljava/lang/StringBuilder;->append(Z)Ljava/lang/StringBuilder;
 

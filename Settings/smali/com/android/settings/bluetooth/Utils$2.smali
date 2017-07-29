@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/bluetooth/Utils$2;
+.class final Lcom/android/settings_ex/bluetooth/Utils$2;
 .super Ljava/lang/Object;
 .source "Utils.java"
 
@@ -28,14 +28,14 @@
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/bluetooth/DockService$DockBluetoothCallback;
+    new-instance v1, Lcom/android/settings_ex/bluetooth/DockService$DockBluetoothCallback;
 
-    invoke-direct {v1, p1}, Lcom/android/settings/bluetooth/DockService$DockBluetoothCallback;-><init>(Landroid/content/Context;)V
+    invoke-direct {v1, p1}, Lcom/android/settings_ex/bluetooth/DockService$DockBluetoothCallback;-><init>(Landroid/content/Context;)V
 
     invoke-virtual {v0, v1}, Lcom/android/b/b/t;->a(Lcom/android/b/b/g;)V
 
     .line 145
-    invoke-static {}, Lcom/android/settings/bluetooth/Utils;->od()Lcom/android/b/b/aj;
+    invoke-static {}, Lcom/android/settings_ex/bluetooth/Utils;->od()Lcom/android/b/b/aj;
 
     move-result-object v0
 

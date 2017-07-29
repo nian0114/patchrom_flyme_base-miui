@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/applications/PermissionInfoFragment;
-.super Lcom/android/settings/SettingsPreferenceFragment;
+.class public Lcom/android/settings_ex/applications/PermissionInfoFragment;
+.super Lcom/android/settings_ex/SettingsPreferenceFragment;
 .source "PermissionInfoFragment.java"
 
 
@@ -10,7 +10,7 @@
 
 .field private KD:Landroid/preference/PreferenceCategory;
 
-.field private KE:Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;
+.field private KE:Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;
 
 .field private bL:Landroid/content/pm/ApplicationInfo;
 
@@ -21,20 +21,20 @@
 
     .prologue
     .line 30
-    invoke-direct {p0}, Lcom/android/settings/SettingsPreferenceFragment;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ex/SettingsPreferenceFragment;-><init>()V
 
     .line 165
     return-void
 .end method
 
-.method public static a(ILandroid/content/Context;)Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;
+.method public static a(ILandroid/content/Context;)Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;
     .locals 9
 
     .prologue
     .line 96
-    new-instance v1, Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;
+    new-instance v1, Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;
 
-    invoke-direct {v1}, Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;-><init>()V
+    invoke-direct {v1}, Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;-><init>()V
 
     .line 97
     const/4 v0, -0x1
@@ -82,7 +82,7 @@
     move-result-object v4
 
     .line 103
-    invoke-static {p0, v0, v4}, Lcom/android/settings/applications/PermissionInfoFragment;->a(ILjava/util/Set;Landroid/content/pm/PackageManager;)V
+    invoke-static {p0, v0, v4}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->a(ILjava/util/Set;Landroid/content/pm/PackageManager;)V
 
     .line 105
     invoke-interface {v0}, Ljava/util/Set;->iterator()Ljava/util/Iterator;
@@ -139,7 +139,7 @@
     if-eqz v8, :cond_1
 
     .line 113
-    invoke-static {v1}, Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;->a(Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;)Ljava/util/Map;
+    invoke-static {v1}, Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;->a(Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;)Ljava/util/Map;
 
     move-result-object v0
 
@@ -158,7 +158,7 @@
     if-eqz v0, :cond_2
 
     .line 115
-    invoke-static {v1}, Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;->b(Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;)Ljava/util/Map;
+    invoke-static {v1}, Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;->b(Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;)Ljava/util/Map;
 
     move-result-object v0
 
@@ -168,7 +168,7 @@
 
     .line 117
     :cond_2
-    invoke-static {v1}, Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;->c(Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;)Ljava/util/Map;
+    invoke-static {v1}, Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;->c(Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;)Ljava/util/Map;
 
     move-result-object v0
 
@@ -213,7 +213,7 @@
     aget-object v3, v1, v0
 
     .line 132
-    invoke-static {v3, p1, p2}, Lcom/android/settings/applications/PermissionInfoFragment;->a(Ljava/lang/String;Ljava/util/Set;Landroid/content/pm/PackageManager;)V
+    invoke-static {v3, p1, p2}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->a(Ljava/lang/String;Ljava/util/Set;Landroid/content/pm/PackageManager;)V
 
     .line 131
     add-int/lit8 v0, v0, 0x1
@@ -245,7 +245,7 @@
     .line 145
     iget-object v0, v0, Landroid/content/pm/PackageInfo;->requestedPermissions:[Ljava/lang/String;
 
-    invoke-static {v0, p1, p2}, Lcom/android/settings/applications/PermissionInfoFragment;->a([Ljava/lang/String;Ljava/util/Set;Landroid/content/pm/PackageManager;)V
+    invoke-static {v0, p1, p2}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->a([Ljava/lang/String;Ljava/util/Set;Landroid/content/pm/PackageManager;)V
 
     .line 147
     :cond_0
@@ -316,11 +316,11 @@
     check-cast v0, Ljava/lang/String;
 
     .line 85
-    invoke-virtual {p0}, Lcom/android/settings/applications/PermissionInfoFragment;->getPreferenceManager()Landroid/preference/PreferenceManager;
+    invoke-virtual {p0}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->getPreferenceManager()Landroid/preference/PreferenceManager;
 
     move-result-object v2
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/PermissionInfoFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
@@ -351,7 +351,7 @@
 
     .line 91
     :cond_0
-    invoke-virtual {p0}, Lcom/android/settings/applications/PermissionInfoFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -448,7 +448,7 @@
 
     .prologue
     .line 47
-    const-class v0, Lcom/android/settings/applications/PermissionInfoFragment;
+    const-class v0, Lcom/android/settings_ex/applications/PermissionInfoFragment;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -462,15 +462,15 @@
 
     .prologue
     .line 52
-    invoke-super {p0, p1}, Lcom/android/settings/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onCreate(Landroid/os/Bundle;)V
 
     .line 54
     const v0, 0x7f080070
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/PermissionInfoFragment;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->addPreferencesFromResource(I)V
 
     .line 56
-    invoke-virtual {p0}, Lcom/android/settings/applications/PermissionInfoFragment;->getArguments()Landroid/os/Bundle;
+    invoke-virtual {p0}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->getArguments()Landroid/os/Bundle;
 
     move-result-object v0
 
@@ -483,10 +483,10 @@
 
     check-cast v0, Landroid/content/pm/ApplicationInfo;
 
-    iput-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment;->bL:Landroid/content/pm/ApplicationInfo;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment;->bL:Landroid/content/pm/ApplicationInfo;
 
     .line 58
-    iget-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment;->bL:Landroid/content/pm/ApplicationInfo;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment;->bL:Landroid/content/pm/ApplicationInfo;
 
     if-nez v0, :cond_0
 
@@ -498,7 +498,7 @@
     invoke-static {v0, v1}, Landroid/util/Log;->e(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 60
-    invoke-virtual {p0}, Lcom/android/settings/applications/PermissionInfoFragment;->finish()V
+    invoke-virtual {p0}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->finish()V
 
     .line 73
     :goto_0
@@ -506,85 +506,85 @@
 
     .line 64
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment;->bL:Landroid/content/pm/ApplicationInfo;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment;->bL:Landroid/content/pm/ApplicationInfo;
 
     iget v0, v0, Landroid/content/pm/ApplicationInfo;->uid:I
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/PermissionInfoFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/applications/PermissionInfoFragment;->a(ILandroid/content/Context;)Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;
+    invoke-static {v0, v1}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->a(ILandroid/content/Context;)Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment;->KE:Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment;->KE:Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;
 
     .line 66
     const-string v0, "privacy_relative"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/PermissionInfoFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment;->KB:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment;->KB:Landroid/preference/PreferenceCategory;
 
     .line 67
     const-string v0, "security_relative"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/PermissionInfoFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment;->KC:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment;->KC:Landroid/preference/PreferenceCategory;
 
     .line 68
     const-string v0, "other_relative"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/applications/PermissionInfoFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment;->KD:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment;->KD:Landroid/preference/PreferenceCategory;
 
     .line 70
-    iget-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment;->KE:Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment;->KE:Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;
 
-    invoke-static {v0}, Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;->a(Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;)Ljava/util/Map;
+    invoke-static {v0}, Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;->a(Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;)Ljava/util/Map;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/applications/PermissionInfoFragment;->KB:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment;->KB:Landroid/preference/PreferenceCategory;
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/applications/PermissionInfoFragment;->a(Ljava/util/Map;Landroid/preference/PreferenceCategory;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->a(Ljava/util/Map;Landroid/preference/PreferenceCategory;)V
 
     .line 71
-    iget-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment;->KE:Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment;->KE:Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;
 
-    invoke-static {v0}, Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;->b(Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;)Ljava/util/Map;
+    invoke-static {v0}, Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;->b(Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;)Ljava/util/Map;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/applications/PermissionInfoFragment;->KC:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment;->KC:Landroid/preference/PreferenceCategory;
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/applications/PermissionInfoFragment;->a(Ljava/util/Map;Landroid/preference/PreferenceCategory;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->a(Ljava/util/Map;Landroid/preference/PreferenceCategory;)V
 
     .line 72
-    iget-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment;->KE:Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment;->KE:Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;
 
-    invoke-static {v0}, Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;->c(Lcom/android/settings/applications/PermissionInfoFragment$PermissionSet;)Ljava/util/Map;
+    invoke-static {v0}, Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;->c(Lcom/android/settings_ex/applications/PermissionInfoFragment$PermissionSet;)Ljava/util/Map;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/applications/PermissionInfoFragment;->KD:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment;->KD:Landroid/preference/PreferenceCategory;
 
-    invoke-direct {p0, v0, v1}, Lcom/android/settings/applications/PermissionInfoFragment;->a(Ljava/util/Map;Landroid/preference/PreferenceCategory;)V
+    invoke-direct {p0, v0, v1}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->a(Ljava/util/Map;Landroid/preference/PreferenceCategory;)V
 
     goto :goto_0
 .end method
@@ -594,9 +594,9 @@
 
     .prologue
     .line 77
-    iget-object v0, p0, Lcom/android/settings/applications/PermissionInfoFragment;->bL:Landroid/content/pm/ApplicationInfo;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/PermissionInfoFragment;->bL:Landroid/content/pm/ApplicationInfo;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/PermissionInfoFragment;->getPackageManager()Landroid/content/pm/PackageManager;
+    invoke-virtual {p0}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -605,13 +605,13 @@
     move-result-object v0
 
     .line 78
-    invoke-virtual {p0}, Lcom/android/settings/applications/PermissionInfoFragment;->getActionBar()Lmiui/app/ActionBar;
+    invoke-virtual {p0}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->getActionBar()Lmiui/app/ActionBar;
 
     move-result-object v1
 
     const v2, 0x7f0c0eec
 
-    invoke-virtual {p0, v2}, Lcom/android/settings/applications/PermissionInfoFragment;->getString(I)Ljava/lang/String;
+    invoke-virtual {p0, v2}, Lcom/android/settings_ex/applications/PermissionInfoFragment;->getString(I)Ljava/lang/String;
 
     move-result-object v2
 
@@ -630,7 +630,7 @@
     invoke-virtual {v1, v0}, Lmiui/app/ActionBar;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 79
-    invoke-super {p0, p1, p2, p3}, Lcom/android/settings/SettingsPreferenceFragment;->onInflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
+    invoke-super {p0, p1, p2, p3}, Lcom/android/settings_ex/SettingsPreferenceFragment;->onInflateView(Landroid/view/LayoutInflater;Landroid/view/ViewGroup;Landroid/os/Bundle;)Landroid/view/View;
 
     move-result-object v0
 

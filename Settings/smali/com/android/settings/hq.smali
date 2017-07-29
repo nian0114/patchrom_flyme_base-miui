@@ -1,19 +1,19 @@
-.class Lcom/android/settings/hq;
+.class Lcom/android/settings_ex/hq;
 .super Landroid/content/BroadcastReceiver;
 .source "SettingsActivity.java"
 
 
 # instance fields
-.field final synthetic zD:Lcom/android/settings/hp;
+.field final synthetic zD:Lcom/android/settings_ex/hp;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/hp;)V
+.method constructor <init>(Lcom/android/settings_ex/hp;)V
     .locals 0
 
     .prologue
     .line 386
-    iput-object p1, p0, Lcom/android/settings/hq;->zD:Lcom/android/settings/hp;
+    iput-object p1, p0, Lcom/android/settings_ex/hq;->zD:Lcom/android/settings_ex/hp;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -41,30 +41,30 @@
     if-eqz v0, :cond_0
 
     .line 391
-    invoke-static {p2}, Lcom/android/settings/iE;->p(Landroid/content/Intent;)Z
+    invoke-static {p2}, Lcom/android/settings_ex/iE;->p(Landroid/content/Intent;)Z
 
     move-result v0
 
     .line 393
-    iget-object v1, p0, Lcom/android/settings/hq;->zD:Lcom/android/settings/hp;
+    iget-object v1, p0, Lcom/android/settings_ex/hq;->zD:Lcom/android/settings_ex/hp;
 
-    invoke-static {v1}, Lcom/android/settings/hp;->a(Lcom/android/settings/hp;)Z
+    invoke-static {v1}, Lcom/android/settings_ex/hp;->a(Lcom/android/settings_ex/hp;)Z
 
     move-result v1
 
     if-eq v1, v0, :cond_0
 
     .line 394
-    iget-object v1, p0, Lcom/android/settings/hq;->zD:Lcom/android/settings/hp;
+    iget-object v1, p0, Lcom/android/settings_ex/hq;->zD:Lcom/android/settings_ex/hp;
 
-    invoke-static {v1, v0}, Lcom/android/settings/hp;->a(Lcom/android/settings/hp;Z)Z
+    invoke-static {v1, v0}, Lcom/android/settings_ex/hp;->a(Lcom/android/settings_ex/hp;Z)Z
 
     .line 395
-    iget-object v0, p0, Lcom/android/settings/hq;->zD:Lcom/android/settings/hp;
+    iget-object v0, p0, Lcom/android/settings_ex/hq;->zD:Lcom/android/settings_ex/hp;
 
     const/4 v1, 0x1
 
-    invoke-static {v0, v1}, Lcom/android/settings/hp;->b(Lcom/android/settings/hp;Z)V
+    invoke-static {v0, v1}, Lcom/android/settings_ex/hp;->b(Lcom/android/settings_ex/hp;Z)V
 
     .line 398
     :cond_0

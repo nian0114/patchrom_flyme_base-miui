@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/nfc/PaymentBackend$Callback;
+.class public interface abstract Lcom/android/settings_ex/nfc/PaymentBackend$Callback;
 .super Ljava/lang/Object;
 .source "PaymentBackend.java"
 

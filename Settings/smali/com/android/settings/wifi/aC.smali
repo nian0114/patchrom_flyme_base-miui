@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/wifi/aC;
+.class public Lcom/android/settings_ex/wifi/aC;
 .super Ljava/lang/Object;
 .source "WifiShareUtils.java"
 

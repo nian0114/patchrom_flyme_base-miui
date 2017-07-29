@@ -1,4 +1,4 @@
-.class Lcom/android/settings/aO;
+.class Lcom/android/settings_ex/aO;
 .super Ljava/lang/Object;
 .source "ConfirmLockPassword.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic fw:Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;
+.field final synthetic fw:Lcom/android/settings_ex/ConfirmLockPassword$ConfirmLockPasswordFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;)V
+.method constructor <init>(Lcom/android/settings_ex/ConfirmLockPassword$ConfirmLockPasswordFragment;)V
     .locals 0
 
     .prologue
     .line 402
-    iput-object p1, p0, Lcom/android/settings/aO;->fw:Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;
+    iput-object p1, p0, Lcom/android/settings_ex/aO;->fw:Lcom/android/settings_ex/ConfirmLockPassword$ConfirmLockPasswordFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,15 +30,15 @@
 
     .prologue
     .line 404
-    iget-object v0, p0, Lcom/android/settings/aO;->fw:Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;
+    iget-object v0, p0, Lcom/android/settings_ex/aO;->fw:Lcom/android/settings_ex/ConfirmLockPassword$ConfirmLockPasswordFragment;
 
-    invoke-static {v0}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->b(Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;)Landroid/widget/TextView;
+    invoke-static {v0}, Lcom/android/settings_ex/ConfirmLockPassword$ConfirmLockPasswordFragment;->b(Lcom/android/settings_ex/ConfirmLockPassword$ConfirmLockPasswordFragment;)Landroid/widget/TextView;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/aO;->fw:Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;
+    iget-object v1, p0, Lcom/android/settings_ex/aO;->fw:Lcom/android/settings_ex/ConfirmLockPassword$ConfirmLockPasswordFragment;
 
-    invoke-static {v1}, Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;->d(Lcom/android/settings/ConfirmLockPassword$ConfirmLockPasswordFragment;)I
+    invoke-static {v1}, Lcom/android/settings_ex/ConfirmLockPassword$ConfirmLockPasswordFragment;->d(Lcom/android/settings_ex/ConfirmLockPassword$ConfirmLockPasswordFragment;)I
 
     move-result v1
 

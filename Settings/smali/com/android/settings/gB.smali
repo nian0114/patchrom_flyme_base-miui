@@ -1,4 +1,4 @@
-.class Lcom/android/settings/gB;
+.class Lcom/android/settings_ex/gB;
 .super Ljava/lang/Object;
 .source "RadioInfo.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic yb:Lcom/android/settings/RadioInfo;
+.field final synthetic yb:Lcom/android/settings_ex/RadioInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/RadioInfo;)V
+.method constructor <init>(Lcom/android/settings_ex/RadioInfo;)V
     .locals 0
 
     .prologue
     .line 1048
-    iput-object p1, p0, Lcom/android/settings/gB;->yb:Lcom/android/settings/RadioInfo;
+    iput-object p1, p0, Lcom/android/settings_ex/gB;->yb:Lcom/android/settings_ex/RadioInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,15 +30,15 @@
 
     .prologue
     .line 1051
-    iget-object v0, p0, Lcom/android/settings/gB;->yb:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ex/gB;->yb:Lcom/android/settings_ex/RadioInfo;
 
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->o(Lcom/android/settings/RadioInfo;)Lcom/android/internal/telephony/Phone;
+    invoke-static {v0}, Lcom/android/settings_ex/RadioInfo;->o(Lcom/android/settings_ex/RadioInfo;)Lcom/android/internal/telephony/Phone;
 
     move-result-object v1
 
-    iget-object v0, p0, Lcom/android/settings/gB;->yb:Lcom/android/settings/RadioInfo;
+    iget-object v0, p0, Lcom/android/settings_ex/gB;->yb:Lcom/android/settings_ex/RadioInfo;
 
-    invoke-static {v0}, Lcom/android/settings/RadioInfo;->E(Lcom/android/settings/RadioInfo;)Z
+    invoke-static {v0}, Lcom/android/settings_ex/RadioInfo;->E(Lcom/android/settings_ex/RadioInfo;)Z
 
     move-result v0
 

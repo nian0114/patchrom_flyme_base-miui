@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ad/a;
+.class Lcom/android/settings_ex/ad/a;
 .super Ljava/lang/Object;
 .source "AdServiceSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ET:Lcom/android/settings/ad/AdServiceSettings;
+.field final synthetic ET:Lcom/android/settings_ex/ad/AdServiceSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ad/AdServiceSettings;)V
+.method constructor <init>(Lcom/android/settings_ex/ad/AdServiceSettings;)V
     .locals 0
 
     .prologue
     .line 33
-    iput-object p1, p0, Lcom/android/settings/ad/a;->ET:Lcom/android/settings/ad/AdServiceSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/ad/a;->ET:Lcom/android/settings_ex/ad/AdServiceSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -31,9 +31,9 @@
     .prologue
     .line 37
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/ad/a;->ET:Lcom/android/settings/ad/AdServiceSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/ad/a;->ET:Lcom/android/settings_ex/ad/AdServiceSettings;
 
-    invoke-static {v0}, Lcom/android/settings/ad/AdServiceSettings;->a(Lcom/android/settings/ad/AdServiceSettings;)Landroid/content/ContentResolver;
+    invoke-static {v0}, Lcom/android/settings_ex/ad/AdServiceSettings;->a(Lcom/android/settings_ex/ad/AdServiceSettings;)Landroid/content/ContentResolver;
 
     move-result-object v0
 

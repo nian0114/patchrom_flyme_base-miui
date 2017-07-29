@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fingerprint/i;
+.class Lcom/android/settings_ex/fingerprint/i;
 .super Ljava/lang/Object;
 .source "FingerprintEnrollEnrolling.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic abO:Lcom/android/settings/fingerprint/h;
+.field final synthetic abO:Lcom/android/settings_ex/fingerprint/h;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fingerprint/h;)V
+.method constructor <init>(Lcom/android/settings_ex/fingerprint/h;)V
     .locals 0
 
     .prologue
     .line 360
-    iput-object p1, p0, Lcom/android/settings/fingerprint/i;->abO:Lcom/android/settings/fingerprint/h;
+    iput-object p1, p0, Lcom/android/settings_ex/fingerprint/i;->abO:Lcom/android/settings_ex/fingerprint/h;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 363
-    iget-object v0, p0, Lcom/android/settings/fingerprint/i;->abO:Lcom/android/settings/fingerprint/h;
+    iget-object v0, p0, Lcom/android/settings_ex/fingerprint/i;->abO:Lcom/android/settings_ex/fingerprint/h;
 
-    iget-object v0, v0, Lcom/android/settings/fingerprint/h;->abM:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+    iget-object v0, v0, Lcom/android/settings_ex/fingerprint/h;->abM:Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;
 
-    invoke-static {v0}, Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;->m(Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;)V
+    invoke-static {v0}, Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;->m(Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;)V
 
     .line 364
     return-void

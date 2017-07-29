@@ -1,4 +1,4 @@
-.class synthetic Lcom/android/settings/wifi/aU;
+.class synthetic Lcom/android/settings_ex/wifi/aU;
 .super Ljava/lang/Object;
 .source "WpsDialog.java"
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 240
-    invoke-static {}, Lcom/android/settings/wifi/WpsDialog$DialogState;->values()[Lcom/android/settings/wifi/WpsDialog$DialogState;
+    invoke-static {}, Lcom/android/settings_ex/wifi/WpsDialog$DialogState;->values()[Lcom/android/settings_ex/wifi/WpsDialog$DialogState;
 
     move-result-object v0
 
@@ -21,12 +21,12 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/wifi/aU;->aEO:[I
+    sput-object v0, Lcom/android/settings_ex/wifi/aU;->aEO:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/wifi/aU;->aEO:[I
+    sget-object v0, Lcom/android/settings_ex/wifi/aU;->aEO:[I
 
-    sget-object v1, Lcom/android/settings/wifi/WpsDialog$DialogState;->aER:Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sget-object v1, Lcom/android/settings_ex/wifi/WpsDialog$DialogState;->aER:Lcom/android/settings_ex/wifi/WpsDialog$DialogState;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -40,9 +40,9 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/wifi/aU;->aEO:[I
+    sget-object v0, Lcom/android/settings_ex/wifi/aU;->aEO:[I
 
-    sget-object v1, Lcom/android/settings/wifi/WpsDialog$DialogState;->aES:Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sget-object v1, Lcom/android/settings_ex/wifi/WpsDialog$DialogState;->aES:Lcom/android/settings_ex/wifi/WpsDialog$DialogState;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -56,9 +56,9 @@
 
     :goto_1
     :try_start_2
-    sget-object v0, Lcom/android/settings/wifi/aU;->aEO:[I
+    sget-object v0, Lcom/android/settings_ex/wifi/aU;->aEO:[I
 
-    sget-object v1, Lcom/android/settings/wifi/WpsDialog$DialogState;->aET:Lcom/android/settings/wifi/WpsDialog$DialogState;
+    sget-object v1, Lcom/android/settings_ex/wifi/WpsDialog$DialogState;->aET:Lcom/android/settings_ex/wifi/WpsDialog$DialogState;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 

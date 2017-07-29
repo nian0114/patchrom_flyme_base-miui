@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/a/a;
+.class public Lcom/android/settings_ex/a/a;
 .super Ljava/lang/Object;
 .source "MiHomeManager.java"
 
@@ -8,7 +8,7 @@
 
 .field private static final UD:Ljava/lang/Object;
 
-.field private static UE:Lcom/android/settings/a/a;
+.field private static UE:Lcom/android/settings_ex/a/a;
 
 .field private static final Uz:Landroid/net/Uri;
 
@@ -37,7 +37,7 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/a/a;->Uz:Landroid/net/Uri;
+    sput-object v0, Lcom/android/settings_ex/a/a;->Uz:Landroid/net/Uri;
 
     .line 23
     const-string v0, "content://com.xiaomi.mihomemanager.settingsProvider/settings"
@@ -46,14 +46,14 @@
 
     move-result-object v0
 
-    sput-object v0, Lcom/android/settings/a/a;->UA:Landroid/net/Uri;
+    sput-object v0, Lcom/android/settings_ex/a/a;->UA:Landroid/net/Uri;
 
     .line 31
     new-instance v0, Ljava/lang/Object;
 
     invoke-direct {v0}, Ljava/lang/Object;-><init>()V
 
-    sput-object v0, Lcom/android/settings/a/a;->UD:Ljava/lang/Object;
+    sput-object v0, Lcom/android/settings_ex/a/a;->UD:Ljava/lang/Object;
 
     return-void
 .end method
@@ -70,20 +70,20 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/a/a;->mContext:Landroid/content/Context;
+    iput-object v0, p0, Lcom/android/settings_ex/a/a;->mContext:Landroid/content/Context;
 
     .line 36
-    iget-object v0, p0, Lcom/android/settings/a/a;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ex/a/a;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/a/a;->i:Landroid/content/pm/PackageManager;
+    iput-object v0, p0, Lcom/android/settings_ex/a/a;->i:Landroid/content/pm/PackageManager;
 
     .line 38
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/a/a;->i:Landroid/content/pm/PackageManager;
+    iget-object v0, p0, Lcom/android/settings_ex/a/a;->i:Landroid/content/pm/PackageManager;
 
     const-string v1, "com.xiaomi.mihomemanager"
 
@@ -93,7 +93,7 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/a/a;->Fl:Landroid/content/pm/PackageInfo;
+    iput-object v0, p0, Lcom/android/settings_ex/a/a;->Fl:Landroid/content/pm/PackageInfo;
     :try_end_0
     .catch Landroid/content/pm/PackageManager$NameNotFoundException; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -115,31 +115,31 @@
     goto :goto_0
 .end method
 
-.method public static aV(Landroid/content/Context;)Lcom/android/settings/a/a;
+.method public static aV(Landroid/content/Context;)Lcom/android/settings_ex/a/a;
     .locals 2
 
     .prologue
     .line 48
-    sget-object v1, Lcom/android/settings/a/a;->UD:Ljava/lang/Object;
+    sget-object v1, Lcom/android/settings_ex/a/a;->UD:Ljava/lang/Object;
 
     monitor-enter v1
 
     .line 49
     :try_start_0
-    sget-object v0, Lcom/android/settings/a/a;->UE:Lcom/android/settings/a/a;
+    sget-object v0, Lcom/android/settings_ex/a/a;->UE:Lcom/android/settings_ex/a/a;
 
     if-nez v0, :cond_0
 
     .line 50
-    new-instance v0, Lcom/android/settings/a/a;
+    new-instance v0, Lcom/android/settings_ex/a/a;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/a/a;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ex/a/a;-><init>(Landroid/content/Context;)V
 
-    sput-object v0, Lcom/android/settings/a/a;->UE:Lcom/android/settings/a/a;
+    sput-object v0, Lcom/android/settings_ex/a/a;->UE:Lcom/android/settings_ex/a/a;
 
     .line 52
     :cond_0
-    sget-object v0, Lcom/android/settings/a/a;->UE:Lcom/android/settings/a/a;
+    sget-object v0, Lcom/android/settings_ex/a/a;->UE:Lcom/android/settings_ex/a/a;
 
     monitor-exit v1
 
@@ -164,7 +164,7 @@
 
     .line 58
     :try_start_0
-    iget-object v1, p0, Lcom/android/settings/a/a;->i:Landroid/content/pm/PackageManager;
+    iget-object v1, p0, Lcom/android/settings_ex/a/a;->i:Landroid/content/pm/PackageManager;
 
     const-string v2, "android"
 
@@ -175,11 +175,11 @@
     move-result-object v1
 
     .line 59
-    iget-object v2, p0, Lcom/android/settings/a/a;->Fl:Landroid/content/pm/PackageInfo;
+    iget-object v2, p0, Lcom/android/settings_ex/a/a;->Fl:Landroid/content/pm/PackageInfo;
 
     if-eqz v2, :cond_0
 
-    iget-object v2, p0, Lcom/android/settings/a/a;->Fl:Landroid/content/pm/PackageInfo;
+    iget-object v2, p0, Lcom/android/settings_ex/a/a;->Fl:Landroid/content/pm/PackageInfo;
 
     iget-object v2, v2, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
 
@@ -191,7 +191,7 @@
 
     aget-object v1, v1, v2
 
-    iget-object v2, p0, Lcom/android/settings/a/a;->Fl:Landroid/content/pm/PackageInfo;
+    iget-object v2, p0, Lcom/android/settings_ex/a/a;->Fl:Landroid/content/pm/PackageInfo;
 
     iget-object v2, v2, Landroid/content/pm/PackageInfo;->signatures:[Landroid/content/pm/Signature;
 
@@ -239,10 +239,10 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/a/a;->UB:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/settings_ex/a/a;->UB:Ljava/util/HashSet;
 
     .line 69
-    invoke-direct {p0}, Lcom/android/settings/a/a;->oM()Z
+    invoke-direct {p0}, Lcom/android/settings_ex/a/a;->oM()Z
 
     move-result v0
 
@@ -255,14 +255,14 @@
 
     .line 72
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/a/a;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ex/a/a;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     .line 73
-    sget-object v1, Lcom/android/settings/a/a;->Uz:Landroid/net/Uri;
+    sget-object v1, Lcom/android/settings_ex/a/a;->Uz:Landroid/net/Uri;
 
     move-object v3, v2
 
@@ -286,7 +286,7 @@
     if-eqz v1, :cond_2
 
     .line 78
-    iget-object v1, p0, Lcom/android/settings/a/a;->UB:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/settings_ex/a/a;->UB:Ljava/util/HashSet;
 
     const/4 v2, 0x1
 
@@ -316,10 +316,10 @@
 
     invoke-direct {v0}, Ljava/util/HashSet;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/a/a;->UC:Ljava/util/HashSet;
+    iput-object v0, p0, Lcom/android/settings_ex/a/a;->UC:Ljava/util/HashSet;
 
     .line 85
-    invoke-direct {p0}, Lcom/android/settings/a/a;->oM()Z
+    invoke-direct {p0}, Lcom/android/settings_ex/a/a;->oM()Z
 
     move-result v0
 
@@ -332,14 +332,14 @@
 
     .line 88
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/a/a;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ex/a/a;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
     .line 89
-    sget-object v1, Lcom/android/settings/a/a;->UA:Landroid/net/Uri;
+    sget-object v1, Lcom/android/settings_ex/a/a;->UA:Landroid/net/Uri;
 
     move-object v3, v2
 
@@ -363,7 +363,7 @@
     if-eqz v1, :cond_2
 
     .line 94
-    iget-object v1, p0, Lcom/android/settings/a/a;->UC:Ljava/util/HashSet;
+    iget-object v1, p0, Lcom/android/settings_ex/a/a;->UC:Ljava/util/HashSet;
 
     const/4 v2, 0x1
 
@@ -389,16 +389,16 @@
 
     .prologue
     .line 100
-    iget-object v0, p0, Lcom/android/settings/a/a;->UB:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/settings_ex/a/a;->UB:Ljava/util/HashSet;
 
     if-nez v0, :cond_0
 
     .line 101
-    invoke-direct {p0}, Lcom/android/settings/a/a;->oN()V
+    invoke-direct {p0}, Lcom/android/settings_ex/a/a;->oN()V
 
     .line 103
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/a/a;->UB:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/settings_ex/a/a;->UB:Ljava/util/HashSet;
 
     invoke-virtual {v0, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 
@@ -412,16 +412,16 @@
 
     .prologue
     .line 107
-    iget-object v0, p0, Lcom/android/settings/a/a;->UC:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/settings_ex/a/a;->UC:Ljava/util/HashSet;
 
     if-nez v0, :cond_0
 
     .line 108
-    invoke-direct {p0}, Lcom/android/settings/a/a;->oO()V
+    invoke-direct {p0}, Lcom/android/settings_ex/a/a;->oO()V
 
     .line 110
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/a/a;->UC:Ljava/util/HashSet;
+    iget-object v0, p0, Lcom/android/settings_ex/a/a;->UC:Ljava/util/HashSet;
 
     invoke-virtual {v0, p1}, Ljava/util/HashSet;->contains(Ljava/lang/Object;)Z
 

@@ -1,13 +1,13 @@
-.class Lcom/android/settings/bluetooth/BluetoothSettings$2;
+.class Lcom/android/settings_ex/bluetooth/BluetoothSettings$2;
 .super Ljava/lang/Object;
 .source "BluetoothSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/dK;
+.implements Lcom/android/settings_ex/dK;
 
 
 # instance fields
-.field final synthetic Rg:Lcom/android/settings/bluetooth/BluetoothSettings;
+.field final synthetic Rg:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
 
 # virtual methods
@@ -18,16 +18,16 @@
     const/4 v2, 0x0
 
     .line 492
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothSettings$2;->Rg:Lcom/android/settings/bluetooth/BluetoothSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$2;->Rg:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/BluetoothSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ex/bluetooth/BluetoothSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hp;
+    check-cast v0, Lcom/android/settings_ex/hp;
 
     .line 494
-    const-class v1, Lcom/android/settings/location/ScanningSettings;
+    const-class v1, Lcom/android/settings_ex/location/ScanningSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -41,7 +41,7 @@
 
     move-object v5, v2
 
-    invoke-virtual/range {v0 .. v6}, Lcom/android/settings/hp;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lcom/android/settings_ex/hp;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     .line 496
     return-void

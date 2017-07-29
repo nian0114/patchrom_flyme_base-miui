@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/AccountSettings$ProfileData;
+.class Lcom/android/settings_ex/accounts/AccountSettings$ProfileData;
 .super Ljava/lang/Object;
 .source "AccountSettings.java"
 
@@ -10,7 +10,7 @@
 
 .field public Ee:Landroid/preference/Preference;
 
-.field public Ef:Lcom/android/settings/accounts/AuthenticatorHelper;
+.field public Ef:Lcom/android/settings_ex/accounts/AuthenticatorHelper;
 
 .field public Eg:Landroid/content/pm/UserInfo;
 
@@ -26,12 +26,12 @@
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/accounts/AccountSettings$1;)V
+.method synthetic constructor <init>(Lcom/android/settings_ex/accounts/AccountSettings$1;)V
     .locals 0
 
     .prologue
     .line 98
-    invoke-direct {p0}, Lcom/android/settings/accounts/AccountSettings$ProfileData;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ex/accounts/AccountSettings$ProfileData;-><init>()V
 
     return-void
 .end method

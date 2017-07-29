@@ -1,4 +1,4 @@
-.class Lcom/android/settings/iy;
+.class Lcom/android/settings_ex/iy;
 .super Landroid/widget/BaseAdapter;
 .source "UsageStatsActivity.java"
 
@@ -6,61 +6,61 @@
 # instance fields
 .field private BQ:I
 
-.field private BR:Lcom/android/settings/ix;
+.field private BR:Lcom/android/settings_ex/ix;
 
-.field private BS:Lcom/android/settings/iz;
+.field private BS:Lcom/android/settings_ex/iz;
 
-.field private BT:Lcom/android/settings/iv;
+.field private BT:Lcom/android/settings_ex/iv;
 
 .field private final BU:Landroid/util/ArrayMap;
 
 .field private final BV:Ljava/util/ArrayList;
 
-.field final synthetic BW:Lcom/android/settings/UsageStatsActivity;
+.field final synthetic BW:Lcom/android/settings_ex/UsageStatsActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/UsageStatsActivity;)V
+.method constructor <init>(Lcom/android/settings_ex/UsageStatsActivity;)V
     .locals 8
 
     .prologue
     const/4 v6, 0x0
 
     .line 110
-    iput-object p1, p0, Lcom/android/settings/iy;->BW:Lcom/android/settings/UsageStatsActivity;
+    iput-object p1, p0, Lcom/android/settings_ex/iy;->BW:Lcom/android/settings_ex/UsageStatsActivity;
 
     invoke-direct {p0}, Landroid/widget/BaseAdapter;-><init>()V
 
     .line 103
-    iput v6, p0, Lcom/android/settings/iy;->BQ:I
+    iput v6, p0, Lcom/android/settings_ex/iy;->BQ:I
 
     .line 104
-    new-instance v0, Lcom/android/settings/ix;
+    new-instance v0, Lcom/android/settings_ex/ix;
 
-    invoke-direct {v0}, Lcom/android/settings/ix;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ex/ix;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/iy;->BR:Lcom/android/settings/ix;
+    iput-object v0, p0, Lcom/android/settings_ex/iy;->BR:Lcom/android/settings_ex/ix;
 
     .line 105
-    new-instance v0, Lcom/android/settings/iz;
+    new-instance v0, Lcom/android/settings_ex/iz;
 
-    invoke-direct {v0}, Lcom/android/settings/iz;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ex/iz;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/iy;->BS:Lcom/android/settings/iz;
+    iput-object v0, p0, Lcom/android/settings_ex/iy;->BS:Lcom/android/settings_ex/iz;
 
     .line 107
     new-instance v0, Landroid/util/ArrayMap;
 
     invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/iy;->BU:Landroid/util/ArrayMap;
+    iput-object v0, p0, Lcom/android/settings_ex/iy;->BU:Landroid/util/ArrayMap;
 
     .line 108
     new-instance v0, Ljava/util/ArrayList;
 
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/iy;->BV:Ljava/util/ArrayList;
+    iput-object v0, p0, Lcom/android/settings_ex/iy;->BV:Ljava/util/ArrayList;
 
     .line 111
     invoke-static {}, Ljava/util/Calendar;->getInstance()Ljava/util/Calendar;
@@ -75,7 +75,7 @@
     invoke-virtual {v2, v0, v1}, Ljava/util/Calendar;->add(II)V
 
     .line 114
-    invoke-static {p1}, Lcom/android/settings/UsageStatsActivity;->a(Lcom/android/settings/UsageStatsActivity;)Landroid/app/usage/UsageStatsManager;
+    invoke-static {p1}, Lcom/android/settings_ex/UsageStatsActivity;->a(Lcom/android/settings_ex/UsageStatsActivity;)Landroid/app/usage/UsageStatsManager;
 
     move-result-object v0
 
@@ -126,7 +126,7 @@
 
     .line 128
     :try_start_0
-    invoke-static {p1}, Lcom/android/settings/UsageStatsActivity;->b(Lcom/android/settings/UsageStatsActivity;)Landroid/content/pm/PackageManager;
+    invoke-static {p1}, Lcom/android/settings_ex/UsageStatsActivity;->b(Lcom/android/settings_ex/UsageStatsActivity;)Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -141,7 +141,7 @@
     move-result-object v1
 
     .line 129
-    invoke-static {p1}, Lcom/android/settings/UsageStatsActivity;->b(Lcom/android/settings/UsageStatsActivity;)Landroid/content/pm/PackageManager;
+    invoke-static {p1}, Lcom/android/settings_ex/UsageStatsActivity;->b(Lcom/android/settings_ex/UsageStatsActivity;)Landroid/content/pm/PackageManager;
 
     move-result-object v6
 
@@ -154,7 +154,7 @@
     move-result-object v1
 
     .line 130
-    iget-object v6, p0, Lcom/android/settings/iy;->BU:Landroid/util/ArrayMap;
+    iget-object v6, p0, Lcom/android/settings_ex/iy;->BU:Landroid/util/ArrayMap;
 
     invoke-virtual {v0}, Landroid/app/usage/UsageStats;->getPackageName()Ljava/lang/String;
 
@@ -207,7 +207,7 @@
 
     .line 144
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/iy;->BV:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ex/iy;->BV:Ljava/util/ArrayList;
 
     invoke-virtual {v4}, Landroid/util/ArrayMap;->values()Ljava/util/Collection;
 
@@ -216,16 +216,16 @@
     invoke-virtual {v0, v1}, Ljava/util/ArrayList;->addAll(Ljava/util/Collection;)Z
 
     .line 147
-    new-instance v0, Lcom/android/settings/iv;
+    new-instance v0, Lcom/android/settings_ex/iv;
 
-    iget-object v1, p0, Lcom/android/settings/iy;->BU:Landroid/util/ArrayMap;
+    iget-object v1, p0, Lcom/android/settings_ex/iy;->BU:Landroid/util/ArrayMap;
 
-    invoke-direct {v0, v1}, Lcom/android/settings/iv;-><init>(Ljava/util/Map;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ex/iv;-><init>(Ljava/util/Map;)V
 
-    iput-object v0, p0, Lcom/android/settings/iy;->BT:Lcom/android/settings/iv;
+    iput-object v0, p0, Lcom/android/settings_ex/iy;->BT:Lcom/android/settings_ex/iv;
 
     .line 148
-    invoke-direct {p0}, Lcom/android/settings/iy;->iu()V
+    invoke-direct {p0}, Lcom/android/settings_ex/iy;->iu()V
 
     goto :goto_0
 .end method
@@ -235,37 +235,37 @@
 
     .prologue
     .line 215
-    iget v0, p0, Lcom/android/settings/iy;->BQ:I
+    iget v0, p0, Lcom/android/settings_ex/iy;->BQ:I
 
     if-nez v0, :cond_1
 
     .line 217
-    iget-object v0, p0, Lcom/android/settings/iy;->BV:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ex/iy;->BV:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/android/settings/iy;->BS:Lcom/android/settings/iz;
+    iget-object v1, p0, Lcom/android/settings_ex/iy;->BS:Lcom/android/settings_ex/iz;
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     .line 225
     :cond_0
     :goto_0
-    invoke-virtual {p0}, Lcom/android/settings/iy;->notifyDataSetChanged()V
+    invoke-virtual {p0}, Lcom/android/settings_ex/iy;->notifyDataSetChanged()V
 
     .line 226
     return-void
 
     .line 218
     :cond_1
-    iget v0, p0, Lcom/android/settings/iy;->BQ:I
+    iget v0, p0, Lcom/android/settings_ex/iy;->BQ:I
 
     const/4 v1, 0x1
 
     if-ne v0, v1, :cond_2
 
     .line 220
-    iget-object v0, p0, Lcom/android/settings/iy;->BV:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ex/iy;->BV:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/android/settings/iy;->BR:Lcom/android/settings/ix;
+    iget-object v1, p0, Lcom/android/settings_ex/iy;->BR:Lcom/android/settings_ex/ix;
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
@@ -273,16 +273,16 @@
 
     .line 221
     :cond_2
-    iget v0, p0, Lcom/android/settings/iy;->BQ:I
+    iget v0, p0, Lcom/android/settings_ex/iy;->BQ:I
 
     const/4 v1, 0x2
 
     if-ne v0, v1, :cond_0
 
     .line 223
-    iget-object v0, p0, Lcom/android/settings/iy;->BV:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ex/iy;->BV:Ljava/util/ArrayList;
 
-    iget-object v1, p0, Lcom/android/settings/iy;->BT:Lcom/android/settings/iv;
+    iget-object v1, p0, Lcom/android/settings_ex/iy;->BT:Lcom/android/settings_ex/iv;
 
     invoke-static {v0, v1}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
@@ -296,7 +296,7 @@
 
     .prologue
     .line 207
-    iget v0, p0, Lcom/android/settings/iy;->BQ:I
+    iget v0, p0, Lcom/android/settings_ex/iy;->BQ:I
 
     if-ne v0, p1, :cond_0
 
@@ -306,10 +306,10 @@
 
     .line 211
     :cond_0
-    iput p1, p0, Lcom/android/settings/iy;->BQ:I
+    iput p1, p0, Lcom/android/settings_ex/iy;->BQ:I
 
     .line 212
-    invoke-direct {p0}, Lcom/android/settings/iy;->iu()V
+    invoke-direct {p0}, Lcom/android/settings_ex/iy;->iu()V
 
     goto :goto_0
 .end method
@@ -319,7 +319,7 @@
 
     .prologue
     .line 153
-    iget-object v0, p0, Lcom/android/settings/iy;->BV:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ex/iy;->BV:Ljava/util/ArrayList;
 
     invoke-virtual {v0}, Ljava/util/ArrayList;->size()I
 
@@ -333,7 +333,7 @@
 
     .prologue
     .line 158
-    iget-object v0, p0, Lcom/android/settings/iy;->BV:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ex/iy;->BV:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -362,9 +362,9 @@
     if-nez p2, :cond_0
 
     .line 176
-    iget-object v0, p0, Lcom/android/settings/iy;->BW:Lcom/android/settings/UsageStatsActivity;
+    iget-object v0, p0, Lcom/android/settings_ex/iy;->BW:Lcom/android/settings_ex/UsageStatsActivity;
 
-    invoke-static {v0}, Lcom/android/settings/UsageStatsActivity;->c(Lcom/android/settings/UsageStatsActivity;)Landroid/view/LayoutInflater;
+    invoke-static {v0}, Lcom/android/settings_ex/UsageStatsActivity;->c(Lcom/android/settings_ex/UsageStatsActivity;)Landroid/view/LayoutInflater;
 
     move-result-object v0
 
@@ -377,9 +377,9 @@
     move-result-object p2
 
     .line 180
-    new-instance v1, Lcom/android/settings/iw;
+    new-instance v1, Lcom/android/settings_ex/iw;
 
-    invoke-direct {v1}, Lcom/android/settings/iw;-><init>()V
+    invoke-direct {v1}, Lcom/android/settings_ex/iw;-><init>()V
 
     .line 181
     const v0, 0x7f1302ff
@@ -390,7 +390,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, v1, Lcom/android/settings/iw;->BN:Landroid/widget/TextView;
+    iput-object v0, v1, Lcom/android/settings_ex/iw;->BN:Landroid/widget/TextView;
 
     .line 182
     const v0, 0x7f130300
@@ -401,7 +401,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, v1, Lcom/android/settings/iw;->BO:Landroid/widget/TextView;
+    iput-object v0, v1, Lcom/android/settings_ex/iw;->BO:Landroid/widget/TextView;
 
     .line 183
     const v0, 0x7f130301
@@ -412,7 +412,7 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, v1, Lcom/android/settings/iw;->BP:Landroid/widget/TextView;
+    iput-object v0, v1, Lcom/android/settings_ex/iw;->BP:Landroid/widget/TextView;
 
     .line 184
     invoke-virtual {p2, v1}, Landroid/view/View;->setTag(Ljava/lang/Object;)V
@@ -421,7 +421,7 @@
 
     .line 192
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/iy;->BV:Ljava/util/ArrayList;
+    iget-object v0, p0, Lcom/android/settings_ex/iy;->BV:Ljava/util/ArrayList;
 
     invoke-virtual {v0, p1}, Ljava/util/ArrayList;->get(I)Ljava/lang/Object;
 
@@ -435,7 +435,7 @@
     if-eqz v6, :cond_1
 
     .line 194
-    iget-object v0, p0, Lcom/android/settings/iy;->BU:Landroid/util/ArrayMap;
+    iget-object v0, p0, Lcom/android/settings_ex/iy;->BU:Landroid/util/ArrayMap;
 
     invoke-virtual {v6}, Landroid/app/usage/UsageStats;->getPackageName()Ljava/lang/String;
 
@@ -448,12 +448,12 @@
     check-cast v0, Ljava/lang/String;
 
     .line 195
-    iget-object v1, v7, Lcom/android/settings/iw;->BN:Landroid/widget/TextView;
+    iget-object v1, v7, Lcom/android/settings_ex/iw;->BN:Landroid/widget/TextView;
 
     invoke-virtual {v1, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 196
-    iget-object v8, v7, Lcom/android/settings/iw;->BO:Landroid/widget/TextView;
+    iget-object v8, v7, Lcom/android/settings_ex/iw;->BO:Landroid/widget/TextView;
 
     invoke-virtual {v6}, Landroid/app/usage/UsageStats;->getLastTimeUsed()J
 
@@ -472,7 +472,7 @@
     invoke-virtual {v8, v0}, Landroid/widget/TextView;->setText(Ljava/lang/CharSequence;)V
 
     .line 198
-    iget-object v0, v7, Lcom/android/settings/iw;->BP:Landroid/widget/TextView;
+    iget-object v0, v7, Lcom/android/settings_ex/iw;->BP:Landroid/widget/TextView;
 
     invoke-virtual {v6}, Landroid/app/usage/UsageStats;->getTotalTimeInForeground()J
 
@@ -498,7 +498,7 @@
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/iw;
+    check-cast v0, Lcom/android/settings_ex/iw;
 
     move-object v7, v0
 

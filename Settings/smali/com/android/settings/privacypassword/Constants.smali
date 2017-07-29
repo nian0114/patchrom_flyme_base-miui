@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/privacypassword/Constants;
+.class public Lcom/android/settings_ex/privacypassword/Constants;
 .super Ljava/lang/Object;
 .source "Constants.java"
 

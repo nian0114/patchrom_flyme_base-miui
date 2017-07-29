@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hF;
+.class Lcom/android/settings_ex/hF;
 .super Ljava/lang/Object;
 .source "SettingsFragment.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic zV:Lcom/android/settings/he;
+.field final synthetic zV:Lcom/android/settings_ex/he;
 
-.field final synthetic zW:Lcom/android/settings/hE;
+.field final synthetic zW:Lcom/android/settings_ex/hE;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/hE;Lcom/android/settings/he;)V
+.method constructor <init>(Lcom/android/settings_ex/hE;Lcom/android/settings_ex/he;)V
     .locals 0
 
     .prologue
     .line 568
-    iput-object p1, p0, Lcom/android/settings/hF;->zW:Lcom/android/settings/hE;
+    iput-object p1, p0, Lcom/android/settings_ex/hF;->zW:Lcom/android/settings_ex/hE;
 
-    iput-object p2, p0, Lcom/android/settings/hF;->zV:Lcom/android/settings/he;
+    iput-object p2, p0, Lcom/android/settings_ex/hF;->zV:Lcom/android/settings_ex/he;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,13 +34,13 @@
 
     .prologue
     .line 570
-    iget-object v0, p0, Lcom/android/settings/hF;->zW:Lcom/android/settings/hE;
+    iget-object v0, p0, Lcom/android/settings_ex/hF;->zW:Lcom/android/settings_ex/hE;
 
-    iget-object v0, v0, Lcom/android/settings/hE;->zR:Lcom/android/settings/SettingsFragment;
+    iget-object v0, v0, Lcom/android/settings_ex/hE;->zR:Lcom/android/settings_ex/SettingsFragment;
 
-    iget-object v1, p0, Lcom/android/settings/hF;->zV:Lcom/android/settings/he;
+    iget-object v1, p0, Lcom/android/settings_ex/hF;->zV:Lcom/android/settings_ex/he;
 
-    invoke-static {v0, p1, v1}, Lcom/android/settings/SettingsFragment;->a(Lcom/android/settings/SettingsFragment;Landroid/view/View;Lcom/android/settings/he;)V
+    invoke-static {v0, p1, v1}, Lcom/android/settings_ex/SettingsFragment;->a(Lcom/android/settings_ex/SettingsFragment;Landroid/view/View;Lcom/android/settings_ex/he;)V
 
     .line 571
     return-void

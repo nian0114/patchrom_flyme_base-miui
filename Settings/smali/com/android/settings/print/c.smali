@@ -1,19 +1,19 @@
-.class Lcom/android/settings/print/c;
+.class Lcom/android/settings_ex/print/c;
 .super Landroid/database/DataSetObserver;
 .source "PrintServiceSettingsFragment.java"
 
 
 # instance fields
-.field final synthetic amt:Lcom/android/settings/print/PrintServiceSettingsFragment;
+.field final synthetic amt:Lcom/android/settings_ex/print/PrintServiceSettingsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/print/PrintServiceSettingsFragment;)V
+.method constructor <init>(Lcom/android/settings_ex/print/PrintServiceSettingsFragment;)V
     .locals 0
 
     .prologue
     .line 107
-    iput-object p1, p0, Lcom/android/settings/print/c;->amt:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iput-object p1, p0, Lcom/android/settings_ex/print/c;->amt:Lcom/android/settings_ex/print/PrintServiceSettingsFragment;
 
     invoke-direct {p0}, Landroid/database/DataSetObserver;-><init>()V
 
@@ -25,20 +25,20 @@
 
     .prologue
     .line 120
-    iget-object v0, p0, Lcom/android/settings/print/c;->amt:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ex/print/c;->amt:Lcom/android/settings_ex/print/PrintServiceSettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->c(Lcom/android/settings/print/PrintServiceSettingsFragment;)Lcom/android/settings/print/h;
+    invoke-static {v0}, Lcom/android/settings_ex/print/PrintServiceSettingsFragment;->c(Lcom/android/settings_ex/print/PrintServiceSettingsFragment;)Lcom/android/settings_ex/print/h;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/print/h;->getUnfilteredCount()I
+    invoke-virtual {v0}, Lcom/android/settings_ex/print/h;->getUnfilteredCount()I
 
     move-result v0
 
     .line 121
-    iget-object v1, p0, Lcom/android/settings/print/c;->amt:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v1, p0, Lcom/android/settings_ex/print/c;->amt:Lcom/android/settings_ex/print/PrintServiceSettingsFragment;
 
-    invoke-static {v1}, Lcom/android/settings/print/PrintServiceSettingsFragment;->d(Lcom/android/settings/print/PrintServiceSettingsFragment;)I
+    invoke-static {v1}, Lcom/android/settings_ex/print/PrintServiceSettingsFragment;->d(Lcom/android/settings_ex/print/PrintServiceSettingsFragment;)I
 
     move-result v1
 
@@ -47,9 +47,9 @@
     if-gtz v0, :cond_1
 
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/print/c;->amt:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v1, p0, Lcom/android/settings_ex/print/c;->amt:Lcom/android/settings_ex/print/PrintServiceSettingsFragment;
 
-    invoke-static {v1}, Lcom/android/settings/print/PrintServiceSettingsFragment;->d(Lcom/android/settings/print/PrintServiceSettingsFragment;)I
+    invoke-static {v1}, Lcom/android/settings_ex/print/PrintServiceSettingsFragment;->d(Lcom/android/settings_ex/print/PrintServiceSettingsFragment;)I
 
     move-result v1
 
@@ -59,9 +59,9 @@
 
     .line 123
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/print/c;->amt:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v1, p0, Lcom/android/settings_ex/print/c;->amt:Lcom/android/settings_ex/print/PrintServiceSettingsFragment;
 
-    invoke-virtual {v1}, Lcom/android/settings/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v1}, Lcom/android/settings_ex/print/PrintServiceSettingsFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -69,9 +69,9 @@
 
     .line 125
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/print/c;->amt:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v1, p0, Lcom/android/settings_ex/print/c;->amt:Lcom/android/settings_ex/print/PrintServiceSettingsFragment;
 
-    invoke-static {v1, v0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->a(Lcom/android/settings/print/PrintServiceSettingsFragment;I)I
+    invoke-static {v1, v0}, Lcom/android/settings_ex/print/PrintServiceSettingsFragment;->a(Lcom/android/settings_ex/print/PrintServiceSettingsFragment;I)I
 
     .line 126
     return-void
@@ -84,12 +84,12 @@
 
     .prologue
     .line 110
-    invoke-direct {p0}, Lcom/android/settings/print/c;->tj()V
+    invoke-direct {p0}, Lcom/android/settings_ex/print/c;->tj()V
 
     .line 111
-    iget-object v0, p0, Lcom/android/settings/print/c;->amt:Lcom/android/settings/print/PrintServiceSettingsFragment;
+    iget-object v0, p0, Lcom/android/settings_ex/print/c;->amt:Lcom/android/settings_ex/print/PrintServiceSettingsFragment;
 
-    invoke-static {v0}, Lcom/android/settings/print/PrintServiceSettingsFragment;->b(Lcom/android/settings/print/PrintServiceSettingsFragment;)V
+    invoke-static {v0}, Lcom/android/settings_ex/print/PrintServiceSettingsFragment;->b(Lcom/android/settings_ex/print/PrintServiceSettingsFragment;)V
 
     .line 112
     return-void
@@ -100,7 +100,7 @@
 
     .prologue
     .line 116
-    invoke-direct {p0}, Lcom/android/settings/print/c;->tj()V
+    invoke-direct {p0}, Lcom/android/settings_ex/print/c;->tj()V
 
     .line 117
     return-void

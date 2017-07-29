@@ -1,4 +1,4 @@
-.class Lcom/android/settings/sound/G;
+.class Lcom/android/settings_ex/sound/G;
 .super Ljava/lang/Object;
 .source "RingerVolumeFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic arh:Lcom/android/settings/sound/E;
+.field final synthetic arh:Lcom/android/settings_ex/sound/E;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sound/E;)V
+.method constructor <init>(Lcom/android/settings_ex/sound/E;)V
     .locals 0
 
     .prologue
     .line 532
-    iput-object p1, p0, Lcom/android/settings/sound/G;->arh:Lcom/android/settings/sound/E;
+    iput-object p1, p0, Lcom/android/settings_ex/sound/G;->arh:Lcom/android/settings_ex/sound/E;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -40,11 +40,11 @@
     invoke-virtual {p1}, Landroid/media/MediaPlayer;->release()V
 
     .line 539
-    iget-object v0, p0, Lcom/android/settings/sound/G;->arh:Lcom/android/settings/sound/E;
+    iget-object v0, p0, Lcom/android/settings_ex/sound/G;->arh:Lcom/android/settings_ex/sound/E;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/sound/E;->a(Lcom/android/settings/sound/E;Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer;
+    invoke-static {v0, v1}, Lcom/android/settings_ex/sound/E;->a(Lcom/android/settings_ex/sound/E;Landroid/media/MediaPlayer;)Landroid/media/MediaPlayer;
 
     .line 540
     const/4 v0, 0x1

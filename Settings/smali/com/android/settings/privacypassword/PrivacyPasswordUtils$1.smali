@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/privacypassword/PrivacyPasswordUtils$1;
+.class final Lcom/android/settings_ex/privacypassword/PrivacyPasswordUtils$1;
 .super Ljava/lang/Object;
 .source "PrivacyPasswordUtils.java"
 
@@ -18,9 +18,9 @@
 
     .prologue
     .line 81
-    iput-object p1, p0, Lcom/android/settings/privacypassword/PrivacyPasswordUtils$1;->aow:Lmiui/security/SecurityManager;
+    iput-object p1, p0, Lcom/android/settings_ex/privacypassword/PrivacyPasswordUtils$1;->aow:Lmiui/security/SecurityManager;
 
-    iput-object p2, p0, Lcom/android/settings/privacypassword/PrivacyPasswordUtils$1;->aox:Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/settings_ex/privacypassword/PrivacyPasswordUtils$1;->aox:Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,9 +34,9 @@
 
     .prologue
     .line 84
-    iget-object v0, p0, Lcom/android/settings/privacypassword/PrivacyPasswordUtils$1;->aow:Lmiui/security/SecurityManager;
+    iget-object v0, p0, Lcom/android/settings_ex/privacypassword/PrivacyPasswordUtils$1;->aow:Lmiui/security/SecurityManager;
 
-    iget-object v1, p0, Lcom/android/settings/privacypassword/PrivacyPasswordUtils$1;->aox:Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ex/privacypassword/PrivacyPasswordUtils$1;->aox:Ljava/lang/String;
 
     invoke-virtual {v0, v1}, Lmiui/security/SecurityManager;->removeAccessControlPass(Ljava/lang/String;)V
 

@@ -1,4 +1,4 @@
-.class public interface abstract Lcom/android/settings/de;
+.class public interface abstract Lcom/android/settings_ex/de;
 .super Ljava/lang/Object;
 .source "FingerprintRemoveCallback.java"
 

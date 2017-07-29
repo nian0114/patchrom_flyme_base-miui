@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fingerprint/m;
+.class Lcom/android/settings_ex/fingerprint/m;
 .super Ljava/lang/Object;
 .source "FingerprintEnrollEnrolling.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic abP:Lcom/android/settings/fingerprint/l;
+.field final synthetic abP:Lcom/android/settings_ex/fingerprint/l;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fingerprint/l;)V
+.method constructor <init>(Lcom/android/settings_ex/fingerprint/l;)V
     .locals 0
 
     .prologue
     .line 391
-    iput-object p1, p0, Lcom/android/settings/fingerprint/m;->abP:Lcom/android/settings/fingerprint/l;
+    iput-object p1, p0, Lcom/android/settings_ex/fingerprint/m;->abP:Lcom/android/settings_ex/fingerprint/l;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

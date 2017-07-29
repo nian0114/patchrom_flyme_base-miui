@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/fu;
+.class public Lcom/android/settings_ex/fu;
 .super Ljava/lang/Object;
 .source "MiuiSettingsCompatibilityHelper.java"
 

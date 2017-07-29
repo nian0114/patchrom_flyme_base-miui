@@ -1,5 +1,5 @@
-.class public Lcom/android/settings/dndmode/h;
-.super Lcom/android/settings/dndmode/q;
+.class public Lcom/android/settings_ex/dndmode/h;
+.super Lcom/android/settings_ex/dndmode/q;
 .source "AutoTimeSettingsFragment.java"
 
 # interfaces
@@ -20,11 +20,11 @@
 
 .field private aaq:Landroid/preference/PreferenceCategory;
 
-.field private aar:Lcom/android/settings/dndmode/LabelPreference;
+.field private aar:Lcom/android/settings_ex/dndmode/LabelPreference;
 
-.field private aas:Lcom/android/settings/dndmode/LabelPreference;
+.field private aas:Lcom/android/settings_ex/dndmode/LabelPreference;
 
-.field private aat:Lcom/android/settings/dndmode/RepeatPreference;
+.field private aat:Lcom/android/settings_ex/dndmode/RepeatPreference;
 
 .field private aau:Landroid/preference/CheckBoxPreference;
 
@@ -39,66 +39,66 @@
 
     .prologue
     .line 85
-    invoke-direct {p0}, Lcom/android/settings/dndmode/q;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ex/dndmode/q;-><init>()V
 
     .line 55
-    new-instance v0, Lcom/android/settings/dndmode/i;
+    new-instance v0, Lcom/android/settings_ex/dndmode/i;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/dndmode/i;-><init>(Lcom/android/settings/dndmode/h;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ex/dndmode/i;-><init>(Lcom/android/settings_ex/dndmode/h;)V
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/h;->Zj:Lmiui/app/TimePickerDialog$OnTimeSetListener;
+    iput-object v0, p0, Lcom/android/settings_ex/dndmode/h;->Zj:Lmiui/app/TimePickerDialog$OnTimeSetListener;
 
     .line 74
-    new-instance v0, Lcom/android/settings/dndmode/j;
+    new-instance v0, Lcom/android/settings_ex/dndmode/j;
 
     new-instance v1, Landroid/os/Handler;
 
     invoke-direct {v1}, Landroid/os/Handler;-><init>()V
 
-    invoke-direct {v0, p0, v1}, Lcom/android/settings/dndmode/j;-><init>(Lcom/android/settings/dndmode/h;Landroid/os/Handler;)V
+    invoke-direct {v0, p0, v1}, Lcom/android/settings_ex/dndmode/j;-><init>(Lcom/android/settings_ex/dndmode/h;Landroid/os/Handler;)V
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/h;->aav:Landroid/database/ContentObserver;
+    iput-object v0, p0, Lcom/android/settings_ex/dndmode/h;->aav:Landroid/database/ContentObserver;
 
     .line 86
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/dndmode/h;I)I
+.method static synthetic a(Lcom/android/settings_ex/dndmode/h;I)I
     .locals 0
 
     .prologue
     .line 29
-    iput p1, p0, Lcom/android/settings/dndmode/h;->Zg:I
+    iput p1, p0, Lcom/android/settings_ex/dndmode/h;->Zg:I
 
     return p1
 .end method
 
-.method static synthetic a(Lcom/android/settings/dndmode/h;)Z
+.method static synthetic a(Lcom/android/settings_ex/dndmode/h;)Z
     .locals 1
 
     .prologue
     .line 29
-    iget-boolean v0, p0, Lcom/android/settings/dndmode/h;->Zi:Z
+    iget-boolean v0, p0, Lcom/android/settings_ex/dndmode/h;->Zi:Z
 
     return v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/dndmode/h;)Landroid/app/Activity;
+.method static synthetic b(Lcom/android/settings_ex/dndmode/h;)Landroid/app/Activity;
     .locals 1
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/android/settings/dndmode/h;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ex/dndmode/h;->mActivity:Landroid/app/Activity;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/dndmode/h;I)Ljava/lang/String;
+.method static synthetic b(Lcom/android/settings_ex/dndmode/h;I)Ljava/lang/String;
     .locals 1
 
     .prologue
     .line 29
-    invoke-direct {p0, p1}, Lcom/android/settings/dndmode/h;->bK(I)Ljava/lang/String;
+    invoke-direct {p0, p1}, Lcom/android/settings_ex/dndmode/h;->bK(I)Ljava/lang/String;
 
     move-result-object v0
 
@@ -128,7 +128,7 @@
 
     rem-int/lit8 v1, p1, 0x3c
 
-    invoke-direct {p0, v1}, Lcom/android/settings/dndmode/h;->bL(I)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/settings_ex/dndmode/h;->bL(I)Ljava/lang/String;
 
     move-result-object v1
 
@@ -195,62 +195,62 @@
     goto :goto_0
 .end method
 
-.method static synthetic c(Lcom/android/settings/dndmode/h;)I
+.method static synthetic c(Lcom/android/settings_ex/dndmode/h;)I
     .locals 1
 
     .prologue
     .line 29
-    iget v0, p0, Lcom/android/settings/dndmode/h;->Zg:I
+    iget v0, p0, Lcom/android/settings_ex/dndmode/h;->Zg:I
 
     return v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/dndmode/h;I)I
+.method static synthetic c(Lcom/android/settings_ex/dndmode/h;I)I
     .locals 0
 
     .prologue
     .line 29
-    iput p1, p0, Lcom/android/settings/dndmode/h;->Zh:I
+    iput p1, p0, Lcom/android/settings_ex/dndmode/h;->Zh:I
 
     return p1
 .end method
 
-.method static synthetic d(Lcom/android/settings/dndmode/h;)Lcom/android/settings/dndmode/LabelPreference;
+.method static synthetic d(Lcom/android/settings_ex/dndmode/h;)Lcom/android/settings_ex/dndmode/LabelPreference;
     .locals 1
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/android/settings/dndmode/h;->aar:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/dndmode/h;->aar:Lcom/android/settings_ex/dndmode/LabelPreference;
 
     return-object v0
 .end method
 
-.method static synthetic e(Lcom/android/settings/dndmode/h;)I
+.method static synthetic e(Lcom/android/settings_ex/dndmode/h;)I
     .locals 1
 
     .prologue
     .line 29
-    iget v0, p0, Lcom/android/settings/dndmode/h;->Zh:I
+    iget v0, p0, Lcom/android/settings_ex/dndmode/h;->Zh:I
 
     return v0
 .end method
 
-.method static synthetic f(Lcom/android/settings/dndmode/h;)Lcom/android/settings/dndmode/LabelPreference;
+.method static synthetic f(Lcom/android/settings_ex/dndmode/h;)Lcom/android/settings_ex/dndmode/LabelPreference;
     .locals 1
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/android/settings/dndmode/h;->aas:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/dndmode/h;->aas:Lcom/android/settings_ex/dndmode/LabelPreference;
 
     return-object v0
 .end method
 
-.method static synthetic g(Lcom/android/settings/dndmode/h;)Landroid/preference/CheckBoxPreference;
+.method static synthetic g(Lcom/android/settings_ex/dndmode/h;)Landroid/preference/CheckBoxPreference;
     .locals 1
 
     .prologue
     .line 29
-    iget-object v0, p0, Lcom/android/settings/dndmode/h;->aau:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/dndmode/h;->aau:Landroid/preference/CheckBoxPreference;
 
     return-object v0
 .end method
@@ -292,7 +292,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 201
-    iget-object v1, p0, Lcom/android/settings/dndmode/h;->mActivity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/android/settings_ex/dndmode/h;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v1, v0}, Landroid/app/Activity;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 
@@ -305,165 +305,165 @@
 
     .prologue
     .line 90
-    invoke-super {p0, p1}, Lcom/android/settings/dndmode/q;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ex/dndmode/q;->onCreate(Landroid/os/Bundle;)V
 
     .line 91
     const v0, 0x7f080039
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/h;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/dndmode/h;->addPreferencesFromResource(I)V
 
     .line 92
-    invoke-virtual {p0}, Lcom/android/settings/dndmode/h;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/dndmode/h;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/h;->mActivity:Landroid/app/Activity;
+    iput-object v0, p0, Lcom/android/settings_ex/dndmode/h;->mActivity:Landroid/app/Activity;
 
     .line 94
     const-string v0, "time_setting_root"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/h;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/dndmode/h;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceScreen;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/h;->aap:Landroid/preference/PreferenceScreen;
+    iput-object v0, p0, Lcom/android/settings_ex/dndmode/h;->aap:Landroid/preference/PreferenceScreen;
 
     .line 95
-    iget-object v0, p0, Lcom/android/settings/dndmode/h;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ex/dndmode/h;->mActivity:Landroid/app/Activity;
 
     invoke-static {v0}, Landroid/provider/MiuiSettings$AntiSpam;->getStartTimeForQuietMode(Landroid/content/Context;)I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/dndmode/h;->Zg:I
+    iput v0, p0, Lcom/android/settings_ex/dndmode/h;->Zg:I
 
     .line 96
-    iget-object v0, p0, Lcom/android/settings/dndmode/h;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ex/dndmode/h;->mActivity:Landroid/app/Activity;
 
     invoke-static {v0}, Landroid/provider/MiuiSettings$AntiSpam;->getEndTimeForQuietMode(Landroid/content/Context;)I
 
     move-result v0
 
-    iput v0, p0, Lcom/android/settings/dndmode/h;->Zh:I
+    iput v0, p0, Lcom/android/settings_ex/dndmode/h;->Zh:I
 
     .line 97
     const-string v0, "start_time"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/h;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/dndmode/h;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/dndmode/LabelPreference;
+    check-cast v0, Lcom/android/settings_ex/dndmode/LabelPreference;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/h;->aar:Lcom/android/settings/dndmode/LabelPreference;
+    iput-object v0, p0, Lcom/android/settings_ex/dndmode/h;->aar:Lcom/android/settings_ex/dndmode/LabelPreference;
 
     .line 98
     const-string v0, "end_time"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/h;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/dndmode/h;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/dndmode/LabelPreference;
+    check-cast v0, Lcom/android/settings_ex/dndmode/LabelPreference;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/h;->aas:Lcom/android/settings/dndmode/LabelPreference;
+    iput-object v0, p0, Lcom/android/settings_ex/dndmode/h;->aas:Lcom/android/settings_ex/dndmode/LabelPreference;
 
     .line 99
     const-string v0, "repeat"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/h;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/dndmode/h;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/dndmode/RepeatPreference;
+    check-cast v0, Lcom/android/settings_ex/dndmode/RepeatPreference;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/h;->aat:Lcom/android/settings/dndmode/RepeatPreference;
+    iput-object v0, p0, Lcom/android/settings_ex/dndmode/h;->aat:Lcom/android/settings_ex/dndmode/RepeatPreference;
 
     .line 100
     const-string v0, "key_quiet_wristband_category"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/h;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/dndmode/h;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/PreferenceCategory;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/h;->aaq:Landroid/preference/PreferenceCategory;
+    iput-object v0, p0, Lcom/android/settings_ex/dndmode/h;->aaq:Landroid/preference/PreferenceCategory;
 
     .line 101
     const-string v0, "key_quiet_wristband"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/dndmode/h;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/dndmode/h;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/dndmode/h;->aau:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ex/dndmode/h;->aau:Landroid/preference/CheckBoxPreference;
 
     .line 103
-    iget-object v0, p0, Lcom/android/settings/dndmode/h;->aar:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/dndmode/h;->aar:Lcom/android/settings_ex/dndmode/LabelPreference;
 
-    iget v1, p0, Lcom/android/settings/dndmode/h;->Zg:I
+    iget v1, p0, Lcom/android/settings_ex/dndmode/h;->Zg:I
 
-    invoke-direct {p0, v1}, Lcom/android/settings/dndmode/h;->bK(I)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/settings_ex/dndmode/h;->bK(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
 
     .line 104
-    iget-object v0, p0, Lcom/android/settings/dndmode/h;->aar:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/dndmode/h;->aar:Lcom/android/settings_ex/dndmode/LabelPreference;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/dndmode/LabelPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ex/dndmode/LabelPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 105
-    iget-object v0, p0, Lcom/android/settings/dndmode/h;->aas:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/dndmode/h;->aas:Lcom/android/settings_ex/dndmode/LabelPreference;
 
-    iget v1, p0, Lcom/android/settings/dndmode/h;->Zh:I
+    iget v1, p0, Lcom/android/settings_ex/dndmode/h;->Zh:I
 
-    invoke-direct {p0, v1}, Lcom/android/settings/dndmode/h;->bK(I)Ljava/lang/String;
+    invoke-direct {p0, v1}, Lcom/android/settings_ex/dndmode/h;->bK(I)Ljava/lang/String;
 
     move-result-object v1
 
-    invoke-virtual {v0, v1}, Lcom/android/settings/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/dndmode/LabelPreference;->setLabel(Ljava/lang/String;)V
 
     .line 106
-    iget-object v0, p0, Lcom/android/settings/dndmode/h;->aas:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/dndmode/h;->aas:Lcom/android/settings_ex/dndmode/LabelPreference;
 
-    invoke-virtual {v0, p0}, Lcom/android/settings/dndmode/LabelPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
+    invoke-virtual {v0, p0}, Lcom/android/settings_ex/dndmode/LabelPreference;->setOnPreferenceClickListener(Landroid/preference/Preference$OnPreferenceClickListener;)V
 
     .line 108
-    new-instance v0, Lcom/android/settings/dndmode/b;
+    new-instance v0, Lcom/android/settings_ex/dndmode/b;
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/h;->mActivity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/android/settings_ex/dndmode/h;->mActivity:Landroid/app/Activity;
 
     invoke-static {v1}, Landroid/provider/MiuiSettings$AntiSpam;->getQuietRepeatType(Landroid/content/Context;)I
 
     move-result v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/dndmode/b;-><init>(I)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ex/dndmode/b;-><init>(I)V
 
     .line 109
-    iget-object v1, p0, Lcom/android/settings/dndmode/h;->mActivity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/android/settings_ex/dndmode/h;->mActivity:Landroid/app/Activity;
 
     const/4 v2, 0x1
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/dndmode/b;->l(Landroid/content/Context;Z)Ljava/lang/String;
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ex/dndmode/b;->l(Landroid/content/Context;Z)Ljava/lang/String;
 
     move-result-object v1
 
     .line 110
-    iget-object v2, p0, Lcom/android/settings/dndmode/h;->aat:Lcom/android/settings/dndmode/RepeatPreference;
+    iget-object v2, p0, Lcom/android/settings_ex/dndmode/h;->aat:Lcom/android/settings_ex/dndmode/RepeatPreference;
 
-    invoke-virtual {v2, v1}, Lcom/android/settings/dndmode/RepeatPreference;->setLabel(Ljava/lang/String;)V
+    invoke-virtual {v2, v1}, Lcom/android/settings_ex/dndmode/RepeatPreference;->setLabel(Ljava/lang/String;)V
 
     .line 111
-    iget-object v1, p0, Lcom/android/settings/dndmode/h;->aat:Lcom/android/settings/dndmode/RepeatPreference;
+    iget-object v1, p0, Lcom/android/settings_ex/dndmode/h;->aat:Lcom/android/settings_ex/dndmode/RepeatPreference;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/dndmode/RepeatPreference;->b(Lcom/android/settings/dndmode/b;)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ex/dndmode/RepeatPreference;->b(Lcom/android/settings_ex/dndmode/b;)V
 
     .line 113
     sget-boolean v0, Lmiui/os/Build;->IS_TABLET:Z
@@ -471,14 +471,14 @@
     if-nez v0, :cond_0
 
     .line 114
-    iget-object v0, p0, Lcom/android/settings/dndmode/h;->aau:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/dndmode/h;->aau:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/CheckBoxPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 115
-    iget-object v0, p0, Lcom/android/settings/dndmode/h;->aau:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/dndmode/h;->aau:Landroid/preference/CheckBoxPreference;
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/h;->mActivity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/android/settings_ex/dndmode/h;->mActivity:Landroid/app/Activity;
 
     invoke-static {v1}, Landroid/provider/MiuiSettings$AntiSpam;->isQuietWristband(Landroid/content/Context;)Z
 
@@ -488,7 +488,7 @@
 
     .line 120
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/dndmode/h;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ex/dndmode/h;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -502,7 +502,7 @@
 
     const/4 v2, 0x0
 
-    iget-object v3, p0, Lcom/android/settings/dndmode/h;->aav:Landroid/database/ContentObserver;
+    iget-object v3, p0, Lcom/android/settings_ex/dndmode/h;->aav:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1, v2, v3}, Landroid/content/ContentResolver;->registerContentObserver(Landroid/net/Uri;ZLandroid/database/ContentObserver;)V
 
@@ -511,9 +511,9 @@
 
     .line 117
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/dndmode/h;->aap:Landroid/preference/PreferenceScreen;
+    iget-object v0, p0, Lcom/android/settings_ex/dndmode/h;->aap:Landroid/preference/PreferenceScreen;
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/h;->aaq:Landroid/preference/PreferenceCategory;
+    iget-object v1, p0, Lcom/android/settings_ex/dndmode/h;->aaq:Landroid/preference/PreferenceCategory;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
@@ -525,33 +525,33 @@
 
     .prologue
     .line 132
-    iget-object v0, p0, Lcom/android/settings/dndmode/h;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ex/dndmode/h;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v0}, Landroid/app/Activity;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/h;->aav:Landroid/database/ContentObserver;
+    iget-object v1, p0, Lcom/android/settings_ex/dndmode/h;->aav:Landroid/database/ContentObserver;
 
     invoke-virtual {v0, v1}, Landroid/content/ContentResolver;->unregisterContentObserver(Landroid/database/ContentObserver;)V
 
     .line 133
-    iget-object v0, p0, Lcom/android/settings/dndmode/h;->mActivity:Landroid/app/Activity;
+    iget-object v0, p0, Lcom/android/settings_ex/dndmode/h;->mActivity:Landroid/app/Activity;
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/h;->aat:Lcom/android/settings/dndmode/RepeatPreference;
+    iget-object v1, p0, Lcom/android/settings_ex/dndmode/h;->aat:Lcom/android/settings_ex/dndmode/RepeatPreference;
 
-    invoke-virtual {v1}, Lcom/android/settings/dndmode/RepeatPreference;->qc()Lcom/android/settings/dndmode/b;
+    invoke-virtual {v1}, Lcom/android/settings_ex/dndmode/RepeatPreference;->qc()Lcom/android/settings_ex/dndmode/b;
 
     move-result-object v1
 
-    invoke-virtual {v1}, Lcom/android/settings/dndmode/b;->pU()I
+    invoke-virtual {v1}, Lcom/android/settings_ex/dndmode/b;->pU()I
 
     move-result v1
 
     invoke-static {v0, v1}, Landroid/provider/MiuiSettings$AntiSpam;->setQuietRepeatType(Landroid/content/Context;I)V
 
     .line 134
-    invoke-super {p0}, Lcom/android/settings/dndmode/q;->onDestroy()V
+    invoke-super {p0}, Lcom/android/settings_ex/dndmode/q;->onDestroy()V
 
     .line 135
     return-void
@@ -564,12 +564,12 @@
     const/4 v0, 0x1
 
     .line 172
-    iget-object v1, p0, Lcom/android/settings/dndmode/h;->aau:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ex/dndmode/h;->aau:Landroid/preference/CheckBoxPreference;
 
     if-ne p1, v1, :cond_2
 
     .line 173
-    iget-object v1, p0, Lcom/android/settings/dndmode/h;->aau:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ex/dndmode/h;->aau:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1}, Landroid/preference/CheckBoxPreference;->isChecked()Z
 
@@ -580,7 +580,7 @@
     .line 174
     new-instance v1, Landroid/security/MiuiLockPatternUtils;
 
-    iget-object v2, p0, Lcom/android/settings/dndmode/h;->mActivity:Landroid/app/Activity;
+    iget-object v2, p0, Lcom/android/settings_ex/dndmode/h;->mActivity:Landroid/app/Activity;
 
     invoke-direct {v1, v2}, Landroid/security/MiuiLockPatternUtils;-><init>(Landroid/content/Context;)V
 
@@ -597,7 +597,7 @@
     if-nez v2, :cond_0
 
     .line 177
-    invoke-virtual {p0, v1}, Lcom/android/settings/dndmode/h;->aX(Ljava/lang/String;)V
+    invoke-virtual {p0, v1}, Lcom/android/settings_ex/dndmode/h;->aX(Ljava/lang/String;)V
 
     .line 189
     :goto_0
@@ -617,7 +617,7 @@
     invoke-virtual {v1, v2, v0}, Landroid/content/Intent;->putExtra(Ljava/lang/String;I)Landroid/content/Intent;
 
     .line 182
-    iget-object v2, p0, Lcom/android/settings/dndmode/h;->mActivity:Landroid/app/Activity;
+    iget-object v2, p0, Lcom/android/settings_ex/dndmode/h;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v2, v1, v0}, Landroid/app/Activity;->startActivityForResult(Landroid/content/Intent;I)V
 
@@ -625,7 +625,7 @@
 
     .line 185
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/dndmode/h;->pY()V
+    invoke-virtual {p0}, Lcom/android/settings_ex/dndmode/h;->pY()V
 
     goto :goto_0
 
@@ -647,39 +647,39 @@
     .line 147
     new-instance v0, Lmiui/app/TimePickerDialog;
 
-    iget-object v1, p0, Lcom/android/settings/dndmode/h;->mActivity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/android/settings_ex/dndmode/h;->mActivity:Landroid/app/Activity;
 
-    iget-object v2, p0, Lcom/android/settings/dndmode/h;->Zj:Lmiui/app/TimePickerDialog$OnTimeSetListener;
+    iget-object v2, p0, Lcom/android/settings_ex/dndmode/h;->Zj:Lmiui/app/TimePickerDialog$OnTimeSetListener;
 
-    iget v3, p0, Lcom/android/settings/dndmode/h;->Zg:I
+    iget v3, p0, Lcom/android/settings_ex/dndmode/h;->Zg:I
 
     div-int/lit8 v3, v3, 0x3c
 
-    iget v4, p0, Lcom/android/settings/dndmode/h;->Zg:I
+    iget v4, p0, Lcom/android/settings_ex/dndmode/h;->Zg:I
 
     rem-int/lit8 v4, v4, 0x3c
 
     invoke-direct/range {v0 .. v5}, Lmiui/app/TimePickerDialog;-><init>(Landroid/content/Context;Lmiui/app/TimePickerDialog$OnTimeSetListener;IIZ)V
 
     .line 150
-    iget-object v1, p0, Lcom/android/settings/dndmode/h;->aar:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v1, p0, Lcom/android/settings_ex/dndmode/h;->aar:Lcom/android/settings_ex/dndmode/LabelPreference;
 
     if-ne p1, v1, :cond_2
 
     .line 151
-    iput-boolean v6, p0, Lcom/android/settings/dndmode/h;->Zi:Z
+    iput-boolean v6, p0, Lcom/android/settings_ex/dndmode/h;->Zi:Z
 
     .line 152
-    iget v1, p0, Lcom/android/settings/dndmode/h;->Zg:I
+    iget v1, p0, Lcom/android/settings_ex/dndmode/h;->Zg:I
 
     if-lez v1, :cond_1
 
     .line 153
-    iget v1, p0, Lcom/android/settings/dndmode/h;->Zg:I
+    iget v1, p0, Lcom/android/settings_ex/dndmode/h;->Zg:I
 
     div-int/lit8 v1, v1, 0x3c
 
-    iget v2, p0, Lcom/android/settings/dndmode/h;->Zg:I
+    iget v2, p0, Lcom/android/settings_ex/dndmode/h;->Zg:I
 
     rem-int/lit8 v2, v2, 0x3c
 
@@ -702,24 +702,24 @@
 
     .line 158
     :cond_2
-    iget-object v1, p0, Lcom/android/settings/dndmode/h;->aas:Lcom/android/settings/dndmode/LabelPreference;
+    iget-object v1, p0, Lcom/android/settings_ex/dndmode/h;->aas:Lcom/android/settings_ex/dndmode/LabelPreference;
 
     if-ne p1, v1, :cond_0
 
     .line 159
-    iput-boolean v5, p0, Lcom/android/settings/dndmode/h;->Zi:Z
+    iput-boolean v5, p0, Lcom/android/settings_ex/dndmode/h;->Zi:Z
 
     .line 160
-    iget v1, p0, Lcom/android/settings/dndmode/h;->Zh:I
+    iget v1, p0, Lcom/android/settings_ex/dndmode/h;->Zh:I
 
     if-lez v1, :cond_3
 
     .line 161
-    iget v1, p0, Lcom/android/settings/dndmode/h;->Zh:I
+    iget v1, p0, Lcom/android/settings_ex/dndmode/h;->Zh:I
 
     div-int/lit8 v1, v1, 0x3c
 
-    iget v2, p0, Lcom/android/settings/dndmode/h;->Zh:I
+    iget v2, p0, Lcom/android/settings_ex/dndmode/h;->Zh:I
 
     rem-int/lit8 v2, v2, 0x3c
 
@@ -743,7 +743,7 @@
 
     .prologue
     .line 127
-    invoke-super {p0}, Lcom/android/settings/dndmode/q;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ex/dndmode/q;->onResume()V
 
     .line 128
     return-void
@@ -779,7 +779,7 @@
     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 211
-    iget-object v1, p0, Lcom/android/settings/dndmode/h;->mActivity:Landroid/app/Activity;
+    iget-object v1, p0, Lcom/android/settings_ex/dndmode/h;->mActivity:Landroid/app/Activity;
 
     invoke-virtual {v1, v0}, Landroid/app/Activity;->startService(Landroid/content/Intent;)Landroid/content/ComponentName;
 

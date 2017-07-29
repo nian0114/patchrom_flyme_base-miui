@@ -1,27 +1,27 @@
-.class Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;
+.class Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;
 .super Landroid/database/ContentObserver;
 .source "InputMethodAndLanguageSettings.java"
 
 
 # instance fields
-.field final synthetic agb:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+.field final synthetic agb:Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings;
 
 .field private mContext:Landroid/content/Context;
 
 
 # direct methods
-.method public constructor <init>(Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;Landroid/os/Handler;Landroid/content/Context;)V
+.method public constructor <init>(Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings;Landroid/os/Handler;Landroid/content/Context;)V
     .locals 0
 
     .prologue
     .line 698
-    iput-object p1, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->agb:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->agb:Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings;
 
     .line 699
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
     .line 700
-    iput-object p3, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->mContext:Landroid/content/Context;
+    iput-object p3, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->mContext:Landroid/content/Context;
 
     .line 701
     return-void
@@ -34,9 +34,9 @@
 
     .prologue
     .line 704
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->agb:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->agb:Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings;
 
-    invoke-static {v0}, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;->a(Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;)V
+    invoke-static {v0}, Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings;->a(Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings;)V
 
     .line 705
     return-void
@@ -47,7 +47,7 @@
 
     .prologue
     .line 716
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 
@@ -66,7 +66,7 @@
     const/4 v2, 0x0
 
     .line 708
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings$SettingsObserver;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0}, Landroid/content/Context;->getContentResolver()Landroid/content/ContentResolver;
 

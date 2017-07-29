@@ -1,27 +1,27 @@
-.class Lcom/android/settings/display/z;
+.class Lcom/android/settings_ex/display/z;
 .super Landroid/database/ContentObserver;
 .source "PaperModeFragment.java"
 
 
 # instance fields
-.field final synthetic Zk:Lcom/android/settings/display/PaperModeFragment;
+.field final synthetic Zk:Lcom/android/settings_ex/display/PaperModeFragment;
 
-.field final synthetic Zl:Lcom/android/settings/display/PaperModePreference;
+.field final synthetic Zl:Lcom/android/settings_ex/display/PaperModePreference;
 
-.field final synthetic Zm:Lcom/android/settings/display/PaperModePreference;
+.field final synthetic Zm:Lcom/android/settings_ex/display/PaperModePreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/display/PaperModeFragment;Landroid/os/Handler;Lcom/android/settings/display/PaperModePreference;Lcom/android/settings/display/PaperModePreference;)V
+.method constructor <init>(Lcom/android/settings_ex/display/PaperModeFragment;Landroid/os/Handler;Lcom/android/settings_ex/display/PaperModePreference;Lcom/android/settings_ex/display/PaperModePreference;)V
     .locals 0
 
     .prologue
     .line 169
-    iput-object p1, p0, Lcom/android/settings/display/z;->Zk:Lcom/android/settings/display/PaperModeFragment;
+    iput-object p1, p0, Lcom/android/settings_ex/display/z;->Zk:Lcom/android/settings_ex/display/PaperModeFragment;
 
-    iput-object p3, p0, Lcom/android/settings/display/z;->Zl:Lcom/android/settings/display/PaperModePreference;
+    iput-object p3, p0, Lcom/android/settings_ex/display/z;->Zl:Lcom/android/settings_ex/display/PaperModePreference;
 
-    iput-object p4, p0, Lcom/android/settings/display/z;->Zm:Lcom/android/settings/display/PaperModePreference;
+    iput-object p4, p0, Lcom/android/settings_ex/display/z;->Zm:Lcom/android/settings_ex/display/PaperModePreference;
 
     invoke-direct {p0, p2}, Landroid/database/ContentObserver;-><init>(Landroid/os/Handler;)V
 
@@ -39,11 +39,11 @@
     const/4 v1, 0x1
 
     .line 172
-    iget-object v3, p0, Lcom/android/settings/display/z;->Zl:Lcom/android/settings/display/PaperModePreference;
+    iget-object v3, p0, Lcom/android/settings_ex/display/z;->Zl:Lcom/android/settings_ex/display/PaperModePreference;
 
-    iget-object v0, p0, Lcom/android/settings/display/z;->Zk:Lcom/android/settings/display/PaperModeFragment;
+    iget-object v0, p0, Lcom/android/settings_ex/display/z;->Zk:Lcom/android/settings_ex/display/PaperModeFragment;
 
-    invoke-static {v0}, Lcom/android/settings/display/PaperModeFragment;->d(Lcom/android/settings/display/PaperModeFragment;)I
+    invoke-static {v0}, Lcom/android/settings_ex/display/PaperModeFragment;->d(Lcom/android/settings_ex/display/PaperModeFragment;)I
 
     move-result v0
 
@@ -52,14 +52,14 @@
     move v0, v1
 
     :goto_0
-    invoke-virtual {v3, v0}, Lcom/android/settings/display/PaperModePreference;->setChecked(Z)V
+    invoke-virtual {v3, v0}, Lcom/android/settings_ex/display/PaperModePreference;->setChecked(Z)V
 
     .line 174
-    iget-object v0, p0, Lcom/android/settings/display/z;->Zm:Lcom/android/settings/display/PaperModePreference;
+    iget-object v0, p0, Lcom/android/settings_ex/display/z;->Zm:Lcom/android/settings_ex/display/PaperModePreference;
 
-    iget-object v3, p0, Lcom/android/settings/display/z;->Zk:Lcom/android/settings/display/PaperModeFragment;
+    iget-object v3, p0, Lcom/android/settings_ex/display/z;->Zk:Lcom/android/settings_ex/display/PaperModeFragment;
 
-    invoke-static {v3}, Lcom/android/settings/display/PaperModeFragment;->d(Lcom/android/settings/display/PaperModeFragment;)I
+    invoke-static {v3}, Lcom/android/settings_ex/display/PaperModeFragment;->d(Lcom/android/settings_ex/display/PaperModeFragment;)I
 
     move-result v3
 
@@ -68,7 +68,7 @@
     if-ne v3, v4, :cond_1
 
     :goto_1
-    invoke-virtual {v0, v1}, Lcom/android/settings/display/PaperModePreference;->setChecked(Z)V
+    invoke-virtual {v0, v1}, Lcom/android/settings_ex/display/PaperModePreference;->setChecked(Z)V
 
     .line 176
     return-void

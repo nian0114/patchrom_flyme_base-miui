@@ -1,19 +1,19 @@
-.class Lcom/android/settings/bluetooth/MiuiBluetoothEnabler$1;
+.class Lcom/android/settings_ex/bluetooth/MiuiBluetoothEnabler$1;
 .super Landroid/content/BroadcastReceiver;
 .source "MiuiBluetoothEnabler.java"
 
 
 # instance fields
-.field final synthetic Sf:Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;
+.field final synthetic Sf:Lcom/android/settings_ex/bluetooth/MiuiBluetoothEnabler;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;)V
+.method constructor <init>(Lcom/android/settings_ex/bluetooth/MiuiBluetoothEnabler;)V
     .locals 0
 
     .prologue
     .line 45
-    iput-object p1, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler$1;->Sf:Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;
+    iput-object p1, p0, Lcom/android/settings_ex/bluetooth/MiuiBluetoothEnabler$1;->Sf:Lcom/android/settings_ex/bluetooth/MiuiBluetoothEnabler;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -36,9 +36,9 @@
     move-result v0
 
     .line 49
-    iget-object v1, p0, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler$1;->Sf:Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;
+    iget-object v1, p0, Lcom/android/settings_ex/bluetooth/MiuiBluetoothEnabler$1;->Sf:Lcom/android/settings_ex/bluetooth/MiuiBluetoothEnabler;
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/bluetooth/MiuiBluetoothEnabler;->bg(I)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ex/bluetooth/MiuiBluetoothEnabler;->bg(I)V
 
     .line 50
     return-void

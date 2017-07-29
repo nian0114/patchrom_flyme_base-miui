@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter$1;
+.class Lcom/android/settings_ex/applications/ResolverSettings$ResolverListAdapter$1;
 .super Ljava/lang/Object;
 .source "ResolverSettings.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic MS:Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;
+.field final synthetic MS:Lcom/android/settings_ex/applications/ResolverSettings$ResolverListAdapter;
 
 .field final synthetic val$position:I
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;I)V
+.method constructor <init>(Lcom/android/settings_ex/applications/ResolverSettings$ResolverListAdapter;I)V
     .locals 0
 
     .prologue
     .line 180
-    iput-object p1, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter$1;->MS:Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;
+    iput-object p1, p0, Lcom/android/settings_ex/applications/ResolverSettings$ResolverListAdapter$1;->MS:Lcom/android/settings_ex/applications/ResolverSettings$ResolverListAdapter;
 
-    iput p2, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter$1;->val$position:I
+    iput p2, p0, Lcom/android/settings_ex/applications/ResolverSettings$ResolverListAdapter$1;->val$position:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -41,15 +41,15 @@
     if-nez v0, :cond_0
 
     .line 184
-    iget-object v0, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter$1;->MS:Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/ResolverSettings$ResolverListAdapter$1;->MS:Lcom/android/settings_ex/applications/ResolverSettings$ResolverListAdapter;
 
-    iget-object v0, v0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter;->MQ:Lcom/android/settings/applications/ResolverSettings;
+    iget-object v0, v0, Lcom/android/settings_ex/applications/ResolverSettings$ResolverListAdapter;->MQ:Lcom/android/settings_ex/applications/ResolverSettings;
 
-    invoke-static {v0}, Lcom/android/settings/applications/ResolverSettings;->d(Lcom/android/settings/applications/ResolverSettings;)Lmiui/widget/DynamicListView;
+    invoke-static {v0}, Lcom/android/settings_ex/applications/ResolverSettings;->d(Lcom/android/settings_ex/applications/ResolverSettings;)Lmiui/widget/DynamicListView;
 
     move-result-object v0
 
-    iget v1, p0, Lcom/android/settings/applications/ResolverSettings$ResolverListAdapter$1;->val$position:I
+    iget v1, p0, Lcom/android/settings_ex/applications/ResolverSettings$ResolverListAdapter$1;->val$position:I
 
     invoke-virtual {v0, v1}, Lmiui/widget/DynamicListView;->startDragging(I)V
 

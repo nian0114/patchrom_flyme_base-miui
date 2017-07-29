@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/MiuiSmsDefaultDialog$3;
+.class Lcom/android/settings_ex/applications/MiuiSmsDefaultDialog$3;
 .super Ljava/lang/Object;
 .source "MiuiSmsDefaultDialog.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic KA:Lcom/android/settings/applications/MiuiSmsDefaultDialog;
+.field final synthetic KA:Lcom/android/settings_ex/applications/MiuiSmsDefaultDialog;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/MiuiSmsDefaultDialog;)V
+.method constructor <init>(Lcom/android/settings_ex/applications/MiuiSmsDefaultDialog;)V
     .locals 0
 
     .prologue
     .line 76
-    iput-object p1, p0, Lcom/android/settings/applications/MiuiSmsDefaultDialog$3;->KA:Lcom/android/settings/applications/MiuiSmsDefaultDialog;
+    iput-object p1, p0, Lcom/android/settings_ex/applications/MiuiSmsDefaultDialog$3;->KA:Lcom/android/settings_ex/applications/MiuiSmsDefaultDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 79
-    iget-object v0, p0, Lcom/android/settings/applications/MiuiSmsDefaultDialog$3;->KA:Lcom/android/settings/applications/MiuiSmsDefaultDialog;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/MiuiSmsDefaultDialog$3;->KA:Lcom/android/settings_ex/applications/MiuiSmsDefaultDialog;
 
-    invoke-static {v0}, Lcom/android/settings/applications/MiuiSmsDefaultDialog;->a(Lcom/android/settings/applications/MiuiSmsDefaultDialog;)I
+    invoke-static {v0}, Lcom/android/settings_ex/applications/MiuiSmsDefaultDialog;->a(Lcom/android/settings_ex/applications/MiuiSmsDefaultDialog;)I
 
     move-result v0
 
@@ -41,9 +41,9 @@
     if-eq v0, v1, :cond_0
 
     .line 80
-    iget-object v0, p0, Lcom/android/settings/applications/MiuiSmsDefaultDialog$3;->KA:Lcom/android/settings/applications/MiuiSmsDefaultDialog;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/MiuiSmsDefaultDialog$3;->KA:Lcom/android/settings_ex/applications/MiuiSmsDefaultDialog;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/MiuiSmsDefaultDialog;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ex/applications/MiuiSmsDefaultDialog;->finish()V
 
     .line 82
     :cond_0

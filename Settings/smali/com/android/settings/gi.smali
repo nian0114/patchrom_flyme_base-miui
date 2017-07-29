@@ -1,4 +1,4 @@
-.class Lcom/android/settings/gi;
+.class Lcom/android/settings_ex/gi;
 .super Landroid/content/BroadcastReceiver;
 .source "PrivacyModeDialog.java"
 
@@ -11,24 +11,24 @@
 
 .field private mDialog:Landroid/app/Dialog;
 
-.field final synthetic vR:Lcom/android/settings/PrivacyModeDialog;
+.field final synthetic vR:Lcom/android/settings_ex/PrivacyModeDialog;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/PrivacyModeDialog;Landroid/content/Context;Landroid/app/Dialog;)V
+.method constructor <init>(Lcom/android/settings_ex/PrivacyModeDialog;Landroid/content/Context;Landroid/app/Dialog;)V
     .locals 2
 
     .prologue
     .line 59
-    iput-object p1, p0, Lcom/android/settings/gi;->vR:Lcom/android/settings/PrivacyModeDialog;
+    iput-object p1, p0, Lcom/android/settings_ex/gi;->vR:Lcom/android/settings_ex/PrivacyModeDialog;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
     .line 60
-    iput-object p2, p0, Lcom/android/settings/gi;->mContext:Landroid/content/Context;
+    iput-object p2, p0, Lcom/android/settings_ex/gi;->mContext:Landroid/content/Context;
 
     .line 61
-    iput-object p3, p0, Lcom/android/settings/gi;->mDialog:Landroid/app/Dialog;
+    iput-object p3, p0, Lcom/android/settings_ex/gi;->mDialog:Landroid/app/Dialog;
 
     .line 62
     new-instance v0, Landroid/content/IntentFilter;
@@ -56,14 +56,14 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/android/settings/gi;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ex/gi;->mContext:Landroid/content/Context;
 
     invoke-virtual {v0, p0}, Landroid/content/Context;->unregisterReceiver(Landroid/content/BroadcastReceiver;)V
 
     .line 75
-    iget-object v0, p0, Lcom/android/settings/gi;->vR:Lcom/android/settings/PrivacyModeDialog;
+    iget-object v0, p0, Lcom/android/settings_ex/gi;->vR:Lcom/android/settings_ex/PrivacyModeDialog;
 
-    invoke-virtual {v0}, Lcom/android/settings/PrivacyModeDialog;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ex/PrivacyModeDialog;->finish()V
 
     .line 76
     return-void
@@ -74,7 +74,7 @@
 
     .prologue
     .line 69
-    iget-object v0, p0, Lcom/android/settings/gi;->mDialog:Landroid/app/Dialog;
+    iget-object v0, p0, Lcom/android/settings_ex/gi;->mDialog:Landroid/app/Dialog;
 
     invoke-virtual {v0}, Landroid/app/Dialog;->cancel()V
 

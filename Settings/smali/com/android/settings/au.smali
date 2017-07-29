@@ -1,19 +1,19 @@
-.class Lcom/android/settings/au;
+.class Lcom/android/settings_ex/au;
 .super Landroid/hardware/fingerprint/FingerprintManager$RemovalCallback;
 .source "ChooseLockGeneric.java"
 
 
 # instance fields
-.field final synthetic dF:Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
+.field final synthetic dF:Lcom/android/settings_ex/ChooseLockGeneric$ChooseLockGenericFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;)V
+.method constructor <init>(Lcom/android/settings_ex/ChooseLockGeneric$ChooseLockGenericFragment;)V
     .locals 0
 
     .prologue
     .line 110
-    iput-object p1, p0, Lcom/android/settings/au;->dF:Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
+    iput-object p1, p0, Lcom/android/settings_ex/au;->dF:Lcom/android/settings_ex/ChooseLockGeneric$ChooseLockGenericFragment;
 
     invoke-direct {p0}, Landroid/hardware/fingerprint/FingerprintManager$RemovalCallback;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 119
-    iget-object v0, p0, Lcom/android/settings/au;->dF:Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;
+    iget-object v0, p0, Lcom/android/settings_ex/au;->dF:Lcom/android/settings_ex/ChooseLockGeneric$ChooseLockGenericFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/ChooseLockGeneric$ChooseLockGenericFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ex/ChooseLockGeneric$ChooseLockGenericFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

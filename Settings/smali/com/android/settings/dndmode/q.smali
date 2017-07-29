@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/dndmode/q;
+.class public Lcom/android/settings_ex/dndmode/q;
 .super Landroid/preference/PreferenceFragment;
 .source "MiuiPreferenceFragment.java"
 

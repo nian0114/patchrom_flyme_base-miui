@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bluetooth/BluetoothDevicePreference$1;
+.class Lcom/android/settings_ex/bluetooth/BluetoothDevicePreference$1;
 .super Ljava/lang/Object;
 .source "BluetoothDevicePreference.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Qt:Lcom/android/settings/bluetooth/BluetoothDevicePreference;
+.field final synthetic Qt:Lcom/android/settings_ex/bluetooth/BluetoothDevicePreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/BluetoothDevicePreference;)V
+.method constructor <init>(Lcom/android/settings_ex/bluetooth/BluetoothDevicePreference;)V
     .locals 0
 
     .prologue
     .line 290
-    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference$1;->Qt:Lcom/android/settings/bluetooth/BluetoothDevicePreference;
+    iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothDevicePreference$1;->Qt:Lcom/android/settings_ex/bluetooth/BluetoothDevicePreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -35,23 +35,23 @@
     if-ne p2, v0, :cond_0
 
     .line 294
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference$1;->Qt:Lcom/android/settings/bluetooth/BluetoothDevicePreference;
+    iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothDevicePreference$1;->Qt:Lcom/android/settings_ex/bluetooth/BluetoothDevicePreference;
 
-    iget-object v0, v0, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->Qp:Lcom/android/b/b/H;
+    iget-object v0, v0, Lcom/android/settings_ex/bluetooth/BluetoothDevicePreference;->Qp:Lcom/android/b/b/H;
 
     invoke-virtual {v0}, Lcom/android/b/b/H;->disconnect()V
 
     .line 296
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference$1;->Qt:Lcom/android/settings/bluetooth/BluetoothDevicePreference;
+    iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothDevicePreference$1;->Qt:Lcom/android/settings_ex/bluetooth/BluetoothDevicePreference;
 
-    invoke-static {v0}, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->b(Lcom/android/settings/bluetooth/BluetoothDevicePreference;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/android/settings_ex/bluetooth/BluetoothDevicePreference;->b(Lcom/android/settings_ex/bluetooth/BluetoothDevicePreference;)Landroid/content/Context;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/bluetooth/BluetoothDevicePreference$1;->Qt:Lcom/android/settings/bluetooth/BluetoothDevicePreference;
+    iget-object v1, p0, Lcom/android/settings_ex/bluetooth/BluetoothDevicePreference$1;->Qt:Lcom/android/settings_ex/bluetooth/BluetoothDevicePreference;
 
-    invoke-static {v1}, Lcom/android/settings/bluetooth/BluetoothDevicePreference;->a(Lcom/android/settings/bluetooth/BluetoothDevicePreference;)Landroid/content/BroadcastReceiver;
+    invoke-static {v1}, Lcom/android/settings_ex/bluetooth/BluetoothDevicePreference;->a(Lcom/android/settings_ex/bluetooth/BluetoothDevicePreference;)Landroid/content/BroadcastReceiver;
 
     move-result-object v1
 

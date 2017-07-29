@@ -1,19 +1,19 @@
-.class Lcom/android/settings/wifi/ba;
+.class Lcom/android/settings_ex/wifi/ba;
 .super Landroid/content/BroadcastReceiver;
 .source "WpsFragment.java"
 
 
 # instance fields
-.field final synthetic aFa:Lcom/android/settings/wifi/WpsFragment;
+.field final synthetic aFa:Lcom/android/settings_ex/wifi/WpsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WpsFragment;)V
+.method constructor <init>(Lcom/android/settings_ex/wifi/WpsFragment;)V
     .locals 0
 
     .prologue
     .line 198
-    iput-object p1, p0, Lcom/android/settings/wifi/ba;->aFa:Lcom/android/settings/wifi/WpsFragment;
+    iput-object p1, p0, Lcom/android/settings_ex/wifi/ba;->aFa:Lcom/android/settings_ex/wifi/WpsFragment;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 201
-    iget-object v0, p0, Lcom/android/settings/wifi/ba;->aFa:Lcom/android/settings/wifi/WpsFragment;
+    iget-object v0, p0, Lcom/android/settings_ex/wifi/ba;->aFa:Lcom/android/settings_ex/wifi/WpsFragment;
 
-    invoke-static {v0, p1, p2}, Lcom/android/settings/wifi/WpsFragment;->a(Lcom/android/settings/wifi/WpsFragment;Landroid/content/Context;Landroid/content/Intent;)V
+    invoke-static {v0, p1, p2}, Lcom/android/settings_ex/wifi/WpsFragment;->a(Lcom/android/settings_ex/wifi/WpsFragment;Landroid/content/Context;Landroid/content/Intent;)V
 
     .line 202
     return-void

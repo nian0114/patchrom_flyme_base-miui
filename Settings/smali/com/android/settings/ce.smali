@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ce;
+.class Lcom/android/settings_ex/ce;
 .super Ljava/lang/Object;
 .source "DeviceAdminAdd.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic lb:Lcom/android/settings/DeviceAdminAdd;
+.field final synthetic lb:Lcom/android/settings_ex/DeviceAdminAdd;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DeviceAdminAdd;)V
+.method constructor <init>(Lcom/android/settings_ex/DeviceAdminAdd;)V
     .locals 0
 
     .prologue
     .line 261
-    iput-object p1, p0, Lcom/android/settings/ce;->lb:Lcom/android/settings/DeviceAdminAdd;
+    iput-object p1, p0, Lcom/android/settings_ex/ce;->lb:Lcom/android/settings_ex/DeviceAdminAdd;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,16 +32,16 @@
     const/4 v1, 0x0
 
     .line 264
-    iget-object v0, p0, Lcom/android/settings/ce;->lb:Lcom/android/settings/DeviceAdminAdd;
+    iget-object v0, p0, Lcom/android/settings_ex/ce;->lb:Lcom/android/settings_ex/DeviceAdminAdd;
 
-    invoke-virtual {v0}, Lcom/android/settings/DeviceAdminAdd;->dq()I
+    invoke-virtual {v0}, Lcom/android/settings_ex/DeviceAdminAdd;->dq()I
 
     move-result v0
 
     .line 266
-    iget-object v2, p0, Lcom/android/settings/ce;->lb:Lcom/android/settings/DeviceAdminAdd;
+    iget-object v2, p0, Lcom/android/settings_ex/ce;->lb:Lcom/android/settings_ex/DeviceAdminAdd;
 
-    iget-object v2, v2, Lcom/android/settings/DeviceAdminAdd;->kN:Landroid/widget/TextView;
+    iget-object v2, v2, Lcom/android/settings_ex/DeviceAdminAdd;->kN:Landroid/widget/TextView;
 
     invoke-virtual {v2}, Landroid/widget/TextView;->getLineCount()I
 
@@ -53,9 +53,9 @@
 
     .line 267
     :goto_0
-    iget-object v2, p0, Lcom/android/settings/ce;->lb:Lcom/android/settings/DeviceAdminAdd;
+    iget-object v2, p0, Lcom/android/settings_ex/ce;->lb:Lcom/android/settings_ex/DeviceAdminAdd;
 
-    iget-object v2, v2, Lcom/android/settings/DeviceAdminAdd;->kP:Landroid/widget/ImageView;
+    iget-object v2, v2, Lcom/android/settings_ex/DeviceAdminAdd;->kP:Landroid/widget/ImageView;
 
     if-eqz v0, :cond_0
 
@@ -68,18 +68,18 @@
     if-eqz v0, :cond_1
 
     .line 269
-    iget-object v0, p0, Lcom/android/settings/ce;->lb:Lcom/android/settings/DeviceAdminAdd;
+    iget-object v0, p0, Lcom/android/settings_ex/ce;->lb:Lcom/android/settings_ex/DeviceAdminAdd;
 
-    iget-object v0, v0, Lcom/android/settings/DeviceAdminAdd;->kN:Landroid/widget/TextView;
+    iget-object v0, v0, Lcom/android/settings_ex/DeviceAdminAdd;->kN:Landroid/widget/TextView;
 
     const/4 v1, 0x0
 
     invoke-virtual {v0, v1}, Landroid/widget/TextView;->setOnClickListener(Landroid/view/View$OnClickListener;)V
 
     .line 270
-    iget-object v0, p0, Lcom/android/settings/ce;->lb:Lcom/android/settings/DeviceAdminAdd;
+    iget-object v0, p0, Lcom/android/settings_ex/ce;->lb:Lcom/android/settings_ex/DeviceAdminAdd;
 
-    iget-object v0, v0, Lcom/android/settings/DeviceAdminAdd;->kP:Landroid/widget/ImageView;
+    iget-object v0, v0, Lcom/android/settings_ex/DeviceAdminAdd;->kP:Landroid/widget/ImageView;
 
     invoke-virtual {v0}, Landroid/widget/ImageView;->getParent()Landroid/view/ViewParent;
 
@@ -91,9 +91,9 @@
 
     .line 272
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/ce;->lb:Lcom/android/settings/DeviceAdminAdd;
+    iget-object v0, p0, Lcom/android/settings_ex/ce;->lb:Lcom/android/settings_ex/DeviceAdminAdd;
 
-    iget-object v0, v0, Lcom/android/settings/DeviceAdminAdd;->kN:Landroid/widget/TextView;
+    iget-object v0, v0, Lcom/android/settings_ex/DeviceAdminAdd;->kN:Landroid/widget/TextView;
 
     invoke-virtual {v0}, Landroid/widget/TextView;->getViewTreeObserver()Landroid/view/ViewTreeObserver;
 

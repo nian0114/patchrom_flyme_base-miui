@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hI;
+.class Lcom/android/settings_ex/hI;
 .super Ljava/lang/Object;
 .source "SettingsPreferenceFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Af:Lcom/android/settings/hH;
+.field final synthetic Af:Lcom/android/settings_ex/hH;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/hH;)V
+.method constructor <init>(Lcom/android/settings_ex/hH;)V
     .locals 0
 
     .prologue
     .line 339
-    iput-object p1, p0, Lcom/android/settings/hI;->Af:Lcom/android/settings/hH;
+    iput-object p1, p0, Lcom/android/settings_ex/hI;->Af:Lcom/android/settings_ex/hH;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,13 +30,13 @@
 
     .prologue
     .line 342
-    iget-object v0, p0, Lcom/android/settings/hI;->Af:Lcom/android/settings/hH;
+    iget-object v0, p0, Lcom/android/settings_ex/hI;->Af:Lcom/android/settings_ex/hH;
 
-    iget v0, v0, Lcom/android/settings/hH;->val$position:I
+    iget v0, v0, Lcom/android/settings_ex/hH;->val$position:I
 
-    iget-object v1, p0, Lcom/android/settings/hI;->Af:Lcom/android/settings/hH;
+    iget-object v1, p0, Lcom/android/settings_ex/hI;->Af:Lcom/android/settings_ex/hH;
 
-    iget-object v1, v1, Lcom/android/settings/hH;->Ae:Landroid/widget/ListView;
+    iget-object v1, v1, Lcom/android/settings_ex/hH;->Ae:Landroid/widget/ListView;
 
     invoke-virtual {v1}, Landroid/widget/ListView;->getFirstVisiblePosition()I
 
@@ -47,9 +47,9 @@
     .line 343
     if-ltz v0, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/hI;->Af:Lcom/android/settings/hH;
+    iget-object v1, p0, Lcom/android/settings_ex/hI;->Af:Lcom/android/settings_ex/hH;
 
-    iget-object v1, v1, Lcom/android/settings/hH;->Ae:Landroid/widget/ListView;
+    iget-object v1, v1, Lcom/android/settings_ex/hH;->Ae:Landroid/widget/ListView;
 
     invoke-virtual {v1}, Landroid/widget/ListView;->getChildCount()I
 
@@ -58,9 +58,9 @@
     if-ge v0, v1, :cond_0
 
     .line 344
-    iget-object v1, p0, Lcom/android/settings/hI;->Af:Lcom/android/settings/hH;
+    iget-object v1, p0, Lcom/android/settings_ex/hI;->Af:Lcom/android/settings_ex/hH;
 
-    iget-object v1, v1, Lcom/android/settings/hH;->Ae:Landroid/widget/ListView;
+    iget-object v1, v1, Lcom/android/settings_ex/hH;->Ae:Landroid/widget/ListView;
 
     invoke-virtual {v1, v0}, Landroid/widget/ListView;->getChildAt(I)Landroid/view/View;
 
@@ -81,9 +81,9 @@
     div-int/lit8 v2, v2, 0x2
 
     .line 347
-    iget-object v3, p0, Lcom/android/settings/hI;->Af:Lcom/android/settings/hH;
+    iget-object v3, p0, Lcom/android/settings_ex/hI;->Af:Lcom/android/settings_ex/hH;
 
-    iget-object v3, v3, Lcom/android/settings/hH;->nN:Landroid/graphics/drawable/Drawable;
+    iget-object v3, v3, Lcom/android/settings_ex/hH;->nN:Landroid/graphics/drawable/Drawable;
 
     int-to-float v1, v1
 

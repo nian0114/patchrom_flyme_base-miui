@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fZ;
+.class Lcom/android/settings_ex/fZ;
 .super Ljava/lang/Object;
 .source "OldmanModeSettings.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic vA:Z
 
-.field final synthetic vB:Lcom/android/settings/fY;
+.field final synthetic vB:Lcom/android/settings_ex/fY;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fY;Z)V
+.method constructor <init>(Lcom/android/settings_ex/fY;Z)V
     .locals 0
 
     .prologue
     .line 49
-    iput-object p1, p0, Lcom/android/settings/fZ;->vB:Lcom/android/settings/fY;
+    iput-object p1, p0, Lcom/android/settings_ex/fZ;->vB:Lcom/android/settings_ex/fY;
 
-    iput-boolean p2, p0, Lcom/android/settings/fZ;->vA:Z
+    iput-boolean p2, p0, Lcom/android/settings_ex/fZ;->vA:Z
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -46,24 +46,24 @@
 
     .line 55
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/fZ;->vB:Lcom/android/settings/fY;
+    iget-object v0, p0, Lcom/android/settings_ex/fZ;->vB:Lcom/android/settings_ex/fY;
 
-    iget-object v0, v0, Lcom/android/settings/fY;->vz:Lcom/android/settings/OldmanModeSettings;
+    iget-object v0, v0, Lcom/android/settings_ex/fY;->vz:Lcom/android/settings_ex/OldmanModeSettings;
 
-    invoke-static {v0}, Lcom/android/settings/OldmanModeSettings;->a(Lcom/android/settings/OldmanModeSettings;)Landroid/preference/CheckBoxPreference;
+    invoke-static {v0}, Lcom/android/settings_ex/OldmanModeSettings;->a(Lcom/android/settings_ex/OldmanModeSettings;)Landroid/preference/CheckBoxPreference;
 
     move-result-object v0
 
-    iget-boolean v1, p0, Lcom/android/settings/fZ;->vA:Z
+    iget-boolean v1, p0, Lcom/android/settings_ex/fZ;->vA:Z
 
     invoke-virtual {v0, v1}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 56
-    iget-object v0, p0, Lcom/android/settings/fZ;->vB:Lcom/android/settings/fY;
+    iget-object v0, p0, Lcom/android/settings_ex/fZ;->vB:Lcom/android/settings_ex/fY;
 
-    iget-object v0, v0, Lcom/android/settings/fY;->vz:Lcom/android/settings/OldmanModeSettings;
+    iget-object v0, v0, Lcom/android/settings_ex/fY;->vz:Lcom/android/settings_ex/OldmanModeSettings;
 
-    iget-boolean v1, p0, Lcom/android/settings/fZ;->vA:Z
+    iget-boolean v1, p0, Lcom/android/settings_ex/fZ;->vA:Z
 
     invoke-static {v0, v1}, Lcom/android/b/a;->s(Landroid/content/Context;Z)V
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/applications/ApplicationsContainer$TabInfo$1;
+.class Lcom/android/settings_ex/applications/ApplicationsContainer$TabInfo$1;
 .super Ljava/lang/Object;
 .source "ApplicationsContainer.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Id:Lcom/android/settings/applications/ApplicationsContainer$TabInfo;
+.field final synthetic Id:Lcom/android/settings_ex/applications/ApplicationsContainer$TabInfo;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/ApplicationsContainer$TabInfo;)V
+.method constructor <init>(Lcom/android/settings_ex/applications/ApplicationsContainer$TabInfo;)V
     .locals 0
 
     .prologue
     .line 372
-    iput-object p1, p0, Lcom/android/settings/applications/ApplicationsContainer$TabInfo$1;->Id:Lcom/android/settings/applications/ApplicationsContainer$TabInfo;
+    iput-object p1, p0, Lcom/android/settings_ex/applications/ApplicationsContainer$TabInfo$1;->Id:Lcom/android/settings_ex/applications/ApplicationsContainer$TabInfo;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 374
-    iget-object v0, p0, Lcom/android/settings/applications/ApplicationsContainer$TabInfo$1;->Id:Lcom/android/settings/applications/ApplicationsContainer$TabInfo;
+    iget-object v0, p0, Lcom/android/settings_ex/applications/ApplicationsContainer$TabInfo$1;->Id:Lcom/android/settings_ex/applications/ApplicationsContainer$TabInfo;
 
-    invoke-virtual {v0}, Lcom/android/settings/applications/ApplicationsContainer$TabInfo;->kk()V
+    invoke-virtual {v0}, Lcom/android/settings_ex/applications/ApplicationsContainer$TabInfo;->kk()V
 
     .line 375
     return-void

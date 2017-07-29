@@ -1,4 +1,4 @@
-.class Lcom/android/settings/aL;
+.class Lcom/android/settings_ex/aL;
 .super Ljava/lang/Object;
 .source "ConfirmDeviceCredentialBaseFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic fg:Lcom/android/settings/ConfirmDeviceCredentialBaseFragment;
+.field final synthetic fg:Lcom/android/settings_ex/ConfirmDeviceCredentialBaseFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ConfirmDeviceCredentialBaseFragment;)V
+.method constructor <init>(Lcom/android/settings_ex/ConfirmDeviceCredentialBaseFragment;)V
     .locals 0
 
     .prologue
     .line 70
-    iput-object p1, p0, Lcom/android/settings/aL;->fg:Lcom/android/settings/ConfirmDeviceCredentialBaseFragment;
+    iput-object p1, p0, Lcom/android/settings_ex/aL;->fg:Lcom/android/settings_ex/ConfirmDeviceCredentialBaseFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 73
-    iget-object v0, p0, Lcom/android/settings/aL;->fg:Lcom/android/settings/ConfirmDeviceCredentialBaseFragment;
+    iget-object v0, p0, Lcom/android/settings_ex/aL;->fg:Lcom/android/settings_ex/ConfirmDeviceCredentialBaseFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/ConfirmDeviceCredentialBaseFragment;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ex/ConfirmDeviceCredentialBaseFragment;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 

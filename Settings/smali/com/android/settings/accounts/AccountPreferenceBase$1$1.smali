@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/AccountPreferenceBase$1$1;
+.class Lcom/android/settings_ex/accounts/AccountPreferenceBase$1$1;
 .super Ljava/lang/Object;
 .source "AccountPreferenceBase.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic DO:Lcom/android/settings/accounts/AccountPreferenceBase$1;
+.field final synthetic DO:Lcom/android/settings_ex/accounts/AccountPreferenceBase$1;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accounts/AccountPreferenceBase$1;)V
+.method constructor <init>(Lcom/android/settings_ex/accounts/AccountPreferenceBase$1;)V
     .locals 0
 
     .prologue
     .line 123
-    iput-object p1, p0, Lcom/android/settings/accounts/AccountPreferenceBase$1$1;->DO:Lcom/android/settings/accounts/AccountPreferenceBase$1;
+    iput-object p1, p0, Lcom/android/settings_ex/accounts/AccountPreferenceBase$1$1;->DO:Lcom/android/settings_ex/accounts/AccountPreferenceBase$1;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 125
-    iget-object v0, p0, Lcom/android/settings/accounts/AccountPreferenceBase$1$1;->DO:Lcom/android/settings/accounts/AccountPreferenceBase$1;
+    iget-object v0, p0, Lcom/android/settings_ex/accounts/AccountPreferenceBase$1$1;->DO:Lcom/android/settings_ex/accounts/AccountPreferenceBase$1;
 
-    iget-object v0, v0, Lcom/android/settings/accounts/AccountPreferenceBase$1;->DN:Lcom/android/settings/accounts/AccountPreferenceBase;
+    iget-object v0, v0, Lcom/android/settings_ex/accounts/AccountPreferenceBase$1;->DN:Lcom/android/settings_ex/accounts/AccountPreferenceBase;
 
-    invoke-virtual {v0}, Lcom/android/settings/accounts/AccountPreferenceBase;->jc()V
+    invoke-virtual {v0}, Lcom/android/settings_ex/accounts/AccountPreferenceBase;->jc()V
 
     .line 126
     return-void

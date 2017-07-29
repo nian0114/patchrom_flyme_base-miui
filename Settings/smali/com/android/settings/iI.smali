@@ -1,19 +1,19 @@
-.class Lcom/android/settings/iI;
+.class Lcom/android/settings_ex/iI;
 .super Landroid/telephony/PhoneStateListener;
 .source "WifiCallingSettings.java"
 
 
 # instance fields
-.field final synthetic Cq:Lcom/android/settings/WifiCallingSettings;
+.field final synthetic Cq:Lcom/android/settings_ex/WifiCallingSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/WifiCallingSettings;)V
+.method constructor <init>(Lcom/android/settings_ex/WifiCallingSettings;)V
     .locals 0
 
     .prologue
     .line 62
-    iput-object p1, p0, Lcom/android/settings/iI;->Cq:Lcom/android/settings/WifiCallingSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/iI;->Cq:Lcom/android/settings_ex/WifiCallingSettings;
 
     invoke-direct {p0}, Landroid/telephony/PhoneStateListener;-><init>()V
 
@@ -31,13 +31,13 @@
     const/4 v2, 0x0
 
     .line 71
-    iget-object v0, p0, Lcom/android/settings/iI;->Cq:Lcom/android/settings/WifiCallingSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/iI;->Cq:Lcom/android/settings_ex/WifiCallingSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/WifiCallingSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ex/WifiCallingSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hp;
+    check-cast v0, Lcom/android/settings_ex/hp;
 
     .line 72
     invoke-static {v0}, Lcom/android/ims/ImsManager;->isNonTtyOrTtyOnVolteEnabled(Landroid/content/Context;)Z
@@ -45,16 +45,16 @@
     move-result v4
 
     .line 74
-    invoke-virtual {v0}, Lcom/android/settings/hp;->hF()Lcom/android/settings/widget/SwitchBar;
+    invoke-virtual {v0}, Lcom/android/settings_ex/hp;->hF()Lcom/android/settings_ex/widget/SwitchBar;
 
     move-result-object v5
 
     .line 75
-    invoke-virtual {v5}, Lcom/android/settings/widget/SwitchBar;->wQ()Lcom/android/settings/widget/ToggleSwitch;
+    invoke-virtual {v5}, Lcom/android/settings_ex/widget/SwitchBar;->wQ()Lcom/android/settings_ex/widget/ToggleSwitch;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/widget/ToggleSwitch;->isChecked()Z
+    invoke-virtual {v0}, Lcom/android/settings_ex/widget/ToggleSwitch;->isChecked()Z
 
     move-result v0
 
@@ -73,12 +73,12 @@
     move v0, v1
 
     :goto_1
-    invoke-virtual {v5, v0}, Lcom/android/settings/widget/SwitchBar;->setEnabled(Z)V
+    invoke-virtual {v5, v0}, Lcom/android/settings_ex/widget/SwitchBar;->setEnabled(Z)V
 
     .line 81
-    iget-object v0, p0, Lcom/android/settings/iI;->Cq:Lcom/android/settings/WifiCallingSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/iI;->Cq:Lcom/android/settings_ex/WifiCallingSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/WifiCallingSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {v0}, Lcom/android/settings_ex/WifiCallingSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 

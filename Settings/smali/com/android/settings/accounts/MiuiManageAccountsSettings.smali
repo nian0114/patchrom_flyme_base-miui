@@ -1,9 +1,9 @@
-.class public Lcom/android/settings/accounts/MiuiManageAccountsSettings;
-.super Lcom/android/settings/accounts/AccountPreferenceBase;
+.class public Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;
+.super Lcom/android/settings_ex/accounts/AccountPreferenceBase;
 .source "MiuiManageAccountsSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/cs;
+.implements Lcom/android/settings_ex/cs;
 
 
 # instance fields
@@ -13,13 +13,13 @@
 
 .field private EL:Landroid/preference/CheckBoxPreference;
 
-.field private EM:Lcom/android/settings/dV;
+.field private EM:Lcom/android/settings_ex/dV;
 
 .field private EN:Z
 
 .field private Ek:Landroid/widget/TextView;
 
-.field private cr:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+.field private cr:Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;
 
 
 # direct methods
@@ -28,7 +28,7 @@
 
     .prologue
     .line 58
-    invoke-direct {p0}, Lcom/android/settings/accounts/AccountPreferenceBase;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ex/accounts/AccountPreferenceBase;-><init>()V
 
     .line 331
     return-void
@@ -39,9 +39,9 @@
 
     .prologue
     .line 276
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->EM:Lcom/android/settings/dV;
+    iget-object v0, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->EM:Lcom/android/settings_ex/dV;
 
-    invoke-virtual {v0}, Lcom/android/settings/dV;->eL()V
+    invoke-virtual {v0}, Lcom/android/settings_ex/dV;->eL()V
 
     .line 277
     return-void
@@ -64,7 +64,7 @@
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
 
     .line 148
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -79,7 +79,7 @@
 
     .prologue
     .line 152
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -148,7 +148,7 @@
     .line 172
     const-string v0, "account"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -285,7 +285,7 @@
     const-string v0, "account_settings_wifi_only_enabled"
 
     :goto_0
-    invoke-direct {p0, v0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->trackEvent(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->trackEvent(Ljava/lang/String;)V
 
     .line 321
     return-void
@@ -302,9 +302,9 @@
 
     .prologue
     .line 280
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->EM:Lcom/android/settings/dV;
+    iget-object v0, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->EM:Lcom/android/settings_ex/dV;
 
-    invoke-virtual {v0}, Lcom/android/settings/dV;->stopAnimation()V
+    invoke-virtual {v0}, Lcom/android/settings_ex/dV;->stopAnimation()V
 
     .line 281
     return-void
@@ -319,7 +319,7 @@
     .line 253
     const-string v0, "account"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->getSystemService(Ljava/lang/String;)Ljava/lang/Object;
 
     move-result-object v0
 
@@ -418,7 +418,7 @@
     const/4 v1, 0x0
 
     .line 299
-    iget-boolean v0, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->EN:Z
+    iget-boolean v0, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->EN:Z
 
     if-eqz v0, :cond_0
 
@@ -437,7 +437,7 @@
     const/4 v3, 0x0
 
     .line 305
-    iget-boolean v0, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->EN:Z
+    iget-boolean v0, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->EN:Z
 
     if-nez v0, :cond_1
 
@@ -476,7 +476,7 @@
     .line 315
     const-string v0, "account_settings_opened"
 
-    invoke-direct {p0, v0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->trackEvent(Ljava/lang/String;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->trackEvent(Ljava/lang/String;)V
 
     .line 316
     return-void
@@ -487,7 +487,7 @@
 
     .prologue
     .line 324
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -524,7 +524,7 @@
 
     .prologue
     .line 58
-    invoke-super {p0, p1, p2}, Lcom/android/settings/accounts/AccountPreferenceBase;->a(Ljava/lang/String;Landroid/preference/PreferenceScreen;)Landroid/preference/PreferenceScreen;
+    invoke-super {p0, p1, p2}, Lcom/android/settings_ex/accounts/AccountPreferenceBase;->a(Ljava/lang/String;Landroid/preference/PreferenceScreen;)Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
@@ -553,7 +553,7 @@
 
     .prologue
     .line 58
-    invoke-super {p0, p1}, Lcom/android/settings/accounts/AccountPreferenceBase;->a(Landroid/os/UserHandle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ex/accounts/AccountPreferenceBase;->a(Landroid/os/UserHandle;)V
 
     return-void
 .end method
@@ -563,7 +563,7 @@
 
     .prologue
     .line 58
-    invoke-super {p0, p1}, Lcom/android/settings/accounts/AccountPreferenceBase;->aa(Ljava/lang/String;)Ljava/util/ArrayList;
+    invoke-super {p0, p1}, Lcom/android/settings_ex/accounts/AccountPreferenceBase;->aa(Ljava/lang/String;)Ljava/util/ArrayList;
 
     move-result-object v0
 
@@ -575,7 +575,7 @@
 
     .prologue
     .line 77
-    const-class v0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;
+    const-class v0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;
 
     invoke-virtual {v0}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -589,7 +589,7 @@
 
     .prologue
     .line 210
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
@@ -606,7 +606,7 @@
     move-result v0
 
     .line 214
-    iget-object v1, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->EK:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->EK:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
@@ -625,16 +625,16 @@
 
     .line 217
     :goto_1
-    iget-boolean v1, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->EN:Z
+    iget-boolean v1, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->EN:Z
 
     if-eq v1, v0, :cond_1
 
     .line 218
-    iput-boolean v0, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->EN:Z
+    iput-boolean v0, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->EN:Z
 
     .line 220
     :cond_1
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->invalidateOptionsMenu()V
+    invoke-virtual {p0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->invalidateOptionsMenu()V
 
     goto :goto_0
 
@@ -650,7 +650,7 @@
 
     .prologue
     .line 58
-    invoke-super {p0}, Lcom/android/settings/accounts/AccountPreferenceBase;->jd()V
+    invoke-super {p0}, Lcom/android/settings_ex/accounts/AccountPreferenceBase;->jd()V
 
     return-void
 .end method
@@ -664,15 +664,15 @@
     const/4 v2, 0x0
 
     .line 105
-    invoke-super {p0, p1}, Lcom/android/settings/accounts/AccountPreferenceBase;->onActivityCreated(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ex/accounts/AccountPreferenceBase;->onActivityCreated(Landroid/os/Bundle;)V
 
     .line 107
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v3
 
     .line 108
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->getView()Landroid/view/View;
+    invoke-virtual {p0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->getView()Landroid/view/View;
 
     move-result-object v0
 
@@ -685,17 +685,17 @@
 
     check-cast v0, Landroid/widget/TextView;
 
-    iput-object v0, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->Ek:Landroid/widget/TextView;
+    iput-object v0, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->Ek:Landroid/widget/TextView;
 
     .line 111
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->Ek:Landroid/widget/TextView;
+    iget-object v0, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->Ek:Landroid/widget/TextView;
 
     const/16 v4, 0x8
 
     invoke-virtual {v0, v4}, Landroid/widget/TextView;->setVisibility(I)V
 
     .line 113
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->EK:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->EK:Landroid/preference/CheckBoxPreference;
 
     invoke-static {}, Landroid/content/ContentResolver;->getMasterSyncAutomatically()Z
 
@@ -704,14 +704,14 @@
     invoke-virtual {v0, v4}, Landroid/preference/CheckBoxPreference;->setChecked(Z)V
 
     .line 114
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->EL:Landroid/preference/CheckBoxPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->EL:Landroid/preference/CheckBoxPreference;
 
     if-eqz v0, :cond_0
 
     .line 115
-    iget-object v4, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->EL:Landroid/preference/CheckBoxPreference;
+    iget-object v4, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->EL:Landroid/preference/CheckBoxPreference;
 
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v0
 
@@ -740,10 +740,10 @@
 
     move-result-object v0
 
-    iput-object v0, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->DS:[Ljava/lang/String;
+    iput-object v0, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->DS:[Ljava/lang/String;
 
     .line 120
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->jd()V
+    invoke-virtual {p0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->jd()V
 
     .line 121
     return-void
@@ -760,79 +760,79 @@
 
     .prologue
     .line 82
-    new-instance v0, Lcom/android/settings/accounts/MiuiManageAccountsSettings$SyncDrawable;
+    new-instance v0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings$SyncDrawable;
 
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
-    invoke-direct {v0, v1}, Lcom/android/settings/accounts/MiuiManageAccountsSettings$SyncDrawable;-><init>(Landroid/content/Context;)V
+    invoke-direct {v0, v1}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings$SyncDrawable;-><init>(Landroid/content/Context;)V
 
-    iput-object v0, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->EM:Lcom/android/settings/dV;
+    iput-object v0, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->EM:Lcom/android/settings_ex/dV;
 
     .line 83
-    invoke-super {p0, p1}, Lcom/android/settings/accounts/AccountPreferenceBase;->onCreate(Landroid/os/Bundle;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ex/accounts/AccountPreferenceBase;->onCreate(Landroid/os/Bundle;)V
 
     .line 84
     const v0, 0x7f08005d
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->addPreferencesFromResource(I)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->addPreferencesFromResource(I)V
 
     .line 85
     const/4 v0, 0x1
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->setHasOptionsMenu(Z)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->setHasOptionsMenu(Z)V
 
     .line 86
     const-string v0, "sync_enable"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->EK:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->EK:Landroid/preference/CheckBoxPreference;
 
     .line 87
     const-string v0, "wifi_only"
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v0
 
     check-cast v0, Landroid/preference/CheckBoxPreference;
 
-    iput-object v0, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->EL:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->EL:Landroid/preference/CheckBoxPreference;
 
     .line 88
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    invoke-static {v0}, Lcom/android/settings/iE;->Z(Landroid/content/Context;)Z
+    invoke-static {v0}, Lcom/android/settings_ex/iE;->Z(Landroid/content/Context;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 89
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+    invoke-virtual {p0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
 
     move-result-object v0
 
-    iget-object v1, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->EL:Landroid/preference/CheckBoxPreference;
+    iget-object v1, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->EL:Landroid/preference/CheckBoxPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
 
     .line 90
     const/4 v0, 0x0
 
-    iput-object v0, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->EL:Landroid/preference/CheckBoxPreference;
+    iput-object v0, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->EL:Landroid/preference/CheckBoxPreference;
 
     .line 93
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->jx()V
+    invoke-direct {p0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->jx()V
 
     .line 94
     return-void
@@ -854,9 +854,9 @@
     move-result-object v0
 
     .line 226
-    iget-object v1, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->EM:Lcom/android/settings/dV;
+    iget-object v1, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->EM:Lcom/android/settings_ex/dV;
 
-    invoke-virtual {v1}, Lcom/android/settings/dV;->eJ()Landroid/graphics/drawable/Drawable;
+    invoke-virtual {v1}, Lcom/android/settings_ex/dV;->eJ()Landroid/graphics/drawable/Drawable;
 
     move-result-object v1
 
@@ -886,12 +886,12 @@
     if-ne v1, v0, :cond_1
 
     .line 287
-    iget-boolean v1, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->EN:Z
+    iget-boolean v1, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->EN:Z
 
     if-eqz v1, :cond_0
 
     .line 288
-    invoke-direct {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->jv()V
+    invoke-direct {p0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->jv()V
 
     .line 294
     :goto_0
@@ -899,13 +899,13 @@
 
     .line 290
     :cond_0
-    invoke-direct {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->jw()V
+    invoke-direct {p0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->jw()V
 
     goto :goto_0
 
     .line 294
     :cond_1
-    invoke-super {p0, p1}, Lcom/android/settings/accounts/AccountPreferenceBase;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
+    invoke-super {p0, p1}, Lcom/android/settings_ex/accounts/AccountPreferenceBase;->onOptionsItemSelected(Landroid/view/MenuItem;)Z
 
     move-result v0
 
@@ -917,7 +917,7 @@
 
     .prologue
     .line 58
-    invoke-super {p0}, Lcom/android/settings/accounts/AccountPreferenceBase;->onPause()V
+    invoke-super {p0}, Lcom/android/settings_ex/accounts/AccountPreferenceBase;->onPause()V
 
     return-void
 .end method
@@ -952,13 +952,13 @@
     invoke-static {v0}, Landroid/content/ContentResolver;->setMasterSyncAutomatically(Z)V
 
     .line 128
-    invoke-direct {p0, v0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->af(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->af(Z)V
 
     .line 129
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->jc()V
+    invoke-virtual {p0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->jc()V
 
     .line 130
-    invoke-direct {p0, v0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->ae(Z)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->ae(Z)V
 
     .line 140
     :cond_0
@@ -987,7 +987,7 @@
     move-result v2
 
     .line 134
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->getContentResolver()Landroid/content/ContentResolver;
+    invoke-virtual {p0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->getContentResolver()Landroid/content/ContentResolver;
 
     move-result-object v3
 
@@ -1001,10 +1001,10 @@
     invoke-static {v3, v4, v0}, Landroid/provider/Settings$Secure;->putInt(Landroid/content/ContentResolver;Ljava/lang/String;I)Z
 
     .line 136
-    invoke-direct {p0, v2}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->ad(Z)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->ad(Z)V
 
     .line 137
-    invoke-direct {p0, v2}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->ag(Z)V
+    invoke-direct {p0, v2}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->ag(Z)V
 
     goto :goto_0
 
@@ -1032,7 +1032,7 @@
     if-eqz v0, :cond_0
 
     .line 235
-    invoke-direct {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->ju()Z
+    invoke-direct {p0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->ju()Z
 
     move-result v1
 
@@ -1042,7 +1042,7 @@
     invoke-interface {v0, v2}, Landroid/view/MenuItem;->setEnabled(Z)Landroid/view/MenuItem;
 
     .line 237
-    iget-boolean v1, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->EN:Z
+    iget-boolean v1, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->EN:Z
 
     if-eqz v1, :cond_1
 
@@ -1052,12 +1052,12 @@
     invoke-interface {v0, v1}, Landroid/view/MenuItem;->setTitle(I)Landroid/view/MenuItem;
 
     .line 239
-    invoke-direct {p0, v0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->a(Landroid/view/MenuItem;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->a(Landroid/view/MenuItem;)V
 
     .line 249
     :cond_0
     :goto_0
-    invoke-super {p0, p1}, Lcom/android/settings/accounts/AccountPreferenceBase;->onPrepareOptionsMenu(Landroid/view/Menu;)V
+    invoke-super {p0, p1}, Lcom/android/settings_ex/accounts/AccountPreferenceBase;->onPrepareOptionsMenu(Landroid/view/Menu;)V
 
     .line 250
     return-void
@@ -1067,7 +1067,7 @@
     invoke-interface {v0, v3}, Landroid/view/MenuItem;->setTitle(I)Landroid/view/MenuItem;
 
     .line 242
-    invoke-direct {p0, v0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->b(Landroid/view/MenuItem;)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->b(Landroid/view/MenuItem;)V
 
     goto :goto_0
 
@@ -1088,7 +1088,7 @@
 
     .prologue
     .line 58
-    invoke-super {p0}, Lcom/android/settings/accounts/AccountPreferenceBase;->onResume()V
+    invoke-super {p0}, Lcom/android/settings_ex/accounts/AccountPreferenceBase;->onResume()V
 
     return-void
 .end method
@@ -1098,7 +1098,7 @@
 
     .prologue
     .line 200
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->cr:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->cr:Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;
 
     if-eqz v0, :cond_0
 
@@ -1111,16 +1111,16 @@
 
     .line 203
     :cond_0
-    new-instance v0, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    new-instance v0, Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;
 
-    invoke-direct {v0, p0, p1}, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;-><init>(Lcom/android/settings/cs;I)V
+    invoke-direct {v0, p0, p1}, Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;-><init>(Lcom/android/settings_ex/cs;I)V
 
-    iput-object v0, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->cr:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    iput-object v0, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->cr:Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;
 
     .line 204
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->cr:Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;
+    iget-object v0, p0, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->cr:Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;
 
-    invoke-virtual {p0}, Lcom/android/settings/accounts/MiuiManageAccountsSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {p0}, Lcom/android/settings_ex/accounts/MiuiManageAccountsSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v1
 
@@ -1132,7 +1132,7 @@
 
     move-result-object v2
 
-    invoke-virtual {v0, v1, v2}, Lcom/android/settings/SettingsPreferenceFragment$SettingsDialogFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
+    invoke-virtual {v0, v1, v2}, Lcom/android/settings_ex/SettingsPreferenceFragment$SettingsDialogFragment;->show(Landroid/app/FragmentManager;Ljava/lang/String;)V
 
     .line 205
     return-void

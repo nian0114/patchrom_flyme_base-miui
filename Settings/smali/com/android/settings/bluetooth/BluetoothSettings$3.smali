@@ -1,4 +1,4 @@
-.class Lcom/android/settings/bluetooth/BluetoothSettings$3;
+.class Lcom/android/settings_ex/bluetooth/BluetoothSettings$3;
 .super Ljava/lang/Object;
 .source "BluetoothSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Rg:Lcom/android/settings/bluetooth/BluetoothSettings;
+.field final synthetic Rg:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/bluetooth/BluetoothSettings;)V
+.method constructor <init>(Lcom/android/settings_ex/bluetooth/BluetoothSettings;)V
     .locals 0
 
     .prologue
     .line 533
-    iput-object p1, p0, Lcom/android/settings/bluetooth/BluetoothSettings$3;->Rg:Lcom/android/settings/bluetooth/BluetoothSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$3;->Rg:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -90,15 +90,15 @@
     invoke-virtual {v2, v1, v0}, Landroid/os/Bundle;->putParcelable(Ljava/lang/String;Landroid/os/Parcelable;)V
 
     .line 550
-    iget-object v0, p0, Lcom/android/settings/bluetooth/BluetoothSettings$3;->Rg:Lcom/android/settings/bluetooth/BluetoothSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/bluetooth/BluetoothSettings$3;->Rg:Lcom/android/settings_ex/bluetooth/BluetoothSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/bluetooth/BluetoothSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ex/bluetooth/BluetoothSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hp;
+    check-cast v0, Lcom/android/settings_ex/hp;
 
-    const-class v1, Lcom/android/settings/bluetooth/DeviceProfilesSettings;
+    const-class v1, Lcom/android/settings_ex/bluetooth/DeviceProfilesSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -110,7 +110,7 @@
 
     move-object v5, v4
 
-    invoke-virtual/range {v0 .. v6}, Lcom/android/settings/hp;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lcom/android/settings_ex/hp;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     goto :goto_0
 .end method

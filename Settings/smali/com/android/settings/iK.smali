@@ -1,4 +1,4 @@
-.class Lcom/android/settings/iK;
+.class Lcom/android/settings_ex/iK;
 .super Ljava/lang/Object;
 .source "WirelessSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic Cr:Lcom/android/settings/WirelessSettings;
+.field final synthetic Cr:Lcom/android/settings_ex/WirelessSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/WirelessSettings;)V
+.method constructor <init>(Lcom/android/settings_ex/WirelessSettings;)V
     .locals 0
 
     .prologue
     .line 234
-    iput-object p1, p0, Lcom/android/settings/iK;->Cr:Lcom/android/settings/WirelessSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/iK;->Cr:Lcom/android/settings_ex/WirelessSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 237
-    iget-object v0, p0, Lcom/android/settings/iK;->Cr:Lcom/android/settings/WirelessSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/iK;->Cr:Lcom/android/settings_ex/WirelessSettings;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -50,14 +50,14 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/WirelessSettings;->a(Lcom/android/settings/WirelessSettings;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ex/WirelessSettings;->a(Lcom/android/settings_ex/WirelessSettings;Ljava/lang/String;)V
 
     .line 238
-    iget-object v0, p0, Lcom/android/settings/iK;->Cr:Lcom/android/settings/WirelessSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/iK;->Cr:Lcom/android/settings_ex/WirelessSettings;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/WirelessSettings;->b(Lcom/android/settings/WirelessSettings;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/android/settings_ex/WirelessSettings;->b(Lcom/android/settings_ex/WirelessSettings;Ljava/lang/String;)Ljava/lang/String;
 
     .line 239
     return-void

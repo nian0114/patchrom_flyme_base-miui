@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fuelgauge/PowerUsageDetail$2;
+.class Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$2;
 .super Ljava/lang/Object;
 .source "PowerUsageDetail.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic afC:Lcom/android/settings/fuelgauge/PowerUsageDetail;
+.field final synthetic afC:Lcom/android/settings_ex/fuelgauge/PowerUsageDetail;
 
 .field final synthetic afD:I
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fuelgauge/PowerUsageDetail;I)V
+.method constructor <init>(Lcom/android/settings_ex/fuelgauge/PowerUsageDetail;I)V
     .locals 0
 
     .prologue
     .line 658
-    iput-object p1, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail$2;->afC:Lcom/android/settings/fuelgauge/PowerUsageDetail;
+    iput-object p1, p0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$2;->afC:Lcom/android/settings_ex/fuelgauge/PowerUsageDetail;
 
-    iput p2, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail$2;->afD:I
+    iput p2, p0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$2;->afD:I
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -34,11 +34,11 @@
 
     .prologue
     .line 661
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail$2;->afC:Lcom/android/settings/fuelgauge/PowerUsageDetail;
+    iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$2;->afC:Lcom/android/settings_ex/fuelgauge/PowerUsageDetail;
 
-    iget v1, p0, Lcom/android/settings/fuelgauge/PowerUsageDetail$2;->afD:I
+    iget v1, p0, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail$2;->afD:I
 
-    invoke-static {v0, v1}, Lcom/android/settings/fuelgauge/PowerUsageDetail;->a(Lcom/android/settings/fuelgauge/PowerUsageDetail;I)V
+    invoke-static {v0, v1}, Lcom/android/settings_ex/fuelgauge/PowerUsageDetail;->a(Lcom/android/settings_ex/fuelgauge/PowerUsageDetail;I)V
 
     .line 662
     const/4 v0, 0x1

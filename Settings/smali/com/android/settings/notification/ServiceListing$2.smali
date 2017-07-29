@@ -1,19 +1,19 @@
-.class Lcom/android/settings/notification/ServiceListing$2;
+.class Lcom/android/settings_ex/notification/ServiceListing$2;
 .super Landroid/content/BroadcastReceiver;
 .source "ServiceListing.java"
 
 
 # instance fields
-.field final synthetic ako:Lcom/android/settings/notification/ServiceListing;
+.field final synthetic ako:Lcom/android/settings_ex/notification/ServiceListing;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/ServiceListing;)V
+.method constructor <init>(Lcom/android/settings_ex/notification/ServiceListing;)V
     .locals 0
 
     .prologue
     .line 196
-    iput-object p1, p0, Lcom/android/settings/notification/ServiceListing$2;->ako:Lcom/android/settings/notification/ServiceListing;
+    iput-object p1, p0, Lcom/android/settings_ex/notification/ServiceListing$2;->ako:Lcom/android/settings_ex/notification/ServiceListing;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 199
-    iget-object v0, p0, Lcom/android/settings/notification/ServiceListing$2;->ako:Lcom/android/settings/notification/ServiceListing;
+    iget-object v0, p0, Lcom/android/settings_ex/notification/ServiceListing$2;->ako:Lcom/android/settings_ex/notification/ServiceListing;
 
-    invoke-virtual {v0}, Lcom/android/settings/notification/ServiceListing;->sA()Ljava/util/List;
+    invoke-virtual {v0}, Lcom/android/settings_ex/notification/ServiceListing;->sA()Ljava/util/List;
 
     .line 200
     return-void

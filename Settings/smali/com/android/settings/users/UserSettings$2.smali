@@ -1,19 +1,19 @@
-.class Lcom/android/settings/users/UserSettings$2;
+.class Lcom/android/settings_ex/users/UserSettings$2;
 .super Landroid/content/BroadcastReceiver;
 .source "UserSettings.java"
 
 
 # instance fields
-.field final synthetic auC:Lcom/android/settings/users/UserSettings;
+.field final synthetic auC:Lcom/android/settings_ex/users/UserSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/users/UserSettings;)V
+.method constructor <init>(Lcom/android/settings_ex/users/UserSettings;)V
     .locals 0
 
     .prologue
     .line 168
-    iput-object p1, p0, Lcom/android/settings/users/UserSettings$2;->auC:Lcom/android/settings/users/UserSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/users/UserSettings$2;->auC:Lcom/android/settings_ex/users/UserSettings;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -42,16 +42,16 @@
     if-eqz v0, :cond_1
 
     .line 172
-    iget-object v0, p0, Lcom/android/settings/users/UserSettings$2;->auC:Lcom/android/settings/users/UserSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/users/UserSettings$2;->auC:Lcom/android/settings_ex/users/UserSettings;
 
-    invoke-static {v0, v2}, Lcom/android/settings/users/UserSettings;->b(Lcom/android/settings/users/UserSettings;I)I
+    invoke-static {v0, v2}, Lcom/android/settings_ex/users/UserSettings;->b(Lcom/android/settings_ex/users/UserSettings;I)I
 
     .line 179
     :cond_0
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/users/UserSettings$2;->auC:Lcom/android/settings/users/UserSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/users/UserSettings$2;->auC:Lcom/android/settings_ex/users/UserSettings;
 
-    invoke-static {v0}, Lcom/android/settings/users/UserSettings;->c(Lcom/android/settings/users/UserSettings;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/settings_ex/users/UserSettings;->c(Lcom/android/settings_ex/users/UserSettings;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -87,9 +87,9 @@
     if-eq v0, v2, :cond_0
 
     .line 176
-    iget-object v1, p0, Lcom/android/settings/users/UserSettings$2;->auC:Lcom/android/settings/users/UserSettings;
+    iget-object v1, p0, Lcom/android/settings_ex/users/UserSettings$2;->auC:Lcom/android/settings_ex/users/UserSettings;
 
-    invoke-static {v1}, Lcom/android/settings/users/UserSettings;->b(Lcom/android/settings/users/UserSettings;)Landroid/util/SparseArray;
+    invoke-static {v1}, Lcom/android/settings_ex/users/UserSettings;->b(Lcom/android/settings_ex/users/UserSettings;)Landroid/util/SparseArray;
 
     move-result-object v1
 

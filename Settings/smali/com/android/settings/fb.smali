@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fb;
+.class Lcom/android/settings_ex/fb;
 .super Ljava/lang/Object;
 .source "MiuiSecurityCommonSettings.java"
 
@@ -7,20 +7,20 @@
 
 
 # instance fields
-.field final synthetic sl:Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+.field final synthetic sl:Lcom/android/settings_ex/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
 
 .field final synthetic sm:Ljava/util/Map;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;Ljava/util/Map;)V
+.method constructor <init>(Lcom/android/settings_ex/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;Ljava/util/Map;)V
     .locals 0
 
     .prologue
     .line 529
-    iput-object p1, p0, Lcom/android/settings/fb;->sl:Lcom/android/settings/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
+    iput-object p1, p0, Lcom/android/settings_ex/fb;->sl:Lcom/android/settings_ex/MiuiSecurityCommonSettings$MiuiSecurityCommonSettingsFragment;
 
-    iput-object p2, p0, Lcom/android/settings/fb;->sm:Ljava/util/Map;
+    iput-object p2, p0, Lcom/android/settings_ex/fb;->sm:Ljava/util/Map;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
 
     check-cast p2, Ljava/lang/String;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/fb;->compare(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ex/fb;->compare(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v0
 
@@ -51,7 +51,7 @@
     .prologue
     .line 533
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/fb;->sm:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ex/fb;->sm:Ljava/util/Map;
 
     invoke-interface {v0, p1}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 
@@ -63,7 +63,7 @@
 
     move-result-wide v2
 
-    iget-object v0, p0, Lcom/android/settings/fb;->sm:Ljava/util/Map;
+    iget-object v0, p0, Lcom/android/settings_ex/fb;->sm:Ljava/util/Map;
 
     invoke-interface {v0, p2}, Ljava/util/Map;->get(Ljava/lang/Object;)Ljava/lang/Object;
 

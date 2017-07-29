@@ -1,4 +1,4 @@
-.class Lcom/android/settings/gh;
+.class Lcom/android/settings_ex/gh;
 .super Ljava/lang/Object;
 .source "PrivacyModeDialog.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic vR:Lcom/android/settings/PrivacyModeDialog;
+.field final synthetic vR:Lcom/android/settings_ex/PrivacyModeDialog;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/PrivacyModeDialog;)V
+.method constructor <init>(Lcom/android/settings_ex/PrivacyModeDialog;)V
     .locals 0
 
     .prologue
     .line 36
-    iput-object p1, p0, Lcom/android/settings/gh;->vR:Lcom/android/settings/PrivacyModeDialog;
+    iput-object p1, p0, Lcom/android/settings_ex/gh;->vR:Lcom/android/settings_ex/PrivacyModeDialog;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,7 +32,7 @@
     .line 39
     new-instance v0, Landroid/security/ChooseLockSettingsHelper;
 
-    iget-object v1, p0, Lcom/android/settings/gh;->vR:Lcom/android/settings/PrivacyModeDialog;
+    iget-object v1, p0, Lcom/android/settings_ex/gh;->vR:Lcom/android/settings_ex/PrivacyModeDialog;
 
     invoke-direct {v0, v1}, Landroid/security/ChooseLockSettingsHelper;-><init>(Landroid/app/Activity;)V
 

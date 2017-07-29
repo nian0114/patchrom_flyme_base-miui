@@ -1,4 +1,4 @@
-.class Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$1;
+.class Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings$1;
 .super Ljava/lang/Object;
 .source "InputMethodAndLanguageSettings.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic aga:Ljava/util/TreeSet;
 
-.field final synthetic agb:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+.field final synthetic agb:Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;Ljava/util/TreeSet;)V
+.method constructor <init>(Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings;Ljava/util/TreeSet;)V
     .locals 0
 
     .prologue
     .line 259
-    iput-object p1, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$1;->agb:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings$1;->agb:Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings;
 
-    iput-object p2, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$1;->aga:Ljava/util/TreeSet;
+    iput-object p2, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings$1;->aga:Ljava/util/TreeSet;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -43,7 +43,7 @@
     invoke-direct {v5}, Landroid/os/Bundle;-><init>()V
 
     .line 266
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$1;->aga:Ljava/util/TreeSet;
+    iget-object v0, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings$1;->aga:Ljava/util/TreeSet;
 
     invoke-virtual {v0}, Ljava/util/TreeSet;->size()I
 
@@ -52,7 +52,7 @@
     if-gt v0, v6, :cond_1
 
     .line 267
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$1;->aga:Ljava/util/TreeSet;
+    iget-object v0, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings$1;->aga:Ljava/util/TreeSet;
 
     invoke-virtual {v0}, Ljava/util/TreeSet;->isEmpty()Z
 
@@ -63,7 +63,7 @@
     .line 276
     const-string v1, "locale"
 
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$1;->aga:Ljava/util/TreeSet;
+    iget-object v0, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings$1;->aga:Ljava/util/TreeSet;
 
     invoke-virtual {v0}, Ljava/util/TreeSet;->first()Ljava/lang/Object;
 
@@ -75,15 +75,15 @@
 
     .line 278
     :cond_0
-    const-class v0, Lcom/android/settings/UserDictionarySettings;
+    const-class v0, Lcom/android/settings_ex/UserDictionarySettings;
 
     move-object v2, v0
 
     .line 282
     :goto_0
-    iget-object v0, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$1;->agb:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings$1;->agb:Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings;
 
-    iget-object v1, p0, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings$1;->agb:Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;
+    iget-object v1, p0, Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings$1;->agb:Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings;
 
     invoke-virtual {v2}, Ljava/lang/Class;->getCanonicalName()Ljava/lang/String;
 
@@ -91,14 +91,14 @@
 
     move v4, v3
 
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings/inputmethod/InputMethodAndLanguageSettings;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
+    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ex/inputmethod/InputMethodAndLanguageSettings;->a(Landroid/app/Fragment;Ljava/lang/String;IILandroid/os/Bundle;)Z
 
     .line 284
     return v6
 
     .line 280
     :cond_1
-    const-class v0, Lcom/android/settings/inputmethod/UserDictionaryList;
+    const-class v0, Lcom/android/settings_ex/inputmethod/UserDictionaryList;
 
     move-object v2, v0
 

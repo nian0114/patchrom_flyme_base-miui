@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fingerprint/p;
+.class Lcom/android/settings_ex/fingerprint/p;
 .super Ljava/lang/Object;
 .source "FingerprintEnrollSidecar.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aca:Lcom/android/settings/fingerprint/n;
+.field final synthetic aca:Lcom/android/settings_ex/fingerprint/n;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fingerprint/n;)V
+.method constructor <init>(Lcom/android/settings_ex/fingerprint/n;)V
     .locals 0
 
     .prologue
     .line 136
-    iput-object p1, p0, Lcom/android/settings/fingerprint/p;->aca:Lcom/android/settings/fingerprint/n;
+    iput-object p1, p0, Lcom/android/settings_ex/fingerprint/p;->aca:Lcom/android/settings_ex/fingerprint/n;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 139
-    iget-object v0, p0, Lcom/android/settings/fingerprint/p;->aca:Lcom/android/settings/fingerprint/n;
+    iget-object v0, p0, Lcom/android/settings_ex/fingerprint/p;->aca:Lcom/android/settings_ex/fingerprint/n;
 
-    invoke-static {v0}, Lcom/android/settings/fingerprint/n;->c(Lcom/android/settings/fingerprint/n;)V
+    invoke-static {v0}, Lcom/android/settings_ex/fingerprint/n;->c(Lcom/android/settings_ex/fingerprint/n;)V
 
     .line 140
     return-void

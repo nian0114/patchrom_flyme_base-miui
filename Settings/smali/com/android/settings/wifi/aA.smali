@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/aA;
+.class Lcom/android/settings_ex/wifi/aA;
 .super Ljava/lang/Object;
 .source "WifiSetupActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aEk:Lcom/android/settings/wifi/az;
+.field final synthetic aEk:Lcom/android/settings_ex/wifi/az;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/az;)V
+.method constructor <init>(Lcom/android/settings_ex/wifi/az;)V
     .locals 0
 
     .prologue
     .line 271
-    iput-object p1, p0, Lcom/android/settings/wifi/aA;->aEk:Lcom/android/settings/wifi/az;
+    iput-object p1, p0, Lcom/android/settings_ex/wifi/aA;->aEk:Lcom/android/settings_ex/wifi/az;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

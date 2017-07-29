@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/cq;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/settings_ex/cq;
+.super Lcom/android/settings_ex/search/a;
 .source "DeviceInfoSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 478
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ex/search/a;-><init>()V
 
     return-void
 .end method
@@ -76,7 +76,7 @@
     .line 491
     const-string v1, "ro.build.selinux"
 
-    invoke-direct {p0, v1}, Lcom/android/settings/cq;->E(Ljava/lang/String;)Z
+    invoke-direct {p0, v1}, Lcom/android/settings_ex/cq;->E(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -91,7 +91,7 @@
     :cond_0
     const-string v1, "ro.url.safetylegal"
 
-    invoke-direct {p0, v1}, Lcom/android/settings/cq;->E(Ljava/lang/String;)Z
+    invoke-direct {p0, v1}, Lcom/android/settings_ex/cq;->E(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -106,7 +106,7 @@
     :cond_1
     const-string v1, "ro.ril.fccid"
 
-    invoke-direct {p0, v1}, Lcom/android/settings/cq;->E(Ljava/lang/String;)Z
+    invoke-direct {p0, v1}, Lcom/android/settings_ex/cq;->E(Ljava/lang/String;)Z
 
     move-result v1
 
@@ -119,7 +119,7 @@
 
     .line 501
     :cond_2
-    invoke-static {p1}, Lcom/android/settings/iE;->Z(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/settings_ex/iE;->Z(Landroid/content/Context;)Z
 
     move-result v1
 
@@ -132,7 +132,7 @@
 
     .line 505
     :cond_3
-    invoke-static {p1}, Lcom/android/settings/DeviceInfoSettings;->o(Landroid/content/Context;)Ljava/lang/String;
+    invoke-static {p1}, Lcom/android/settings_ex/DeviceInfoSettings;->o(Landroid/content/Context;)Ljava/lang/String;
 
     move-result-object v1
 

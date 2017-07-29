@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/nfc/NfcSeRoute;
+.class public Lcom/android/settings_ex/nfc/NfcSeRoute;
 .super Ljava/lang/Object;
 .source "NfcSeRoute.java"
 
@@ -23,7 +23,7 @@
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
     .line 40
-    invoke-direct {p0}, Lcom/android/settings/nfc/NfcSeRoute;->rX()Z
+    invoke-direct {p0}, Lcom/android/settings_ex/nfc/NfcSeRoute;->rX()Z
 
     move-result v0
 
@@ -35,16 +35,16 @@
 
     .line 44
     :cond_0
-    iput-object p1, p0, Lcom/android/settings/nfc/NfcSeRoute;->mContext:Landroid/content/Context;
+    iput-object p1, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->mContext:Landroid/content/Context;
 
     .line 45
-    iput-object p2, p0, Lcom/android/settings/nfc/NfcSeRoute;->un:Landroid/nfc/NfcAdapter;
+    iput-object p2, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->un:Landroid/nfc/NfcAdapter;
 
     .line 46
-    iput-object p3, p0, Lcom/android/settings/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
+    iput-object p3, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
 
     .line 47
-    iget-object v1, p0, Lcom/android/settings/nfc/NfcSeRoute;->mContext:Landroid/content/Context;
+    iget-object v1, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->mContext:Landroid/content/Context;
 
     sget-boolean v0, Lmiui/os/Build;->IS_GLOBAL_BUILD:Z
 
@@ -58,22 +58,22 @@
     move-result-object v0
 
     .line 48
-    iget-object v1, p0, Lcom/android/settings/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/ListPreference;->setTitle(Ljava/lang/CharSequence;)V
 
     .line 49
-    iget-object v1, p0, Lcom/android/settings/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
+    iget-object v1, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
 
     invoke-virtual {v1, v0}, Landroid/preference/ListPreference;->setDialogTitle(Ljava/lang/CharSequence;)V
 
     .line 50
-    iget-object v0, p0, Lcom/android/settings/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, p0}, Landroid/preference/ListPreference;->setOnPreferenceChangeListener(Landroid/preference/Preference$OnPreferenceChangeListener;)V
 
     .line 51
-    invoke-direct {p0}, Lcom/android/settings/nfc/NfcSeRoute;->pf()V
+    invoke-direct {p0}, Lcom/android/settings_ex/nfc/NfcSeRoute;->pf()V
 
     goto :goto_0
 
@@ -90,7 +90,7 @@
     .prologue
     .line 151
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/nfc/NfcSeRoute;->un:Landroid/nfc/NfcAdapter;
+    iget-object v0, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->un:Landroid/nfc/NfcAdapter;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -116,7 +116,7 @@
     if-eqz v0, :cond_0
 
     .line 153
-    iget-object v1, p0, Lcom/android/settings/nfc/NfcSeRoute;->un:Landroid/nfc/NfcAdapter;
+    iget-object v1, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->un:Landroid/nfc/NfcAdapter;
 
     const/4 v2, 0x1
 
@@ -181,7 +181,7 @@
     const/4 v6, 0x1
 
     .line 78
-    iget-object v3, p0, Lcom/android/settings/nfc/NfcSeRoute;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->mContext:Landroid/content/Context;
 
     sget-boolean v0, Lmiui/os/Build;->IS_GLOBAL_BUILD:Z
 
@@ -195,7 +195,7 @@
     move-result-object v3
 
     .line 79
-    iget-object v0, p0, Lcom/android/settings/nfc/NfcSeRoute;->mContext:Landroid/content/Context;
+    iget-object v0, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->mContext:Landroid/content/Context;
 
     const v4, 0x7f0c0fb2
 
@@ -204,9 +204,9 @@
     move-result-object v4
 
     .line 80
-    iget-object v5, p0, Lcom/android/settings/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
+    iget-object v5, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
 
-    invoke-direct {p0}, Lcom/android/settings/nfc/NfcSeRoute;->rW()Z
+    invoke-direct {p0}, Lcom/android/settings_ex/nfc/NfcSeRoute;->rW()Z
 
     move-result v0
 
@@ -224,19 +224,19 @@
     invoke-virtual {v5, v0}, Landroid/preference/ListPreference;->setEntries([Ljava/lang/CharSequence;)V
 
     .line 81
-    invoke-direct {p0}, Lcom/android/settings/nfc/NfcSeRoute;->rY()I
+    invoke-direct {p0}, Lcom/android/settings_ex/nfc/NfcSeRoute;->rY()I
 
     move-result v0
 
     packed-switch v0, :pswitch_data_0
 
     .line 95
-    iget-object v0, p0, Lcom/android/settings/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v7}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 96
-    iget-object v0, p0, Lcom/android/settings/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
 
     sget-boolean v3, Lmiui/os/Build;->IS_GLOBAL_BUILD:Z
 
@@ -247,7 +247,7 @@
 
     .line 99
     :goto_3
-    iget-object v0, p0, Lcom/android/settings/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v6}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
@@ -270,7 +270,7 @@
 
     .line 84
     :pswitch_0
-    iget-object v0, p0, Lcom/android/settings/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
 
     invoke-virtual {v0}, Landroid/preference/ListPreference;->getEntries()[Ljava/lang/CharSequence;
 
@@ -281,12 +281,12 @@
     if-le v0, v6, :cond_2
 
     .line 85
-    iget-object v0, p0, Lcom/android/settings/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v6}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 86
-    iget-object v0, p0, Lcom/android/settings/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
 
     const v1, 0x7f0c0fb3
 
@@ -296,12 +296,12 @@
 
     .line 88
     :cond_2
-    iget-object v0, p0, Lcom/android/settings/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v7}, Landroid/preference/ListPreference;->setValueIndex(I)V
 
     .line 89
-    iget-object v3, p0, Lcom/android/settings/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
+    iget-object v3, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
 
     sget-boolean v0, Lmiui/os/Build;->IS_GLOBAL_BUILD:Z
 
@@ -354,7 +354,7 @@
 
     .line 68
     :cond_1
-    iget-object v2, p0, Lcom/android/settings/nfc/NfcSeRoute;->mContext:Landroid/content/Context;
+    iget-object v2, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->mContext:Landroid/content/Context;
 
     invoke-virtual {v2}, Landroid/content/Context;->getPackageManager()Landroid/content/pm/PackageManager;
 
@@ -369,14 +369,14 @@
     if-eqz v2, :cond_3
 
     .line 70
-    new-instance v2, Lcom/android/settings/nfc/PaymentBackend;
+    new-instance v2, Lcom/android/settings_ex/nfc/PaymentBackend;
 
-    iget-object v3, p0, Lcom/android/settings/nfc/NfcSeRoute;->mContext:Landroid/content/Context;
+    iget-object v3, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->mContext:Landroid/content/Context;
 
-    invoke-direct {v2, v3}, Lcom/android/settings/nfc/PaymentBackend;-><init>(Landroid/content/Context;)V
+    invoke-direct {v2, v3}, Lcom/android/settings_ex/nfc/PaymentBackend;-><init>(Landroid/content/Context;)V
 
     .line 71
-    invoke-virtual {v2}, Lcom/android/settings/nfc/PaymentBackend;->rZ()Ljava/util/List;
+    invoke-virtual {v2}, Lcom/android/settings_ex/nfc/PaymentBackend;->rZ()Ljava/util/List;
 
     move-result-object v2
 
@@ -440,7 +440,7 @@
     .prologue
     .line 132
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/nfc/NfcSeRoute;->un:Landroid/nfc/NfcAdapter;
+    iget-object v0, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->un:Landroid/nfc/NfcAdapter;
 
     invoke-virtual {v0}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
 
@@ -460,7 +460,7 @@
     if-eqz v0, :cond_0
 
     .line 134
-    iget-object v1, p0, Lcom/android/settings/nfc/NfcSeRoute;->un:Landroid/nfc/NfcAdapter;
+    iget-object v1, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->un:Landroid/nfc/NfcAdapter;
 
     const/4 v2, 0x0
 
@@ -524,14 +524,14 @@
     const/4 v1, 0x0
 
     .line 104
-    invoke-direct {p0}, Lcom/android/settings/nfc/NfcSeRoute;->rX()Z
+    invoke-direct {p0}, Lcom/android/settings_ex/nfc/NfcSeRoute;->rX()Z
 
     move-result v0
 
     if-eqz v0, :cond_1
 
     .line 105
-    iget-object v0, p0, Lcom/android/settings/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/nfc/NfcSeRoute;->aiu:Landroid/preference/ListPreference;
 
     invoke-virtual {v0, v1}, Landroid/preference/ListPreference;->setEnabled(Z)V
 
@@ -576,10 +576,10 @@
     invoke-static {v2, v3}, Landroid/util/Log;->i(Ljava/lang/String;Ljava/lang/String;)I
 
     .line 113
-    invoke-direct {p0, v0}, Lcom/android/settings/nfc/NfcSeRoute;->cz(I)V
+    invoke-direct {p0, v0}, Lcom/android/settings_ex/nfc/NfcSeRoute;->cz(I)V
 
     .line 115
-    invoke-direct {p0}, Lcom/android/settings/nfc/NfcSeRoute;->pf()V
+    invoke-direct {p0}, Lcom/android/settings_ex/nfc/NfcSeRoute;->pf()V
 
     .line 118
     :cond_1
@@ -599,14 +599,14 @@
 
     .prologue
     .line 55
-    invoke-direct {p0}, Lcom/android/settings/nfc/NfcSeRoute;->rX()Z
+    invoke-direct {p0}, Lcom/android/settings_ex/nfc/NfcSeRoute;->rX()Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 56
-    invoke-direct {p0}, Lcom/android/settings/nfc/NfcSeRoute;->pf()V
+    invoke-direct {p0}, Lcom/android/settings_ex/nfc/NfcSeRoute;->pf()V
 
     .line 58
     :cond_0

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/accounts/MiuiAddAccountSettings$1;
+.class Lcom/android/settings_ex/accounts/MiuiAddAccountSettings$1;
 .super Ljava/lang/Object;
 .source "MiuiAddAccountSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic EJ:Lcom/android/settings/accounts/MiuiAddAccountSettings;
+.field final synthetic EJ:Lcom/android/settings_ex/accounts/MiuiAddAccountSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/accounts/MiuiAddAccountSettings;)V
+.method constructor <init>(Lcom/android/settings_ex/accounts/MiuiAddAccountSettings;)V
     .locals 0
 
     .prologue
     .line 39
-    iput-object p1, p0, Lcom/android/settings/accounts/MiuiAddAccountSettings$1;->EJ:Lcom/android/settings/accounts/MiuiAddAccountSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/accounts/MiuiAddAccountSettings$1;->EJ:Lcom/android/settings_ex/accounts/MiuiAddAccountSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 42
-    iget-object v0, p0, Lcom/android/settings/accounts/MiuiAddAccountSettings$1;->EJ:Lcom/android/settings/accounts/MiuiAddAccountSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/accounts/MiuiAddAccountSettings$1;->EJ:Lcom/android/settings_ex/accounts/MiuiAddAccountSettings;
 
-    invoke-static {v0}, Lcom/android/settings/accounts/MiuiAddAccountSettings;->a(Lcom/android/settings/accounts/MiuiAddAccountSettings;)V
+    invoke-static {v0}, Lcom/android/settings_ex/accounts/MiuiAddAccountSettings;->a(Lcom/android/settings_ex/accounts/MiuiAddAccountSettings;)V
 
     .line 43
     return-void

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/cM;
+.class Lcom/android/settings_ex/cM;
 .super Ljava/lang/Object;
 .source "DropDownPreference.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic mo:Lcom/android/settings/DropDownPreference;
+.field final synthetic mo:Lcom/android/settings_ex/DropDownPreference;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/DropDownPreference;)V
+.method constructor <init>(Lcom/android/settings_ex/DropDownPreference;)V
     .locals 0
 
     .prologue
     .line 55
-    iput-object p1, p0, Lcom/android/settings/cM;->mo:Lcom/android/settings/DropDownPreference;
+    iput-object p1, p0, Lcom/android/settings_ex/cM;->mo:Lcom/android/settings_ex/DropDownPreference;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 58
-    iget-object v0, p0, Lcom/android/settings/cM;->mo:Lcom/android/settings/DropDownPreference;
+    iget-object v0, p0, Lcom/android/settings_ex/cM;->mo:Lcom/android/settings_ex/DropDownPreference;
 
     const/4 v1, 0x1
 
-    invoke-virtual {v0, p3, v1}, Lcom/android/settings/DropDownPreference;->g(IZ)V
+    invoke-virtual {v0, p3, v1}, Lcom/android/settings_ex/DropDownPreference;->g(IZ)V
 
     .line 59
     return-void

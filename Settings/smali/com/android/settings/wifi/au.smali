@@ -1,22 +1,22 @@
-.class Lcom/android/settings/wifi/au;
+.class Lcom/android/settings_ex/wifi/au;
 .super Ljava/lang/Object;
 .source "WifiSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/dK;
+.implements Lcom/android/settings_ex/dK;
 
 
 # instance fields
-.field final synthetic aDY:Lcom/android/settings/wifi/WifiSettings;
+.field final synthetic aDY:Lcom/android/settings_ex/wifi/WifiSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/WifiSettings;)V
+.method constructor <init>(Lcom/android/settings_ex/wifi/WifiSettings;)V
     .locals 0
 
     .prologue
     .line 800
-    iput-object p1, p0, Lcom/android/settings/wifi/au;->aDY:Lcom/android/settings/wifi/WifiSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/wifi/au;->aDY:Lcom/android/settings_ex/wifi/WifiSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -32,16 +32,16 @@
     const/4 v2, 0x0
 
     .line 803
-    iget-object v0, p0, Lcom/android/settings/wifi/au;->aDY:Lcom/android/settings/wifi/WifiSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/wifi/au;->aDY:Lcom/android/settings_ex/wifi/WifiSettings;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/WifiSettings;->getActivity()Landroid/app/Activity;
+    invoke-virtual {v0}, Lcom/android/settings_ex/wifi/WifiSettings;->getActivity()Landroid/app/Activity;
 
     move-result-object v0
 
-    check-cast v0, Lcom/android/settings/hp;
+    check-cast v0, Lcom/android/settings_ex/hp;
 
     .line 805
-    const-class v1, Lcom/android/settings/location/ScanningSettings;
+    const-class v1, Lcom/android/settings_ex/location/ScanningSettings;
 
     invoke-virtual {v1}, Ljava/lang/Class;->getName()Ljava/lang/String;
 
@@ -55,7 +55,7 @@
 
     move-object v5, v2
 
-    invoke-virtual/range {v0 .. v6}, Lcom/android/settings/hp;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
+    invoke-virtual/range {v0 .. v6}, Lcom/android/settings_ex/hp;->startPreferencePanel(Ljava/lang/String;Landroid/os/Bundle;ILjava/lang/CharSequence;Landroid/app/Fragment;I)V
 
     .line 807
     return-void

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/deviceinfo/StorageItemPreference;
+.class public Lcom/android/settings_ex/deviceinfo/StorageItemPreference;
 .super Landroid/preference/Preference;
 .source "StorageItemPreference.java"
 

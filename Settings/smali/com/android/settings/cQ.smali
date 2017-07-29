@@ -1,4 +1,4 @@
-.class Lcom/android/settings/cQ;
+.class Lcom/android/settings_ex/cQ;
 .super Ljava/lang/Object;
 .source "EdgeModeGuideActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic mv:Lcom/android/settings/EdgeModeGuideActivity;
+.field final synthetic mv:Lcom/android/settings_ex/EdgeModeGuideActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/EdgeModeGuideActivity;)V
+.method constructor <init>(Lcom/android/settings_ex/EdgeModeGuideActivity;)V
     .locals 0
 
     .prologue
     .line 72
-    iput-object p1, p0, Lcom/android/settings/cQ;->mv:Lcom/android/settings/EdgeModeGuideActivity;
+    iput-object p1, p0, Lcom/android/settings_ex/cQ;->mv:Lcom/android/settings_ex/EdgeModeGuideActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 75
-    iget-object v0, p0, Lcom/android/settings/cQ;->mv:Lcom/android/settings/EdgeModeGuideActivity;
+    iget-object v0, p0, Lcom/android/settings_ex/cQ;->mv:Lcom/android/settings_ex/EdgeModeGuideActivity;
 
-    invoke-virtual {v0}, Lcom/android/settings/EdgeModeGuideActivity;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ex/EdgeModeGuideActivity;->finish()V
 
     .line 76
     return-void

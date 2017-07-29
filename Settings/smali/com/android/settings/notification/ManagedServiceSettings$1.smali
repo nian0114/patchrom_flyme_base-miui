@@ -1,22 +1,22 @@
-.class Lcom/android/settings/notification/ManagedServiceSettings$1;
+.class Lcom/android/settings_ex/notification/ManagedServiceSettings$1;
 .super Ljava/lang/Object;
 .source "ManagedServiceSettings.java"
 
 # interfaces
-.implements Lcom/android/settings/notification/ServiceListing$Callback;
+.implements Lcom/android/settings_ex/notification/ServiceListing$Callback;
 
 
 # instance fields
-.field final synthetic aiO:Lcom/android/settings/notification/ManagedServiceSettings;
+.field final synthetic aiO:Lcom/android/settings_ex/notification/ManagedServiceSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/notification/ManagedServiceSettings;)V
+.method constructor <init>(Lcom/android/settings_ex/notification/ManagedServiceSettings;)V
     .locals 0
 
     .prologue
     .line 71
-    iput-object p1, p0, Lcom/android/settings/notification/ManagedServiceSettings$1;->aiO:Lcom/android/settings/notification/ManagedServiceSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/notification/ManagedServiceSettings$1;->aiO:Lcom/android/settings_ex/notification/ManagedServiceSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 74
-    iget-object v0, p0, Lcom/android/settings/notification/ManagedServiceSettings$1;->aiO:Lcom/android/settings/notification/ManagedServiceSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/notification/ManagedServiceSettings$1;->aiO:Lcom/android/settings_ex/notification/ManagedServiceSettings;
 
-    invoke-static {v0, p1}, Lcom/android/settings/notification/ManagedServiceSettings;->a(Lcom/android/settings/notification/ManagedServiceSettings;Ljava/util/List;)V
+    invoke-static {v0, p1}, Lcom/android/settings_ex/notification/ManagedServiceSettings;->a(Lcom/android/settings_ex/notification/ManagedServiceSettings;Ljava/util/List;)V
 
     .line 75
     return-void

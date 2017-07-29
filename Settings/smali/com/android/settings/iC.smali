@@ -1,4 +1,4 @@
-.class Lcom/android/settings/iC;
+.class Lcom/android/settings_ex/iC;
 .super Landroid/widget/SimpleCursorAdapter;
 .source "UserDictionarySettings.java"
 
@@ -13,7 +13,7 @@
 
 
 # direct methods
-.method public constructor <init>(Landroid/content/Context;ILandroid/database/Cursor;[Ljava/lang/String;[ILcom/android/settings/UserDictionarySettings;)V
+.method public constructor <init>(Landroid/content/Context;ILandroid/database/Cursor;[Ljava/lang/String;[ILcom/android/settings_ex/UserDictionarySettings;)V
     .locals 3
 
     .prologue
@@ -21,11 +21,11 @@
     invoke-direct/range {p0 .. p5}, Landroid/widget/SimpleCursorAdapter;-><init>(Landroid/content/Context;ILandroid/database/Cursor;[Ljava/lang/String;[I)V
 
     .line 269
-    new-instance v0, Lcom/android/settings/iD;
+    new-instance v0, Lcom/android/settings_ex/iD;
 
-    invoke-direct {v0, p0}, Lcom/android/settings/iD;-><init>(Lcom/android/settings/iC;)V
+    invoke-direct {v0, p0}, Lcom/android/settings_ex/iD;-><init>(Lcom/android/settings_ex/iC;)V
 
-    iput-object v0, p0, Lcom/android/settings/iC;->Cc:Landroid/widget/SimpleCursorAdapter$ViewBinder;
+    iput-object v0, p0, Lcom/android/settings_ex/iC;->Cc:Landroid/widget/SimpleCursorAdapter$ViewBinder;
 
     .line 293
     if-eqz p3, :cond_0
@@ -49,13 +49,13 @@
 
     invoke-direct {v2, p3, v1, v0}, Landroid/widget/AlphabetIndexer;-><init>(Landroid/database/Cursor;ILjava/lang/CharSequence;)V
 
-    iput-object v2, p0, Lcom/android/settings/iC;->Cb:Landroid/widget/AlphabetIndexer;
+    iput-object v2, p0, Lcom/android/settings_ex/iC;->Cb:Landroid/widget/AlphabetIndexer;
 
     .line 301
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/iC;->Cc:Landroid/widget/SimpleCursorAdapter$ViewBinder;
+    iget-object v0, p0, Lcom/android/settings_ex/iC;->Cc:Landroid/widget/SimpleCursorAdapter$ViewBinder;
 
-    invoke-virtual {p0, v0}, Lcom/android/settings/iC;->setViewBinder(Landroid/widget/SimpleCursorAdapter$ViewBinder;)V
+    invoke-virtual {p0, v0}, Lcom/android/settings_ex/iC;->setViewBinder(Landroid/widget/SimpleCursorAdapter$ViewBinder;)V
 
     .line 302
     return-void
@@ -68,7 +68,7 @@
 
     .prologue
     .line 306
-    iget-object v0, p0, Lcom/android/settings/iC;->Cb:Landroid/widget/AlphabetIndexer;
+    iget-object v0, p0, Lcom/android/settings_ex/iC;->Cb:Landroid/widget/AlphabetIndexer;
 
     if-nez v0, :cond_0
 
@@ -78,7 +78,7 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/iC;->Cb:Landroid/widget/AlphabetIndexer;
+    iget-object v0, p0, Lcom/android/settings_ex/iC;->Cb:Landroid/widget/AlphabetIndexer;
 
     invoke-virtual {v0, p1}, Landroid/widget/AlphabetIndexer;->getPositionForSection(I)I
 
@@ -92,7 +92,7 @@
 
     .prologue
     .line 311
-    iget-object v0, p0, Lcom/android/settings/iC;->Cb:Landroid/widget/AlphabetIndexer;
+    iget-object v0, p0, Lcom/android/settings_ex/iC;->Cb:Landroid/widget/AlphabetIndexer;
 
     if-nez v0, :cond_0
 
@@ -102,7 +102,7 @@
     return v0
 
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/iC;->Cb:Landroid/widget/AlphabetIndexer;
+    iget-object v0, p0, Lcom/android/settings_ex/iC;->Cb:Landroid/widget/AlphabetIndexer;
 
     invoke-virtual {v0, p1}, Landroid/widget/AlphabetIndexer;->getSectionForPosition(I)I
 
@@ -116,7 +116,7 @@
 
     .prologue
     .line 316
-    iget-object v0, p0, Lcom/android/settings/iC;->Cb:Landroid/widget/AlphabetIndexer;
+    iget-object v0, p0, Lcom/android/settings_ex/iC;->Cb:Landroid/widget/AlphabetIndexer;
 
     if-nez v0, :cond_0
 
@@ -126,7 +126,7 @@
     return-object v0
 
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/iC;->Cb:Landroid/widget/AlphabetIndexer;
+    iget-object v0, p0, Lcom/android/settings_ex/iC;->Cb:Landroid/widget/AlphabetIndexer;
 
     invoke-virtual {v0}, Landroid/widget/AlphabetIndexer;->getSections()[Ljava/lang/Object;
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/deviceinfo/UsbModeChooserActivity$3;
+.class Lcom/android/settings_ex/deviceinfo/UsbModeChooserActivity$3;
 .super Ljava/lang/Object;
 .source "UsbModeChooserActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic XQ:Lcom/android/settings/deviceinfo/UsbModeChooserActivity;
+.field final synthetic XQ:Lcom/android/settings_ex/deviceinfo/UsbModeChooserActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/UsbModeChooserActivity;)V
+.method constructor <init>(Lcom/android/settings_ex/deviceinfo/UsbModeChooserActivity;)V
     .locals 0
 
     .prologue
     .line 101
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/UsbModeChooserActivity$3;->XQ:Lcom/android/settings/deviceinfo/UsbModeChooserActivity;
+    iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/UsbModeChooserActivity$3;->XQ:Lcom/android/settings_ex/deviceinfo/UsbModeChooserActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 104
-    iget-object v0, p0, Lcom/android/settings/deviceinfo/UsbModeChooserActivity$3;->XQ:Lcom/android/settings/deviceinfo/UsbModeChooserActivity;
+    iget-object v0, p0, Lcom/android/settings_ex/deviceinfo/UsbModeChooserActivity$3;->XQ:Lcom/android/settings_ex/deviceinfo/UsbModeChooserActivity;
 
-    invoke-virtual {v0}, Lcom/android/settings/deviceinfo/UsbModeChooserActivity;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ex/deviceinfo/UsbModeChooserActivity;->finish()V
 
     .line 105
     return-void

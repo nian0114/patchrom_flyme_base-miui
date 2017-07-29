@@ -1,4 +1,4 @@
-.class Lcom/android/settings/display/J;
+.class Lcom/android/settings_ex/display/J;
 .super Ljava/lang/Object;
 .source "ScreenEffect.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic ZO:Lcom/android/settings/display/ScreenEffect;
+.field final synthetic ZO:Lcom/android/settings_ex/display/ScreenEffect;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/display/ScreenEffect;)V
+.method constructor <init>(Lcom/android/settings_ex/display/ScreenEffect;)V
     .locals 0
 
     .prologue
     .line 126
-    iput-object p1, p0, Lcom/android/settings/display/J;->ZO:Lcom/android/settings/display/ScreenEffect;
+    iput-object p1, p0, Lcom/android/settings_ex/display/J;->ZO:Lcom/android/settings_ex/display/ScreenEffect;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 129
-    iget-object v0, p0, Lcom/android/settings/display/J;->ZO:Lcom/android/settings/display/ScreenEffect;
+    iget-object v0, p0, Lcom/android/settings_ex/display/J;->ZO:Lcom/android/settings_ex/display/ScreenEffect;
 
-    invoke-virtual {v0}, Lcom/android/settings/display/ScreenEffect;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ex/display/ScreenEffect;->finish()V
 
     .line 130
     return-void

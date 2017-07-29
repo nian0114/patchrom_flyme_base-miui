@@ -1,4 +1,4 @@
-.class Lcom/android/settings/ex;
+.class Lcom/android/settings_ex/ex;
 .super Ljava/lang/Object;
 .source "MiuiLocaleSettings.java"
 
@@ -9,18 +9,18 @@
 # instance fields
 .field final synthetic rm:[Ljava/lang/String;
 
-.field final synthetic rn:Lcom/android/settings/MiuiLocaleSettings;
+.field final synthetic rn:Lcom/android/settings_ex/MiuiLocaleSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiLocaleSettings;[Ljava/lang/String;)V
+.method constructor <init>(Lcom/android/settings_ex/MiuiLocaleSettings;[Ljava/lang/String;)V
     .locals 0
 
     .prologue
     .line 45
-    iput-object p1, p0, Lcom/android/settings/ex;->rn:Lcom/android/settings/MiuiLocaleSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/ex;->rn:Lcom/android/settings_ex/MiuiLocaleSettings;
 
-    iput-object p2, p0, Lcom/android/settings/ex;->rm:[Ljava/lang/String;
+    iput-object p2, p0, Lcom/android/settings_ex/ex;->rm:[Ljava/lang/String;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -38,7 +38,7 @@
 
     check-cast p2, Ljava/lang/String;
 
-    invoke-virtual {p0, p1, p2}, Lcom/android/settings/ex;->compare(Ljava/lang/String;Ljava/lang/String;)I
+    invoke-virtual {p0, p1, p2}, Lcom/android/settings_ex/ex;->compare(Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v0
 
@@ -50,20 +50,20 @@
 
     .prologue
     .line 48
-    iget-object v0, p0, Lcom/android/settings/ex;->rn:Lcom/android/settings/MiuiLocaleSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/ex;->rn:Lcom/android/settings_ex/MiuiLocaleSettings;
 
-    iget-object v1, p0, Lcom/android/settings/ex;->rm:[Ljava/lang/String;
+    iget-object v1, p0, Lcom/android/settings_ex/ex;->rm:[Ljava/lang/String;
 
-    invoke-static {v0, v1, p1}, Lcom/android/settings/MiuiLocaleSettings;->a(Lcom/android/settings/MiuiLocaleSettings;[Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v0, v1, p1}, Lcom/android/settings_ex/MiuiLocaleSettings;->a(Lcom/android/settings_ex/MiuiLocaleSettings;[Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v0
 
     .line 49
-    iget-object v1, p0, Lcom/android/settings/ex;->rn:Lcom/android/settings/MiuiLocaleSettings;
+    iget-object v1, p0, Lcom/android/settings_ex/ex;->rn:Lcom/android/settings_ex/MiuiLocaleSettings;
 
-    iget-object v2, p0, Lcom/android/settings/ex;->rm:[Ljava/lang/String;
+    iget-object v2, p0, Lcom/android/settings_ex/ex;->rm:[Ljava/lang/String;
 
-    invoke-static {v1, v2, p2}, Lcom/android/settings/MiuiLocaleSettings;->a(Lcom/android/settings/MiuiLocaleSettings;[Ljava/lang/String;Ljava/lang/String;)I
+    invoke-static {v1, v2, p2}, Lcom/android/settings_ex/MiuiLocaleSettings;->a(Lcom/android/settings_ex/MiuiLocaleSettings;[Ljava/lang/String;Ljava/lang/String;)I
 
     move-result v1
 

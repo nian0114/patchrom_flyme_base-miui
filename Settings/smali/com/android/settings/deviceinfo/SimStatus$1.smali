@@ -1,19 +1,19 @@
-.class Lcom/android/settings/deviceinfo/SimStatus$1;
+.class Lcom/android/settings_ex/deviceinfo/SimStatus$1;
 .super Landroid/content/BroadcastReceiver;
 .source "SimStatus.java"
 
 
 # instance fields
-.field final synthetic WL:Lcom/android/settings/deviceinfo/SimStatus;
+.field final synthetic WL:Lcom/android/settings_ex/deviceinfo/SimStatus;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/deviceinfo/SimStatus;)V
+.method constructor <init>(Lcom/android/settings_ex/deviceinfo/SimStatus;)V
     .locals 0
 
     .prologue
     .line 116
-    iput-object p1, p0, Lcom/android/settings/deviceinfo/SimStatus$1;->WL:Lcom/android/settings/deviceinfo/SimStatus;
+    iput-object p1, p0, Lcom/android/settings_ex/deviceinfo/SimStatus$1;->WL:Lcom/android/settings_ex/deviceinfo/SimStatus;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -74,9 +74,9 @@
 
     if-ne v1, v2, :cond_0
 
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/SimStatus$1;->WL:Lcom/android/settings/deviceinfo/SimStatus;
+    iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/SimStatus$1;->WL:Lcom/android/settings_ex/deviceinfo/SimStatus;
 
-    invoke-static {v1}, Lcom/android/settings/deviceinfo/SimStatus;->a(Lcom/android/settings/deviceinfo/SimStatus;)Landroid/telephony/SubscriptionInfo;
+    invoke-static {v1}, Lcom/android/settings_ex/deviceinfo/SimStatus;->a(Lcom/android/settings_ex/deviceinfo/SimStatus;)Landroid/telephony/SubscriptionInfo;
 
     move-result-object v1
 
@@ -96,9 +96,9 @@
     move-result-object v0
 
     .line 130
-    iget-object v1, p0, Lcom/android/settings/deviceinfo/SimStatus$1;->WL:Lcom/android/settings/deviceinfo/SimStatus;
+    iget-object v1, p0, Lcom/android/settings_ex/deviceinfo/SimStatus$1;->WL:Lcom/android/settings_ex/deviceinfo/SimStatus;
 
-    invoke-static {v1, v0}, Lcom/android/settings/deviceinfo/SimStatus;->a(Lcom/android/settings/deviceinfo/SimStatus;Ljava/lang/String;)V
+    invoke-static {v1, v0}, Lcom/android/settings_ex/deviceinfo/SimStatus;->a(Lcom/android/settings_ex/deviceinfo/SimStatus;Ljava/lang/String;)V
 
     goto :goto_0
 .end method

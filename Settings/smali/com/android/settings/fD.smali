@@ -1,4 +1,4 @@
-.class Lcom/android/settings/fD;
+.class Lcom/android/settings_ex/fD;
 .super Ljava/lang/Object;
 .source "MiuiWirelessSettings.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic uE:Lcom/android/settings/MiuiWirelessSettings;
+.field final synthetic uE:Lcom/android/settings_ex/MiuiWirelessSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/MiuiWirelessSettings;)V
+.method constructor <init>(Lcom/android/settings_ex/MiuiWirelessSettings;)V
     .locals 0
 
     .prologue
     .line 379
-    iput-object p1, p0, Lcom/android/settings/fD;->uE:Lcom/android/settings/MiuiWirelessSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/fD;->uE:Lcom/android/settings_ex/MiuiWirelessSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,7 +30,7 @@
 
     .prologue
     .line 382
-    iget-object v0, p0, Lcom/android/settings/fD;->uE:Lcom/android/settings/MiuiWirelessSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/fD;->uE:Lcom/android/settings_ex/MiuiWirelessSettings;
 
     new-instance v1, Ljava/lang/StringBuilder;
 
@@ -50,14 +50,14 @@
 
     move-result-object v1
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiWirelessSettings;->a(Lcom/android/settings/MiuiWirelessSettings;Ljava/lang/String;)V
+    invoke-static {v0, v1}, Lcom/android/settings_ex/MiuiWirelessSettings;->a(Lcom/android/settings_ex/MiuiWirelessSettings;Ljava/lang/String;)V
 
     .line 383
-    iget-object v0, p0, Lcom/android/settings/fD;->uE:Lcom/android/settings/MiuiWirelessSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/fD;->uE:Lcom/android/settings_ex/MiuiWirelessSettings;
 
     const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Lcom/android/settings/MiuiWirelessSettings;->b(Lcom/android/settings/MiuiWirelessSettings;Ljava/lang/String;)Ljava/lang/String;
+    invoke-static {v0, v1}, Lcom/android/settings_ex/MiuiWirelessSettings;->b(Lcom/android/settings_ex/MiuiWirelessSettings;Ljava/lang/String;)Ljava/lang/String;
 
     .line 384
     return-void

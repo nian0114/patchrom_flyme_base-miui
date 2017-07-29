@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/bootloader/Utils$ParameterException;
+.class public Lcom/android/settings_ex/bootloader/Utils$ParameterException;
 .super Ljava/lang/Exception;
 .source "Utils.java"
 

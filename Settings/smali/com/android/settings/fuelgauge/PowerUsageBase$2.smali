@@ -1,19 +1,19 @@
-.class Lcom/android/settings/fuelgauge/PowerUsageBase$2;
+.class Lcom/android/settings_ex/fuelgauge/PowerUsageBase$2;
 .super Landroid/content/BroadcastReceiver;
 .source "PowerUsageBase.java"
 
 
 # instance fields
-.field final synthetic afo:Lcom/android/settings/fuelgauge/PowerUsageBase;
+.field final synthetic afo:Lcom/android/settings_ex/fuelgauge/PowerUsageBase;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fuelgauge/PowerUsageBase;)V
+.method constructor <init>(Lcom/android/settings_ex/fuelgauge/PowerUsageBase;)V
     .locals 0
 
     .prologue
     .line 161
-    iput-object p1, p0, Lcom/android/settings/fuelgauge/PowerUsageBase$2;->afo:Lcom/android/settings/fuelgauge/PowerUsageBase;
+    iput-object p1, p0, Lcom/android/settings_ex/fuelgauge/PowerUsageBase$2;->afo:Lcom/android/settings_ex/fuelgauge/PowerUsageBase;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -42,18 +42,18 @@
 
     if-eqz v0, :cond_0
 
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageBase$2;->afo:Lcom/android/settings/fuelgauge/PowerUsageBase;
+    iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerUsageBase$2;->afo:Lcom/android/settings_ex/fuelgauge/PowerUsageBase;
 
-    invoke-static {v0, p2}, Lcom/android/settings/fuelgauge/PowerUsageBase;->a(Lcom/android/settings/fuelgauge/PowerUsageBase;Landroid/content/Intent;)Z
+    invoke-static {v0, p2}, Lcom/android/settings_ex/fuelgauge/PowerUsageBase;->a(Lcom/android/settings_ex/fuelgauge/PowerUsageBase;Landroid/content/Intent;)Z
 
     move-result v0
 
     if-eqz v0, :cond_0
 
     .line 167
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageBase$2;->afo:Lcom/android/settings/fuelgauge/PowerUsageBase;
+    iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerUsageBase$2;->afo:Lcom/android/settings_ex/fuelgauge/PowerUsageBase;
 
-    invoke-static {v0}, Lcom/android/settings/fuelgauge/PowerUsageBase;->a(Lcom/android/settings/fuelgauge/PowerUsageBase;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/settings_ex/fuelgauge/PowerUsageBase;->a(Lcom/android/settings_ex/fuelgauge/PowerUsageBase;)Landroid/os/Handler;
 
     move-result-object v0
 
@@ -64,9 +64,9 @@
     if-nez v0, :cond_0
 
     .line 168
-    iget-object v0, p0, Lcom/android/settings/fuelgauge/PowerUsageBase$2;->afo:Lcom/android/settings/fuelgauge/PowerUsageBase;
+    iget-object v0, p0, Lcom/android/settings_ex/fuelgauge/PowerUsageBase$2;->afo:Lcom/android/settings_ex/fuelgauge/PowerUsageBase;
 
-    invoke-static {v0}, Lcom/android/settings/fuelgauge/PowerUsageBase;->a(Lcom/android/settings/fuelgauge/PowerUsageBase;)Landroid/os/Handler;
+    invoke-static {v0}, Lcom/android/settings_ex/fuelgauge/PowerUsageBase;->a(Lcom/android/settings_ex/fuelgauge/PowerUsageBase;)Landroid/os/Handler;
 
     move-result-object v0
 

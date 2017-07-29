@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hB;
+.class Lcom/android/settings_ex/hB;
 .super Ljava/lang/Object;
 .source "SettingsFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic zR:Lcom/android/settings/SettingsFragment;
+.field final synthetic zR:Lcom/android/settings_ex/SettingsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/SettingsFragment;)V
+.method constructor <init>(Lcom/android/settings_ex/SettingsFragment;)V
     .locals 0
 
     .prologue
     .line 337
-    iput-object p1, p0, Lcom/android/settings/hB;->zR:Lcom/android/settings/SettingsFragment;
+    iput-object p1, p0, Lcom/android/settings_ex/hB;->zR:Lcom/android/settings_ex/SettingsFragment;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 

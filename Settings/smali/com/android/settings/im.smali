@@ -1,4 +1,4 @@
-.class synthetic Lcom/android/settings/im;
+.class synthetic Lcom/android/settings_ex/im;
 .super Ljava/lang/Object;
 .source "TrustedCredentialsSettings.java"
 
@@ -13,7 +13,7 @@
 
     .prologue
     .line 113
-    invoke-static {}, Lcom/android/settings/TrustedCredentialsSettings$Tab;->values()[Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    invoke-static {}, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->values()[Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
 
     move-result-object v0
 
@@ -21,12 +21,12 @@
 
     new-array v0, v0, [I
 
-    sput-object v0, Lcom/android/settings/im;->Bz:[I
+    sput-object v0, Lcom/android/settings_ex/im;->Bz:[I
 
     :try_start_0
-    sget-object v0, Lcom/android/settings/im;->Bz:[I
+    sget-object v0, Lcom/android/settings_ex/im;->Bz:[I
 
-    sget-object v1, Lcom/android/settings/TrustedCredentialsSettings$Tab;->BG:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    sget-object v1, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->BG:Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 
@@ -40,9 +40,9 @@
 
     :goto_0
     :try_start_1
-    sget-object v0, Lcom/android/settings/im;->Bz:[I
+    sget-object v0, Lcom/android/settings_ex/im;->Bz:[I
 
-    sget-object v1, Lcom/android/settings/TrustedCredentialsSettings$Tab;->BH:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    sget-object v1, Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;->BH:Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
 
     invoke-virtual {v1}, Ljava/lang/Enum;->ordinal()I
 

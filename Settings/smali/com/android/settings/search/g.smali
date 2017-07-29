@@ -1,31 +1,31 @@
-.class Lcom/android/settings/search/g;
+.class Lcom/android/settings_ex/search/g;
 .super Landroid/os/AsyncTask;
 .source "Index.java"
 
 
 # instance fields
-.field final synthetic apl:Lcom/android/settings/search/e;
+.field final synthetic apl:Lcom/android/settings_ex/search/e;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/search/e;)V
+.method private constructor <init>(Lcom/android/settings_ex/search/e;)V
     .locals 0
 
     .prologue
     .line 1294
-    iput-object p1, p0, Lcom/android/settings/search/g;->apl:Lcom/android/settings/search/e;
+    iput-object p1, p0, Lcom/android/settings_ex/search/g;->apl:Lcom/android/settings_ex/search/e;
 
     invoke-direct {p0}, Landroid/os/AsyncTask;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/search/e;Lcom/android/settings/search/f;)V
+.method synthetic constructor <init>(Lcom/android/settings_ex/search/e;Lcom/android/settings_ex/search/f;)V
     .locals 0
 
     .prologue
     .line 1294
-    invoke-direct {p0, p1}, Lcom/android/settings/search/g;-><init>(Lcom/android/settings/search/e;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ex/search/g;-><init>(Lcom/android/settings_ex/search/e;)V
 
     return-void
 .end method
@@ -39,7 +39,7 @@
     .line 1294
     check-cast p1, [Ljava/lang/String;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/search/g;->f([Ljava/lang/String;)Ljava/lang/Long;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ex/search/g;->f([Ljava/lang/String;)Ljava/lang/Long;
 
     move-result-object v0
 
@@ -85,9 +85,9 @@
     invoke-virtual {v4, v5, v0}, Landroid/content/ContentValues;->put(Ljava/lang/String;Ljava/lang/Long;)V
 
     .line 1304
-    iget-object v0, p0, Lcom/android/settings/search/g;->apl:Lcom/android/settings/search/e;
+    iget-object v0, p0, Lcom/android/settings_ex/search/g;->apl:Lcom/android/settings_ex/search/e;
 
-    invoke-static {v0}, Lcom/android/settings/search/e;->b(Lcom/android/settings/search/e;)Landroid/database/sqlite/SQLiteDatabase;
+    invoke-static {v0}, Lcom/android/settings_ex/search/e;->b(Lcom/android/settings_ex/search/e;)Landroid/database/sqlite/SQLiteDatabase;
 
     move-result-object v5
 
@@ -144,7 +144,7 @@
 
     .line 1322
     :try_start_1
-    invoke-static {}, Lcom/android/settings/search/e;->tZ()J
+    invoke-static {}, Lcom/android/settings_ex/search/e;->tZ()J
 
     move-result-wide v2
 

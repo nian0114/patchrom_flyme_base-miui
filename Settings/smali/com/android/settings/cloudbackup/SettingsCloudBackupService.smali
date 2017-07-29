@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/cloudbackup/SettingsCloudBackupService;
+.class public Lcom/android/settings_ex/cloudbackup/SettingsCloudBackupService;
 .super Lcom/xiaomi/settingsdk/backup/CloudBackupServiceBase;
 .source "SettingsCloudBackupService.java"
 
@@ -21,9 +21,9 @@
 
     .prologue
     .line 10
-    new-instance v0, Lcom/android/settings/cloudbackup/f;
+    new-instance v0, Lcom/android/settings_ex/cloudbackup/f;
 
-    invoke-direct {v0}, Lcom/android/settings/cloudbackup/f;-><init>()V
+    invoke-direct {v0}, Lcom/android/settings_ex/cloudbackup/f;-><init>()V
 
     return-object v0
 .end method

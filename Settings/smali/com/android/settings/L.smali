@@ -1,4 +1,4 @@
-.class interface abstract Lcom/android/settings/L;
+.class interface abstract Lcom/android/settings_ex/L;
 .super Ljava/lang/Object;
 .source "AppWidgetLoader.java"
 

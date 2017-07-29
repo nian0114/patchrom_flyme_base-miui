@@ -1,4 +1,4 @@
-.class Lcom/android/settings/hb;
+.class Lcom/android/settings_ex/hb;
 .super Ljava/lang/Object;
 .source "ScreenButtonAlertActivity.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic yu:Lcom/android/settings/ScreenButtonAlertActivity;
+.field final synthetic yu:Lcom/android/settings_ex/ScreenButtonAlertActivity;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/ScreenButtonAlertActivity;)V
+.method constructor <init>(Lcom/android/settings_ex/ScreenButtonAlertActivity;)V
     .locals 0
 
     .prologue
     .line 39
-    iput-object p1, p0, Lcom/android/settings/hb;->yu:Lcom/android/settings/ScreenButtonAlertActivity;
+    iput-object p1, p0, Lcom/android/settings_ex/hb;->yu:Lcom/android/settings_ex/ScreenButtonAlertActivity;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -33,9 +33,9 @@
     invoke-interface {p1}, Landroid/content/DialogInterface;->dismiss()V
 
     .line 43
-    iget-object v0, p0, Lcom/android/settings/hb;->yu:Lcom/android/settings/ScreenButtonAlertActivity;
+    iget-object v0, p0, Lcom/android/settings_ex/hb;->yu:Lcom/android/settings_ex/ScreenButtonAlertActivity;
 
-    invoke-virtual {v0}, Lcom/android/settings/ScreenButtonAlertActivity;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ex/ScreenButtonAlertActivity;->finish()V
 
     .line 44
     return-void

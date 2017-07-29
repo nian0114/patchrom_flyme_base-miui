@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/AppPermissions$PermissionGroup;
+.class final Lcom/android/settings_ex/applications/AppPermissions$PermissionGroup;
 .super Ljava/lang/Object;
 .source "AppPermissions.java"
 
@@ -20,7 +20,7 @@
 
     invoke-direct {v0}, Landroid/util/ArrayMap;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/applications/AppPermissions$PermissionGroup;->Gk:Landroid/util/ArrayMap;
+    iput-object v0, p0, Lcom/android/settings_ex/applications/AppPermissions$PermissionGroup;->Gk:Landroid/util/ArrayMap;
 
     return-void
 .end method

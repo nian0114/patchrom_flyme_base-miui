@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/MiuiFactoryResetBroadcastReceiver;
+.class public Lcom/android/settings_ex/MiuiFactoryResetBroadcastReceiver;
 .super Landroid/content/BroadcastReceiver;
 .source "MiuiFactoryResetBroadcastReceiver.java"
 
@@ -44,7 +44,7 @@
     .line 22
     new-instance v0, Landroid/content/Intent;
 
-    const-class v1, Lcom/android/settings/MiuiFactoryResetReceived;
+    const-class v1, Lcom/android/settings_ex/MiuiFactoryResetReceived;
 
     invoke-direct {v0, p1, v1}, Landroid/content/Intent;-><init>(Landroid/content/Context;Ljava/lang/Class;)V
 

@@ -1,4 +1,4 @@
-.class Lcom/android/settings/in;
+.class Lcom/android/settings_ex/in;
 .super Ljava/lang/Object;
 .source "TrustedCredentialsSettings.java"
 
@@ -6,20 +6,20 @@
 # instance fields
 .field private final BA:Landroid/util/SparseArray;
 
-.field private final BB:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+.field private final BB:Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
 
-.field private final BC:Lcom/android/settings/is;
+.field private final BC:Lcom/android/settings_ex/is;
 
-.field final synthetic Bt:Lcom/android/settings/TrustedCredentialsSettings;
+.field final synthetic Bt:Lcom/android/settings_ex/TrustedCredentialsSettings;
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$Tab;Lcom/android/settings/is;)V
+.method private constructor <init>(Lcom/android/settings_ex/TrustedCredentialsSettings;Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;Lcom/android/settings_ex/is;)V
     .locals 1
 
     .prologue
     .line 407
-    iput-object p1, p0, Lcom/android/settings/in;->Bt:Lcom/android/settings/TrustedCredentialsSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/in;->Bt:Lcom/android/settings_ex/TrustedCredentialsSettings;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -28,73 +28,73 @@
 
     invoke-direct {v0}, Landroid/util/SparseArray;-><init>()V
 
-    iput-object v0, p0, Lcom/android/settings/in;->BA:Landroid/util/SparseArray;
+    iput-object v0, p0, Lcom/android/settings_ex/in;->BA:Landroid/util/SparseArray;
 
     .line 408
-    iput-object p3, p0, Lcom/android/settings/in;->BC:Lcom/android/settings/is;
+    iput-object p3, p0, Lcom/android/settings_ex/in;->BC:Lcom/android/settings_ex/is;
 
     .line 409
-    iput-object p2, p0, Lcom/android/settings/in;->BB:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    iput-object p2, p0, Lcom/android/settings_ex/in;->BB:Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
 
     .line 410
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$Tab;Lcom/android/settings/is;Lcom/android/settings/if;)V
+.method synthetic constructor <init>(Lcom/android/settings_ex/TrustedCredentialsSettings;Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;Lcom/android/settings_ex/is;Lcom/android/settings_ex/if;)V
     .locals 0
 
     .prologue
     .line 401
-    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings/in;-><init>(Lcom/android/settings/TrustedCredentialsSettings;Lcom/android/settings/TrustedCredentialsSettings$Tab;Lcom/android/settings/is;)V
+    invoke-direct {p0, p1, p2, p3}, Lcom/android/settings_ex/in;-><init>(Lcom/android/settings_ex/TrustedCredentialsSettings;Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;Lcom/android/settings_ex/is;)V
 
     return-void
 .end method
 
-.method static synthetic a(Lcom/android/settings/in;)Landroid/util/SparseArray;
+.method static synthetic a(Lcom/android/settings_ex/in;)Landroid/util/SparseArray;
     .locals 1
 
     .prologue
     .line 401
-    iget-object v0, p0, Lcom/android/settings/in;->BA:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/settings_ex/in;->BA:Landroid/util/SparseArray;
 
     return-object v0
 .end method
 
-.method static synthetic b(Lcom/android/settings/in;)Lcom/android/settings/TrustedCredentialsSettings$Tab;
+.method static synthetic b(Lcom/android/settings_ex/in;)Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
     .locals 1
 
     .prologue
     .line 401
-    iget-object v0, p0, Lcom/android/settings/in;->BB:Lcom/android/settings/TrustedCredentialsSettings$Tab;
+    iget-object v0, p0, Lcom/android/settings_ex/in;->BB:Lcom/android/settings_ex/TrustedCredentialsSettings$Tab;
 
     return-object v0
 .end method
 
-.method static synthetic c(Lcom/android/settings/in;)Lcom/android/settings/is;
+.method static synthetic c(Lcom/android/settings_ex/in;)Lcom/android/settings_ex/is;
     .locals 1
 
     .prologue
     .line 401
-    iget-object v0, p0, Lcom/android/settings/in;->BC:Lcom/android/settings/is;
+    iget-object v0, p0, Lcom/android/settings_ex/in;->BC:Lcom/android/settings_ex/is;
 
     return-object v0
 .end method
 
 
 # virtual methods
-.method public b(Lcom/android/settings/iq;)V
+.method public b(Lcom/android/settings_ex/iq;)V
     .locals 2
 
     .prologue
     .line 511
-    iget-object v0, p0, Lcom/android/settings/in;->BA:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/settings_ex/in;->BA:Landroid/util/SparseArray;
 
     if-eqz v0, :cond_0
 
     .line 512
-    iget-object v0, p0, Lcom/android/settings/in;->BA:Landroid/util/SparseArray;
+    iget-object v0, p0, Lcom/android/settings_ex/in;->BA:Landroid/util/SparseArray;
 
-    iget v1, p1, Lcom/android/settings/iq;->mProfileId:I
+    iget v1, p1, Lcom/android/settings_ex/iq;->mProfileId:I
 
     invoke-virtual {v0, v1}, Landroid/util/SparseArray;->get(I)Ljava/lang/Object;
 

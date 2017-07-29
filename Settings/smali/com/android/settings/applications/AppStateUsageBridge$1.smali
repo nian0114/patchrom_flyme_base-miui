@@ -1,4 +1,4 @@
-.class final Lcom/android/settings/applications/AppStateUsageBridge$1;
+.class final Lcom/android/settings_ex/applications/AppStateUsageBridge$1;
 .super Ljava/lang/Object;
 .source "AppStateUsageBridge.java"
 

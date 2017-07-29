@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/d/i;
+.class public Lcom/android/settings_ex/d/i;
 .super Ljava/lang/Object;
 .source "UidDetail.java"
 

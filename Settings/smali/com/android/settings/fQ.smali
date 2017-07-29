@@ -1,19 +1,19 @@
-.class Lcom/android/settings/fQ;
+.class Lcom/android/settings_ex/fQ;
 .super Lmiui/os/AsyncTaskWithProgress;
 .source "NotificationAppListSettings.java"
 
 
 # instance fields
-.field final synthetic vi:Lcom/android/settings/NotificationAppListSettings;
+.field final synthetic vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/NotificationAppListSettings;Landroid/app/FragmentManager;)V
+.method constructor <init>(Lcom/android/settings_ex/NotificationAppListSettings;Landroid/app/FragmentManager;)V
     .locals 0
 
     .prologue
     .line 145
-    iput-object p1, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
     invoke-direct {p0, p2}, Lmiui/os/AsyncTaskWithProgress;-><init>(Landroid/app/FragmentManager;)V
 
@@ -29,7 +29,7 @@
     .line 145
     check-cast p1, [Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/fQ;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
+    invoke-virtual {p0, p1}, Lcom/android/settings_ex/fQ;->doInBackground([Ljava/lang/Void;)Ljava/lang/Void;
 
     move-result-object v0
 
@@ -41,18 +41,18 @@
 
     .prologue
     .line 189
-    iget-object v0, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v0}, Lcom/android/settings/NotificationAppListSettings;->b(Lcom/android/settings/NotificationAppListSettings;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/settings_ex/NotificationAppListSettings;->b(Lcom/android/settings_ex/NotificationAppListSettings;)Ljava/util/List;
 
     move-result-object v0
 
     invoke-interface {v0}, Ljava/util/List;->clear()V
 
     .line 190
-    iget-object v0, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v0}, Lcom/android/settings/NotificationAppListSettings;->c(Lcom/android/settings/NotificationAppListSettings;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/settings_ex/NotificationAppListSettings;->c(Lcom/android/settings_ex/NotificationAppListSettings;)Ljava/util/List;
 
     move-result-object v0
 
@@ -71,9 +71,9 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->addCategory(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 193
-    iget-object v1, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v1, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v1}, Lcom/android/settings/NotificationAppListSettings;->f(Lcom/android/settings/NotificationAppListSettings;)Landroid/content/pm/PackageManager;
+    invoke-static {v1}, Lcom/android/settings_ex/NotificationAppListSettings;->f(Lcom/android/settings_ex/NotificationAppListSettings;)Landroid/content/pm/PackageManager;
 
     move-result-object v1
 
@@ -137,9 +137,9 @@
     if-nez v4, :cond_0
 
     .line 199
-    iget-object v4, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v4, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v4}, Lcom/android/settings/NotificationAppListSettings;->d(Lcom/android/settings/NotificationAppListSettings;)Landroid/content/Context;
+    invoke-static {v4}, Lcom/android/settings_ex/NotificationAppListSettings;->d(Lcom/android/settings_ex/NotificationAppListSettings;)Landroid/content/Context;
 
     move-result-object v4
 
@@ -150,15 +150,15 @@
     move-result v4
 
     .line 200
-    new-instance v5, Lcom/android/settings/fW;
+    new-instance v5, Lcom/android/settings_ex/fW;
 
-    iget-object v6, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v6, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
     iget-object v0, v0, Landroid/content/pm/ResolveInfo;->activityInfo:Landroid/content/pm/ActivityInfo;
 
     iget-object v0, v0, Landroid/content/pm/ActivityInfo;->applicationInfo:Landroid/content/pm/ApplicationInfo;
 
-    invoke-direct {v5, v6, v0, v4}, Lcom/android/settings/fW;-><init>(Lcom/android/settings/NotificationAppListSettings;Landroid/content/pm/ApplicationInfo;I)V
+    invoke-direct {v5, v6, v0, v4}, Lcom/android/settings_ex/fW;-><init>(Lcom/android/settings_ex/NotificationAppListSettings;Landroid/content/pm/ApplicationInfo;I)V
 
     .line 201
     const/4 v0, 0x3
@@ -166,9 +166,9 @@
     if-ne v4, v0, :cond_1
 
     .line 202
-    iget-object v0, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v0}, Lcom/android/settings/NotificationAppListSettings;->b(Lcom/android/settings/NotificationAppListSettings;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/settings_ex/NotificationAppListSettings;->b(Lcom/android/settings_ex/NotificationAppListSettings;)Ljava/util/List;
 
     move-result-object v0
 
@@ -182,9 +182,9 @@
 
     .line 205
     :cond_1
-    iget-object v0, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v0}, Lcom/android/settings/NotificationAppListSettings;->c(Lcom/android/settings/NotificationAppListSettings;)Ljava/util/List;
+    invoke-static {v0}, Lcom/android/settings_ex/NotificationAppListSettings;->c(Lcom/android/settings_ex/NotificationAppListSettings;)Ljava/util/List;
 
     move-result-object v0
 
@@ -206,7 +206,7 @@
     .line 145
     check-cast p1, Ljava/lang/Void;
 
-    invoke-virtual {p0, p1}, Lcom/android/settings/fQ;->onPostExecute(Ljava/lang/Void;)V
+    invoke-virtual {p0, p1}, Lcom/android/settings_ex/fQ;->onPostExecute(Ljava/lang/Void;)V
 
     return-void
 .end method
@@ -228,35 +228,35 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 151
-    iget-object v1, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v1, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v1}, Lcom/android/settings/NotificationAppListSettings;->b(Lcom/android/settings/NotificationAppListSettings;)Ljava/util/List;
+    invoke-static {v1}, Lcom/android/settings_ex/NotificationAppListSettings;->b(Lcom/android/settings_ex/NotificationAppListSettings;)Ljava/util/List;
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/fR;
+    new-instance v2, Lcom/android/settings_ex/fR;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/fR;-><init>(Lcom/android/settings/fQ;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ex/fR;-><init>(Lcom/android/settings_ex/fQ;)V
 
     invoke-static {v1, v2}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     .line 159
-    iget-object v1, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v1, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v1}, Lcom/android/settings/NotificationAppListSettings;->c(Lcom/android/settings/NotificationAppListSettings;)Ljava/util/List;
+    invoke-static {v1}, Lcom/android/settings_ex/NotificationAppListSettings;->c(Lcom/android/settings_ex/NotificationAppListSettings;)Ljava/util/List;
 
     move-result-object v1
 
-    new-instance v2, Lcom/android/settings/fS;
+    new-instance v2, Lcom/android/settings_ex/fS;
 
-    invoke-direct {v2, p0}, Lcom/android/settings/fS;-><init>(Lcom/android/settings/fQ;)V
+    invoke-direct {v2, p0}, Lcom/android/settings_ex/fS;-><init>(Lcom/android/settings_ex/fQ;)V
 
     invoke-static {v1, v2}, Ljava/util/Collections;->sort(Ljava/util/List;Ljava/util/Comparator;)V
 
     .line 168
-    iget-object v1, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v1, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v1}, Lcom/android/settings/NotificationAppListSettings;->b(Lcom/android/settings/NotificationAppListSettings;)Ljava/util/List;
+    invoke-static {v1}, Lcom/android/settings_ex/NotificationAppListSettings;->b(Lcom/android/settings_ex/NotificationAppListSettings;)Ljava/util/List;
 
     move-result-object v1
 
@@ -267,13 +267,13 @@
     if-lez v1, :cond_0
 
     .line 169
-    new-instance v1, Lcom/android/settings/fW;
+    new-instance v1, Lcom/android/settings_ex/fW;
 
-    iget-object v2, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v2, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    iget-object v3, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v3, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v3}, Lcom/android/settings/NotificationAppListSettings;->d(Lcom/android/settings/NotificationAppListSettings;)Landroid/content/Context;
+    invoke-static {v3}, Lcom/android/settings_ex/NotificationAppListSettings;->d(Lcom/android/settings_ex/NotificationAppListSettings;)Landroid/content/Context;
 
     move-result-object v3
 
@@ -283,9 +283,9 @@
 
     const/high16 v4, 0x7f110000
 
-    iget-object v5, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v5, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v5}, Lcom/android/settings/NotificationAppListSettings;->b(Lcom/android/settings/NotificationAppListSettings;)Ljava/util/List;
+    invoke-static {v5}, Lcom/android/settings_ex/NotificationAppListSettings;->b(Lcom/android/settings_ex/NotificationAppListSettings;)Ljava/util/List;
 
     move-result-object v5
 
@@ -295,9 +295,9 @@
 
     new-array v6, v9, [Ljava/lang/Object;
 
-    iget-object v7, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v7, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v7}, Lcom/android/settings/NotificationAppListSettings;->b(Lcom/android/settings/NotificationAppListSettings;)Ljava/util/List;
+    invoke-static {v7}, Lcom/android/settings_ex/NotificationAppListSettings;->b(Lcom/android/settings_ex/NotificationAppListSettings;)Ljava/util/List;
 
     move-result-object v7
 
@@ -315,15 +315,15 @@
 
     move-result-object v3
 
-    invoke-direct {v1, v2, v3}, Lcom/android/settings/fW;-><init>(Lcom/android/settings/NotificationAppListSettings;Ljava/lang/String;)V
+    invoke-direct {v1, v2, v3}, Lcom/android/settings_ex/fW;-><init>(Lcom/android/settings_ex/NotificationAppListSettings;Ljava/lang/String;)V
 
     .line 172
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 173
-    iget-object v1, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v1, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v1}, Lcom/android/settings/NotificationAppListSettings;->b(Lcom/android/settings/NotificationAppListSettings;)Ljava/util/List;
+    invoke-static {v1}, Lcom/android/settings_ex/NotificationAppListSettings;->b(Lcom/android/settings_ex/NotificationAppListSettings;)Ljava/util/List;
 
     move-result-object v1
 
@@ -331,9 +331,9 @@
 
     .line 175
     :cond_0
-    iget-object v1, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v1, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v1}, Lcom/android/settings/NotificationAppListSettings;->c(Lcom/android/settings/NotificationAppListSettings;)Ljava/util/List;
+    invoke-static {v1}, Lcom/android/settings_ex/NotificationAppListSettings;->c(Lcom/android/settings_ex/NotificationAppListSettings;)Ljava/util/List;
 
     move-result-object v1
 
@@ -344,13 +344,13 @@
     if-lez v1, :cond_1
 
     .line 176
-    new-instance v1, Lcom/android/settings/fW;
+    new-instance v1, Lcom/android/settings_ex/fW;
 
-    iget-object v2, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v2, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    iget-object v3, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v3, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v3}, Lcom/android/settings/NotificationAppListSettings;->d(Lcom/android/settings/NotificationAppListSettings;)Landroid/content/Context;
+    invoke-static {v3}, Lcom/android/settings_ex/NotificationAppListSettings;->d(Lcom/android/settings_ex/NotificationAppListSettings;)Landroid/content/Context;
 
     move-result-object v3
 
@@ -360,9 +360,9 @@
 
     const v4, 0x7f110001
 
-    iget-object v5, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v5, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v5}, Lcom/android/settings/NotificationAppListSettings;->c(Lcom/android/settings/NotificationAppListSettings;)Ljava/util/List;
+    invoke-static {v5}, Lcom/android/settings_ex/NotificationAppListSettings;->c(Lcom/android/settings_ex/NotificationAppListSettings;)Ljava/util/List;
 
     move-result-object v5
 
@@ -372,9 +372,9 @@
 
     new-array v6, v9, [Ljava/lang/Object;
 
-    iget-object v7, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v7, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v7}, Lcom/android/settings/NotificationAppListSettings;->c(Lcom/android/settings/NotificationAppListSettings;)Ljava/util/List;
+    invoke-static {v7}, Lcom/android/settings_ex/NotificationAppListSettings;->c(Lcom/android/settings_ex/NotificationAppListSettings;)Ljava/util/List;
 
     move-result-object v7
 
@@ -392,15 +392,15 @@
 
     move-result-object v3
 
-    invoke-direct {v1, v2, v3}, Lcom/android/settings/fW;-><init>(Lcom/android/settings/NotificationAppListSettings;Ljava/lang/String;)V
+    invoke-direct {v1, v2, v3}, Lcom/android/settings_ex/fW;-><init>(Lcom/android/settings_ex/NotificationAppListSettings;Ljava/lang/String;)V
 
     .line 179
     invoke-interface {v0, v1}, Ljava/util/List;->add(Ljava/lang/Object;)Z
 
     .line 180
-    iget-object v1, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v1, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v1}, Lcom/android/settings/NotificationAppListSettings;->c(Lcom/android/settings/NotificationAppListSettings;)Ljava/util/List;
+    invoke-static {v1}, Lcom/android/settings_ex/NotificationAppListSettings;->c(Lcom/android/settings_ex/NotificationAppListSettings;)Ljava/util/List;
 
     move-result-object v1
 
@@ -408,22 +408,22 @@
 
     .line 183
     :cond_1
-    iget-object v1, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v1, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v1}, Lcom/android/settings/NotificationAppListSettings;->e(Lcom/android/settings/NotificationAppListSettings;)Lcom/android/settings/fT;
+    invoke-static {v1}, Lcom/android/settings_ex/NotificationAppListSettings;->e(Lcom/android/settings_ex/NotificationAppListSettings;)Lcom/android/settings_ex/fT;
 
     move-result-object v1
 
-    invoke-virtual {v1, v0}, Lcom/android/settings/fT;->setItems(Ljava/util/List;)V
+    invoke-virtual {v1, v0}, Lcom/android/settings_ex/fT;->setItems(Ljava/util/List;)V
 
     .line 184
-    iget-object v0, p0, Lcom/android/settings/fQ;->vi:Lcom/android/settings/NotificationAppListSettings;
+    iget-object v0, p0, Lcom/android/settings_ex/fQ;->vi:Lcom/android/settings_ex/NotificationAppListSettings;
 
-    invoke-static {v0}, Lcom/android/settings/NotificationAppListSettings;->e(Lcom/android/settings/NotificationAppListSettings;)Lcom/android/settings/fT;
+    invoke-static {v0}, Lcom/android/settings_ex/NotificationAppListSettings;->e(Lcom/android/settings_ex/NotificationAppListSettings;)Lcom/android/settings_ex/fT;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/fT;->notifyDataSetChanged()V
+    invoke-virtual {v0}, Lcom/android/settings_ex/fT;->notifyDataSetChanged()V
 
     .line 185
     return-void

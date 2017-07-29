@@ -1,4 +1,4 @@
-.class Lcom/android/settings/sound/r;
+.class Lcom/android/settings_ex/sound/r;
 .super Ljava/lang/Object;
 .source "BatchMediaPlayer.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aqG:Lcom/android/settings/sound/BatchMediaPlayer;
+.field final synthetic aqG:Lcom/android/settings_ex/sound/BatchMediaPlayer;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sound/BatchMediaPlayer;)V
+.method constructor <init>(Lcom/android/settings_ex/sound/BatchMediaPlayer;)V
     .locals 0
 
     .prologue
     .line 46
-    iput-object p1, p0, Lcom/android/settings/sound/r;->aqG:Lcom/android/settings/sound/BatchMediaPlayer;
+    iput-object p1, p0, Lcom/android/settings_ex/sound/r;->aqG:Lcom/android/settings_ex/sound/BatchMediaPlayer;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,9 +30,9 @@
 
     .prologue
     .line 49
-    iget-object v0, p0, Lcom/android/settings/sound/r;->aqG:Lcom/android/settings/sound/BatchMediaPlayer;
+    iget-object v0, p0, Lcom/android/settings_ex/sound/r;->aqG:Lcom/android/settings_ex/sound/BatchMediaPlayer;
 
-    invoke-static {v0}, Lcom/android/settings/sound/BatchMediaPlayer;->a(Lcom/android/settings/sound/BatchMediaPlayer;)V
+    invoke-static {v0}, Lcom/android/settings_ex/sound/BatchMediaPlayer;->a(Lcom/android/settings_ex/sound/BatchMediaPlayer;)V
 
     .line 50
     return-void

@@ -1,19 +1,19 @@
-.class Lcom/android/settings/applications/InstalledAppDetailsFragment$2;
+.class Lcom/android/settings_ex/applications/InstalledAppDetailsFragment$2;
 .super Landroid/content/BroadcastReceiver;
 .source "InstalledAppDetailsFragment.java"
 
 
 # instance fields
-.field final synthetic Jv:Lcom/android/settings/applications/InstalledAppDetailsFragment;
+.field final synthetic Jv:Lcom/android/settings_ex/applications/InstalledAppDetailsFragment;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/applications/InstalledAppDetailsFragment;)V
+.method constructor <init>(Lcom/android/settings_ex/applications/InstalledAppDetailsFragment;)V
     .locals 0
 
     .prologue
     .line 1229
-    iput-object p1, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$2;->Jv:Lcom/android/settings/applications/InstalledAppDetailsFragment;
+    iput-object p1, p0, Lcom/android/settings_ex/applications/InstalledAppDetailsFragment$2;->Jv:Lcom/android/settings_ex/applications/InstalledAppDetailsFragment;
 
     invoke-direct {p0}, Landroid/content/BroadcastReceiver;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 1232
-    iget-object v1, p0, Lcom/android/settings/applications/InstalledAppDetailsFragment$2;->Jv:Lcom/android/settings/applications/InstalledAppDetailsFragment;
+    iget-object v1, p0, Lcom/android/settings_ex/applications/InstalledAppDetailsFragment$2;->Jv:Lcom/android/settings_ex/applications/InstalledAppDetailsFragment;
 
-    invoke-virtual {p0}, Lcom/android/settings/applications/InstalledAppDetailsFragment$2;->getResultCode()I
+    invoke-virtual {p0}, Lcom/android/settings_ex/applications/InstalledAppDetailsFragment$2;->getResultCode()I
 
     move-result v0
 
@@ -38,7 +38,7 @@
     const/4 v0, 0x1
 
     :goto_0
-    invoke-static {v1, v0}, Lcom/android/settings/applications/InstalledAppDetailsFragment;->c(Lcom/android/settings/applications/InstalledAppDetailsFragment;Z)V
+    invoke-static {v1, v0}, Lcom/android/settings_ex/applications/InstalledAppDetailsFragment;->c(Lcom/android/settings_ex/applications/InstalledAppDetailsFragment;Z)V
 
     .line 1233
     return-void

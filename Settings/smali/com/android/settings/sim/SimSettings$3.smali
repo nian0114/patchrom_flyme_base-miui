@@ -1,5 +1,5 @@
-.class final Lcom/android/settings/sim/SimSettings$3;
-.super Lcom/android/settings/search/a;
+.class final Lcom/android/settings_ex/sim/SimSettings$3;
+.super Lcom/android/settings_ex/search/a;
 .source "SimSettings.java"
 
 
@@ -9,7 +9,7 @@
 
     .prologue
     .line 313
-    invoke-direct {p0}, Lcom/android/settings/search/a;-><init>()V
+    invoke-direct {p0}, Lcom/android/settings_ex/search/a;-><init>()V
 
     return-void
 .end method
@@ -26,7 +26,7 @@
     invoke-direct {v0}, Ljava/util/ArrayList;-><init>()V
 
     .line 320
-    invoke-static {p1}, Lcom/android/settings/iE;->ag(Landroid/content/Context;)Z
+    invoke-static {p1}, Lcom/android/settings_ex/iE;->ag(Landroid/content/Context;)Z
 
     move-result v1
 

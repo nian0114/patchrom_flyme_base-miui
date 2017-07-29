@@ -1,19 +1,19 @@
-.class Lcom/android/settings/fingerprint/h;
+.class Lcom/android/settings_ex/fingerprint/h;
 .super Landroid/graphics/drawable/Animatable2$AnimationCallback;
 .source "FingerprintEnrollEnrolling.java"
 
 
 # instance fields
-.field final synthetic abM:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+.field final synthetic abM:Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;)V
+.method constructor <init>(Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;)V
     .locals 0
 
     .prologue
     .line 352
-    iput-object p1, p0, Lcom/android/settings/fingerprint/h;->abM:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+    iput-object p1, p0, Lcom/android/settings_ex/fingerprint/h;->abM:Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;
 
     invoke-direct {p0}, Landroid/graphics/drawable/Animatable2$AnimationCallback;-><init>()V
 
@@ -27,9 +27,9 @@
 
     .prologue
     .line 355
-    iget-object v0, p0, Lcom/android/settings/fingerprint/h;->abM:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+    iget-object v0, p0, Lcom/android/settings_ex/fingerprint/h;->abM:Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;
 
-    invoke-static {v0}, Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;->l(Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;)Z
+    invoke-static {v0}, Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;->l(Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;)Z
 
     move-result v0
 
@@ -41,15 +41,15 @@
 
     .line 360
     :cond_0
-    iget-object v0, p0, Lcom/android/settings/fingerprint/h;->abM:Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;
+    iget-object v0, p0, Lcom/android/settings_ex/fingerprint/h;->abM:Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;
 
-    invoke-static {v0}, Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;->e(Lcom/android/settings/fingerprint/FingerprintEnrollEnrolling;)Landroid/widget/ImageView;
+    invoke-static {v0}, Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;->e(Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;)Landroid/widget/ImageView;
 
     move-result-object v0
 
-    new-instance v1, Lcom/android/settings/fingerprint/i;
+    new-instance v1, Lcom/android/settings_ex/fingerprint/i;
 
-    invoke-direct {v1, p0}, Lcom/android/settings/fingerprint/i;-><init>(Lcom/android/settings/fingerprint/h;)V
+    invoke-direct {v1, p0}, Lcom/android/settings_ex/fingerprint/i;-><init>(Lcom/android/settings_ex/fingerprint/h;)V
 
     invoke-virtual {v0, v1}, Landroid/widget/ImageView;->post(Ljava/lang/Runnable;)Z
 

@@ -1,4 +1,4 @@
-.class public Lcom/android/settings/ScreenButtonAlertActivity;
+.class public Lcom/android/settings_ex/ScreenButtonAlertActivity;
 .super Landroid/app/Activity;
 .source "ScreenButtonAlertActivity.java"
 
@@ -47,9 +47,9 @@
 
     const v2, 0x7f0c00c4
 
-    new-instance v3, Lcom/android/settings/hb;
+    new-instance v3, Lcom/android/settings_ex/hb;
 
-    invoke-direct {v3, p0}, Lcom/android/settings/hb;-><init>(Lcom/android/settings/ScreenButtonAlertActivity;)V
+    invoke-direct {v3, p0}, Lcom/android/settings_ex/hb;-><init>(Lcom/android/settings_ex/ScreenButtonAlertActivity;)V
 
     invoke-virtual {v0, v2, v3}, Landroid/app/AlertDialog$Builder;->setNegativeButton(ILandroid/content/DialogInterface$OnClickListener;)Landroid/app/AlertDialog$Builder;
 
@@ -76,7 +76,7 @@
 
     check-cast v0, Landroid/widget/ImageView;
 
-    iput-object v0, p0, Lcom/android/settings/ScreenButtonAlertActivity;->yt:Landroid/widget/ImageView;
+    iput-object v0, p0, Lcom/android/settings_ex/ScreenButtonAlertActivity;->yt:Landroid/widget/ImageView;
 
     .line 49
     invoke-static {p0}, Lcom/bumptech/glide/h;->e(Landroid/app/Activity;)Lcom/bumptech/glide/j;
@@ -103,7 +103,7 @@
 
     move-result-object v0
 
-    iget-object v3, p0, Lcom/android/settings/ScreenButtonAlertActivity;->yt:Landroid/widget/ImageView;
+    iget-object v3, p0, Lcom/android/settings_ex/ScreenButtonAlertActivity;->yt:Landroid/widget/ImageView;
 
     invoke-virtual {v0, v3}, Lcom/bumptech/glide/f;->b(Landroid/widget/ImageView;)Lcom/bumptech/glide/request/b/k;
 

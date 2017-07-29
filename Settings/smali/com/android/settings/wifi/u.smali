@@ -1,4 +1,4 @@
-.class Lcom/android/settings/wifi/u;
+.class Lcom/android/settings_ex/wifi/u;
 .super Ljava/lang/Object;
 .source "MiuiWifiDetailFragment.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aAP:Lcom/android/settings/wifi/s;
+.field final synthetic aAP:Lcom/android/settings_ex/wifi/s;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/wifi/s;)V
+.method constructor <init>(Lcom/android/settings_ex/wifi/s;)V
     .locals 0
 
     .prologue
     .line 153
-    iput-object p1, p0, Lcom/android/settings/wifi/u;->aAP:Lcom/android/settings/wifi/s;
+    iput-object p1, p0, Lcom/android/settings_ex/wifi/u;->aAP:Lcom/android/settings_ex/wifi/s;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -30,11 +30,11 @@
 
     .prologue
     .line 156
-    iget-object v0, p0, Lcom/android/settings/wifi/u;->aAP:Lcom/android/settings/wifi/s;
+    iget-object v0, p0, Lcom/android/settings_ex/wifi/u;->aAP:Lcom/android/settings_ex/wifi/s;
 
-    iget-object v0, v0, Lcom/android/settings/wifi/s;->aAO:Lcom/android/settings/wifi/MiuiWifiDetailFragment;
+    iget-object v0, v0, Lcom/android/settings_ex/wifi/s;->aAO:Lcom/android/settings_ex/wifi/MiuiWifiDetailFragment;
 
-    invoke-virtual {v0}, Lcom/android/settings/wifi/MiuiWifiDetailFragment;->finish()V
+    invoke-virtual {v0}, Lcom/android/settings_ex/wifi/MiuiWifiDetailFragment;->finish()V
 
     .line 157
     return-void

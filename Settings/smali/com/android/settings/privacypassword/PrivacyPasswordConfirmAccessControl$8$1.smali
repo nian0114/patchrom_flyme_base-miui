@@ -1,4 +1,4 @@
-.class Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$8$1;
+.class Lcom/android/settings_ex/privacypassword/PrivacyPasswordConfirmAccessControl$8$1;
 .super Ljava/lang/Object;
 .source "PrivacyPasswordConfirmAccessControl.java"
 
@@ -7,16 +7,16 @@
 
 
 # instance fields
-.field final synthetic aon:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$8;
+.field final synthetic aon:Lcom/android/settings_ex/privacypassword/PrivacyPasswordConfirmAccessControl$8;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$8;)V
+.method constructor <init>(Lcom/android/settings_ex/privacypassword/PrivacyPasswordConfirmAccessControl$8;)V
     .locals 0
 
     .prologue
     .line 535
-    iput-object p1, p0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$8$1;->aon:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$8;
+    iput-object p1, p0, Lcom/android/settings_ex/privacypassword/PrivacyPasswordConfirmAccessControl$8$1;->aon:Lcom/android/settings_ex/privacypassword/PrivacyPasswordConfirmAccessControl$8;
 
     invoke-direct {p0}, Ljava/lang/Object;-><init>()V
 
@@ -45,19 +45,19 @@
     move-result v0
 
     .line 542
-    iget-object v1, p0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$8$1;->aon:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$8;
+    iget-object v1, p0, Lcom/android/settings_ex/privacypassword/PrivacyPasswordConfirmAccessControl$8$1;->aon:Lcom/android/settings_ex/privacypassword/PrivacyPasswordConfirmAccessControl$8;
 
-    iget-object v1, v1, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$8;->aok:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl;
+    iget-object v1, v1, Lcom/android/settings_ex/privacypassword/PrivacyPasswordConfirmAccessControl$8;->aok:Lcom/android/settings_ex/privacypassword/PrivacyPasswordConfirmAccessControl;
 
-    iget-object v2, p0, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$8$1;->aon:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$8;
+    iget-object v2, p0, Lcom/android/settings_ex/privacypassword/PrivacyPasswordConfirmAccessControl$8$1;->aon:Lcom/android/settings_ex/privacypassword/PrivacyPasswordConfirmAccessControl$8;
 
-    iget-object v2, v2, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl$8;->aok:Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl;
+    iget-object v2, v2, Lcom/android/settings_ex/privacypassword/PrivacyPasswordConfirmAccessControl$8;->aok:Lcom/android/settings_ex/privacypassword/PrivacyPasswordConfirmAccessControl;
 
-    invoke-virtual {v2}, Lcom/android/settings/privacypassword/PrivacyPasswordConfirmAccessControl;->aH()Landroid/content/Intent;
+    invoke-virtual {v2}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordConfirmAccessControl;->aH()Landroid/content/Intent;
 
     move-result-object v2
 
-    invoke-static {v0, v1, v2}, Lcom/android/settings/privacypassword/PrivacyPasswordUtils;->a(ZLandroid/app/Activity;Landroid/content/Intent;)V
+    invoke-static {v0, v1, v2}, Lcom/android/settings_ex/privacypassword/PrivacyPasswordUtils;->a(ZLandroid/app/Activity;Landroid/content/Intent;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

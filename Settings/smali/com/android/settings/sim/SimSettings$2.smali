@@ -1,19 +1,19 @@
-.class Lcom/android/settings/sim/SimSettings$2;
+.class Lcom/android/settings_ex/sim/SimSettings$2;
 .super Landroid/telephony/PhoneStateListener;
 .source "SimSettings.java"
 
 
 # instance fields
-.field final synthetic apY:Lcom/android/settings/sim/SimSettings;
+.field final synthetic apY:Lcom/android/settings_ex/sim/SimSettings;
 
 
 # direct methods
-.method constructor <init>(Lcom/android/settings/sim/SimSettings;)V
+.method constructor <init>(Lcom/android/settings_ex/sim/SimSettings;)V
     .locals 0
 
     .prologue
     .line 214
-    iput-object p1, p0, Lcom/android/settings/sim/SimSettings$2;->apY:Lcom/android/settings/sim/SimSettings;
+    iput-object p1, p0, Lcom/android/settings_ex/sim/SimSettings$2;->apY:Lcom/android/settings_ex/sim/SimSettings;
 
     invoke-direct {p0}, Landroid/telephony/PhoneStateListener;-><init>()V
 
@@ -29,11 +29,11 @@
     const/4 v0, 0x0
 
     .line 222
-    iget-object v1, p0, Lcom/android/settings/sim/SimSettings$2;->apY:Lcom/android/settings/sim/SimSettings;
+    iget-object v1, p0, Lcom/android/settings_ex/sim/SimSettings$2;->apY:Lcom/android/settings_ex/sim/SimSettings;
 
     const-string v2, "sim_cellular_data"
 
-    invoke-virtual {v1, v2}, Lcom/android/settings/sim/SimSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+    invoke-virtual {v1, v2}, Lcom/android/settings_ex/sim/SimSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
 
     move-result-object v1
 

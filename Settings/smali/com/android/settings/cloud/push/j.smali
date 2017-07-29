@@ -1,33 +1,33 @@
-.class Lcom/android/settings/cloud/push/j;
+.class Lcom/android/settings_ex/cloud/push/j;
 .super Landroid/content/pm/IPackageDeleteObserver$Stub;
 .source "CompatChecker.java"
 
 
 # instance fields
-.field final synthetic Ui:Lcom/android/settings/cloud/push/h;
+.field final synthetic Ui:Lcom/android/settings_ex/cloud/push/h;
 
 .field finished:Z
 
 
 # direct methods
-.method private constructor <init>(Lcom/android/settings/cloud/push/h;)V
+.method private constructor <init>(Lcom/android/settings_ex/cloud/push/h;)V
     .locals 0
 
     .prologue
     .line 43
-    iput-object p1, p0, Lcom/android/settings/cloud/push/j;->Ui:Lcom/android/settings/cloud/push/h;
+    iput-object p1, p0, Lcom/android/settings_ex/cloud/push/j;->Ui:Lcom/android/settings_ex/cloud/push/h;
 
     invoke-direct {p0}, Landroid/content/pm/IPackageDeleteObserver$Stub;-><init>()V
 
     return-void
 .end method
 
-.method synthetic constructor <init>(Lcom/android/settings/cloud/push/h;Lcom/android/settings/cloud/push/i;)V
+.method synthetic constructor <init>(Lcom/android/settings_ex/cloud/push/h;Lcom/android/settings_ex/cloud/push/i;)V
     .locals 0
 
     .prologue
     .line 43
-    invoke-direct {p0, p1}, Lcom/android/settings/cloud/push/j;-><init>(Lcom/android/settings/cloud/push/h;)V
+    invoke-direct {p0, p1}, Lcom/android/settings_ex/cloud/push/j;-><init>(Lcom/android/settings_ex/cloud/push/h;)V
 
     return-void
 .end method
@@ -43,44 +43,44 @@
 
     .line 48
     :try_start_0
-    iget-object v0, p0, Lcom/android/settings/cloud/push/j;->Ui:Lcom/android/settings/cloud/push/h;
+    iget-object v0, p0, Lcom/android/settings_ex/cloud/push/j;->Ui:Lcom/android/settings_ex/cloud/push/h;
 
-    invoke-static {v0}, Lcom/android/settings/cloud/push/h;->a(Lcom/android/settings/cloud/push/h;)Lcom/android/settings/cloud/push/k;
+    invoke-static {v0}, Lcom/android/settings_ex/cloud/push/h;->a(Lcom/android/settings_ex/cloud/push/h;)Lcom/android/settings_ex/cloud/push/k;
 
     move-result-object v0
 
     if-eqz v0, :cond_0
 
     .line 49
-    iget-object v0, p0, Lcom/android/settings/cloud/push/j;->Ui:Lcom/android/settings/cloud/push/h;
+    iget-object v0, p0, Lcom/android/settings_ex/cloud/push/j;->Ui:Lcom/android/settings_ex/cloud/push/h;
 
-    invoke-static {v0}, Lcom/android/settings/cloud/push/h;->a(Lcom/android/settings/cloud/push/h;)Lcom/android/settings/cloud/push/k;
+    invoke-static {v0}, Lcom/android/settings_ex/cloud/push/h;->a(Lcom/android/settings_ex/cloud/push/h;)Lcom/android/settings_ex/cloud/push/k;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/cloud/push/k;->getTitle()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/settings_ex/cloud/push/k;->getTitle()Ljava/lang/String;
 
     move-result-object v1
 
     .line 50
-    iget-object v0, p0, Lcom/android/settings/cloud/push/j;->Ui:Lcom/android/settings/cloud/push/h;
+    iget-object v0, p0, Lcom/android/settings_ex/cloud/push/j;->Ui:Lcom/android/settings_ex/cloud/push/h;
 
-    invoke-static {v0}, Lcom/android/settings/cloud/push/h;->a(Lcom/android/settings/cloud/push/h;)Lcom/android/settings/cloud/push/k;
+    invoke-static {v0}, Lcom/android/settings_ex/cloud/push/h;->a(Lcom/android/settings_ex/cloud/push/h;)Lcom/android/settings_ex/cloud/push/k;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/cloud/push/k;->oJ()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/settings_ex/cloud/push/k;->oJ()Ljava/lang/String;
 
     move-result-object v2
 
     .line 51
-    iget-object v0, p0, Lcom/android/settings/cloud/push/j;->Ui:Lcom/android/settings/cloud/push/h;
+    iget-object v0, p0, Lcom/android/settings_ex/cloud/push/j;->Ui:Lcom/android/settings_ex/cloud/push/h;
 
-    invoke-static {v0}, Lcom/android/settings/cloud/push/h;->a(Lcom/android/settings/cloud/push/h;)Lcom/android/settings/cloud/push/k;
+    invoke-static {v0}, Lcom/android/settings_ex/cloud/push/h;->a(Lcom/android/settings_ex/cloud/push/h;)Lcom/android/settings_ex/cloud/push/k;
 
     move-result-object v0
 
-    invoke-virtual {v0}, Lcom/android/settings/cloud/push/k;->getMessage()Ljava/lang/String;
+    invoke-virtual {v0}, Lcom/android/settings_ex/cloud/push/k;->getMessage()Ljava/lang/String;
 
     move-result-object v3
 
@@ -116,9 +116,9 @@
     if-nez v0, :cond_0
 
     .line 54
-    iget-object v0, p0, Lcom/android/settings/cloud/push/j;->Ui:Lcom/android/settings/cloud/push/h;
+    iget-object v0, p0, Lcom/android/settings_ex/cloud/push/j;->Ui:Lcom/android/settings_ex/cloud/push/h;
 
-    invoke-static {v0}, Lcom/android/settings/cloud/push/h;->b(Lcom/android/settings/cloud/push/h;)Landroid/content/Context;
+    invoke-static {v0}, Lcom/android/settings_ex/cloud/push/h;->b(Lcom/android/settings_ex/cloud/push/h;)Landroid/content/Context;
 
     move-result-object v0
 
@@ -163,15 +163,15 @@
     iput v2, v4, Landroid/app/Notification;->flags:I
 
     .line 61
-    iget-object v2, p0, Lcom/android/settings/cloud/push/j;->Ui:Lcom/android/settings/cloud/push/h;
+    iget-object v2, p0, Lcom/android/settings_ex/cloud/push/j;->Ui:Lcom/android/settings_ex/cloud/push/h;
 
-    invoke-static {v2}, Lcom/android/settings/cloud/push/h;->b(Lcom/android/settings/cloud/push/h;)Landroid/content/Context;
+    invoke-static {v2}, Lcom/android/settings_ex/cloud/push/h;->b(Lcom/android/settings_ex/cloud/push/h;)Landroid/content/Context;
 
     move-result-object v2
 
-    iget-object v5, p0, Lcom/android/settings/cloud/push/j;->Ui:Lcom/android/settings/cloud/push/h;
+    iget-object v5, p0, Lcom/android/settings_ex/cloud/push/j;->Ui:Lcom/android/settings_ex/cloud/push/h;
 
-    invoke-static {v5}, Lcom/android/settings/cloud/push/h;->b(Lcom/android/settings/cloud/push/h;)Landroid/content/Context;
+    invoke-static {v5}, Lcom/android/settings_ex/cloud/push/h;->b(Lcom/android/settings_ex/cloud/push/h;)Landroid/content/Context;
 
     move-result-object v5
 
@@ -198,7 +198,7 @@
     :cond_0
     const/4 v0, 0x1
 
-    iput-boolean v0, p0, Lcom/android/settings/cloud/push/j;->finished:Z
+    iput-boolean v0, p0, Lcom/android/settings_ex/cloud/push/j;->finished:Z
 
     .line 67
     invoke-virtual {p0}, Ljava/lang/Object;->notifyAll()V
