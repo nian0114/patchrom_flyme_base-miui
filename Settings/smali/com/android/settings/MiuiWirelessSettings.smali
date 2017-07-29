@@ -2356,6 +2356,23 @@
     move-result-object v1
 
     .line 646
+    if-eqz v1, :cond_nian_17
+
+    invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
+
+    :cond_nian_17
+    invoke-virtual {p0}, Lcom/android/settings_ex/MiuiWirelessSettings;->getPreferenceScreen()Landroid/preference/PreferenceScreen;
+
+    move-result-object v0
+
+    .line 645
+    const-string v1, "toggle_airplane"
+
+    invoke-virtual {p0, v1}, Lcom/android/settings_ex/MiuiWirelessSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
+
+    move-result-object v1
+
+    .line 646
     if-eqz v1, :cond_18
 
     invoke-virtual {v0, v1}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
