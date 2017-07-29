@@ -492,84 +492,7 @@
     const/4 v6, 0x1
 
     .line 135
-    const-string v0, "power_usage"
 
-    invoke-virtual {p2}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
-
-    move-result-object v1
-
-    invoke-virtual {v0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    .line 136
-    invoke-direct {p0}, Lcom/android/settings_ex/fuelgauge/BatterySettings;->qW()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_0
-
-    .line 137
-    const-string v2, "com.mediatek.gemini.GeminiPowerUsageSummary"
-
-    const/4 v3, 0x0
-
-    const/4 v4, 0x0
-
-    const v5, 0x7f0c0dcf
-
-    move-object v0, p0
-
-    move-object v1, p0
-
-    invoke-virtual/range {v0 .. v5}, Lcom/android/settings_ex/fuelgauge/BatterySettings;->a(Landroid/app/Fragment;Ljava/lang/String;ILandroid/os/Bundle;I)Z
-
-    move v0, v6
-
-    .line 155
-    :goto_0
-    return v0
-
-    .line 140
-    :cond_0
-    sget-boolean v0, Lmiui/os/Build;->IS_TABLET:Z
-
-    if-nez v0, :cond_1
-
-    sget-boolean v0, Lmiui/os/Build;->IS_CTS_BUILD:Z
-
-    if-nez v0, :cond_1
-
-    .line 141
-    new-instance v0, Landroid/content/Intent;
-
-    const-string v1, "android.intent.action.POWER_USAGE_SUMMARY"
-
-    invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
-
-    .line 142
-    const-string v1, ":miui:starting_window_label"
-
-    const-string v2, ""
-
-    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
-
-    .line 143
-    invoke-virtual {p0}, Lcom/android/settings_ex/fuelgauge/BatterySettings;->getActivity()Landroid/app/Activity;
-
-    move-result-object v1
-
-    invoke-virtual {v1, v0}, Landroid/app/Activity;->startActivity(Landroid/content/Intent;)V
-
-    move v0, v6
-
-    .line 144
-    goto :goto_0
-
-    .line 148
-    :cond_1
     const-string v0, "power_center"
 
     invoke-virtual {p2}, Landroid/preference/Preference;->getKey()Ljava/lang/String;
@@ -628,7 +551,7 @@
 
     move-result v0
 
-    goto :goto_0
+    return v0
 .end method
 
 .method public onResume()V
