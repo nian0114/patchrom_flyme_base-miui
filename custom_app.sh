@@ -21,4 +21,6 @@ if [ $1 = "TeleService" ];then
 	applyPatch $1 $2
 fi
 
-
+if [ $1 = "Telecom" ];then
+	applyPatch $1 $2
+fi

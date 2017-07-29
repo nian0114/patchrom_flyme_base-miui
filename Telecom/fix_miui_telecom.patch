@@ -1,0 +1,22 @@
+From 92308d40e2e556140bca23e7859c43246a4daeae Mon Sep 17 00:00:00 2001
+From: nian0114 <268078545@qq.com>
+Date: Sat, 29 Jul 2017 13:06:40 +0800
+Subject: [PATCH] fix telecom fc
+
+---
+ .../smali/com/android/server/telecom/PhoneAccountRegistrar.smali | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+--- a/smali/com/android/server/telecom/PhoneAccountRegistrar.smali
++++ b/smali/com/android/server/telecom/PhoneAccountRegistrar.smali
+@@ -3435,7 +3435,7 @@
+     .local v1, "subId":I
+     iget-object v2, p0, Lcom/android/server/telecom/PhoneAccountRegistrar;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
+
+-    invoke-virtual {v2, v1}, Landroid/telephony/SubscriptionManager;->setDefaultVoiceSubId(I)V
++    invoke-virtual {v2, v1}, Landroid/telephony/SubscriptionManager;->setDefaultVoiceSubIdExtended(I)V
+
+     .end local v1    # "subId":I
+     :cond_3
+--
+2.13.2
