@@ -1,0 +1,991 @@
+From 08b5b3d6bf1e65004ab91a2b6c57ba92e651a8fb Mon Sep 17 00:00:00 2001
+From: nian0114 <268078545@qq.com>
+Date: Sun, 30 Jul 2017 02:44:49 +0800
+Subject: [PATCH] same as mi5
+
+---
+ .../AndroidManifest.xml                       |   1 +
+ .../android/keyguard/FingerprintNavHelper.smali    |  40 ++++++
+ .../systemui/keyguard/KeyguardViewMediator.smali   |  37 +++++
+ .../statusbar/phone/MzKeyguardBottomAreaView.smali |  22 ++-
+ .../service/IFingerprintService$Stub$Proxy.smali   | 116 +++++++++++++++
+ .../service/IFingerprintService$Stub.smali         | 153 ++++++++++++++++++++
+ .../fingerprints/service/IFingerprintService.smali |  24 ++++
+ .../service/INavigator$Stub$Proxy.smali            | 122 ++++++++++++++++
+ .../com/fingerprints/service/INavigator$Stub.smali | 157 +++++++++++++++++++++
+ .../com/fingerprints/service/INavigator.smali      |  24 ++++
+ .../com/fingerprints/service/Navigation.smali      | 154 ++++++++++++++++++++
+ .../systemui/recents/misc/SpecialConditions.smali  |   2 +-
+ .../smali/com/meizu/keyguard/MzGestureHelper.smali |   4 +-
+ 13 files changed, 847 insertions(+), 9 deletions(-)
+ create mode 100644 smali/com/android/keyguard/FingerprintNavHelper.smali
+ create mode 100644 smali/com/fingerprints/service/IFingerprintService$Stub$Proxy.smali
+ create mode 100644 smali/com/fingerprints/service/IFingerprintService$Stub.smali
+ create mode 100644 smali/com/fingerprints/service/IFingerprintService.smali
+ create mode 100644 smali/com/fingerprints/service/INavigator$Stub$Proxy.smali
+ create mode 100644 smali/com/fingerprints/service/INavigator$Stub.smali
+ create mode 100644 smali/com/fingerprints/service/INavigator.smali
+ create mode 100644 smali/com/fingerprints/service/Navigation.smali
+
+--- a/AndroidManifest.xml
++++ b/AndroidManifest.xml
+@@ -220,4 +220,5 @@
+         <activity android:launchMode="standard" android:name="com.meizu.sharewidget.activity.ShareViewGroupActivity" android:theme="@style/Theme.Flyme.Share.Day"/>
+     </application>
+     <uses-permission android:name="android.permission.INTERNET"/>
++    <uses-permission android:name="com.fingerprints.service.ACCESS_EXTENSION_SERVICE"/>
+ </manifest>
+--- a/smali/com/android/keyguard/FingerprintNavHelper.smali
++++ b/smali/com/android/keyguard/FingerprintNavHelper.smali
+@@ -0,0 +1,40 @@
++.class public Lcom/android/keyguard/FingerprintNavHelper;
++.super Ljava/lang/Object;
++.source "FingerprintNavHelper.java"
++
++
++# direct methods
++.method public constructor <init>()V
++    .locals 0
++
++    .prologue
++    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
++
++    return-void
++.end method
++
++.method public static enableNavigation(Z)V
++    .locals 2
++    .param p0, "enable"    # Z
++
++    .prologue
++    :try_start_0
++    new-instance v1, Lcom/fingerprints/service/Navigation;
++
++    invoke-direct {v1}, Lcom/fingerprints/service/Navigation;-><init>()V
++
++    invoke-virtual {v1, p0}, Lcom/fingerprints/service/Navigation;->setNavigationEnabled(Z)V
++    :try_end_0
++    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
++
++    :goto_0
++    return-void
++
++    :catch_0
++    move-exception v0
++
++    .local v0, "e":Ljava/lang/Exception;
++    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
++
++    goto :goto_0
++.end method
+--- a/smali/com/android/systemui/keyguard/KeyguardViewMediator.smali
++++ b/smali/com/android/systemui/keyguard/KeyguardViewMediator.smali
+@@ -1438,6 +1438,28 @@
+     return-void
+ .end method
+
++.method private enableFingerprintNavigation(Z)V
++    .locals 1
++    .param p1, "enable"    # Z
++
++    .prologue
++    :try_start_0
++    invoke-static {p1}, Lcom/android/keyguard/FingerprintNavHelper;->enableNavigation(Z)V
++    :try_end_0
++    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
++
++    :goto_0
++    return-void
++
++    :catch_0
++    move-exception v0
++
++    .local v0, "e":Ljava/lang/Exception;
++    invoke-virtual {v0}, Ljava/lang/Exception;->printStackTrace()V
++
++    goto :goto_0
++.end method
++
+ .method private exitGuestMode()V
+     .locals 9
+
+@@ -4129,6 +4151,17 @@
+     return-void
+ .end method
+
++.method static synthetic wrapEnableFingerprintNavigation(Lcom/android/keyguard/KeyguardViewMediator;Z)V
++    .locals 0
++    .param p0, "x0"    # Lcom/android/keyguard/KeyguardViewMediator;
++    .param p1, "x1"    # Z
++
++    .prologue
++    invoke-direct {p0, p1}, Lcom/android/systemui/keyguard/KeyguardViewMediator;->enableFingerprintNavigation(Z)V
++
++    return-void
++.end method
++
+
+ # virtual methods
+ .method public addStateMonitorCallback(Lcom/android/internal/policy/IKeyguardStateCallback;)V
+@@ -4855,6 +4888,10 @@
+     .locals 2
+
+     .prologue
++    const/4 v0, 0x1
++
++    invoke-direct {p0, v0}, Lcom/android/systemui/keyguard/KeyguardViewMediator;->enableFingerprintNavigation(Z)V
++
+     iget-object v0, p0, Lcom/android/systemui/keyguard/KeyguardViewMediator;->mContext:Landroid/content/Context;
+
+     const-string v1, "search"
+--- a/smali/com/android/systemui/statusbar/phone/MzKeyguardBottomAreaView.smali
++++ b/smali/com/android/systemui/statusbar/phone/MzKeyguardBottomAreaView.smali
+@@ -154,14 +154,24 @@
+
+     move-result-object v0
+
+-    const-string v1, "com.meizu.media.camera"
++    const-string v1, "com.android.camera"
+
+-    const-string v2, "com.meizu.media.camera.SecureCameraActivity"
++    const-string v2, "com.android.camera.Camera"
+
+     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+     move-result-object v0
+
++    const-string v1, "ShowCameraWhenLocked"
++
++    const/4 v2, 0x1
++
++    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
++
++    const-string v1, "StartActivityWhenLocked"
++
++    invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->putExtra(Ljava/lang/String;Z)Landroid/content/Intent;
++
+     sput-object v0, Lcom/android/systemui/statusbar/phone/MzKeyguardBottomAreaView;->SECURE_CAMERA_INTENT:Landroid/content/Intent;
+
+     new-instance v0, Landroid/content/Intent;
+@@ -170,9 +180,9 @@
+
+     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
+
+-    const-string v1, "com.meizu.media.camera"
++    const-string v1, "com.android.camera"
+
+-    const-string v2, "com.meizu.media.camera.CameraLauncher"
++    const-string v2, "com.android.camera.Camera"
+
+     invoke-virtual {v0, v1, v2}, Landroid/content/Intent;->setClassName(Ljava/lang/String;Ljava/lang/String;)Landroid/content/Intent;
+
+@@ -250,9 +260,9 @@
+
+     new-instance v0, Landroid/content/ComponentName;
+
+-    const-string v1, "com.meizu.media.camera"
++    const-string v1, "com.android.camera"
+
+-    const-string v2, "com.meizu.media.camera.CameraLauncher"
++    const-string v2, "com.android.camera.Camera"
+
+     invoke-direct {v0, v1, v2}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+--- a/smali/com/fingerprints/service/IFingerprintService$Stub$Proxy.smali
++++ b/smali/com/fingerprints/service/IFingerprintService$Stub$Proxy.smali
+@@ -0,0 +1,116 @@
++.class Lcom/fingerprints/service/IFingerprintService$Stub$Proxy;
++.super Ljava/lang/Object;
++.source "IFingerprintService.java"
++
++# interfaces
++.implements Lcom/fingerprints/service/IFingerprintService;
++
++
++# annotations
++.annotation system Ldalvik/annotation/EnclosingClass;
++    value = Lcom/fingerprints/service/IFingerprintService$Stub;
++.end annotation
++
++.annotation system Ldalvik/annotation/InnerClass;
++    accessFlags = 0xa
++    name = "Proxy"
++.end annotation
++
++
++# instance fields
++.field private mRemote:Landroid/os/IBinder;
++
++
++# direct methods
++.method constructor <init>(Landroid/os/IBinder;)V
++    .locals 0
++    .param p1, "remote"    # Landroid/os/IBinder;
++
++    .prologue
++    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
++
++    iput-object p1, p0, Lcom/fingerprints/service/IFingerprintService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
++
++    return-void
++.end method
++
++
++# virtual methods
++.method public asBinder()Landroid/os/IBinder;
++    .locals 1
++
++    .prologue
++    iget-object v0, p0, Lcom/fingerprints/service/IFingerprintService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
++
++    return-object v0
++.end method
++
++.method public getInterfaceDescriptor()Ljava/lang/String;
++    .locals 1
++
++    .prologue
++    const-string v0, "com.fingerprints.service.IFingerprintService"
++
++    return-object v0
++.end method
++
++.method public getService(Ljava/lang/String;)Landroid/os/IBinder;
++    .locals 6
++    .param p1, "serviceName"    # Ljava/lang/String;
++    .annotation system Ldalvik/annotation/Throws;
++        value = {
++            Landroid/os/RemoteException;
++        }
++    .end annotation
++
++    .prologue
++    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
++
++    move-result-object v0
++
++    .local v0, "_data":Landroid/os/Parcel;
++    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
++
++    move-result-object v1
++
++    .local v1, "_reply":Landroid/os/Parcel;
++    :try_start_0
++    const-string v3, "com.fingerprints.service.IFingerprintService"
++
++    invoke-virtual {v0, v3}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
++
++    invoke-virtual {v0, p1}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
++
++    iget-object v3, p0, Lcom/fingerprints/service/IFingerprintService$Stub$Proxy;->mRemote:Landroid/os/IBinder;
++
++    const/4 v4, 0x1
++
++    const/4 v5, 0x0
++
++    invoke-interface {v3, v4, v0, v1, v5}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
++
++    invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
++
++    invoke-virtual {v1}, Landroid/os/Parcel;->readStrongBinder()Landroid/os/IBinder;
++    :try_end_0
++    .catchall {:try_start_0 .. :try_end_0} :catchall_0
++
++    move-result-object v2
++
++    .local v2, "_result":Landroid/os/IBinder;
++    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
++
++    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
++
++    return-object v2
++
++    .end local v2    # "_result":Landroid/os/IBinder;
++    :catchall_0
++    move-exception v3
++
++    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
++
++    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
++
++    throw v3
++.end method
+--- a/smali/com/fingerprints/service/IFingerprintService$Stub.smali
++++ b/smali/com/fingerprints/service/IFingerprintService$Stub.smali
+@@ -0,0 +1,153 @@
++.class public abstract Lcom/fingerprints/service/IFingerprintService$Stub;
++.super Landroid/os/Binder;
++.source "IFingerprintService.java"
++
++# interfaces
++.implements Lcom/fingerprints/service/IFingerprintService;
++
++
++# annotations
++.annotation system Ldalvik/annotation/EnclosingClass;
++    value = Lcom/fingerprints/service/IFingerprintService;
++.end annotation
++
++.annotation system Ldalvik/annotation/InnerClass;
++    accessFlags = 0x409
++    name = "Stub"
++.end annotation
++
++.annotation system Ldalvik/annotation/MemberClasses;
++    value = {
++        Lcom/fingerprints/service/IFingerprintService$Stub$Proxy;
++    }
++.end annotation
++
++
++# static fields
++.field private static final DESCRIPTOR:Ljava/lang/String; = "com.fingerprints.service.IFingerprintService"
++
++.field static final TRANSACTION_getService:I = 0x1
++
++
++# direct methods
++.method public constructor <init>()V
++    .locals 1
++
++    .prologue
++    invoke-direct {p0}, Landroid/os/Binder;-><init>()V
++
++    const-string v0, "com.fingerprints.service.IFingerprintService"
++
++    invoke-virtual {p0, p0, v0}, Lcom/fingerprints/service/IFingerprintService$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
++
++    return-void
++.end method
++
++.method public static asInterface(Landroid/os/IBinder;)Lcom/fingerprints/service/IFingerprintService;
++    .locals 2
++    .param p0, "obj"    # Landroid/os/IBinder;
++
++    .prologue
++    if-nez p0, :cond_0
++
++    const/4 v0, 0x0
++
++    :goto_0
++    return-object v0
++
++    :cond_0
++    const-string v1, "com.fingerprints.service.IFingerprintService"
++
++    invoke-interface {p0, v1}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
++
++    move-result-object v0
++
++    .local v0, "iin":Landroid/os/IInterface;
++    if-eqz v0, :cond_1
++
++    instance-of v1, v0, Lcom/fingerprints/service/IFingerprintService;
++
++    if-eqz v1, :cond_1
++
++    check-cast v0, Lcom/fingerprints/service/IFingerprintService;
++
++    goto :goto_0
++
++    :cond_1
++    new-instance v0, Lcom/fingerprints/service/IFingerprintService$Stub$Proxy;
++
++    .end local v0    # "iin":Landroid/os/IInterface;
++    invoke-direct {v0, p0}, Lcom/fingerprints/service/IFingerprintService$Stub$Proxy;-><init>(Landroid/os/IBinder;)V
++
++    goto :goto_0
++.end method
++
++
++# virtual methods
++.method public asBinder()Landroid/os/IBinder;
++    .locals 0
++
++    .prologue
++    return-object p0
++.end method
++
++.method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
++    .locals 4
++    .param p1, "code"    # I
++    .param p2, "data"    # Landroid/os/Parcel;
++    .param p3, "reply"    # Landroid/os/Parcel;
++    .param p4, "flags"    # I
++    .annotation system Ldalvik/annotation/Throws;
++        value = {
++            Landroid/os/RemoteException;
++        }
++    .end annotation
++
++    .prologue
++    const/4 v2, 0x1
++
++    sparse-switch p1, :sswitch_data_0
++
++    invoke-super {p0, p1, p2, p3, p4}, Landroid/os/Binder;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
++
++    move-result v2
++
++    :goto_0
++    return v2
++
++    :sswitch_0
++    const-string v3, "com.fingerprints.service.IFingerprintService"
++
++    invoke-virtual {p3, v3}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
++
++    goto :goto_0
++
++    :sswitch_1
++    const-string v3, "com.fingerprints.service.IFingerprintService"
++
++    invoke-virtual {p2, v3}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
++
++    invoke-virtual {p2}, Landroid/os/Parcel;->readString()Ljava/lang/String;
++
++    move-result-object v0
++
++    .local v0, "_arg0":Ljava/lang/String;
++    invoke-virtual {p0, v0}, Lcom/fingerprints/service/IFingerprintService$Stub;->getService(Ljava/lang/String;)Landroid/os/IBinder;
++
++    move-result-object v1
++
++    .local v1, "_result":Landroid/os/IBinder;
++    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
++
++    invoke-virtual {p3, v1}, Landroid/os/Parcel;->writeStrongBinder(Landroid/os/IBinder;)V
++
++    goto :goto_0
++
++    nop
++
++    :sswitch_data_0
++    .sparse-switch
++        0x1 -> :sswitch_1
++        0x5f4e5446 -> :sswitch_0
++    .end sparse-switch
++.end method
+--- a/smali/com/fingerprints/service/IFingerprintService.smali
++++ b/smali/com/fingerprints/service/IFingerprintService.smali
+@@ -0,0 +1,24 @@
++.class public interface abstract Lcom/fingerprints/service/IFingerprintService;
++.super Ljava/lang/Object;
++.source "IFingerprintService.java"
++
++# interfaces
++.implements Landroid/os/IInterface;
++
++
++# annotations
++.annotation system Ldalvik/annotation/MemberClasses;
++    value = {
++        Lcom/fingerprints/service/IFingerprintService$Stub;
++    }
++.end annotation
++
++
++# virtual methods
++.method public abstract getService(Ljava/lang/String;)Landroid/os/IBinder;
++    .annotation system Ldalvik/annotation/Throws;
++        value = {
++            Landroid/os/RemoteException;
++        }
++    .end annotation
++.end method
+--- a/smali/com/fingerprints/service/INavigator$Stub$Proxy.smali
++++ b/smali/com/fingerprints/service/INavigator$Stub$Proxy.smali
+@@ -0,0 +1,122 @@
++.class Lcom/fingerprints/service/INavigator$Stub$Proxy;
++.super Ljava/lang/Object;
++.source "INavigator.java"
++
++# interfaces
++.implements Lcom/fingerprints/service/INavigator;
++
++
++# annotations
++.annotation system Ldalvik/annotation/EnclosingClass;
++    value = Lcom/fingerprints/service/INavigator$Stub;
++.end annotation
++
++.annotation system Ldalvik/annotation/InnerClass;
++    accessFlags = 0xa
++    name = "Proxy"
++.end annotation
++
++
++# instance fields
++.field private mRemote:Landroid/os/IBinder;
++
++
++# direct methods
++.method constructor <init>(Landroid/os/IBinder;)V
++    .locals 0
++    .param p1, "remote"    # Landroid/os/IBinder;
++
++    .prologue
++    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
++
++    iput-object p1, p0, Lcom/fingerprints/service/INavigator$Stub$Proxy;->mRemote:Landroid/os/IBinder;
++
++    return-void
++.end method
++
++
++# virtual methods
++.method public asBinder()Landroid/os/IBinder;
++    .locals 1
++
++    .prologue
++    iget-object v0, p0, Lcom/fingerprints/service/INavigator$Stub$Proxy;->mRemote:Landroid/os/IBinder;
++
++    return-object v0
++.end method
++
++.method public getInterfaceDescriptor()Ljava/lang/String;
++    .locals 1
++
++    .prologue
++    const-string v0, "com.fingerprints.service.INavigator"
++
++    return-object v0
++.end method
++
++.method public setNavigationEnabled(Z)V
++    .locals 5
++    .param p1, "enabled"    # Z
++    .annotation system Ldalvik/annotation/Throws;
++        value = {
++            Landroid/os/RemoteException;
++        }
++    .end annotation
++
++    .prologue
++    const/4 v2, 0x1
++
++    const/4 v3, 0x0
++
++    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
++
++    move-result-object v0
++
++    .local v0, "_data":Landroid/os/Parcel;
++    invoke-static {}, Landroid/os/Parcel;->obtain()Landroid/os/Parcel;
++
++    move-result-object v1
++
++    .local v1, "_reply":Landroid/os/Parcel;
++    :try_start_0
++    const-string v4, "com.fingerprints.service.INavigator"
++
++    invoke-virtual {v0, v4}, Landroid/os/Parcel;->writeInterfaceToken(Ljava/lang/String;)V
++
++    if-eqz p1, :cond_0
++
++    :goto_0
++    invoke-virtual {v0, v2}, Landroid/os/Parcel;->writeInt(I)V
++
++    iget-object v2, p0, Lcom/fingerprints/service/INavigator$Stub$Proxy;->mRemote:Landroid/os/IBinder;
++
++    const/4 v3, 0x1
++
++    const/4 v4, 0x0
++
++    invoke-interface {v2, v3, v0, v1, v4}, Landroid/os/IBinder;->transact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
++
++    invoke-virtual {v1}, Landroid/os/Parcel;->readException()V
++    :try_end_0
++    .catchall {:try_start_0 .. :try_end_0} :catchall_0
++
++    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
++
++    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
++
++    return-void
++
++    :cond_0
++    move v2, v3
++
++    goto :goto_0
++
++    :catchall_0
++    move-exception v2
++
++    invoke-virtual {v1}, Landroid/os/Parcel;->recycle()V
++
++    invoke-virtual {v0}, Landroid/os/Parcel;->recycle()V
++
++    throw v2
++.end method
+--- a/smali/com/fingerprints/service/INavigator$Stub.smali
++++ b/smali/com/fingerprints/service/INavigator$Stub.smali
+@@ -0,0 +1,157 @@
++.class public abstract Lcom/fingerprints/service/INavigator$Stub;
++.super Landroid/os/Binder;
++.source "INavigator.java"
++
++# interfaces
++.implements Lcom/fingerprints/service/INavigator;
++
++
++# annotations
++.annotation system Ldalvik/annotation/EnclosingClass;
++    value = Lcom/fingerprints/service/INavigator;
++.end annotation
++
++.annotation system Ldalvik/annotation/InnerClass;
++    accessFlags = 0x409
++    name = "Stub"
++.end annotation
++
++.annotation system Ldalvik/annotation/MemberClasses;
++    value = {
++        Lcom/fingerprints/service/INavigator$Stub$Proxy;
++    }
++.end annotation
++
++
++# static fields
++.field private static final DESCRIPTOR:Ljava/lang/String; = "com.fingerprints.service.INavigator"
++
++.field static final TRANSACTION_setNavigationEnabled:I = 0x1
++
++
++# direct methods
++.method public constructor <init>()V
++    .locals 1
++
++    .prologue
++    invoke-direct {p0}, Landroid/os/Binder;-><init>()V
++
++    const-string v0, "com.fingerprints.service.INavigator"
++
++    invoke-virtual {p0, p0, v0}, Lcom/fingerprints/service/INavigator$Stub;->attachInterface(Landroid/os/IInterface;Ljava/lang/String;)V
++
++    return-void
++.end method
++
++.method public static asInterface(Landroid/os/IBinder;)Lcom/fingerprints/service/INavigator;
++    .locals 2
++    .param p0, "obj"    # Landroid/os/IBinder;
++
++    .prologue
++    if-nez p0, :cond_0
++
++    const/4 v0, 0x0
++
++    :goto_0
++    return-object v0
++
++    :cond_0
++    const-string v1, "com.fingerprints.service.INavigator"
++
++    invoke-interface {p0, v1}, Landroid/os/IBinder;->queryLocalInterface(Ljava/lang/String;)Landroid/os/IInterface;
++
++    move-result-object v0
++
++    .local v0, "iin":Landroid/os/IInterface;
++    if-eqz v0, :cond_1
++
++    instance-of v1, v0, Lcom/fingerprints/service/INavigator;
++
++    if-eqz v1, :cond_1
++
++    check-cast v0, Lcom/fingerprints/service/INavigator;
++
++    goto :goto_0
++
++    :cond_1
++    new-instance v0, Lcom/fingerprints/service/INavigator$Stub$Proxy;
++
++    .end local v0    # "iin":Landroid/os/IInterface;
++    invoke-direct {v0, p0}, Lcom/fingerprints/service/INavigator$Stub$Proxy;-><init>(Landroid/os/IBinder;)V
++
++    goto :goto_0
++.end method
++
++
++# virtual methods
++.method public asBinder()Landroid/os/IBinder;
++    .locals 0
++
++    .prologue
++    return-object p0
++.end method
++
++.method public onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
++    .locals 3
++    .param p1, "code"    # I
++    .param p2, "data"    # Landroid/os/Parcel;
++    .param p3, "reply"    # Landroid/os/Parcel;
++    .param p4, "flags"    # I
++    .annotation system Ldalvik/annotation/Throws;
++        value = {
++            Landroid/os/RemoteException;
++        }
++    .end annotation
++
++    .prologue
++    const/4 v1, 0x1
++
++    sparse-switch p1, :sswitch_data_0
++
++    invoke-super {p0, p1, p2, p3, p4}, Landroid/os/Binder;->onTransact(ILandroid/os/Parcel;Landroid/os/Parcel;I)Z
++
++    move-result v1
++
++    :goto_0
++    return v1
++
++    :sswitch_0
++    const-string v2, "com.fingerprints.service.INavigator"
++
++    invoke-virtual {p3, v2}, Landroid/os/Parcel;->writeString(Ljava/lang/String;)V
++
++    goto :goto_0
++
++    :sswitch_1
++    const-string v2, "com.fingerprints.service.INavigator"
++
++    invoke-virtual {p2, v2}, Landroid/os/Parcel;->enforceInterface(Ljava/lang/String;)V
++
++    invoke-virtual {p2}, Landroid/os/Parcel;->readInt()I
++
++    move-result v2
++
++    if-eqz v2, :cond_0
++
++    move v0, v1
++
++    .local v0, "_arg0":Z
++    :goto_1
++    invoke-virtual {p0, v0}, Lcom/fingerprints/service/INavigator$Stub;->setNavigationEnabled(Z)V
++
++    invoke-virtual {p3}, Landroid/os/Parcel;->writeNoException()V
++
++    goto :goto_0
++
++    .end local v0    # "_arg0":Z
++    :cond_0
++    const/4 v0, 0x0
++
++    goto :goto_1
++
++    :sswitch_data_0
++    .sparse-switch
++        0x1 -> :sswitch_1
++        0x5f4e5446 -> :sswitch_0
++    .end sparse-switch
++.end method
+--- a/smali/com/fingerprints/service/INavigator.smali
++++ b/smali/com/fingerprints/service/INavigator.smali
+@@ -0,0 +1,24 @@
++.class public interface abstract Lcom/fingerprints/service/INavigator;
++.super Ljava/lang/Object;
++.source "INavigator.java"
++
++# interfaces
++.implements Landroid/os/IInterface;
++
++
++# annotations
++.annotation system Ldalvik/annotation/MemberClasses;
++    value = {
++        Lcom/fingerprints/service/INavigator$Stub;
++    }
++.end annotation
++
++
++# virtual methods
++.method public abstract setNavigationEnabled(Z)V
++    .annotation system Ldalvik/annotation/Throws;
++        value = {
++            Landroid/os/RemoteException;
++        }
++    .end annotation
++.end method
+--- a/smali/com/fingerprints/service/Navigation.smali
++++ b/smali/com/fingerprints/service/Navigation.smali
+@@ -0,0 +1,154 @@
++.class public Lcom/fingerprints/service/Navigation;
++.super Ljava/lang/Object;
++.source "Navigation.java"
++
++
++# static fields
++.field static final SERVICE_NAME:Ljava/lang/String; = "navigator"
++
++
++# instance fields
++.field private mService:Lcom/fingerprints/service/INavigator;
++
++
++# direct methods
++.method public constructor <init>()V
++    .locals 10
++    .annotation system Ldalvik/annotation/Throws;
++        value = {
++            Ljava/lang/Exception;
++        }
++    .end annotation
++
++    .prologue
++    invoke-direct {p0}, Ljava/lang/Object;-><init>()V
++
++    const/4 v4, 0x0
++
++    .local v4, "service":Lcom/fingerprints/service/IFingerprintService;
++    :try_start_0
++    const-string v6, "android.os.ServiceManager"
++
++    invoke-static {v6}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
++
++    move-result-object v5
++
++    .local v5, "servicemanager":Ljava/lang/Class;, "Ljava/lang/Class<*>;"
++    const-string v6, "getService"
++
++    const/4 v7, 0x1
++
++    new-array v7, v7, [Ljava/lang/Class;
++
++    const/4 v8, 0x0
++
++    const-class v9, Ljava/lang/String;
++
++    aput-object v9, v7, v8
++
++    invoke-virtual {v5, v6, v7}, Ljava/lang/Class;->getMethod(Ljava/lang/String;[Ljava/lang/Class;)Ljava/lang/reflect/Method;
++
++    move-result-object v2
++
++    .local v2, "getService":Ljava/lang/reflect/Method;
++    const/4 v6, 0x0
++
++    const/4 v7, 0x1
++
++    new-array v7, v7, [Ljava/lang/Object;
++
++    const/4 v8, 0x0
++
++    const-string v9, "fingerprints_service"
++
++    aput-object v9, v7, v8
++
++    invoke-virtual {v2, v6, v7}, Ljava/lang/reflect/Method;->invoke(Ljava/lang/Object;[Ljava/lang/Object;)Ljava/lang/Object;
++
++    move-result-object v0
++
++    check-cast v0, Landroid/os/IBinder;
++
++    .local v0, "binder":Landroid/os/IBinder;
++    invoke-static {v0}, Lcom/fingerprints/service/IFingerprintService$Stub;->asInterface(Landroid/os/IBinder;)Lcom/fingerprints/service/IFingerprintService;
++    :try_end_0
++    .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
++
++    move-result-object v4
++
++    .end local v0    # "binder":Landroid/os/IBinder;
++    .end local v2    # "getService":Ljava/lang/reflect/Method;
++    .end local v5    # "servicemanager":Ljava/lang/Class;, "Ljava/lang/Class<*>;"
++    :goto_0
++    if-nez v4, :cond_0
++
++    new-instance v6, Ljava/lang/Exception;
++
++    const-string v7, "The FPC extension service could not be loaded"
++
++    invoke-direct {v6, v7}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
++
++    throw v6
++
++    :catch_0
++    move-exception v1
++
++    .local v1, "e":Ljava/lang/Exception;
++    invoke-virtual {v1}, Ljava/lang/Exception;->printStackTrace()V
++
++    goto :goto_0
++
++    .end local v1    # "e":Ljava/lang/Exception;
++    :cond_0
++    const-string v6, "navigator"
++
++    invoke-interface {v4, v6}, Lcom/fingerprints/service/IFingerprintService;->getService(Ljava/lang/String;)Landroid/os/IBinder;
++
++    move-result-object v3
++
++    .local v3, "navBinder":Landroid/os/IBinder;
++    if-nez v3, :cond_1
++
++    new-instance v6, Ljava/lang/Exception;
++
++    const-string v7, "Authenticator API could not be loaded"
++
++    invoke-direct {v6, v7}, Ljava/lang/Exception;-><init>(Ljava/lang/String;)V
++
++    throw v6
++
++    :cond_1
++    invoke-static {v3}, Lcom/fingerprints/service/INavigator$Stub;->asInterface(Landroid/os/IBinder;)Lcom/fingerprints/service/INavigator;
++
++    move-result-object v6
++
++    iput-object v6, p0, Lcom/fingerprints/service/Navigation;->mService:Lcom/fingerprints/service/INavigator;
++
++    return-void
++.end method
++
++
++# virtual methods
++.method public setNavigationEnabled(Z)V
++    .locals 2
++    .param p1, "enabled"    # Z
++
++    .prologue
++    :try_start_0
++    iget-object v1, p0, Lcom/fingerprints/service/Navigation;->mService:Lcom/fingerprints/service/INavigator;
++
++    invoke-interface {v1, p1}, Lcom/fingerprints/service/INavigator;->setNavigationEnabled(Z)V
++    :try_end_0
++    .catch Landroid/os/RemoteException; {:try_start_0 .. :try_end_0} :catch_0
++
++    :goto_0
++    return-void
++
++    :catch_0
++    move-exception v0
++
++    .local v0, "e":Landroid/os/RemoteException;
++    invoke-virtual {v0}, Landroid/os/RemoteException;->printStackTrace()V
++
++    goto :goto_0
++.end method
+--- a/smali/com/flyme/systemui/recents/misc/SpecialConditions.smali
++++ b/smali/com/flyme/systemui/recents/misc/SpecialConditions.smali
+@@ -175,7 +175,7 @@
+     return-void
+
+     :cond_0
+-    const-string v0, "com.meizu.media.camera"
++    const-string v0, "com.android.camera"
+
+     invoke-virtual {p1, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+--- a/smali/com/meizu/keyguard/MzGestureHelper.smali
++++ b/smali/com/meizu/keyguard/MzGestureHelper.smali
+@@ -100,9 +100,9 @@
+
+     new-instance v0, Landroid/content/ComponentName;
+
+-    const-string v1, "com.meizu.media.camera"
++    const-string v1, "com.android.camera"
+
+-    const-string v2, "com.meizu.media.camera.CameraLauncher"
++    const-string v2, "com.android.camera.Camera"
+
+     invoke-direct {v0, v1, v2}, Landroid/content/ComponentName;-><init>(Ljava/lang/String;Ljava/lang/String;)V
+
+--
+2.13.2
