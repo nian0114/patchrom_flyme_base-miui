@@ -184,43 +184,13 @@
     if-eqz v0, :cond_0
 
     .line 51
-    const-string v0, "privacy_settings"
-
-    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 52
-    const-string v0, "children_mode_settings"
-
-    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 53
-    const-string v0, "category_privacy_settings"
-
-    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
 
     .line 56
     :cond_0
-    invoke-static {}, Lcom/android/b/a;->zg()Z
-
-    move-result v0
-
-    if-eqz v0, :cond_1
-
-    const-string v0, "children_mode_settings"
-
-    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->contains(Ljava/lang/Object;)Z
-
-    move-result v0
-
-    if-nez v0, :cond_1
-
-    .line 57
-    const-string v0, "children_mode_settings"
-
-    invoke-virtual {v4, v0}, Ljava/util/ArrayList;->add(Ljava/lang/Object;)Z
-
-    .line 60
-    :cond_1
     const-string v0, "support_led_light"
 
     invoke-static {v0, v2}, Lmiui/util/FeatureParser;->getBoolean(Ljava/lang/String;Z)Z
@@ -475,37 +445,7 @@
     .line 105
     goto :goto_1
 
-    .line 115
     :cond_e
-    const-string v0, "one_key_migrate"
-
-    invoke-virtual {p0, v0}, Lcom/android/settings_ex/OtherPersonalSettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v0
-
-    .line 116
-    sget-boolean v4, Lmiui/os/Build;->IS_TABLET:Z
-
-    if-nez v4, :cond_f
-
-    invoke-direct {p0}, Lcom/android/settings_ex/OtherPersonalSettings;->gw()Z
-
-    move-result v4
-
-    if-eqz v4, :cond_f
-
-    invoke-static {}, Landroid/os/UserHandle;->myUserId()I
-
-    move-result v4
-
-    if-eqz v4, :cond_10
-
-    .line 117
-    :cond_f
-    invoke-virtual {v3, v0}, Landroid/preference/PreferenceScreen;->removePreference(Landroid/preference/Preference;)Z
-
-    .line 120
-    :cond_10
     invoke-static {}, Landroid/os/UserHandle;->myUserId()I
 
     move-result v0
@@ -520,16 +460,6 @@
     const-string v4, "privacy_and_backup_cat"
 
     aput-object v4, v0, v2
-
-    const-string v4, "privacy_settings"
-
-    aput-object v4, v0, v1
-
-    const/4 v1, 0x2
-
-    const-string v4, "one_key_migrate"
-
-    aput-object v4, v0, v1
 
     .line 122
     array-length v1, v0

@@ -362,31 +362,6 @@
     invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings_ex/dh;->a(Ljava/lang/String;IIII)V
 
     .line 70
-    const-string v0, "date_time_settings"
-
-    const v1, 0x7f080026
-
-    const v2, 0x7f1303a6
-
-    const v3, 0x7f0c01c2
-
-    const v4, 0x7f0c0c37
-
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings_ex/dh;->a(Ljava/lang/String;IIII)V
-
-    .line 71
-    const-string v0, "language_settings"
-
-    const v1, 0x7f080052
-
-    const v2, 0x7f1303a3
-
-    const v3, 0x7f0c060b
-
-    const v4, 0x7f0c0c3a
-
-    invoke-static {v0, v1, v2, v3, v4}, Lcom/android/settings_ex/dh;->a(Ljava/lang/String;IIII)V
-
     .line 72
     const-string v0, "about_settings"
 

@@ -187,17 +187,6 @@
 
     invoke-virtual {p0, v0, v1}, Lcom/android/settings_ex/MiuiSettings$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
 
-    .line 108
-    const v0, 0x7f1303c3
-
-    invoke-static {v0}, Ljava/lang/Integer;->valueOf(I)Ljava/lang/Integer;
-
-    move-result-object v0
-
-    const-string v1, "children_mode_settings"
-
-    invoke-virtual {p0, v0, v1}, Lcom/android/settings_ex/MiuiSettings$1;->put(Ljava/lang/Object;Ljava/lang/Object;)Ljava/lang/Object;
-
     .line 109
     const v0, 0x7f1303c4
 
