@@ -28,4 +28,5 @@ vendor_saved_apps := \
 	ims \
 	MiuiCamera \
 	qcrilmsgtunnel \
-	QtiTetherService
+	QtiTetherService \
+	TouchAssistant
