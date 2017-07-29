@@ -1341,21 +1341,6 @@
 
     .line 224
     :goto_2
-    const-string v0, "auto_rotate"
-
-    invoke-virtual {p0, v0}, Lcom/android/settings_ex/DisplaySettings;->findPreference(Ljava/lang/CharSequence;)Landroid/preference/Preference;
-
-    move-result-object v0
-
-    check-cast v0, Landroid/preference/CheckBoxPreference;
-
-    iput-object v0, p0, Lcom/android/settings_ex/DisplaySettings;->lP:Landroid/preference/CheckBoxPreference;
-
-    .line 225
-    iget-object v0, p0, Lcom/android/settings_ex/DisplaySettings;->lP:Landroid/preference/CheckBoxPreference;
-
-    invoke-virtual {v0, v3}, Landroid/preference/CheckBoxPreference;->setPersistent(Z)V
-
     .line 264
     const-string v0, "night_mode"
 
