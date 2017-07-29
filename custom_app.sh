@@ -16,6 +16,10 @@ function applyPatch() {
     cd ..
 }
 
+if [ $1 = "SystemUI" ];then
+	applyPatch $1 $2
+fi
+
 if [ $1 = "ConnectivitySettings" ];then
 	applyPatch $1 $2
 fi
