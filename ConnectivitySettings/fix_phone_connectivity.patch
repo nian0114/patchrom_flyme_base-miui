@@ -1,0 +1,46 @@
+From 2fe9b0ab3ac645e496ca822482ccd63907ee69ae Mon Sep 17 00:00:00 2001
+From: nian0114 <268078545@qq.com>
+Date: Sun, 30 Jul 2017 02:17:12 +0800
+Subject: [PATCH] fix phone fc when change main card
+
+---
+ .../smali/com/meizu/connectivitysettings/MobileNetworkSettings.smali    | 2 +-
+ .../smali/com/meizu/connectivitysettings/MzSimInfoEditor.smali          | 2 +-
+ .../smali/com/meizu/connectivitysettings/sim/SimDialogActivity.smali    | 2 +-
+ 3 files changed, 3 insertions(+), 3 deletions(-)
+
+--- a/smali/com/meizu/connectivitysettings/MobileNetworkSettings.smali
++++ b/smali/com/meizu/connectivitysettings/MobileNetworkSettings.smali
+@@ -5835,7 +5835,7 @@
+
+     move/from16 v1, v19
+
+-    invoke-virtual {v0, v1}, Landroid/telephony/SubscriptionManager;->setDefaultDataSubId(I)V
++    invoke-virtual {v0, v1}, Landroid/telephony/SubscriptionManager;->setDefaultDataSubIdExtended(I)V
+
+     const/16 v21, 0x64
+
+--- a/smali/com/meizu/connectivitysettings/MzSimInfoEditor.smali
++++ b/smali/com/meizu/connectivitysettings/MzSimInfoEditor.smali
+@@ -615,7 +615,7 @@
+
+     iget-object v1, p0, Lcom/meizu/connectivitysettings/MzSimInfoEditor;->mSubscriptionManager:Landroid/telephony/SubscriptionManager;
+
+-    invoke-virtual {v1, v0}, Landroid/telephony/SubscriptionManager;->setDefaultDataSubId(I)V
++    invoke-virtual {v1, v0}, Landroid/telephony/SubscriptionManager;->setDefaultDataSubIdExtended(I)V
+
+     return-void
+
+--- a/smali/com/meizu/connectivitysettings/sim/SimDialogActivity.smali
++++ b/smali/com/meizu/connectivitysettings/sim/SimDialogActivity.smali
+@@ -175,7 +175,7 @@
+     move-result-object v0
+
+     .local v0, "subscriptionManager":Landroid/telephony/SubscriptionManager;
+-    invoke-virtual {v0, p1}, Landroid/telephony/SubscriptionManager;->setDefaultDataSubId(I)V
++    invoke-virtual {v0, p1}, Landroid/telephony/SubscriptionManager;->setDefaultDataSubIdExtended(I)V
+
+     const v1, 0x7f0c0424
+
+--
+2.13.2
