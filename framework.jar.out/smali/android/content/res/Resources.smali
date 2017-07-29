@@ -1083,17 +1083,17 @@
     .local v0, "ret":Landroid/content/res/Resources;
     if-nez v0, :cond_0
 
-    new-instance v0, Landroid/content/res/MiuiResources;
+    new-instance v0, Landroid/content/res/Resources;
 
     .end local v0    # "ret":Landroid/content/res/Resources;
-    invoke-direct {v0}, Landroid/content/res/MiuiResources;-><init>()V
+    invoke-direct {v0}, Landroid/content/res/Resources;-><init>()V
 
     .restart local v0    # "ret":Landroid/content/res/Resources;
     sput-object v0, Landroid/content/res/Resources;->mSystem:Landroid/content/res/Resources;
 
-    const/4 v1, 0x0
+    #const/4 v1, 0x0
 
-    invoke-static {v0, v1}, Landroid/miui/ResourcesManager;->initMiuiResource(Landroid/content/res/Resources;Ljava/lang/String;)V
+    #invoke-static {v0, v1}, Landroid/miui/ResourcesManager;->initMiuiResource(Landroid/content/res/Resources;Ljava/lang/String;)V
 
     invoke-static {}, Landroid/content/res/Resources$FlymeInjector;->setFlymeSystemThemeResource()V
 
@@ -5837,9 +5837,9 @@
     iput-object v8, v0, Landroid/content/res/TypedArray;->mXml:Landroid/content/res/XmlBlock$Parser;
 
     .line 1999
-    invoke-virtual {p0, v0}, Landroid/content/res/Resources;->loadOverlayTypedArray(Landroid/content/res/TypedArray;)Landroid/content/res/TypedArray;
+    #invoke-virtual {p0, v0}, Landroid/content/res/Resources;->loadOverlayTypedArray(Landroid/content/res/TypedArray;)Landroid/content/res/TypedArray;
 
-    move-result-object v0
+    #move-result-object v0
 
     .line 2000
     return-object v0
@@ -5921,11 +5921,11 @@
     aput v4, v2, v4
 
     .line 617
-    invoke-virtual {p0, v0}, Landroid/content/res/Resources;->loadOverlayTypedArray(Landroid/content/res/TypedArray;)Landroid/content/res/TypedArray;
+    #invoke-virtual {p0, v0}, Landroid/content/res/Resources;->loadOverlayTypedArray(Landroid/content/res/TypedArray;)Landroid/content/res/TypedArray;
 
-    move-result-object v2
+    #move-result-object v2
 
-    return-object v2
+    return-object v0
 .end method
 
 .method public openRawResource(I)Ljava/io/InputStream;

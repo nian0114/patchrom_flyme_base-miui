@@ -957,9 +957,9 @@
 
     if-nez v0, :cond_0
 
-    invoke-static {p0}, Landroid/content/res/MiuiConfiguration;->needNewResources(I)Z
+    #invoke-static {p0}, Landroid/content/res/MiuiConfiguration;->needNewResources(I)Z
 
-    move-result v0
+    #move-result v0
 
     :cond_0
     const/4 v0, 0x1
