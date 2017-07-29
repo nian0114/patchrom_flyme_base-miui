@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="music_grid_preference_padding_horizon">23.269989dip</dimen>
+    <dimen name="screen_effect_actionbar_height">480.0dip</dimen>
+    <dimen name="page_layout_panel_padding_top">34.0dip</dimen>
+    <dimen name="page_layout_level_left_margin1">51.0dip</dimen>
+    <dimen name="page_layout_level_left_margin2">61.0dip</dimen>
+    <dimen name="page_layout_small_size">35.0px</dimen>
+    <dimen name="page_layout_normal_size">41.0px</dimen>
+    <dimen name="page_layout_medium_size">46.0px</dimen>
+    <dimen name="page_layout_large_size">51.0px</dimen>
+    <dimen name="page_layout_huge_size">56.0px</dimen>
+    <dimen name="page_layout_godzilla_size">56.0px</dimen>
+    <dimen name="page_layout_small_title_size">32.0px</dimen>
+    <dimen name="page_layout_normal_title_size">41.0px</dimen>
+    <dimen name="page_layout_medium_title_size">48.0px</dimen>
+    <dimen name="page_layout_large_title_size">56.0px</dimen>
+    <dimen name="page_layout_huge_title_size">80.0px</dimen>
+    <dimen name="page_layout_godzilla_title_size">95.0px</dimen>
+    <dimen name="page_layout_small_summary_size">26.0px</dimen>
+    <dimen name="page_layout_normal_summary_size">32.0px</dimen>
+    <dimen name="page_layout_medium_summary_size">34.0px</dimen>
+    <dimen name="page_layout_large_summary_size">40.0px</dimen>
+    <dimen name="page_layout_huge_summary_size">51.0px</dimen>
+    <dimen name="page_layout_godzilla_summary_size">51.0px</dimen>
+</resources>
