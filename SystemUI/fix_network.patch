@@ -1,0 +1,50 @@
+From e774b7b9bcf488e918b22c33a070def501f3a7e6 Mon Sep 17 00:00:00 2001
+From: nian0114 <268078545@qq.com>
+Date: Sun, 28 May 2017 22:59:41 +0800
+Subject: [PATCH] fix wrong network type
+
+---
+ .../systemui/statusbar/policy/MobileDataControllerImpl.smali |  4 +++-
+ .../smali/com/flyme/systemui/qs/tiles/MobileDataTile.smali   | 12 ++++++++++++
+ 2 files changed, 15 insertions(+), 1 deletion(-)
+
+--- a/smali/com/android/systemui/statusbar/policy/MobileDataControllerImpl.smali
++++ b/smali/com/android/systemui/statusbar/policy/MobileDataControllerImpl.smali
+@@ -485,11 +485,13 @@
+     .local v1, "modes":[I
+     aput v4, v1, v3
+
++    const/16 v3, 0x15
++
+     aput v3, v1, v4
+
+     if-le v0, v5, :cond_0
+
+-    const/16 v2, 0x9
++    const/16 v2, 0x16
+
+     aput v2, v1, v5
+
+--- a/smali/com/flyme/systemui/qs/tiles/MobileDataTile.smali
++++ b/smali/com/flyme/systemui/qs/tiles/MobileDataTile.smali
+@@ -233,6 +233,18 @@
+         :pswitch_0
+         :pswitch_4
+         :pswitch_4
++        :pswitch_4
++        :pswitch_4
++        :pswitch_3
++        :pswitch_3
++        :pswitch_4
++        :pswitch_2
++        :pswitch_4
++        :pswitch_2
++        :pswitch_4
++        :pswitch_4
++        :pswitch_2
++        :pswitch_4
+     .end packed-switch
+ .end method
+
+--
+2.12.2

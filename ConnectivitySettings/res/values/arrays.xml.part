@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <add-resource type="array" name="preferred_network_mode_4g3g2g"/>
+    <add-resource type="array" name="preferred_network_mode_4g3g2g_value"/>
+    <string-array name="preferred_network_mode_4g3g2g">
+        <item>2G</item>
+        <item>3G/2G</item>
+        <item>4G/3G/2G</item>
+    </string-array>
+    <string-array name="preferred_network_mode_4g3g2g_value">
+        <item>1</item>
+        <item>21</item>
+        <item>22</item>
+    </string-array>
+</resources>
