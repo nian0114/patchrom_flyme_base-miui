@@ -364,7 +364,7 @@
 
     iget-object v1, v1, Landroid/app/LoadedApk;->mPackageName:Ljava/lang/String;
 
-    invoke-static {v10, v1}, Landroid/miui/ResourcesManager;->initMiuiResource(Landroid/content/res/Resources;Ljava/lang/String;)V
+    #invoke-static {v10, v1}, Landroid/miui/ResourcesManager;->initMiuiResource(Landroid/content/res/Resources;Ljava/lang/String;)V
 
     invoke-direct {p0, v10}, Landroid/app/ContextImpl;->setFlymeThemeResource(Landroid/content/res/Resources;)V
 
