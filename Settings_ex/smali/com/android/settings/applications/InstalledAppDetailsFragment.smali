@@ -728,7 +728,7 @@
     invoke-direct {p0}, Lcom/android/settings_ex/applications/InstalledAppDetailsFragment;->kE()V
 
     .line 537
-    const-string v0, "com.android.settings"
+    const-string v0, "com.android.settings_ex"
 
     iget-object v1, p0, Lcom/android/settings_ex/applications/InstalledAppDetailsFragment;->Fk:Lcom/android/b/a/o;
 
@@ -3992,7 +3992,7 @@
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setAction(Ljava/lang/String;)Landroid/content/Intent;
 
     .line 1111
-    const-string v1, "com.android.settings"
+    const-string v1, "com.android.settings_ex"
 
     const-string v4, "com.android.settings.Settings$NotificationFilterActivity"
 

@@ -520,7 +520,7 @@
     move-result-object v0
 
     .line 888
-    const-string v4, "com.android.settings"
+    const-string v4, "com.android.settings_ex"
 
     invoke-virtual {v4, v0}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
 

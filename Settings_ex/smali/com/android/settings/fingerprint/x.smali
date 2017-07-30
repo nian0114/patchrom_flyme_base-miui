@@ -784,7 +784,7 @@
     if-nez v1, :cond_0
 
     .line 505
-    const-string v1, "com.android.settings"
+    const-string v1, "com.android.settings_ex"
 
     const-class v2, Lcom/android/settings_ex/ChooseLockGeneric;
 
@@ -1282,7 +1282,7 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 397
-    const-string v1, "com.android.settings"
+    const-string v1, "com.android.settings_ex"
 
     const-class v2, Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;
 

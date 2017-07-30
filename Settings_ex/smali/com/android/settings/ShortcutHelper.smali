@@ -96,7 +96,7 @@
     .line 297
     new-instance v1, Landroid/content/ComponentName;
 
-    const-string v2, "com.android.settings"
+    const-string v2, "com.android.settings_ex"
 
     const-string v3, "com.miui.optimizecenter.MainActivity"
 
@@ -168,7 +168,7 @@
     .line 315
     new-instance v1, Landroid/content/ComponentName;
 
-    const-string v2, "com.android.settings"
+    const-string v2, "com.android.settings_ex"
 
     const-string v3, "com.miui.powercenter.PowerCenter"
 
@@ -192,7 +192,7 @@
     .line 321
     new-instance v1, Landroid/content/ComponentName;
 
-    const-string v2, "com.android.settings"
+    const-string v2, "com.android.settings_ex"
 
     const-string v3, "com.miui.viruscenter.activity.VirusScanAppActivity"
 
@@ -216,7 +216,7 @@
     .line 327
     new-instance v1, Landroid/content/ComponentName;
 
-    const-string v2, "com.android.settings"
+    const-string v2, "com.android.settings_ex"
 
     const-string v3, "com.miui.securitycenter.permission.PermMainActivity"
 

@@ -366,7 +366,7 @@
     if-eqz v0, :cond_0
 
     .line 23
-    const-string v1, "com.android.settings"
+    const-string v1, "com.android.settings_ex"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 

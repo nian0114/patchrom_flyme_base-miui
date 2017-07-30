@@ -37,7 +37,7 @@
     .line 54
     new-instance v0, Landroid/content/ComponentName;
 
-    const-string v1, "com.android.settings"
+    const-string v1, "com.android.settings_ex"
 
     const-string v2, "com.android.settings.widget.SettingsAppWidgetProvider"
 

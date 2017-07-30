@@ -102,7 +102,7 @@
     invoke-virtual {v0, v1, p8, p9}, Landroid/content/Intent;->putExtra(Ljava/lang/String;J)Landroid/content/Intent;
 
     .line 160
-    const-string v1, "com.android.settings"
+    const-string v1, "com.android.settings_ex"
 
     invoke-virtual {p5}, Ljava/lang/Class;->getName()Ljava/lang/String;
 

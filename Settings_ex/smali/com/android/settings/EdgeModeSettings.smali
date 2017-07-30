@@ -118,7 +118,7 @@
     invoke-direct {v1}, Landroid/content/Intent;-><init>()V
 
     .line 48
-    const-string v3, "com.android.settings"
+    const-string v3, "com.android.settings_ex"
 
     const-string v4, "com.android.settings.EdgeModeGuideActivity"
 

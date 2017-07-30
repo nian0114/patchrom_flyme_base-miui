@@ -264,7 +264,7 @@
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 108
-    const-string v1, "com.android.settings"
+    const-string v1, "com.android.settings_ex"
 
     invoke-virtual {v0, v1}, Landroid/content/Intent;->setPackage(Ljava/lang/String;)Landroid/content/Intent;
 

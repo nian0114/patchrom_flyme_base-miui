@@ -60,7 +60,7 @@
     .line 74
     sget-object v0, Lcom/android/settings_ex/ChildrenModeSettings;->o:Ljava/util/HashSet;
 
-    const-string v1, "com.android.settings"
+    const-string v1, "com.android.settings_ex"
 
     invoke-virtual {v0, v1}, Ljava/util/HashSet;->add(Ljava/lang/Object;)Z
 
@@ -215,7 +215,7 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 181
-    const-string v1, "com.android.settings"
+    const-string v1, "com.android.settings_ex"
 
     const-string v2, "com.android.settings.PrivacyPasswordConfirmLockPattern"
 
@@ -259,7 +259,7 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 306
-    const-string v1, "com.android.settings"
+    const-string v1, "com.android.settings_ex"
 
     const-string v2, "com.android.settings.PrivacyPasswordChooseLockPattern"
 

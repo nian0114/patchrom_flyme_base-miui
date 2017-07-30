@@ -187,7 +187,7 @@
 
     const v3, 0x7f020249
 
-    const-string v4, "com.android.settings"
+    const-string v4, "com.android.settings_ex"
 
     const/4 v5, 0x1
 

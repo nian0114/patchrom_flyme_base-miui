@@ -323,7 +323,7 @@
     invoke-direct {v2}, Landroid/content/Intent;-><init>()V
 
     .line 77
-    const-string v6, "com.android.settings"
+    const-string v6, "com.android.settings_ex"
 
     const-string v7, "com.android.settings.IccLockSettings"
 

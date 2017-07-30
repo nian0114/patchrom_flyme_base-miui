@@ -320,7 +320,7 @@
     invoke-direct {v0}, Landroid/content/Intent;-><init>()V
 
     .line 141
-    const-string v1, "com.android.settings"
+    const-string v1, "com.android.settings_ex"
 
     const-class v2, Lcom/android/settings_ex/fingerprint/FingerprintEnrollEnrolling;
 

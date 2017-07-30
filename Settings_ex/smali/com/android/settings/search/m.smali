@@ -630,7 +630,7 @@
     .line 176
     sget-object v0, Lcom/android/settings_ex/search/m;->apu:Ljava/util/HashMap;
 
-    const-string v1, "com.android.settings"
+    const-string v1, "com.android.settings_ex"
 
     const/4 v2, 0x0
 

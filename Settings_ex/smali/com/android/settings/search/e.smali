@@ -3327,7 +3327,7 @@
     .line 214
     new-instance v0, Lcom/android/settings_ex/search/e;
 
-    const-string v1, "com.android.settings"
+    const-string v1, "com.android.settings_ex"
 
     invoke-direct {v0, p0, v1}, Lcom/android/settings_ex/search/e;-><init>(Landroid/content/Context;Ljava/lang/String;)V
 

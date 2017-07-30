@@ -2371,7 +2371,7 @@
     .line 463
     new-instance v3, Landroid/content/ComponentName;
 
-    const-string v4, "com.android.settings"
+    const-string v4, "com.android.settings_ex"
 
     const-string v5, "com.android.settings.ScreenButtonAlertActivity"
 
