@@ -7080,9 +7080,9 @@
     :cond_3
     :goto_1
     :try_start_2
-    new-instance v8, Lcom/android/internal/policy/MiuiPhoneWindow;
+    new-instance v8, Lcom/android/internal/policy/PhoneWindow;
 
-    invoke-direct {v8, v2}, Lcom/android/internal/policy/MiuiPhoneWindow;-><init>(Landroid/content/Context;)V
+    invoke-direct {v8, v2}, Lcom/android/internal/policy/PhoneWindow;-><init>(Landroid/content/Context;)V
 
     .line 2340
     .local v8, "win":Lcom/android/internal/policy/PhoneWindow;
