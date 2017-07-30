@@ -80,7 +80,7 @@
     <string name="config_persistentDataPackageName">com.google.android.gms</string>
     <string name="config_webViewPackageName">com.google.android.webview</string>
     <string name="prohibit_manual_network_selection_in_gobal_mode">false</string>
-    <string name="config_keyguardComponent">com.android.keyguard/com.android.keyguard.KeyguardService</string>
+    <string name="config_keyguardComponent">com.android.systemui/com.android.systemui.keyguard.KeyguardService</string>
     <string name="config_forceVoiceInteractionServicePackage" />
     <string name="config_radio_access_family" />
     <string name="config_cameraLaunchGestureSensorStringType" />
@@ -660,13 +660,13 @@
     <string name="lockscreen_sim_puk_locked_instructions">See the User Guide or contact Customer Care.</string>
     <string name="lockscreen_sim_locked_message">SIM card is locked.</string>
     <string name="lockscreen_sim_unlock_progress_dialog_message">Unlocking SIM card…</string>
-    <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"You have incorrectly drawn your unlock pattern %d times. 
+    <string name="lockscreen_too_many_failed_attempts_dialog_message" formatted="false">"You have incorrectly drawn your unlock pattern %d times.
 
 Try again in %d seconds."</string>
-    <string name="lockscreen_too_many_failed_password_attempts_dialog_message" formatted="false">"You have incorrectly typed your password %d times. 
+    <string name="lockscreen_too_many_failed_password_attempts_dialog_message" formatted="false">"You have incorrectly typed your password %d times.
 
 Try again in %d seconds."</string>
-    <string name="lockscreen_too_many_failed_pin_attempts_dialog_message" formatted="false">"You have incorrectly typed your PIN %d times. 
+    <string name="lockscreen_too_many_failed_pin_attempts_dialog_message" formatted="false">"You have incorrectly typed your PIN %d times.
 
 Try again in %d seconds."</string>
     <string name="lockscreen_failed_attempts_almost_glogin" formatted="false">"You have incorrectly drawn your unlock pattern %d times. After %d more unsuccessful attempts, you will be asked to unlock your phone using your Google signin.
@@ -1291,13 +1291,13 @@ for account %s."</string>
     <string name="kg_login_account_recovery_hint">"Forgot your username or password?
 Visit "<b>google.com/accounts/recovery</b>.</string>
     <string name="kg_login_checking_password">Checking account…</string>
-    <string name="kg_too_many_failed_pin_attempts_dialog_message" formatted="false">"You have incorrectly typed your PIN %d times. 
+    <string name="kg_too_many_failed_pin_attempts_dialog_message" formatted="false">"You have incorrectly typed your PIN %d times.
 
 Try again in %d seconds."</string>
-    <string name="kg_too_many_failed_password_attempts_dialog_message" formatted="false">"You have incorrectly typed your password %d times. 
+    <string name="kg_too_many_failed_password_attempts_dialog_message" formatted="false">"You have incorrectly typed your password %d times.
 
 Try again in %d seconds."</string>
-    <string name="kg_too_many_failed_pattern_attempts_dialog_message" formatted="false">"You have incorrectly drawn your unlock pattern %d times. 
+    <string name="kg_too_many_failed_pattern_attempts_dialog_message" formatted="false">"You have incorrectly drawn your unlock pattern %d times.
 
 Try again in %d seconds."</string>
     <string name="kg_failed_attempts_almost_at_wipe" formatted="false">You have incorrectly attempted to unlock the phone %d times. After %d more unsuccessful attempts, the phone will be reset to factory default and all user data will be lost.</string>
