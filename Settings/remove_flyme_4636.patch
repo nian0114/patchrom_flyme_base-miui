@@ -1,0 +1,27 @@
+From ecb7fe300fc492a02e9cb5c6f8fb675c4d58063f Mon Sep 17 00:00:00 2001
+From: nian0114 <268078545@qq.com>
+Date: Sun, 30 Jul 2017 11:23:23 +0800
+Subject: [PATCH] remove flyme network select
+
+---
+ Settings/AndroidManifest.xml | 6 ------
+ 1 file changed, 6 deletions(-)
+
+--- a/Settings/AndroidManifest.xml
++++ b/Settings/AndroidManifest.xml
+@@ -834,12 +834,6 @@
+                 <category android:name="android.intent.category.DEFAULT"/>
+             </intent-filter>
+         </activity>
+-        <receiver android:name="com.android.settings.TestingSettingsBroadcastReceiver">
+-            <intent-filter>
+-                <action android:name="android.provider.Telephony.SECRET_CODE"/>
+-                <data android:host="4636" android:scheme="android_secret_code"/>
+-            </intent-filter>
+-        </receiver>
+         <activity android:finishOnCloseSystemDialogs="true" android:label="@string/widget_picker_title" android:name="com.android.settings.AppWidgetPickActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Material.Light.Dialog.Alert">
+             <intent-filter>
+                 <action android:name="android.appwidget.action.APPWIDGET_PICK"/>
+-- 
+2.13.2
+
