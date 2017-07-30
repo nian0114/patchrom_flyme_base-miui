@@ -1562,7 +1562,7 @@
     const/4 v6, 0x0
 
     .line 216
-    sget v4, Lmiui/R$style;->Theme_Light_Dialog_Alert:I
+    sget v4, Lcom/flyme/internal/R$style;->Theme_Flyme_Light_Dialog_Alert:I
 
     invoke-virtual {p0, v4}, Lcom/android/internal/app/ResolverActivity;->setTheme(I)V
 
