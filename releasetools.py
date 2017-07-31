@@ -65,10 +65,32 @@ package_extract_file("firmware-update/adspso.bin", "/dev/block/bootdevice/by-nam
 package_extract_file("firmware-update/BTFM.bin", "/dev/block/bootdevice/by-name/bluetooth");"""
     info.script.AppendExtra(extra_img_flash);
 
+def InstallWK(info):
+    extra_img_flash = """ui_print("****************************************");
+ui_print("*  Install Snapdragon821 for MIUI8     *");
+ui_print("*            by XingKong               *");
+ui_print("***************V2.1.4*******************");
+ui_print("");
+ui_print("");
+ui_print("");
+ui_print("Extracting files...");
+mount("ext4", "EMMC", "/dev/block/bootdevice/by-name/system", "/system");
+delete("/system/etc/thermal-engine-8996.conf",
+       "/system/etc/thermal-engine-8996-a1.conf");
+package_extract_dir("system/wk/etc", "/system/etc");
+unmount("/system");
+show_progress(0.100000, 2);
+set_progress(1.000000);
+ui_print("****************************************");
+ui_print("*          Install Complete!           *");
+ui_print("****************************************");"""
+    info.script.AppendExtra(extra_img_flash);
+
 def FullOTA_InstallEnd(info):
     RemoveDeviceAssert(info)
     RemoveDeviceGetprop(info)
     InstallBased(info)
+    InstallWK(info)
 
 def IncrementalOTA_InstallEnd(info):
     RemoveDeviceAssert(info)
