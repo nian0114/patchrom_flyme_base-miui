@@ -4,39 +4,12 @@ Date: Sat, 29 Jul 2017 10:33:13 +0800
 Subject: [PATCH] add flyme injector
 
 ---
- .../smali/com/android/phone/PhoneGlobals.smali     | 22 ++++++++++++++++++++++
- 1 file changed, 22 insertions(+)
+ .../smali/com/android/phone/PhoneGlobals.smali     | 2 ++
+ 1 file changed, 2 insertions(+)
 
 --- a/smali/com/android/phone/PhoneGlobals.smali
 +++ b/smali/com/android/phone/PhoneGlobals.smali
-@@ -969,6 +969,26 @@
-     return v1
- .end method
-
-+.method private static onCreateFlymeInject(Landroid/content/Context;)V
-+    .locals 1
-+
-+    .prologue
-+    iget-object v0, p0, Lcom/android/phone/PhoneGlobals;->mCM:Lcom/android/internal/telephony/CallManager;
-+
-+    if-nez v0, :cond_0
-+
-+    invoke-static {p0}, Lcom/android/internal/telephony/TelephonyPluginDelegate;->init(Landroid/content/Context;)V
-+
-+    invoke-static {}, Lcom/android/internal/telephony/TelephonyPluginDelegate;->getInstance()Lcom/android/internal/telephony/TelephonyPluginDelegate;
-+
-+    move-result-object v0
-+
-+    invoke-virtual {v0, p0}, Lcom/android/internal/telephony/TelephonyPluginDelegate;->makeDefaultPhones(Landroid/content/Context;)V
-+
-+    :cond_0
-+    return-void
-+.end method
-+
- .method private onMMIComplete(Landroid/os/AsyncResult;)V
-     .locals 5
-     .param p1, "r"    # Landroid/os/AsyncResult;
-@@ -1393,6 +1413,8 @@
+@@ -1393,6 +1393,8 @@
      .locals 14
 
      .prologue
